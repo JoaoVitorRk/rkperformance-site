@@ -29,19 +29,26 @@ Site one-page premium e dinâmico da RK Performance — fundo escuro, dourado me
 
 > ⚠️ Para alterar o WhatsApp, abra `index.html` e substitua todas as ocorrências de `5542999246208` pelo novo número no formato internacional (ex.: `5542999999999`).
 
-## 🚀 Como publicar na Hostinger
+## 🚀 Como publicar na Hostinger via GitHub (Integração Direta)
 
-### 1. Acesse o painel da Hostinger
+### 1. Criar o repositório no GitHub
 
-1. Entre em [hPanel da Hostinger](https://hpanel.hostinger.com)
-2. Vá em **Hospedagem** → selecione seu plano que contém `rkperformance.com.br`
+Execute no terminal (ou crie um novo repositório chamado `rkperformance-site` no GitHub sob a conta `JoaoVitorRk`):
 
-### 2. Faça upload dos arquivos
+```bash
+cd site
+git remote add origin https://github.com/JoaoVitorRk/rkperformance-site.git
+git branch -M main
+git push -u origin main
+```
 
-1. No hPanel, abra **Gerenciador de Arquivos**
-2. Navegue até `public_html`
-3. Envie o arquivo `index.html` para dentro de `public_html` (substituindo o que existir)
-4. Apague arquivos antigos se houver (ex.: `default.php`, `index.php`, etc.)
+### 2. Conectar e Implantar na Hostinger
+
+1. No painel da Hostinger (tela **"Selecione o repositório Git para importar"**):
+2. Clique no botão de atualizar **↻** ao lado de `JoaoVitorRk` para listar seus repositórios.
+3. Selecione o repositório `rkperformance-site`.
+4. Clique em **Implantar**.
+5. Toda vez que fizer um `git push origin main`, a Hostinger atualizará o site automaticamente!
 
 ### 3. Configure o domínio (se ainda não estiver conectado)
 
