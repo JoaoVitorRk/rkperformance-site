@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RK Performance | Mais clientes chegando no seu negócio todos os dias</title>
+<meta name="description" content="A RK Performance produz, edita e gerencia o anúncio inteiro do seu negócio — conteúdo que vende + campanha otimizada. Você não produz nada. Diagnóstico gratuito via WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://rkperformance.com.br/">
+<meta property="og:title" content="RK Performance | Mais clientes chegando no seu negócio todos os dias">
+<meta property="og:description" content="A gente grava, edita e gerencia o anúncio inteiro. Você não produz nada — só atende clientes novos chegando.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rkperformance.com.br/">
+<meta property="og:site_name" content="RK Performance">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Schibsted+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+
+<style>
+:root{
+  --preto:#0A0A0A;
+  --grafite:#1A1A1A;
+  --grafite2:#2A2A2A;
+  --off:#F5F0E8;
+  --bege:#D9CBB8;
+  --dourado:#C9A96A;
+  --dourado2:#E0C68A;
+  --font-display:'Bricolage Grotesque',sans-serif;
+  --font-body:'Schibsted Grotesk',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--preto);color:var(--off);font-family:var(--font-body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+p{text-wrap:pretty}
+img{display:block;max-width:100%}
+a{color:var(--dourado);text-decoration:none}
+.gold{color:var(--dourado)}
+.gold2{color:var(--dourado2)}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+.label{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--dourado);font-weight:600;display:inline-flex;align-items:center;gap:12px}
+.label::before{content:'';width:32px;height:1px;background:var(--dourado)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:4px;font-weight:600;font-size:15px;cursor:pointer;border:1px solid transparent;transition:all .3s ease;letter-spacing:.02em;text-align:center}
+.btn-primary{background:var(--dourado);color:var(--preto)}
+.btn-primary:hover{background:var(--dourado2);transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,169,106,.25)}
+.btn-outline{border-color:var(--dourado);color:var(--dourado);background:transparent}
+.btn-outline:hover{background:var(--dourado);color:var(--preto);transform:translateY(-2px)}
+section{position:relative;overflow:hidden}
+.section-pad{padding:100px 0}
+@media(max-width:768px){.section-pad{padding:64px 0}}
+
+/* ===== PRELOADER ===== */
+#preloader{position:fixed;inset:0;z-index:999;background:var(--preto);display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s}
+#preloader.hide{opacity:0;visibility:hidden}
+.pre-logo{font-family:var(--font-display);font-weight:900;font-size:32px;display:flex;align-items:center;gap:14px}
+.pre-logo .rk{color:var(--dourado)}
+.pre-logo .sep{width:1px;height:36px;background:var(--dourado)}
+.pre-logo .perf{font-size:14px;letter-spacing:.32em;color:var(--bege)}
+.pre-bar{position:absolute;bottom:0;left:0;height:2px;background:var(--dourado);width:0;transition:width .2s linear}
+.pre-num{position:absolute;bottom:24px;right:24px;font-family:var(--font-display);font-size:15px;color:var(--bege);letter-spacing:.1em}
+
+/* ===== HEADER ===== */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 0;transition:all .4s ease;background:transparent}
+.site-header.scrolled{padding:14px 0;background:rgba(10,10,10,.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(217,203,184,.08)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:800;font-size:22px;color:var(--off);z-index:101}
+.logo .rk{color:var(--dourado)}
+.logo .sep{width:1px;height:24px;background:var(--dourado)}
+.logo .perf{font-size:12px;letter-spacing:.24em;font-weight:600;color:var(--bege)}
+.nav-desktop{display:none;align-items:center;gap:32px}
+.nav-desktop a{color:var(--bege);font-size:14px;font-weight:500;position:relative;transition:color .3s}
+.nav-desktop a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:1px;background:var(--dourado);transition:width .3s}
+.nav-desktop a:hover{color:var(--off)}
+.nav-desktop a:hover::after{width:100%}
+.nav-desktop .btn{padding:12px 24px}
+.nav-desktop .btn::after{display:none}
+@media(min-width:992px){.nav-desktop{display:flex}}
+.menu-mobile{display:flex;flex-direction:column;gap:6px;background:none;border:none;cursor:pointer;z-index:101;padding:10px}
+.menu-mobile span{display:block;width:28px;height:2px;background:var(--off);transition:all .4s}
+.menu-mobile.active span:nth-child(1){transform:translateY(8px) rotate(45deg);background:var(--dourado)}
+.menu-mobile.active span:nth-child(2){opacity:0}
+.menu-mobile.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg);background:var(--dourado)}
+@media(min-width:992px){.menu-mobile{display:none}}
+.nav-mobile{position:fixed;inset:0;background:rgba(10,10,10,.98);backdrop-filter:blur(20px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;visibility:hidden;transition:all .5s ease;z-index:100}
+.nav-mobile.open{opacity:1;visibility:visible}
+.nav-mobile a{color:var(--off);font-family:var(--font-display);font-weight:800;font-size:28px;padding:12px 0;opacity:0;transform:translateY(20px);transition:all .5s ease}
+.nav-mobile.open a{opacity:1;transform:translateY(0)}
+.nav-mobile a:hover{color:var(--dourado)}
+.nav-mobile a svg{flex-shrink:0}
+
+/* ===== HERO ===== */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-bottom:40px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.3) saturate(.8)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.7) 0%,var(--preto) 100%)}
+.hero-grid{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:8px;padding-top:160px;padding-bottom:20px}
+.hero-content{max-width:940px;margin:0 auto;display:flex;flex-direction:column;align-items:center}
+.hero-title{font-size:clamp(36px,6vw,68px);font-weight:900;line-height:1.15;margin:24px 0 20px;letter-spacing:-.03em;max-width:920px;padding-top:10px}
+.hero-title .line{display:block;overflow:visible;padding:4px 0}
+.hero-title .line-inner{display:block}
+html.js .hero-title .line-inner{transform:translateY(110%);transition:transform 1s cubic-bezier(.19,1,.22,1)}
+html.js .hero-title .line-inner.revealed{transform:translateY(0)}
+.hero-sub{margin-left:auto;margin-right:auto;font-size:clamp(16px,2vw,19px);max-width:680px;color:var(--bege)}
+html.js .hero-sub{opacity:0;transform:translateY(20px);transition:all .8s ease .4s}
+html.js .hero-sub.revealed{opacity:1;transform:translateY(0)}
+.hero-ctas{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+@media(min-width:480px){.hero-ctas{flex-direction:row}}
+html.js .hero-ctas{opacity:0;transform:translateY(20px);transition:all .8s ease .6s}
+html.js .hero-ctas.revealed{opacity:1;transform:translateY(0)}
+.hero-note{margin-top:16px;font-size:13px;color:rgba(217,203,184,.7)}
+.hero-stats{display:flex;gap:48px;margin-top:36px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+html.js .hero-stats{opacity:0;transition:all .8s ease .8s}
+html.js .hero-stats.revealed{opacity:1}
+.stat{display:flex;flex-direction:column;align-items:center;text-align:center}
+.stat b{font-family:var(--font-display);font-size:32px;font-weight:900;color:var(--off);line-height:1;white-space:nowrap}
+.stat b .gold{font-weight:900;color:var(--dourado)}
+.stat span{font-size:12px;color:var(--bege);letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
+
+.hero-scroll{margin-top:24px;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(217,203,184,.6);font-size:11px;letter-spacing:.22em;text-transform:uppercase;z-index:3}
+.hero-scroll .mouse{width:20px;height:32px;border:1.5px solid rgba(217,203,184,.5);border-radius:10px;position:relative}
+.hero-scroll .mouse::after{content:'';position:absolute;top:5px;left:50%;transform:translateX(-50%);width:3px;height:6px;background:var(--dourado);border-radius:3px;animation:scrollDot 1.6s infinite}
+@keyframes scrollDot{0%{opacity:0;top:5px}40%{opacity:1}80%{opacity:0;top:16px}100%{opacity:0}}
+
+/* ===== SEÇÃO AUTORIDADE (Quem somos) ===== */
+.autoridade{background:var(--grafite);position:relative}
+.autoridade::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:90%;max-width:800px;height:1px;background:linear-gradient(90deg,transparent,var(--dourado),transparent);opacity:.4}
+.aut-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+@media(min-width:1024px){.aut-grid{grid-template-columns:1fr 1.1fr}}
+.aut-card{background:var(--preto);border:1px solid rgba(201,169,106,.2);border-radius:16px;padding:40px;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.aut-badge{position:absolute;top:-14px;left:32px;background:var(--dourado);color:var(--preto);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 14px;border-radius:4px}
+.aut-card h3{font-size:24px;color:var(--off);margin-bottom:6px;font-family:var(--font-display)}
+.aut-card .aut-cargo{font-size:14px;color:var(--dourado);letter-spacing:.05em;margin-bottom:24px;display:block}
+.aut-stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:28px;padding-top:24px;border-top:1px solid rgba(217,203,184,.1)}
+.aut-stat-item h4{font-family:var(--font-display);font-size:clamp(26px,3.2vw,34px);font-weight:900;color:var(--dourado);line-height:1}
+.aut-stat-item p{font-size:13px;color:var(--bege);margin-top:6px;line-height:1.4}
+
+.aut-content h2{font-size:clamp(28px,4vw,44px);font-weight:900;line-height:1.15;margin:20px 0 24px;letter-spacing:-.03em}
+.aut-content p{color:var(--bege);font-size:16px;line-height:1.8;margin-bottom:20px}
+.aut-content p b{color:var(--off)}
+.aut-highlights{display:flex;flex-direction:column;gap:16px;margin-top:32px}
+.aut-hl{display:flex;align-items:flex-start;gap:16px;background:rgba(10,10,10,.5);padding:16px 20px;border-radius:8px;border-left:3px solid var(--dourado)}
+.aut-hl-icon{width:36px;height:36px;border-radius:50%;background:rgba(201,169,106,.15);color:var(--dourado);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.aut-hl-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2}
+.aut-hl div h5{font-size:15px;color:var(--off);margin-bottom:2px}
+.aut-hl div p{font-size:13px;color:var(--bege);margin:0;line-height:1.5}
+
+/* ===== MARQUEE ===== */
+.marquee{border-top:1px solid rgba(201,169,106,.2);border-bottom:1px solid rgba(201,169,106,.2);padding:28px 0;overflow:hidden;background:var(--grafite)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:marquee 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{font-family:var(--font-display);font-weight:800;font-size:clamp(18px,2.5vw,28px);text-transform:uppercase;letter-spacing:.05em;padding:0 24px;color:var(--off);white-space:nowrap;display:flex;align-items:center;gap:28px}
+.diamond{width:12px;height:12px;background:var(--dourado);transform:rotate(45deg);flex-shrink:0;display:inline-block}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ===== SEÇÃO TÍTULO ===== */
+.sec-head{margin-bottom:64px}
+.sec-head h2{font-size:clamp(30px,4.6vw,52px);font-weight:900;margin:20px 0 16px;max-width:720px;letter-spacing:-.03em}
+.sec-head p{color:var(--bege);font-size:17px;max-width:560px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center h2{margin-left:auto;margin-right:auto}
+.sec-head.center p{margin-left:auto;margin-right:auto}
+.sec-head.center .label::before{display:none}
+.sec-head.center .label{justify-content:center}
+
+/* ===== PROBLEMA ===== */
+.problema{background:var(--preto)}
+.dor-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:768px){.dor-grid{grid-template-columns:repeat(3,1fr)}}
+.dor-card{background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:8px;padding:32px 28px;transition:all .4s}
+.dor-card:hover{border-color:rgba(201,169,106,.3);transform:translateY(-4px)}
+.dor-card h3{font-size:18px;margin-bottom:10px;color:var(--off)}
+.dor-card p{font-size:15px;color:var(--bege);line-height:1.7}
+.dor-card .dor-num{font-family:var(--font-display);font-weight:900;font-size:14px;color:rgba(201,169,106,.5);letter-spacing:.2em;margin-bottom:16px}
+
+/* ===== SOBRE ===== */
+.sobre{background:var(--preto)}
+.sobre-grid{display:grid;grid-template-columns:1fr;gap:64px;align-items:center}
+@media(min-width:1024px){.sobre-grid{grid-template-columns:1fr 1fr}}
+.sobre-media{position:relative}
+.sobre-img-main{border-radius:8px;overflow:hidden;position:relative;z-index:2;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.sobre-img-main img{width:100%;height:auto;min-height:420px;object-fit:cover;transition:transform 1.2s cubic-bezier(.19,1,.22,1)}
+.sobre-img-main:hover img{transform:scale(1.05)}
+.sobre-img-float{position:absolute;bottom:-40px;right:-10px;width:55%;border-radius:8px;overflow:hidden;z-index:3;box-shadow:0 20px 60px rgba(0,0,0,.6);border:4px solid var(--preto)}
+@media(min-width:768px){.sobre-img-float{right:-40px}}
+.sobre-img-float img{width:100%;height:200px;object-fit:cover}
+.sobre-frame{position:absolute;inset:-20px 20px 20px -20px;border:1px solid rgba(201,169,106,.3);border-radius:12px;z-index:1}
+.sobre-exp{position:absolute;bottom:24px;left:24px;z-index:4;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);padding:20px 24px;border-radius:8px;border-left:3px solid var(--dourado)}
+.sobre-exp b{font-family:var(--font-display);font-size:26px;font-weight:900;display:block;line-height:1.2}
+.sobre-exp span{font-size:13px;color:var(--bege);letter-spacing:.06em;text-transform:uppercase}
+.sobre-text p{color:var(--bege);font-size:17px;margin-bottom:20px;line-height:1.8}
+.sobre-text p b{color:var(--off)}
+.sobre-text h2{font-size:clamp(28px,4vw,44px);font-weight:900;line-height:1.1;margin:20px 0 24px;letter-spacing:-.03em}
+.sobre-points{margin-top:32px;display:grid;gap:16px}
+.sobre-point{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:8px;transition:all .4s}
+.sobre-point:hover{border-color:rgba(201,169,106,.4);transform:translateX(8px)}
+.sobre-point .icon{width:40px;height:40px;flex-shrink:0;border-radius:50%;border:1px solid var(--dourado);display:flex;align-items:center;justify-content:center;color:var(--dourado)}
+.sobre-point .icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6}
+.sobre-point div h4{font-size:15px;margin-bottom:4px;color:var(--off)}
+.sobre-point div p{font-size:14px;color:var(--bege);margin:0;line-height:1.6}
+
+/* ===== SERVIÇOS ===== */
+.servicos{background:var(--grafite)}
+.ser-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){.ser-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.ser-grid{grid-template-columns:repeat(3,1fr)}}
+.ser-card{position:relative;background:var(--preto);border:1px solid rgba(217,203,184,.08);border-radius:8px;padding:32px 28px;overflow:hidden;transition:all .4s ease;cursor:pointer}
+.ser-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--dourado),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+.ser-card:hover::before{transform:scaleX(1)}
+.ser-card:hover{transform:translateY(-8px);border-color:rgba(201,169,106,.3);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.ser-num{font-family:var(--font-display);font-weight:900;font-size:14px;color:rgba(201,169,106,.5);letter-spacing:.2em;margin-bottom:20px}
+.ser-icon{width:52px;height:52px;border:1px solid var(--dourado);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--dourado);margin-bottom:24px;transition:all .4s}
+.ser-card:hover .ser-icon{background:var(--dourado);color:var(--preto)}
+.ser-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5}
+.ser-card h3{font-size:19px;margin-bottom:10px}
+.ser-card p{font-size:14px;color:var(--bege);line-height:1.7}
+
+/* ===== ESCOPO ===== */
+.escopo{background:var(--preto)}
+.escopo-grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:768px){.escopo-grid{grid-template-columns:1fr 1fr}}
+.escopo-card{border-radius:12px;padding:40px 36px;border:1px solid rgba(217,203,184,.1)}
+.escopo-card.inclui{background:linear-gradient(180deg,rgba(201,169,106,.04),transparent 50%),var(--grafite)}
+.escopo-card.nao-inclui{background:var(--grafite);border-style:dashed}
+.escopo-card h3{font-size:20px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.escopo-card h3 .ico{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.escopo-card.inclui h3 .ico{background:var(--dourado);color:var(--preto)}
+.escopo-card.nao-inclui h3 .ico{border:1px solid var(--bege);color:var(--bege)}
+.escopo-card ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.escopo-card li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--bege)}
+.escopo-card li svg{width:18px;height:18px;flex-shrink:0;margin-top:2px;fill:none;stroke-width:2}
+.escopo-card.inclui li svg{stroke:var(--dourado)}
+.escopo-card.nao-inclui li svg{stroke:var(--bege)}
+
+/* ===== PROCESSO ===== */
+.processo{background:var(--grafite)}
+.processo-wrap{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab}
+.processo-wrap::-webkit-scrollbar{display:none}
+.processo-wrap.dragging{cursor:grabbing;scroll-snap-type:none}
+.processo-track{display:flex;gap:0;width:max-content;padding-bottom:20px}
+.passo-card{width:85vw;max-width:420px;padding:48px 40px;border-left:1px solid rgba(201,169,106,.25);flex-shrink:0;position:relative;scroll-snap-align:start}
+@media(min-width:768px){.passo-card{width:420px}}
+.passo-card:first-child{border-left:none;padding-left:0}
+.passo-num{font-family:var(--font-display);font-weight:900;font-size:72px;color:rgba(201,169,106,.4);-webkit-text-stroke:1px rgba(201,169,106,.6);line-height:1;margin-bottom:24px;transition:all .4s}
+@supports(-webkit-text-stroke:1px #000){
+.passo-num{color:transparent}
+}
+.passo-card:hover .passo-num{color:var(--dourado);-webkit-text-stroke:transparent}
+.passo-card h3{font-size:22px;margin-bottom:12px;color:var(--off)}
+.passo-card p{color:var(--bege);font-size:15px;line-height:1.7}
+.passo-arrow{position:absolute;top:50%;right:-16px;width:34px;height:34px;border-radius:50%;background:var(--dourado);color:var(--preto);display:flex;align-items:center;justify-content:center;font-size:16px;z-index:2}
+.passo-arrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.processo-hint{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:48px;color:var(--bege);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.processo-hint .arrow-line{display:flex;align-items:center;gap:6px}
+.processo-hint .arrow-line span{width:40px;height:1px;background:var(--dourado);animation:pulseLine 1.5s infinite}
+@keyframes pulseLine{0%,100%{opacity:.4;transform:scaleX(.8)}50%{opacity:1;transform:scaleX(1)}}
+
+/* ===== PÚBLICO ===== */
+.publico{background:var(--preto)}
+.pub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:640px){.pub-grid{grid-template-columns:repeat(4,1fr)}}
+.pub-item{padding:24px 18px;text-align:center;background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:8px;transition:all .4s}
+.pub-item:hover{border-color:var(--dourado);transform:translateY(-4px)}
+.pub-item .ico{font-size:26px;margin-bottom:10px}
+.pub-item h4{font-size:14px;font-weight:600;color:var(--off);line-height:1.4;font-family:var(--font-body)}
+
+/* ===== PACOTE ===== */
+.pacotes{background:var(--grafite)}
+.pacote-single{max-width:720px;margin:0 auto}
+.pacote{background:var(--preto);border:1px solid rgba(201,169,106,.3);border-radius:12px;padding:44px 36px;display:flex;flex-direction:column;position:relative;transition:all .4s ease;box-shadow:0 0 60px rgba(201,169,106,.08)}
+.pacote:hover{transform:translateY(-8px)}
+.pacote.destaque{border-color:var(--dourado);background:linear-gradient(180deg,rgba(201,169,106,.06),transparent 40%),var(--preto)}
+.plan-label{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--dourado);color:var(--preto);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 16px;border-radius:4px;white-space:nowrap}
+.pacote h3{font-size:24px;color:var(--off);margin-bottom:4px;text-align:center}
+.pacote .plan-desc{font-size:15px;color:var(--bege);margin-bottom:24px;text-align:center}
+.pacote .preco{font-family:var(--font-display);font-size:clamp(46px,5vw,58px);font-weight:900;color:var(--dourado);line-height:1;text-align:center}
+.pacote .preco small{font-size:16px;color:var(--bege);font-weight:400;margin-left:4px}
+.pacote .preco-note{font-size:13px;color:var(--bege);margin-top:8px;margin-bottom:10px;text-align:center}
+.pacote .minimo{display:inline-flex;align-items:center;gap:8px;background:rgba(201,169,106,.12);border:1px solid rgba(201,169,106,.4);color:var(--dourado);font-size:13px;font-weight:600;padding:8px 16px;border-radius:100px;margin:0 auto 28px}
+.pacote ul{list-style:none;flex:1;display:flex;flex-direction:column;gap:14px;margin-bottom:36px}
+.pacote li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--bege)}
+.pacote li svg{width:16px;height:16px;flex-shrink:0;margin-top:3px;fill:none;stroke:var(--dourado);stroke-width:2}
+.pacote .btn{width:100%}
+.pacote-note{margin-top:40px;text-align:center;color:var(--bege);font-size:14px;line-height:1.8}
+.pacote-note b{color:var(--dourado)}
+.verba-box{margin-top:48px;background:var(--preto);border:1px solid rgba(201,169,106,.2);border-radius:12px;padding:32px 36px;max-width:760px;margin-left:auto;margin-right:auto}
+.verba-box h4{font-size:18px;color:var(--dourado);margin-bottom:12px}
+.verba-box p{font-size:15px;color:var(--bege);line-height:1.8}
+
+/* ===== POR QUE 3 MESES ===== */
+.meses{background:var(--preto)}
+.meses-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:48px}
+@media(min-width:768px){.meses-grid{grid-template-columns:repeat(3,1fr)}}
+.mes-card{background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:12px;padding:32px 28px;position:relative;transition:all .4s}
+.mes-card:hover{border-color:rgba(201,169,106,.4);transform:translateY(-4px)}
+.mes-card .mes-tag{font-family:var(--font-display);font-weight:900;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado);margin-bottom:16px;display:inline-block;background:rgba(201,169,106,.12);padding:6px 14px;border-radius:100px}
+.mes-card h3{font-size:19px;margin-bottom:10px;color:var(--off)}
+.mes-card p{font-size:14px;color:var(--bege);line-height:1.7}
+.mes-frase{margin-top:40px;text-align:center;font-size:16px;color:var(--bege);line-height:1.8;max-width:720px;margin-left:auto;margin-right:auto}
+.mes-frase b{color:var(--dourado)}
+
+/* ===== SOLUÇÕES EMPRESA ===== */
+.solucoes{background:var(--grafite)}
+.sol-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:640px){.sol-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.sol-grid{grid-template-columns:repeat(4,1fr)}}
+.sol-card{position:relative;background:var(--preto);border:1px solid rgba(217,203,184,.08);border-radius:8px;padding:32px 28px;overflow:hidden;transition:all .4s ease;display:flex;flex-direction:column;gap:16px}
+.sol-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--dourado),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+.sol-card:hover::before{transform:scaleX(1)}
+.sol-card:hover{transform:translateY(-6px);border-color:rgba(201,169,106,.3)}
+.sol-icon{width:48px;height:48px;border:1px solid var(--dourado);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--dourado);flex-shrink:0}
+.sol-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6}
+.sol-card h3{font-size:18px;margin-bottom:4px}
+.sol-card p{font-size:14px;color:var(--bege);line-height:1.7;flex:1}
+.sol-cta{margin-top:48px;text-align:center}
+.sol-cta p{color:var(--bege);font-size:16px;margin-bottom:20px}
+
+/* ===== CTA FINAL ===== */
+.cta-final{background:var(--preto);position:relative}
+.cta-bg{position:absolute;inset:0;overflow:hidden}
+.cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.25)}
+.cta-overlay{position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 50%,rgba(10,10,10,.5),var(--preto) 90%)}
+.cta-inner{position:relative;z-index:2;text-align:center;padding:120px 24px}
+@media(min-width:768px){.cta-inner{padding:150px 24px}}
+.cta-inner h2{font-size:clamp(32px,5.5vw,64px);font-weight:900;max-width:760px;margin:24px auto;letter-spacing:-.03em}
+.cta-inner p{color:var(--bege);max-width:540px;margin:0 auto 40px;font-size:17px}
+.cta-inner .btn{min-width:260px}
+.cta-note{margin-top:20px;font-size:13px;color:rgba(217,203,184,.7)}
+
+/* ===== FAQ ===== */
+.faq{background:var(--grafite)}
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(217,203,184,.12)}
+.faq-q{width:100%;background:none;border:none;color:var(--off);font-family:var(--font-body);font-weight:500;font-size:16px;padding:28px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;transition:color .3s}
+.faq-q:hover{color:var(--dourado)}
+.faq-q .plus{width:36px;height:36px;min-width:36px;border:1px solid rgba(201,169,106,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;transition:all .4s}
+.faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--dourado);transition:all .4s}
+.faq-q .plus::before{width:14px;height:2px}
+.faq-q .plus::after{width:2px;height:14px}
+.faq-item.open .faq-q{color:var(--dourado)}
+.faq-item.open .plus{transform:rotate(135deg);border-color:var(--dourado)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.19,1,.22,1)}
+.faq-a p{padding:0 0 28px;font-size:15px;color:var(--bege);line-height:1.8;max-width:680px}
+
+/* ===== FOOTER ===== */
+footer{border-top:1px solid rgba(217,203,184,.08);padding:80px 0 40px;background:var(--preto)}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-bottom:64px}
+@media(min-width:768px){.footer-grid{grid-template-columns:2fr 1fr 1fr}}
+.footer-brand p{color:var(--bege);font-size:14px;margin-top:20px;max-width:360px;line-height:1.8}
+.footer-col h4{color:var(--dourado);font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px}
+.footer-col a{display:block;color:var(--bege);font-size:14px;padding:6px 0;transition:color .3s,padding-left .3s}
+.footer-col a:hover{color:var(--dourado);padding-left:6px}
+.footer-bottom{padding-top:32px;border-top:1px solid rgba(217,203,184,.08);display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--bege)}
+@media(min-width:768px){.footer-bottom{flex-direction:row;justify-content:space-between}}
+
+/* ===== WHATSAPP FAB ===== */
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(37,211,102,.3);transition:all .3s;border:2px solid rgba(255,255,255,.08)}
+.wa-fab:hover{transform:scale(1.1) rotate(8deg);box-shadow:0 12px 40px rgba(37,211,102,.4)}
+.wa-fab svg{width:28px;height:28px;fill:var(--preto)}
+
+/* ===== ANIMAÇÕES DE SCROLL ===== */
+html.js .reveal{opacity:0;transform:translateY(50px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+html.js .reveal.in-view{opacity:1;transform:translateY(0)}
+html.js .reveal-left{opacity:0;transform:translateX(-60px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+html.js .reveal-left.in-view{opacity:1;transform:translateX(0)}
+html.js .reveal-right{opacity:0;transform:translateX(60px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+html.js .reveal-right.in-view{opacity:1;transform:translateX(0)}
+html.js .reveal-scale{opacity:0;transform:scale(.92);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+html.js .reveal-scale.in-view{opacity:1;transform:scale(1)}
+.delay-1{transition-delay:.15s}
+.delay-2{transition-delay:.3s}
+.delay-3{transition-delay:.45s}
+.delay-4{transition-delay:.6s}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pre-logo">
+    <span class="rk">RK</span>
+    <span class="sep"></span>
+    <span class="perf">PERFORMANCE</span>
+  </div>
+  <div class="pre-bar" id="preBar"></div>
+  <div class="pre-num" id="preNum">0%</div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#topo" class="logo" aria-label="RK Performance — Início">
+      <span class="rk">RK</span>
+      <span class="sep" aria-hidden="true"></span>
+      <span class="perf">PERFORMANCE</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a href="#autoridade">História</a>
+      <a href="#sobre">Método</a>
+      <a href="#servicos">O que fazemos</a>
+      <a href="#escopo">O que inclui</a>
+      <a href="#pacotes">Investimento</a>
+      <a href="#solucoes">Para empresas</a>
+      <a href="#faq">FAQ</a>
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20entender%20como%20funciona." class="btn btn-primary">Falar no WhatsApp</a>
+    </nav>
+    <button class="menu-mobile" id="btnMenu" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#autoridade">História</a>
+    <a href="#sobre">Método</a>
+    <a href="#servicos">O que fazemos</a>
+    <a href="#escopo">O que inclui</a>
+    <a href="#pacotes">Investimento</a>
+    <a href="#solucoes">Para empresas</a>
+    <a href="#faq">FAQ</a>
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20entender%20como%20funciona." style="font-size:18px;color:var(--dourado);display:inline-flex;align-items:center;gap:10px">Falar no WhatsApp <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</header>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" data-parallax>
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1920&auto=format&fit=crop" alt="Dono de negócio atendendo cliente" loading="eager">
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="label">Marketing que gera resultado de verdade</span>
+        <h1 class="hero-title">
+          <span class="line"><span class="line-inner">Seu negócio não precisa</span></span>
+          <span class="line"><span class="line-inner">de mais seguidor. Precisa de</span></span>
+          <span class="line"><span class="line-inner"><span class="gold">clientes chegando todo dia</span>.</span></span>
+        </h1>
+        <p class="hero-sub">Existe gente do seu lado pronta pra comprar o que você vende — só não ouviu falar de você. A gente grava, edita e gerencia o anúncio inteiro pra colocar o seu negócio na frente dela. Você não produz nada.</p>
+        <div class="hero-ctas">
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20clientes%20novos%20no%20meu%20neg%C3%B3cio." class="btn btn-primary">Quero clientes novos</a>
+          <a href="#sobre" class="btn btn-outline">Entender como funciona</a>
+        </div>
+        <p class="hero-note">Nós vamos até o seu negócio. Você não mexe um dedo.</p>
+        <div class="hero-stats">
+          <div class="stat"><b><span class="gold">+R$ 1.5M</span></b><span>Gerenciados em campanhas</span></div>
+          <div class="stat"><b><span class="gold">+650k</span></b><span>Investidos em anúncios online</span></div>
+          <div class="stat"><b><span class="gold">+4 anos</span></b><span>De experiência real em vendas</span></div>
+        </div>
+        <div class="hero-scroll">
+          <span class="mouse"></span>
+          <span>Role para explorar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA / QUEM SOMOS -->
+<section id="autoridade" class="autoridade section-pad">
+  <div class="container">
+    <div class="aut-grid">
+      <div class="aut-card reveal-left">
+        <span class="aut-badge">A história por trás do método</span>
+        <h3>Todo negócio bom tem um problema: ninguém sabe que ele existe</h3>
+        <span class="aut-cargo">E é exatamente isso que a gente muda</span>
+        <p style="font-size:14px;color:var(--bege);line-height:1.7;">O produto de qualidade, o serviço bem feito, o atendimento que fideliza — tudo isso existe. Só que a sua região continua não sabendo. O problema não é o seu negócio: é que ele não aparece para quem decide comprar.</p>
+
+        <div class="aut-stats-grid">
+          <div class="aut-stat-item">
+            <h4>+R$ 1.5M</h4>
+            <p>Gerenciados em campanhas</p>
+          </div>
+          <div class="aut-stat-item">
+            <h4>+650k</h4>
+            <p>Investidos em anúncios online</p>
+          </div>
+          <div class="aut-stat-item">
+            <h4>+4 anos</h4>
+            <p>De experiência real em vendas</p>
+          </div>
+          <div class="aut-stat-item">
+            <h4>100%</h4>
+            <p>Foco em retorno de verdade</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aut-content reveal-right delay-1">
+        <span class="label">A virada</span>
+        <h2>Quando as pessoas passam a <span class="gold">ver o seu negócio</span>, o caixa muda</h2>
+        <p>Nós somos <b>João Vitor Raifur Kos e Nicoli Fischer Kos</b>, fundadores da <b>RK Performance</b>. Passamos <b>4 anos gerenciando anúncios online</b> — e descobrimos o motivo real de a maioria dos negócios não venderem pela internet: <b>não falta tráfego. Falta conteúdo que venda.</b></p>
+        <p>Pagamos anúncios, testamos centenas de campanhas e aprendemos a mesma lição: <b>o criativo é o que faz o anúncio vender.</b> Foi assim que nasceu o nosso método — a gente não entrega só gestão. A gente entrega o <b>anúncio inteiro</b>, do primeiro vídeo ao relatório final.</p>
+
+        <div class="aut-highlights">
+          <div class="aut-hl">
+            <div class="aut-hl-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 15l-2 5l9-11h-7l2-5l-9 11h7z"/></svg>
+            </div>
+            <div>
+              <h5>Formação de elite</h5>
+              <p>Formados e mentorados na maior e melhor escola de gestores de tráfego da América do Sul (Comunidade Sobral de Tráfego).</p>
+            </div>
+          </div>
+          <div class="aut-hl">
+            <div class="aut-hl-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <h5>2 das maiores mentorias do Brasil</h5>
+              <p>Estratégias de vendas e performance das maiores mentorias do país aplicadas direto na tração do seu negócio.</p>
+            </div>
+          </div>
+          <div class="aut-hl">
+            <div class="aut-hl-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h5>Experiência em infoprodutos</h5>
+              <p>Atuamos no mercado de infoprodutos, onde cada centavo de tráfego precisa converter — o mesmo rigor aplicado no seu negócio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Cliente novo <i class="diamond"></i> WhatsApp tocando <i class="diamond"></i> Caixa crescendo <i class="diamond"></i> Você só atendendo <i class="diamond"></i></span>
+    <span>Cliente novo <i class="diamond"></i> WhatsApp tocando <i class="diamond"></i> Caixa crescendo <i class="diamond"></i> Você só atendendo <i class="diamond"></i></span>
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section class="problema section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">O problema</span>
+      <h2>Você já tem um bom negócio. <span class="gold">O problema é que ninguém sabe.</span></h2>
+    </div>
+    <div class="dor-grid">
+      <div class="dor-card reveal delay-1">
+        <div class="dor-num">01</div>
+        <h3>O dinheiro do anúncio que some</h3>
+        <p>Você já pagou anúncio que prometia milagre e não apareceu ninguém? Quase sempre não é o anúncio — é o conteúdo dentro dele. Sem criativo bom, dinheiro de verba é dinheiro no lixo.</p>
+      </div>
+      <div class="dor-card reveal delay-2">
+        <div class="dor-num">02</div>
+        <h3>O gestor que só espera você produzir</h3>
+        <p>Gestor de tráfego comum espera você mandar o material. Você não tem tempo. Resultado: o mês passa, a verba é gasta e a campanha mal sai do papel.</p>
+      </div>
+      <div class="dor-card reveal delay-3">
+        <div class="dor-num">03</div>
+        <h3>O conteúdo que não convence ninguém</h3>
+        <p>Vídeo de banco de imagem não gera venda. O cliente quer ver o SEU produto, o SEU serviço, o SEU atendimento antes de gastar — e isso não existe pronto na internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre section-pad">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-media reveal-left">
+        <div class="sobre-frame"></div>
+        <div class="sobre-img-main">
+          <img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=1000&auto=format&fit=crop" alt="Equipe gravando conteúdo em negócio local" loading="lazy">
+        </div>
+        <div class="sobre-img-float">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" alt="Analisando métricas de campanha" loading="lazy">
+        </div>
+        <div class="sobre-exp">
+          <b>Anúncio inteiro.</b>
+          <span>Estratégia + gravação + edição + gestão</span>
+        </div>
+      </div>
+      <div class="sobre-text reveal-right delay-1">
+        <span class="label">O Método RK</span>
+        <h2>O anúncio que <span class="gold">para o dedo</span> e enche o seu WhatsApp</h2>
+        <p>A maioria dos anúncios falha por um motivo simples: <b>ninguém quer ver.</b> Nosso método resolve exatamente isso. A gente <b>vai até o seu negócio</b>, grava o seu produto, o seu ambiente e o seu atendimento com qualidade de cinema — e transforma isso em vídeos que param o dedo de quem está rolando o feed.</p>
+        <p>Depois, <b>colocamos esse vídeo na frente de quem está perto de você e pronto pra comprar</b>. O gestor comum espera você produzir. A gente produz e entrega o anúncio inteiro — você só responde o WhatsApp.</p>
+        <div class="sobre-points">
+          <div class="sobre-point">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-9-9"/><path d="M21 3l-9 9"/><path d="M15 3h6v6"/></svg></div>
+            <div><h4>Conteúdo que vende de verdade</h4><p>Nada de banco de imagem. Vídeo do seu negócio real, gravado por quem entende de vender.</p></div>
+          </div>
+          <div class="sobre-point">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-7-10a7 7 0 1114 0c0 5.65-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+            <div><h4>Na frente de quem compra agora</h4><p>Segmentação por região, interesse e comportamento. Quem vê o anúncio pode se tornar cliente hoje.</p></div>
+          </div>
+          <div class="sobre-point">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
+            <div><h4>Você no controle da evolução</h4><p>Relatório simples todo mês: o que foi feito, o que funcionou e quanto de resultado os anúncios geraram.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">O que fazemos</span>
+      <h2>O anúncio inteiro, <span class="gold">do primeiro vídeo ao cliente no WhatsApp</span></h2>
+      <p>Nada de meia entrega. Do planejamento ao relatório — a gente assume tudo que o seu anúncio precisa para vender.</p>
+    </div>
+    <div class="ser-grid">
+      <div class="ser-card reveal delay-1">
+        <div class="ser-num">01</div>
+        <div class="ser-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Estratégia de oferta</h3>
+        <p>Definimos o que vender, para quem e com qual oferta irresistível. A campanha certa começa na conversa certa.</p>
+      </div>
+      <div class="ser-card reveal delay-2">
+        <div class="ser-num">02</div>
+        <div class="ser-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 20h8"/><path d="M12 18v2"/></svg></div>
+        <h3>Gravação no seu negócio</h3>
+        <p>Vamos até você e gravamos o que seu cliente quer ver: o produto, o ambiente, o atendimento.</p>
+      </div>
+      <div class="ser-card reveal delay-3">
+        <div class="ser-num">03</div>
+        <div class="ser-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
+        <h3>Edição que para o dedo</h3>
+        <p>Vídeos curtos, editados para parar a rolagem: chamada clara, texto forte e destino direto pro WhatsApp.</p>
+      </div>
+      <div class="ser-card reveal delay-4">
+        <div class="ser-num">04</div>
+        <div class="ser-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 6-6"/></svg></div>
+        <h3>Gestão que gera retorno</h3>
+        <p>Campanhas no Meta Ads segmentadas pra quem está perto, com testes de criativo e orçamento otimizado.</p>
+      </div>
+      <div class="ser-card reveal">
+        <div class="ser-num">05</div>
+        <div class="ser-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
+        <h3>Relatório de resultado</h3>
+        <p>Todo mês você vê o que foi feito, o que funcionou e quanto de cliente novo entrou pelo anúncio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESCOPO -->
+<section id="escopo" class="escopo section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">O que está incluso</span>
+      <h2>Tudo incluso. <span class="gold">Zero dor de cabeça.</span></h2>
+      <p>Você paga e a gente resolve. Sem letra miúda, sem "depende", sem surpresa.</p>
+    </div>
+    <div class="escopo-grid">
+      <div class="escopo-card inclui reveal-left">
+        <h3><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Incluso no pacote</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Estratégia e planejamento mensal</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Gravação presencial do seu negócio</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Edição dos vídeos usados nos anúncios</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Gestão completa no Meta Ads</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Testes de criativos e otimização contínua</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Relatório mensal de resultado</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Arquivos dos vídeos liberados para uso orgânico</li>
+        </ul>
+      </div>
+      <div class="escopo-card nao-inclui reveal-right delay-1">
+        <h3><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6L6 18M6 6l12 12"/></svg></span>Por sua conta</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Verba de anúncios (paga direto à Meta)</li>
+          <li><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Atendimento dos clientes que chegam</li>
+          <li><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Postagens orgânicas do Instagram/feed</li>
+        </ul>
+        <p style="margin-top:20px;font-size:14px;color:var(--bege);line-height:1.7">Quer ajuda com o feed orgânico, automação de atendimento ou sistemas para o seu negócio? Temos soluções complementares — é só conversar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section id="processo" class="processo section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">Método RK em ação</span>
+      <h2>Você não precisa entender como funciona. <span class="gold">Só precisa ver os clientes chegando.</span></h2>
+      <p>Mas se quiser entender, são 5 passos simples — todos por nossa conta.</p>
+    </div>
+  </div>
+  <div class="processo-wrap" id="processoWrap">
+    <div class="processo-track">
+      <div class="passo-card">
+        <div class="passo-num">01</div>
+        <h3>Diagnóstico</h3>
+        <p>Entendemos seu negócio e encontramos a oferta que faz o cliente da sua região querer comprar agora.</p>
+        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">02</div>
+        <h3>Captação</h3>
+        <p>Vamos até o seu negócio. Gravamos o produto, o ambiente, o atendimento — o que ninguém viu ainda.</p>
+        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">03</div>
+        <h3>Edição que vende</h3>
+        <p>Transformamos a gravação num anúncio que para o dedo, gera desejo e clama pelo WhatsApp.</p>
+        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">04</div>
+        <h3>Segmentação e gestão</h3>
+        <p>Colocamos o anúncio na frente de quem está perto de você e pronto pra comprar hoje.</p>
+        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+      <div class="passo-card">
+        <div class="passo-num">05</div>
+        <h3>WhatsApp tocando</h3>
+        <p>Clientes novos chegam, você só atende. E a gente acompanha os resultados pra melhorar todo mês.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="processo-hint reveal">
+      <span>Arraste para o lado</span>
+      <span class="arrow-line"><span></span><span></span><span></span></span>
+    </div>
+  </div>
+</section>
+
+<!-- PÚBLICO -->
+<section id="publico" class="publico section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">Para quem é</span>
+      <h2>Se existe gente perto de você pronta pra comprar, <span class="gold">esse anúncio é pra você</span></h2>
+      <p>Negócio bom, produto bom, mas o celular não toca? O problema não é o seu negócio — é a falta de anúncio que vende.</p>
+    </div>
+    <div class="pub-grid reveal">
+      <div class="pub-item"><div class="ico">🏬</div><h4>Comércio & varejo</h4></div>
+      <div class="pub-item"><div class="ico">🛠️</div><h4>Serviços</h4></div>
+      <div class="pub-item"><div class="ico">🍽️</div><h4>Alimentação</h4></div>
+      <div class="pub-item"><div class="ico">💇</div><h4>Estética & beleza</h4></div>
+      <div class="pub-item"><div class="ico">🩺</div><h4>Saúde & clínicas</h4></div>
+      <div class="pub-item"><div class="ico">🏋️</div><h4>Academia & esporte</h4></div>
+      <div class="pub-item"><div class="ico">🚗</div><h4>Autopeças & oficinas</h4></div>
+      <div class="pub-item"><div class="ico">📈</div><h4>Outros segmentos</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACOTE -->
+<section id="pacotes" class="pacotes section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">Investimento</span>
+      <h2>Um pacote único. <span class="gold">O anúncio inteiro.</span></h2>
+      <p>Sem escolher entre "essencial" ou "premium". Um único investimento, tudo incluso, pra você não pensar em mais nada.</p>
+    </div>
+    <div class="pacote-single reveal">
+      <div class="pacote destaque">
+        <span class="plan-label">Único pacote</span>
+        <h3>Método RK</h3>
+        <p class="plan-desc">Tudo que o seu negócio precisa pra ter cliente novo chegando todo mês.</p>
+        <div class="preco">R$ 1.497<small>/mês</small></div>
+        <p class="preco-note">Verba de anúncios à parte</p>
+        <span class="minimo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Compromisso mínimo de 3 meses</span>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>1 captação presencial todo mês</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>4 a 6 vídeos editados que vendem</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Estratégia e oferta definidas com você</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Gestão completa no Meta Ads + testes de criativos</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Otimização contínua até o resultado ideal</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Relatório mensal simples de resultado</li>
+        </ul>
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20RK." class="btn btn-primary">Quero clientes chegando todo mês</a>
+      </div>
+    </div>
+    <div class="pacote-note reveal">
+      <b>Se fizer separado:</b> gestor de tráfego (~R$ 1.000) + produtor de conteúdo (~R$ 800) + editor (~R$ 600) = <b>R$ 2.400/mês</b> e muita reunião. No Método RK, <b>tudo incluso em um só investimento</b> e você não mexe um dedo.
+    </div>
+    <div class="verba-box reveal">
+      <h4>💡 E se não aparecer cliente novo?</h4>
+      <p>A gente <b>ajusta, troca criativo, muda oferta e otimiza todo dia até aparecer</b>. Não é "toma o relatório e resolve depois" — é parceria de resultado. Enquanto você estiver no plano, nossa obrigação é fazer o anúncio vender. E sobre a verba: ela é paga <b>direto à Meta</b>, você tem controle total e transparência de cada real investido. Recomendamos começar com R$ 500 a R$ 1.000/mês — porque o que enche seu caixa não é o valor da verba, é o conteúdo do anúncio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE 3 MESES -->
+<section class="meses section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">Por que o compromisso mínimo é de 3 meses?</span>
+      <h2>Anúncio não é botão de milagre. <span class="gold">É processo.</span></h2>
+      <p>Resultado consistente não nasce do dia pra noite. Ele é construído em três fases — e cada uma é essencial.</p>
+    </div>
+    <div class="meses-grid">
+      <div class="mes-card reveal delay-1">
+        <span class="mes-tag">Mês 1 — Implementação</span>
+        <h3>A gente monta a base</h3>
+        <p>Diagnóstico do seu negócio, captação do material, produção dos primeiros criativos e estrutura das campanhas. Aqui nascem os primeiros dados de mercado — o que seu cliente responde e o que não responde.</p>
+      </div>
+      <div class="mes-card reveal delay-2">
+        <span class="mes-tag">Mês 2 — Otimização</span>
+        <h3>A gente afina a máquina</h3>
+        <p>Com os primeiros resultados em mãos, testamos variações de criativos, ofertas e segmentações. Matamos o que não performa e dobramos no que funciona. É aqui que a campanha encontra o formato vencedor.</p>
+      </div>
+      <div class="mes-card reveal delay-3">
+        <span class="mes-tag">Mês 3 — Resultado estabilizado</span>
+        <h3>A campanha opera no ponto ideal</h3>
+        <p>A campanha já rodou o ciclo completo de ajustes e está operando com consistência. É a partir daqui que o volume de clientes novos se torna previsível — e a base pra continuar escalando mês a mês.</p>
+      </div>
+    </div>
+    <p class="mes-frase reveal">Por isso o compromisso mínimo é de <b>3 meses</b>: é o tempo necessário pra implementar, ajustar e otimizar até o resultado chegar no ponto ideal. Sem fidelidade depois disso — <b>você fica enquanto os clientes chegarem</b>.</p>
+  </div>
+</section>
+
+<!-- SOLUÇÕES EMPRESA -->
+<section id="solucoes" class="solucoes section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">Soluções para empresas</span>
+      <h2>Além do tráfego: <span class="gold">a gente também constrói a estrutura</span></h2>
+      <p>Seu negócio também precisa aparecer na busca, atender rápido e organizar a operação. A RK Performance entrega isso também.</p>
+    </div>
+    <div class="sol-grid">
+      <div class="sol-card reveal delay-1">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+        <h3>Google Meu Negócio + rankeamento local</h3>
+        <p>Configuração completa do seu perfil no Google e análise de posicionamento pra aparecer entre os primeiros resultados quando alguém procurar pelo seu tipo de negócio na sua cidade.</p>
+      </div>
+      <div class="sol-card reveal delay-2">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Criação de sites</h3>
+        <p>Landing pages e sites profissionais com foco em conversão — feitos pra transformar visita em contato e contato em cliente.</p>
+      </div>
+      <div class="sol-card reveal delay-3">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+        <h3>Automação de atendimento no WhatsApp</h3>
+        <p>Respostas automáticas, menu de opções e fluxos que qualificam o cliente e respondem na hora — mesmo quando você não pode atender.</p>
+      </div>
+      <div class="sol-card reveal delay-4">
+        <div class="sol-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>CRM — controle de estoque e clientes</h3>
+        <p>Sistemas simples pra organizar vendas, controlar estoque, histórico e cadastro de clientes — você sabe exatamente o que tem e pra quem vender.</p>
+      </div>
+    </div>
+    <div class="sol-cta reveal">
+      <p>Não sabe por onde começar? A gente investiga o seu negócio e aponta o que falta. <b style="color:var(--dourado)">Diagnóstico gratuito.</b></p>
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20meu%20diagn%C3%B3stico%20gratuito." class="btn btn-primary">Quero meu diagnóstico gratuito</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contato" class="cta-final">
+  <div class="cta-bg">
+    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1920&auto=format&fit=crop" alt="" loading="lazy">
+  </div>
+  <div class="cta-overlay"></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <span class="label">Agora é com você</span>
+      <h2>Tem gente perto de você <span class="gold">pronta pra comprar agora</span>. Vamos colocar o seu negócio na frente dela.</h2>
+      <p>Uma conversa de 15 minutos. Sem compromisso. Você vai sair sabendo exatamente o que falta pro seu negócio receber mais clientes.</p>
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20clientes%20novos%20no%20meu%20neg%C3%B3cio." class="btn btn-primary">Quero clientes novos</a>
+      <p class="cta-note">Resposta rápida em horário comercial · Atendemos poucos clientes por mês — garanta sua vaga.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq section-pad">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="label">FAQ</span>
+      <h2>Perguntas <span class="gold">frequentes</span></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">"Nunca fiz anúncio. Será que funciona pra mim?"<span class="plus"></span></button>
+        <div class="faq-a"><p>Funciona — e é pra isso que a gente existe. Você não precisa entender nada de anúncio. A gente cuida da estratégia, da gravação, da edição e da gestão. O único requisito é você deixar a gente entrar no seu negócio e atender bem quem chegar pelo WhatsApp.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">"Já tentei anúncio e não funcionou. Por que seria diferente?"<span class="plus"></span></button>
+        <div class="faq-a"><p>O anúncio que você viu antes provavelmente tinha um problema simples: criativo fraco ou segmentação genérica. Anúncio não vende sozinho — o conteúdo dele vende. A gente grava o seu negócio de verdade e coloca na frente de quem está perto e com interesse no que você vende. O que falhou antes não usa esse método.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">"Por que o compromisso mínimo é de 3 meses?"<span class="plus"></span></button>
+        <div class="faq-a"><p>Porque anúncio é processo, não botão de milagre. O primeiro mês é de implementação: a gente monta a base, grava e estrutura. O segundo é de otimização: testamos variações e encontramos o que funciona. O terceiro é de resultado estabilizado: a campanha operando no ponto ideal. Encurtar isso é entregar resultado pela metade. Depois dos 3 meses, sem fidelidade — você fica enquanto os clientes chegarem.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">"E se não der resultado?"<span class="plus"></span></button>
+        <div class="faq-a"><p>A gente ajusta, troca criativo, muda a oferta e otimiza todo dia até aparecer. Enquanto você estiver no plano, nossa obrigação é fazer o anúncio vender. E se mesmo assim quiser sair depois do período mínimo, é só avisar — sem multa, sem ressentimento.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">"Por que a verba de anúncio é por minha conta?"<span class="plus"></span></button>
+        <div class="faq-a"><p>Porque ela é o combustível que vai pra Meta — e você tem controle total e transparência de cada real. Nenhum gestor sério embute verba no serviço sem você ver. Recomendamos começar com R$ 500 a R$ 1.000/mês. E lembre: o que enche seu caixa não é o tamanho da verba, é o conteúdo do anúncio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">"Preciso ter Instagram ou Facebook?"<span class="plus"></span></button>
+        <div class="faq-a"><p>Só uma página no Facebook ou Instagram pra rodar os anúncios. Se você não tiver, a gente ajuda a criar do zero — simples e rápido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">"Em quanto tempo vejo cliente novo chegando?"<span class="plus"></span></button>
+        <div class="faq-a"><p>Alcance e visualizações começam nos primeiros dias. Clientes novos entrando no WhatsApp costumam aparecer nas primeiras semanas — e se estabilizam no terceiro mês, quando a campanha já passou pelo ciclo completo de otimização. Por isso a orientação e a estratégia vêm antes de qualquer vídeo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#topo" class="logo">
+          <span class="rk">RK</span>
+          <span class="sep" aria-hidden="true"></span>
+          <span class="perf">PERFORMANCE</span>
+        </a>
+        <p>O anúncio inteiro do seu negócio: a gente grava, edita, gerencia e otimiza. Você só atende os clientes que chegam. E quando o assunto é tecnologia, também construímos o que a sua empresa precisa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#autoridade">História</a>
+        <a href="#sobre">Método</a>
+        <a href="#servicos">O que fazemos</a>
+        <a href="#pacotes">Investimento</a>
+        <a href="#solucoes">Para empresas</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+<a href="https://wa.me/5542999246208">WhatsApp</a>
+        <a href="https://instagram.com/rkperformance.digital" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:contato@rkperformance.com.br">contato@rkperformance.com.br</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> RK Performance. Todos os direitos reservados.</span>
+      <span>Guarapuava / PR</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FAB -->
+<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20entender%20como%20funciona." class="wa-fab" aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+/* ===== PRELOADER ===== */
+(function(){
+  var bar = document.getElementById('preBar');
+  var num = document.getElementById('preNum');
+  var pre = document.getElementById('preloader');
+  var p = 0;
+  var timer = setInterval(function(){
+    p += Math.random() * 18 + 8;
+    if(p >= 100){ p = 100; clearInterval(timer);
+      setTimeout(function(){
+        pre.classList.add('hide');
+        document.body.style.overflow = '';
+        initHero();
+      }, 300);
+    }
+    bar.style.width = p + '%';
+    num.textContent = Math.floor(p) + '%';
+  }, 180);
+  document.body.style.overflow = 'hidden';
+  function initHero(){
+    setTimeout(function(){
+      document.querySelectorAll('.hero-title .line-inner').forEach(function(el){ el.classList.add('revealed'); });
+      document.querySelector('.hero-sub').classList.add('revealed');
+      document.querySelector('.hero-ctas').classList.add('revealed');
+      document.querySelector('.hero-stats').classList.add('revealed');
+    }, 200);
+  }
+})();
+
+/* ===== HEADER SCROLL ===== */
+(function(){
+  var header = document.getElementById('header');
+  function onScroll(){
+    if(window.scrollY > 50){ header.classList.add('scrolled'); }
+    else{ header.classList.remove('scrolled'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+/* ===== MENU MOBILE ===== */
+(function(){
+  var btn = document.getElementById('btnMenu');
+  var nav = document.getElementById('navMobile');
+  var links = nav.querySelectorAll('a');
+  function toggle(open){
+    btn.classList.toggle('active', open);
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', function(){ toggle(!nav.classList.contains('open')); });
+  links.forEach(function(a){ a.addEventListener('click', function(){ toggle(false); }); });
+})();
+
+/* ===== REVEAL ON SCROLL ===== */
+(function(){
+  var els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ obs.observe(el); });
+})();
+
+/* ===== PARALLAX ===== */
+(function(){
+  var targets = document.querySelectorAll('[data-parallax]');
+  if(!targets.length) return;
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        targets.forEach(function(t){
+          var img = t.querySelector('img');
+          var rect = t.getBoundingClientRect();
+          if(rect.bottom < 0 || rect.top > window.innerHeight) return;
+          var offset = rect.top * 0.25;
+          if(img) img.style.transform = 'translateY(' + offset + 'px) scale(1.1)';
+        });
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, {passive:true});
+})();
+
+/* ===== PROCESSO DRAG ===== */
+(function(){
+  var wrap = document.getElementById('processoWrap');
+  if(!wrap) return;
+  var isDown = false;
+  var startX, startScroll;
+  wrap.addEventListener('mousedown', function(e){
+    isDown = true; startX = e.pageX; startScroll = wrap.scrollLeft;
+    wrap.classList.add('dragging');
+  });
+  window.addEventListener('mouseup', function(){ isDown = false; wrap.classList.remove('dragging'); });
+  window.addEventListener('mousemove', function(e){
+    if(!isDown) return;
+    e.preventDefault();
+    wrap.scrollLeft = startScroll - (e.pageX - startX);
+  });
+})();
+
+/* ===== FAQ ACCORDION ===== */
+(function(){
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      items.forEach(function(i){
+        i.classList.remove('open');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+})();
+
+/* ===== ANO ===== */
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

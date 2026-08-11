@@ -1,0 +1,15 @@
+{
+  "name": "rkperformance-site",
+  "version": "1.0.0",
+  "description": "Site institucional RK Performance - servido via Node.js/Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
