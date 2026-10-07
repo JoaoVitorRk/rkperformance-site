@@ -144,11 +144,13 @@ nav.main a.active{opacity:1}
 .hero .lead{font-size:18px;color:var(--mudo);max-width:560px;line-height:1.75;margin-bottom:36px}
 .hero .ctas{display:flex;align-items:center;flex-wrap:wrap;gap:22px;margin-bottom:44px}
 .hero .linha-caps{max-width:600px}
-.selo{position:relative;width:104px;height:104px;flex:none}
-.selo svg{width:100%;height:100%;animation:spin 26s linear infinite}
-.selo svg text{font-family:var(--font);font-size:10.5px;font-weight:500;letter-spacing:.28em;fill:var(--dourado);text-transform:uppercase}
+.selo{position:relative;width:116px;height:116px;flex:none}
+.selo svg{width:100%;height:100%;overflow:visible;animation:spin 28s linear infinite}
+.selo svg text{font-family:var(--font);font-size:8.3px;font-weight:500;letter-spacing:.08em;fill:var(--dourado);text-transform:uppercase}
+.light .selo svg text{fill:var(--dourado3)}
 .selo .mid{position:absolute;inset:0;display:grid;place-items:center}
 .selo .mid svg{width:18px;height:18px;animation:none;stroke:var(--dourado);fill:none;stroke-width:1.4}
+.light .selo .mid svg{stroke:var(--dourado3)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .hero-visual{position:relative}
 .scroll-hint{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:10px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--mudo2);margin-top:60px;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--fio)}
@@ -157,10 +159,10 @@ nav.main a.active{opacity:1}
 @keyframes wheel{0%{transform:translateY(0);opacity:1}70%{transform:translateY(12px);opacity:0}100%{opacity:0}}
 
 /* ===== faixa de credenciais (letreiro) ===== */
-.strip{position:relative;overflow:hidden;background:var(--noite2);border-top:1px solid var(--fio);border-bottom:1px solid var(--fio);padding:18px 0}
+.strip{position:relative;overflow:hidden;background:var(--marfim2);border-top:1px solid var(--fio2);border-bottom:1px solid var(--fio2);padding:16px 0}
 .strip-track{display:flex;width:max-content;will-change:transform}
-.strip-track span{display:inline-flex;align-items:center;gap:14px;padding:0 26px;font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--off);white-space:nowrap}
-.strip-track span svg{width:13px;height:13px;stroke:var(--dourado);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.strip-track span{display:inline-flex;align-items:center;gap:14px;padding:0 30px;font-size:10.5px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--tinta2);white-space:nowrap}
+.strip-track span svg{width:13px;height:13px;stroke:var(--dourado3);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 
 /* ===== ponto de partida ===== */
 .dores{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;border-top:1px solid var(--fio-escuro)}
