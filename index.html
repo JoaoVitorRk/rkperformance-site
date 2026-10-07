@@ -1,796 +1,433 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RK Performance | Sua empresa na frente das pessoas certas, todos os dias</title>
-<meta name="description" content="Criamos anúncios online para aumentar sua visibilidade, atrair clientes e gerar novas oportunidades para o seu negócio. + de R$ 650 mil investidos em anúncios para nossos clientes.">
+<title>RK Performance | Sites, sistemas e inteligência artificial para sua empresa funcionar no digital</title>
+<meta name="description" content="A RK desenvolve sites, sistemas sob medida e soluções com inteligência artificial — e, quando faz sentido, os anúncios que levam as pessoas certas até eles. Prévia navegável antes de fechar. Guarapuava/PR, atendimento em todo o Brasil.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0A0A0A">
+<meta name="theme-color" content="#16120F">
 <link rel="canonical" href="https://rkperformance.com.br/">
-<meta property="og:title" content="RK Performance | Sua empresa na frente das pessoas certas, todos os dias">
-<meta property="og:description" content="Criamos anúncios online para aumentar sua visibilidade, atrair clientes e gerar novas oportunidades para o seu negócio.">
+<meta property="og:title" content="RK Performance | Sites, sistemas e IA para sua empresa funcionar no digital">
+<meta property="og:description" content="Sites escritos do zero, painéis sob medida, agentes de IA e automação — com prévia navegável antes de você pagar qualquer coisa.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rkperformance.com.br/">
 <meta property="og:site_name" content="RK Performance">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://rkperformance.com.br/assets/img/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Schibsted+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://images.unsplash.com">
-
-<style>
-:root{
-  --preto:#0A0A0A;
-  --grafite:#1A1A1A;
-  --grafite2:#2A2A2A;
-  --off:#F5F0E8;
-  --bege:#D9CBB8;
-  --dourado:#C9A96A;
-  --dourado2:#E0C68A;
-  --font-display:'Bricolage Grotesque',sans-serif;
-  --font-body:'Schibsted Grotesk',sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--preto);color:var(--off);font-family:var(--font-body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
-p{text-wrap:pretty}
-img{display:block;max-width:100%}
-a{color:var(--dourado);text-decoration:none}
-.gold{color:var(--dourado)}
-.gold2{color:var(--dourado2)}
-.container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
-.label{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--dourado);font-weight:600;display:inline-flex;align-items:center;gap:12px}
-.label::before{content:'';width:32px;height:1px;background:var(--dourado)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:4px;font-weight:600;font-size:15px;cursor:pointer;border:1px solid transparent;transition:all .3s ease;letter-spacing:.02em;text-align:center}
-.btn-primary{background:var(--dourado);color:var(--preto)}
-.btn-primary:hover{background:var(--dourado2);transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,169,106,.25)}
-.btn-outline{border-color:var(--dourado);color:var(--dourado);background:transparent}
-.btn-outline:hover{background:var(--dourado);color:var(--preto);transform:translateY(-2px)}
-section{position:relative;overflow:hidden}
-.section-pad{padding:100px 0}
-@media(max-width:768px){.section-pad{padding:64px 0}}
-
-/* ===== PRELOADER ===== */
-#preloader{position:fixed;inset:0;z-index:999;background:var(--preto);display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s}
-#preloader.hide{opacity:0;visibility:hidden}
-.pre-logo{font-family:var(--font-display);font-weight:900;font-size:32px;display:flex;align-items:center;gap:14px}
-.pre-logo .rk{color:var(--dourado)}
-.pre-logo .sep{width:1px;height:36px;background:var(--dourado)}
-.pre-logo .perf{font-size:14px;letter-spacing:.32em;color:var(--bege)}
-.pre-bar{position:absolute;bottom:0;left:0;height:2px;background:var(--dourado);width:0;transition:width .2s linear}
-.pre-num{position:absolute;bottom:24px;right:24px;font-family:var(--font-display);font-size:15px;color:var(--bege);letter-spacing:.1em}
-
-/* ===== HEADER ===== */
-.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 0;transition:all .4s ease;background:transparent}
-.site-header.scrolled{padding:14px 0;background:rgba(10,10,10,.85);backdrop-filter:blur(16px);border-bottom:1px solid rgba(217,203,184,.08)}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:800;font-size:22px;color:var(--off);z-index:101}
-.logo .rk{color:var(--dourado)}
-.logo .sep{width:1px;height:24px;background:var(--dourado)}
-.logo .perf{font-size:12px;letter-spacing:.24em;font-weight:600;color:var(--bege)}
-.nav-desktop{display:none;align-items:center;gap:32px}
-.nav-desktop a{color:var(--bege);font-size:14px;font-weight:500;position:relative;transition:color .3s}
-.nav-desktop a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:1px;background:var(--dourado);transition:width .3s}
-.nav-desktop a:hover{color:var(--off)}
-.nav-desktop a:hover::after{width:100%}
-.nav-desktop .btn{padding:12px 24px}
-.nav-desktop .btn::after{display:none}
-@media(min-width:992px){.nav-desktop{display:flex}}
-.menu-mobile{display:flex;flex-direction:column;gap:6px;background:none;border:none;cursor:pointer;z-index:101;padding:10px}
-.menu-mobile span{display:block;width:28px;height:2px;background:var(--off);transition:all .4s}
-.menu-mobile.active span:nth-child(1){transform:translateY(8px) rotate(45deg);background:var(--dourado)}
-.menu-mobile.active span:nth-child(2){opacity:0}
-.menu-mobile.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg);background:var(--dourado)}
-@media(min-width:992px){.menu-mobile{display:none}}
-.nav-mobile{position:fixed;inset:0;background:rgba(10,10,10,.98);backdrop-filter:blur(20px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;visibility:hidden;transition:all .5s ease;z-index:100}
-.nav-mobile.open{opacity:1;visibility:visible}
-.nav-mobile a{color:var(--off);font-family:var(--font-display);font-weight:800;font-size:28px;padding:12px 0;opacity:0;transform:translateY(20px);transition:all .5s ease}
-.nav-mobile.open a{opacity:1;transform:translateY(0)}
-.nav-mobile a:hover{color:var(--dourado)}
-.nav-mobile a svg{flex-shrink:0}
-
-/* ===== HERO ===== */
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-bottom:40px}
-.hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.3) saturate(.8)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.7) 0%,var(--preto) 100%)}
-.hero-grid{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:8px;padding-top:160px;padding-bottom:20px}
-.hero-content{max-width:940px;margin:0 auto;display:flex;flex-direction:column;align-items:center}
-.hero-title{font-size:clamp(36px,6vw,68px);font-weight:900;line-height:1.15;margin:24px 0 20px;letter-spacing:-.03em;max-width:920px;padding-top:10px}
-.hero-title .line{display:block;overflow:visible;padding:4px 0}
-.hero-title .line-inner{display:block}
-html.js .hero-title .line-inner{transform:translateY(110%);transition:transform 1s cubic-bezier(.19,1,.22,1)}
-html.js .hero-title .line-inner.revealed{transform:translateY(0)}
-.hero-sub{margin-left:auto;margin-right:auto;font-size:clamp(16px,2vw,19px);max-width:680px;color:var(--bege)}
-html.js .hero-sub{opacity:0;transform:translateY(20px);transition:all .8s ease .4s}
-html.js .hero-sub.revealed{opacity:1;transform:translateY(0)}
-.hero-ctas{display:flex;flex-direction:column;gap:14px;margin-top:24px}
-@media(min-width:480px){.hero-ctas{flex-direction:row}}
-html.js .hero-ctas{opacity:0;transform:translateY(20px);transition:all .8s ease .6s}
-html.js .hero-ctas.revealed{opacity:1;transform:translateY(0)}
-.hero-note{margin-top:16px;font-size:13px;color:rgba(217,203,184,.7)}
-.hero-stats{display:flex;gap:48px;margin-top:36px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
-html.js .hero-stats{opacity:0;transition:all .8s ease .8s}
-html.js .hero-stats.revealed{opacity:1}
-.stat{display:flex;flex-direction:column;align-items:center;text-align:center}
-.stat b{font-family:var(--font-display);font-size:32px;font-weight:900;color:var(--off);line-height:1;white-space:nowrap}
-.stat b .gold{font-weight:900;color:var(--dourado)}
-.stat span{font-size:12px;color:var(--bege);letter-spacing:.1em;text-transform:uppercase;margin-top:8px}
-
-.hero-scroll{margin-top:24px;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(217,203,184,.6);font-size:11px;letter-spacing:.22em;text-transform:uppercase;z-index:3}
-.hero-scroll .mouse{width:20px;height:32px;border:1.5px solid rgba(217,203,184,.5);border-radius:10px;position:relative}
-.hero-scroll .mouse::after{content:'';position:absolute;top:5px;left:50%;transform:translateX(-50%);width:3px;height:6px;background:var(--dourado);border-radius:3px;animation:scrollDot 1.6s infinite}
-@keyframes scrollDot{0%{opacity:0;top:5px}40%{opacity:1}80%{opacity:0;top:16px}100%{opacity:0}}
-
-/* ===== MARQUEE ===== */
-.marquee{border-top:1px solid rgba(201,169,106,.2);border-bottom:1px solid rgba(201,169,106,.2);padding:28px 0;overflow:hidden;background:var(--grafite)}
-.marquee-track{display:flex;gap:0;width:max-content;animation:marquee 30s linear infinite}
-.marquee:hover .marquee-track{animation-play-state:paused}
-.marquee-track span{font-family:var(--font-display);font-weight:800;font-size:clamp(18px,2.5vw,28px);text-transform:uppercase;letter-spacing:.05em;padding:0 24px;color:var(--off);white-space:nowrap;display:flex;align-items:center;gap:28px}
-.diamond{width:12px;height:12px;background:var(--dourado);transform:rotate(45deg);flex-shrink:0;display:inline-block}
-@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-/* ===== SEÇÃO TÍTULO ===== */
-.sec-head{margin-bottom:64px}
-.sec-head h2{font-size:clamp(30px,4.6vw,52px);font-weight:900;margin:20px 0 16px;max-width:720px;letter-spacing:-.03em}
-.sec-head p{color:var(--bege);font-size:17px;max-width:560px}
-.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
-.sec-head.center h2{margin-left:auto;margin-right:auto}
-.sec-head.center p{margin-left:auto;margin-right:auto}
-.sec-head.center .label::before{display:none}
-.sec-head.center .label{justify-content:center}
-
-/* ===== PROBLEMA (texto editorial) ===== */
-.problema{background:var(--grafite)}
-.problema-inner{max-width:720px;margin:0 auto;border-left:2px solid var(--dourado);padding-left:32px}
-@media(max-width:640px){.problema-inner{padding-left:20px}}
-.problema-inner h2{font-size:clamp(28px,4.4vw,46px);font-weight:900;line-height:1.25;letter-spacing:-.02em;margin-bottom:28px;max-width:640px}
-.problema-inner p{color:var(--bege);font-size:17px;line-height:1.85;margin-bottom:16px;max-width:620px}
-.problema-inner p:last-child{margin-bottom:0;color:var(--off);font-weight:700}
-
-/* ===== SERVIÇOS (Como ajudamos) ===== */
-.servicos{background:var(--preto)}
-.ser-grid{display:grid;grid-template-columns:1fr;gap:20px}
-@media(min-width:640px){.ser-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.ser-grid{grid-template-columns:repeat(3,1fr)}}
-.ser-card{position:relative;background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:8px;padding:32px 28px;overflow:hidden;transition:all .4s ease;cursor:default}
-.ser-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--dourado),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
-.ser-card:hover::before{transform:scaleX(1)}
-.ser-card:hover{transform:translateY(-8px);border-color:rgba(201,169,106,.3);box-shadow:0 20px 50px rgba(0,0,0,.4)}
-.ser-num{font-family:var(--font-display);font-weight:900;font-size:14px;color:rgba(201,169,106,.5);letter-spacing:.2em;margin-bottom:20px}
-.ser-icon{width:52px;height:52px;border:1px solid var(--dourado);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--dourado);margin-bottom:24px;transition:all .4s}
-.ser-card:hover .ser-icon{background:var(--dourado);color:var(--preto)}
-.ser-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5}
-.ser-card h3{font-size:19px;margin-bottom:10px}
-.ser-card p{font-size:14px;color:var(--bege);line-height:1.7}
-
-/* ===== STATS STRIP ===== */
-.stats-strip{background:var(--grafite);border-top:1px solid rgba(201,169,106,.2);border-bottom:1px solid rgba(201,169,106,.2);padding:56px 0}
-.stats-row{display:flex;flex-wrap:wrap;justify-content:center;gap:56px}
-
-/* ===== ESTRUTURA (soluções complementares) ===== */
-.solucoes{background:var(--preto)}
-.sol-grid{display:grid;grid-template-columns:1fr;gap:20px}
-@media(min-width:640px){.sol-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.sol-grid{grid-template-columns:repeat(4,1fr)}}
-.sol-card{position:relative;background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:8px;padding:32px 28px;overflow:hidden;transition:all .4s ease;display:flex;flex-direction:column;gap:16px}
-.sol-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--dourado),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
-.sol-card:hover::before{transform:scaleX(1)}
-.sol-card:hover{transform:translateY(-6px);border-color:rgba(201,169,106,.3)}
-.sol-icon{width:48px;height:48px;border:1px solid var(--dourado);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--dourado);flex-shrink:0}
-.sol-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6}
-.sol-card h3{font-size:18px;margin-bottom:4px}
-.sol-card p{font-size:14px;color:var(--bege);line-height:1.7;flex:1}
-.sol-cta{margin-top:48px;text-align:center}
-.sol-cta p{color:var(--bege);font-size:16px;margin:0}
-
-/* ===== COMO FUNCIONA ===== */
-.processo{background:var(--grafite)}
-.processo-wrap{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab}
-.processo-wrap::-webkit-scrollbar{display:none}
-.processo-wrap.dragging{cursor:grabbing;scroll-snap-type:none}
-.processo-track{display:flex;gap:0;width:max-content;padding-bottom:20px}
-.passo-card{width:85vw;max-width:420px;padding:48px 40px;border-left:1px solid rgba(201,169,106,.25);flex-shrink:0;position:relative;scroll-snap-align:start}
-@media(min-width:768px){.passo-card{width:420px}}
-.passo-card:first-child{border-left:none;padding-left:0}
-.passo-num{font-family:var(--font-display);font-weight:900;font-size:72px;color:rgba(201,169,106,.4);-webkit-text-stroke:1px rgba(201,169,106,.6);line-height:1;margin-bottom:24px;transition:all .4s}
-@supports(-webkit-text-stroke:1px #000){
-.passo-num{color:transparent}
-}
-.passo-card:hover .passo-num{color:var(--dourado);-webkit-text-stroke:transparent}
-.passo-card h3{font-size:22px;margin-bottom:12px;color:var(--off)}
-.passo-card p{color:var(--bege);font-size:15px;line-height:1.7}
-.passo-arrow{position:absolute;top:50%;right:-16px;width:34px;height:34px;border-radius:50%;background:var(--dourado);color:var(--preto);display:flex;align-items:center;justify-content:center;font-size:16px;z-index:2}
-.passo-arrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
-.processo-hint{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:48px;color:var(--bege);font-size:13px;letter-spacing:.16em;text-transform:uppercase}
-.processo-hint .arrow-line{display:flex;align-items:center;gap:6px}
-.processo-hint .arrow-line span{width:40px;height:1px;background:var(--dourado);animation:pulseLine 1.5s infinite}
-@keyframes pulseLine{0%,100%{opacity:.4;transform:scaleX(.8)}50%{opacity:1;transform:scaleX(1)}}
-
-/* ===== PÚBLICO / SEGMENTOS ===== */
-.publico{background:var(--preto)}
-.publico-intro{max-width:600px;margin:0 auto 20px}
-.publico-intro>p{font-size:17px;color:var(--off);font-weight:600;margin-bottom:20px}
-.publico-intro ul{list-style:none;display:flex;flex-direction:column;gap:14px}
-.publico-intro li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--bege);line-height:1.6}
-.publico-intro li svg{width:18px;height:18px;flex-shrink:0;margin-top:3px;fill:none;stroke:var(--dourado);stroke-width:2}
-.publico-note{text-align:center;font-size:16px;color:var(--bege);margin:36px auto 48px;max-width:560px;line-height:1.7}
-.seg-grid{display:grid;grid-template-columns:1fr;gap:20px}
-@media(min-width:640px){.seg-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.seg-grid{grid-template-columns:repeat(3,1fr)}}
-.seg-card{background:var(--grafite);border:1px solid rgba(217,203,184,.08);border-radius:8px;padding:28px 26px;transition:all .4s}
-.seg-card:hover{border-color:rgba(201,169,106,.35);transform:translateY(-4px)}
-.seg-card .ico{font-size:24px;margin-bottom:14px}
-.seg-card h3{font-size:16px;color:var(--off);margin-bottom:8px}
-.seg-card p{font-size:14px;color:var(--bege);line-height:1.6;margin:0}
-
-/* ===== ESTRATÉGIA (CTA intermediário) ===== */
-.estrategia{background:var(--grafite)}
-.estrategia-box{max-width:720px;margin:0 auto;text-align:center;background:var(--preto);border:1px solid rgba(201,169,106,.25);border-radius:16px;padding:56px 40px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
-.estrategia-box .label{justify-content:center}
-.estrategia-box .label::before{display:none}
-.estrategia-box h2{font-size:clamp(26px,3.6vw,38px);font-weight:900;margin:20px 0 20px;letter-spacing:-.02em}
-.estrategia-box p{color:var(--bege);font-size:16px;line-height:1.8;margin-bottom:12px;max-width:560px;margin-left:auto;margin-right:auto}
-.estrategia-box .btn{margin-top:24px}
-
-/* ===== CTA FINAL ===== */
-.cta-final{background:var(--preto);position:relative}
-.cta-bg{position:absolute;inset:0;overflow:hidden}
-.cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.25)}
-.cta-overlay{position:absolute;inset:0;background:radial-gradient(60% 80% at 50% 50%,rgba(10,10,10,.5),var(--preto) 90%)}
-.cta-inner{position:relative;z-index:2;text-align:center;padding:120px 24px}
-@media(min-width:768px){.cta-inner{padding:150px 24px}}
-.cta-inner h2{font-size:clamp(32px,5.5vw,64px);font-weight:900;max-width:760px;margin:24px auto;letter-spacing:-.03em}
-.cta-inner p{color:var(--bege);max-width:540px;margin:0 auto 40px;font-size:17px}
-.cta-inner .btn{min-width:260px}
-.cta-note{margin-top:20px;font-size:13px;color:rgba(217,203,184,.7)}
-
-/* ===== FAQ ===== */
-.faq{background:var(--preto)}
-.faq-list{max-width:760px;margin:0 auto}
-.faq-item{border-bottom:1px solid rgba(217,203,184,.12)}
-.faq-q{width:100%;background:none;border:none;color:var(--off);font-family:var(--font-body);font-weight:500;font-size:16px;padding:28px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;transition:color .3s}
-.faq-q:hover{color:var(--dourado)}
-.faq-q .plus{width:36px;height:36px;min-width:36px;border:1px solid rgba(201,169,106,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;transition:all .4s}
-.faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--dourado);transition:all .4s}
-.faq-q .plus::before{width:14px;height:2px}
-.faq-q .plus::after{width:2px;height:14px}
-.faq-item.open .faq-q{color:var(--dourado)}
-.faq-item.open .plus{transform:rotate(135deg);border-color:var(--dourado)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.19,1,.22,1)}
-.faq-a p{padding:0 0 28px;font-size:15px;color:var(--bege);line-height:1.8;max-width:680px}
-
-/* ===== FOOTER ===== */
-footer{border-top:1px solid rgba(217,203,184,.08);padding:80px 0 40px;background:var(--preto)}
-.footer-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-bottom:64px}
-@media(min-width:768px){.footer-grid{grid-template-columns:2fr 1fr 1fr}}
-.footer-brand p{color:var(--bege);font-size:14px;margin-top:20px;max-width:360px;line-height:1.8}
-.footer-col h4{color:var(--dourado);font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px}
-.footer-col a{display:block;color:var(--bege);font-size:14px;padding:6px 0;transition:color .3s,padding-left .3s}
-.footer-col a:hover{color:var(--dourado);padding-left:6px}
-.footer-bottom{padding-top:32px;border-top:1px solid rgba(217,203,184,.08);display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--bege)}
-@media(min-width:768px){.footer-bottom{flex-direction:row;justify-content:space-between}}
-
-/* ===== WHATSAPP FAB ===== */
-.wa-fab{position:fixed;bottom:24px;right:24px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(37,211,102,.3);transition:all .3s;border:2px solid rgba(255,255,255,.08)}
-.wa-fab:hover{transform:scale(1.1) rotate(8deg);box-shadow:0 12px 40px rgba(37,211,102,.4)}
-.wa-fab svg{width:28px;height:28px;fill:var(--preto)}
-
-/* ===== ANIMAÇÕES DE SCROLL ===== */
-html.js .reveal{opacity:0;transform:translateY(50px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
-html.js .reveal.in-view{opacity:1;transform:translateY(0)}
-html.js .reveal-left{opacity:0;transform:translateX(-60px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
-html.js .reveal-left.in-view{opacity:1;transform:translateX(0)}
-html.js .reveal-right{opacity:0;transform:translateX(60px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
-html.js .reveal-right.in-view{opacity:1;transform:translateX(0)}
-html.js .reveal-scale{opacity:0;transform:scale(.92);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
-html.js .reveal-scale.in-view{opacity:1;transform:scale(1)}
-.delay-1{transition-delay:.15s}
-.delay-2{transition-delay:.3s}
-.delay-3{transition-delay:.45s}
-.delay-4{transition-delay:.6s}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/mockups.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"RK Performance","url":"https://rkperformance.com.br/","description":"Desenvolvimento de sites, sistemas sob medida, inteligência artificial, automação e gestão de tráfego pago.","areaServed":"BR","address":{"@type":"PostalAddress","addressLocality":"Guarapuava","addressRegion":"PR","addressCountry":"BR"},"email":"contato@rkperformance.com.br","sameAs":["https://instagram.com/rkperformance.digital"]}
+</script>
 </head>
 <body>
-<script>document.documentElement.className+=' js';</script>
+<div class="grain" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
 
-<!-- PRELOADER -->
-<div id="preloader">
-  <div class="pre-logo">
-    <span class="rk">RK</span>
-    <span class="sep"></span>
-    <span class="perf">PERFORMANCE</span>
-  </div>
-  <div class="pre-bar" id="preBar"></div>
-  <div class="pre-num" id="preNum">0%</div>
-</div>
-
-<!-- HEADER -->
-<header class="site-header" id="header">
-  <div class="container header-inner">
-    <a href="#topo" class="logo" aria-label="RK Performance — Início">
-      <span class="rk">RK</span>
-      <span class="sep" aria-hidden="true"></span>
-      <span class="perf">PERFORMANCE</span>
-    </a>
-    <nav class="nav-desktop" aria-label="Navegação principal">
-      <a href="#solucao">Como ajudamos</a>
-      <a href="#estrutura">Estrutura</a>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#publico">Para quem é</a>
-      <a href="#faq">FAQ</a>
-<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20entender%20como%20funciona." class="btn btn-primary">Falar no WhatsApp</a>
+<header class="top on-light" id="header">
+  <div class="container">
+    <a href="#topo" class="logo" aria-label="RK Performance — início"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></a>
+    <nav class="main" aria-label="Principal">
+      <a href="#sites" data-nav="sites">Soluções</a>
+      <a href="#projetos" data-nav="projetos">Projetos</a>
+      <a href="#metodo" data-nav="metodo">Como funciona</a>
+      <a href="#sobre" data-nav="sobre">Quem faz</a>
+      <a href="#faq" data-nav="faq">Dúvidas</a>
     </nav>
-    <button class="menu-mobile" id="btnMenu" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-cta">
+      <a class="btn btn-ouro btn-sm" href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK!%20Quero%20um%20diagn%C3%B3stico%20da%20estrutura%20digital%20da%20minha%20empresa." target="_blank" rel="noopener">Pedir diagnóstico</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
-  <nav class="nav-mobile" id="navMobile">
-    <a href="#solucao">Como ajudamos</a>
-    <a href="#estrutura">Estrutura</a>
-    <a href="#como-funciona">Como funciona</a>
-    <a href="#publico">Para quem é</a>
-    <a href="#faq">FAQ</a>
-<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20entender%20como%20funciona." style="font-size:18px;color:var(--dourado);display:inline-flex;align-items:center;gap:10px">Falar no WhatsApp <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  </nav>
 </header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <button class="close" id="menuClose" aria-label="Fechar menu"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#F2EBE1" stroke-width="1.4"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <a href="#sites">Soluções</a><a href="#projetos">Projetos</a><a href="#metodo">Como funciona</a><a href="#sobre">Quem faz</a><a href="#faq">Dúvidas</a>
+  <a class="btn btn-ouro" href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK!%20Quero%20um%20diagn%C3%B3stico%20da%20estrutura%20digital%20da%20minha%20empresa." target="_blank" rel="noopener">Pedir diagnóstico no WhatsApp</a>
+</div>
 
 <main id="topo">
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg" data-parallax>
-    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1920&auto=format&fit=crop" alt="Painel de métricas e resultados de campanhas de anúncios" loading="eager">
-  </div>
-  <div class="hero-overlay"></div>
-
+<section class="hero light" id="inicio">
   <div class="container">
     <div class="hero-grid">
       <div class="hero-content">
-        <h1 class="hero-title">
-          <span class="line"><span class="line-inner">Sua empresa na frente</span></span>
-          <span class="line"><span class="line-inner">das <span class="gold">pessoas certas</span>,</span></span>
-          <span class="line"><span class="line-inner">todos os dias.</span></span>
+        <div class="greet"><span class="dot live"></span><span id="greet">Olá</span> · RK Performance</div>
+        <h1>
+          <span class="line"><span class="line-inner">Sua empresa não precisa</span></span>
+          <span class="line"><span class="line-inner">só aparecer.</span></span>
+          <span class="line"><span class="line-inner">Precisa <span class="ouro">funcionar</span> no digital.</span></span>
         </h1>
-        <p class="hero-sub">Criamos anúncios online para aumentar sua visibilidade, atrair clientes e gerar novas oportunidades para o seu negócio.</p>
-        <div class="hero-ctas">
-<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20atrair%20mais%20clientes%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-primary">Quero atrair mais clientes</a>
+        <p class="lead">Desenvolvemos sites, sistemas sob medida e soluções com inteligência artificial — a estrutura que faz sua empresa ser encontrada, atender bem e vender com organização. E, quando faz sentido, os anúncios que levam as pessoas certas até ela.</p>
+        <div class="ctas">
+          <a class="btn btn-ouro" href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK!%20Quero%20um%20diagn%C3%B3stico%20da%20estrutura%20digital%20da%20minha%20empresa." target="_blank" rel="noopener">Pedir um diagnóstico <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="selo" href="#metodo" aria-label="Prévia navegável antes de pagar — veja como funciona">
+            <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#circ">prévia antes de pagar · prévia antes de pagar ·</textPath></text></svg>
+            <span class="mid"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></span>
+          </a>
         </div>
-        <div class="hero-stats">
-          <div class="stat"><b><span class="gold">+ de R$ 650 mil</span></b><span>Investidos em anúncios para nossos clientes</span></div>
+        <div class="linha-caps"><span>Sites</span><span>Sistemas</span><span>Inteligência artificial</span><span>Automação</span><span>Tráfego pago</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stack">
+          <div class="retrato cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+            <picture><source media="(max-width:640px)" srcset="assets/img/hero-dupla-m.webp"><img src="assets/img/hero-dupla.webp" alt="João Vitor e Nicoli, fundadores da RK Performance" width="1200" height="1500" loading="eager" fetchpriority="high"></picture>
+            <div class="legenda"><b>João Vitor &amp; Nicoli</b>fundadores · Guarapuava, PR</div>
+          </div>
+          <div class="floatcard"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>Proposta aceita</b><small>cliente confirmou pelo link · painel avisado</small></div></div>
         </div>
-        <div class="hero-scroll">
-          <span class="mouse"></span>
-          <span>Role para explorar</span>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#problema"><span class="mouse"></span>Explorar</a>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="strip-track" id="strip">
+  <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Sites e landing pages</span><span><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>Sistemas e painéis sob medida</span><span><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 014 4v1h1a3 3 0 010 6h-1v1a4 4 0 01-8 0v-1H7a3 3 0 010-6h1V7a4 4 0 014-4z"/></svg>Agentes de IA e automação</span><span><svg viewBox="0 0 24 24"><path d="M3 11l18-7-7 18-2-8-9-3z"/></svg>Tráfego pago quando faz sentido</span><span><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.6-7-11a7 7 0 0114 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Guarapuava · PR</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>Atendimento em todo o Brasil</span>
+  <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Sites e landing pages</span><span><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>Sistemas e painéis sob medida</span><span><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 014 4v1h1a3 3 0 010 6h-1v1a4 4 0 01-8 0v-1H7a3 3 0 010-6h1V7a4 4 0 014-4z"/></svg>Agentes de IA e automação</span><span><svg viewBox="0 0 24 24"><path d="M3 11l18-7-7 18-2-8-9-3z"/></svg>Tráfego pago quando faz sentido</span><span><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.6-7-11a7 7 0 0114 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Guarapuava · PR</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>Atendimento em todo o Brasil</span>
+</div></div>
+
+<!-- PONTO DE PARTIDA -->
+<section class="sec light" id="problema">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">O ponto de partida</span>
+      <h2>Sua empresa pode estar perdendo clientes antes do <span class="ouro">primeiro contato</span>.</h2>
+      <p>Hoje a decisão começa muito antes da conversa com você. A pessoa pesquisa, abre seu site (ou não encontra), olha o Instagram, manda mensagem e espera resposta. Cada etapa sem estrutura é um cliente que vai para o concorrente.</p>
+    </div>
+    <div class="dores reveal d1">
+      <div class="dor"><span class="n">01</span><span>Site desatualizado — ou nenhum site</span></div>
+      <div class="dor"><span class="n">05</span>Agenda e financeiro no papel</div>
+      <div class="dor"><span class="n">02</span>Instagram como único "site"</div>
+      <div class="dor"><span class="n">06</span>Sem dados do que funciona</div>
+      <div class="dor"><span class="n">03</span>Proposta em PDF, sem controle de quem aceitou</div>
+      <div class="dor"><span class="n">07</span>Ferramentas que não conversam entre si</div>
+      <div class="dor"><span class="n">04</span>WhatsApp respondido na mão, quando dá</div>
+      <div class="dor"><span class="n">08</span>Depender de programador pra qualquer ajuste</div>
+    </div>
+  </div>
+</section>
+
+<div class="band l-d" aria-hidden="true"></div>
+
+<!-- ECOSSISTEMA -->
+<section class="sec dark mist eco" id="ecossistema">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center">Ecossistema RK</span>
+      <h2>Uma estrutura digital completa, não um serviço <span class="ouro">solto</span>.</h2>
+      <p>Site, sistema, IA, automação e anúncios conversando entre si — construídos pela mesma equipe, sem intermediários.</p>
+    </div>
+    <div class="flow reveal d1">
+      <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/></svg></span><b>Site</b><small>presença</small></div>
+      <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v6H4zM4 14h10v6H4z"/></svg></span><b>Landing page</b><small>conversão</small></div>
+      <div class="node hot"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg></span><b>Sistema</b><small>operação</small></div>
+      <div class="node hot"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 014 4v1h1a3 3 0 010 6h-1v1a4 4 0 01-8 0v-1H7a3 3 0 010-6h1V7a4 4 0 014-4z"/><circle cx="10" cy="11" r="1"/><circle cx="14" cy="11" r="1"/></svg></span><b>Agente de IA</b><small>atendimento</small></div>
+      <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h5l2-5 3 10 2-5h4"/></svg></span><b>Automação</b><small>processos</small></div>
+      <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l18-7-7 18-2-8-9-3z"/></svg></span><b>Tráfego pago</b><small>alcance</small></div>
+      <div class="node"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 16V9M11 16V5M16 16v-7M21 16v-4"/></svg></span><b>Dados</b><small>evolução</small></div>
+    </div>
+    <p class="note reveal d2"><b>Aqui o tráfego é da casa.</b> Quando o projeto pede anúncios, quem construiu a estrutura é quem opera a campanha — e ela só entra depois que a estrutura está pronta pra converter.</p>
+    <div class="stats">
+      <div class="stat reveal"><div class="n">01</div><b><span data-count="10" data-prefix="+">+10</span></b><span class="lbl">Projetos no ar</span><p>Sites, painéis e demonstrações publicados em 2026 — todos abertos pra você visitar.</p></div>
+      <div class="stat reveal d1"><div class="n">02</div><b><span data-count="4">4</span></b><span class="lbl">Idiomas num só site</span><p>Português, inglês, espanhol e italiano no mesmo endereço, com o texto revisado por idioma.</p></div>
+      <div class="stat reveal d2"><div class="n">03</div><b><span data-count="650" data-prefix="R$ " data-suffix=" mil">R$ 650 mil</span></b><span class="lbl">Geridos em anúncios</span><p>A experiência de quem já operou mídia de verdade — e sabe o que a estrutura precisa segurar.</p></div>
+      <div class="stat reveal d3"><div class="n">04</div><b><span data-count="100" data-suffix="%">100%</span></b><span class="lbl">Seu — código e domínio</span><p>Sem aluguel de plataforma, sem ficar refém de programador.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band d-l" aria-hidden="true"></div>
+
+<!-- SITES -->
+<section class="frente light" id="sites">
+  <div class="container"><div class="grid">
+    <div class="copy reveal">
+      <span class="eyebrow">Sites e landing pages</span>
+      <h2>Sites leves, escritos do zero, com a <span class="ouro">cara</span> da sua empresa.</h2>
+      <p class="lead">Nada de template de WordPress nem construtor de arrastar. Cada site é escrito do zero, com a identidade do cliente, fotos reais e o texto pensado pra vender.</p>
+      <div class="acc" data-acc>
+        <div class="acc-item open"><button class="acc-q" aria-expanded="true">Site institucional premium<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Apresentação completa da empresa com direção de arte própria: fotos e vídeos reais, tipografia com personalidade e movimento na medida. Feito pra transmitir autoridade de verdade.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Landing page de conversão<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Uma página, uma oferta, um botão. Estrutura pensada pra campanhas: carrega rápido, mede tudo e leva direto pro WhatsApp.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Vários idiomas e SEO técnico<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Tradutor em português, inglês, espanhol e italiano dentro do próprio site, títulos e metadados estruturados e Google Meu Negócio alinhado. Pra ser encontrado dentro e fora do país.</p></div></div></div>
+      </div>
+      <div class="linha-caps"><span>HTML e CSS puros</span><span>Sem WordPress</span><span>SEO técnico</span><span>Até 4 idiomas</span><span>Domínio próprio</span></div>
+    </div>
+    <div class="mock-wrap cant reveal d1"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+      <div class="win">
+        <div class="bar"><i></i><i></i><i></i><span class="t">index.html · seusite.com.br</span><span class="tag ok"><span class="dot"></span>publicado</span></div>
+        <div class="code" id="code" aria-label="Exemplo de código de um site RK"></div>
+        <div class="code-foot"><span>HTML · CSS · sem framework</span><span><b>no ar</b> · domínio próprio</span></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<div class="band l-d" aria-hidden="true"></div>
+
+<!-- SISTEMAS -->
+<section class="frente flip dark mist" id="sistemas">
+  <div class="container"><div class="grid">
+    <div class="copy reveal">
+      <span class="eyebrow">Sistemas e painéis sob medida</span>
+      <h2>Propostas, agenda e financeiro em um painel <span class="ouro">seu</span> — não numa planilha.</h2>
+      <p class="lead">Quando o problema não é aparecer, é operar: proposta em PDF que ninguém controla, agenda no papel, pagamento que se perde. A gente constrói o sistema do tamanho do seu negócio.</p>
+      <div class="acc" data-acc>
+        <div class="acc-item open"><button class="acc-q" aria-expanded="true">Propostas online com aceite<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>O cliente abre um link com o nome dele, compara as opções e aceita na hora. Você recebe a confirmação no painel — sem PDF, sem "vou ver e te falo".</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Painel administrativo com senha<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Clientes, propostas, status e valores num lugar só, no celular ou no computador. Simples de mexer e impossível de perder um cliente.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Área administrativa pra atualizar o site<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Quando o site precisa de atualização frequente, ele sai com uma área própria: textos, fotos e materiais editados pela sua equipe, sem depender de programador pra cada ajuste.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Cardápio digital e aplicações específicas<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Cardápio por QR code com vídeo dos pratos, controle de pacientes pra consultório, o que o seu negócio pedir — desenhado com você, não adaptado de um pacote.</p></div></div></div>
+      </div>
+      <div class="linha-caps"><span>Banco de dados próprio</span><span>Acesso por senha</span><span>Funciona no celular</span><span>Sem mensalidade de plataforma</span></div>
+    </div>
+    <div class="mock-wrap cant reveal d1"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+      <div class="win">
+        <div class="bar"><i></i><i></i><i></i><span class="t">painel · propostas · exemplo</span><span class="tag gold"><span class="dot live" style="color:#C9A771"></span>ao vivo</span></div>
+        <div class="panel">
+          <div class="row"><div><b>Casal Ana &amp; Pedro</b><small>Casamento · 14 mar</small></div><span class="val tnum">R$ 4.800</span><span class="tag ok">Aceita</span></div>
+          <div class="row"><div><b>Formatura Medicina</b><small>Enviada há 2 h</small></div><span class="val tnum">R$ 3.200</span><span class="tag warn">Aguardando</span></div>
+          <div class="row"><div><b>Aniversário de 15 anos</b><small>Rascunho</small></div><span class="val tnum">R$ 2.900</span><span class="tag">Em aberto</span></div>
+          <div class="row"><div><b>Bodas de prata</b><small>Aceita ontem</small></div><span class="val tnum">R$ 3.900</span><span class="tag ok">Aceita</span></div>
+          <div class="kpis"><div><b>12</b><small>propostas</small></div><div><b>7</b><small>aceitas</small></div><div><b>R$ 31,4 mil</b><small>fechados</small></div></div>
         </div>
       </div>
     </div>
-  </div>
+  </div></div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Estratégia <i class="diamond"></i> Anúncios <i class="diamond"></i> Criativos <i class="diamond"></i> Conversão <i class="diamond"></i> Otimização <i class="diamond"></i></span>
-    <span>Estratégia <i class="diamond"></i> Anúncios <i class="diamond"></i> Criativos <i class="diamond"></i> Conversão <i class="diamond"></i> Otimização <i class="diamond"></i></span>
-  </div>
-</div>
+<div class="band d-l" aria-hidden="true"></div>
 
-<!-- PROBLEMA -->
-<section id="problema" class="problema section-pad">
+<!-- IA E AUTOMAÇÃO -->
+<section class="frente light" id="ia">
+  <div class="container"><div class="grid">
+    <div class="copy reveal">
+      <span class="eyebrow">Inteligência artificial e automação</span>
+      <h2>Atendimento que responde em segundos, <span class="ouro">mesmo</span> com a loja cheia.</h2>
+      <p class="lead">Agentes de IA treinados com as informações reais do seu negócio, automações que tiram tarefa repetitiva da sua mão e conteúdo gerado com IA quando faz sentido — sempre com a sua aprovação.</p>
+      <div class="acc" data-acc>
+        <div class="acc-item open"><button class="acc-q" aria-expanded="true">Agente de atendimento no WhatsApp e no Instagram<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Responde dúvidas com as informações do seu negócio, anota pedidos, gera a cobrança no Pix e avisa a equipe. Fora do horário, registra pro dia seguinte.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Automação de direct e comentários<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Quem comenta recebe o link no direct automaticamente, quem pede orçamento cai na fila certa. Funciona enquanto você dorme.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Automação de processos e integrações<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>As ferramentas que você já usa passando informação entre si: venda aprovada numa plataforma vira registro, conferência e aviso do outro lado, sem retrabalho manual.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Conteúdo e provador virtual com IA<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Fotos de produto, peças de anúncio e provador virtual pra moda, feitos com IA e revisados um a um antes de ir ao ar.</p></div></div></div>
+      </div>
+      <div class="linha-caps"><span>WhatsApp e Instagram</span><span>Pix automático</span><span>Treinado com dados reais</span><span>Integrações por API</span></div>
+    </div>
+    <div class="mock-wrap cant reveal d1"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+      <div class="win">
+        <div class="bar"><i></i><i></i><i></i><span class="t">WhatsApp · agente · simulação</span><span class="tag ok"><span class="dot live"></span>online</span></div>
+        <div class="chat" id="chat">
+          <div class="msg c">Oi! Ainda tem o combo 2 pra entrega?<time>22:41</time></div>
+          <div class="typing"><i></i><i></i><i></i></div>
+          <div class="msg a">Tem sim 😊 Combo 2: dois smash burgers, batata e dois refris por R$ 59,90. Entrega em uns 40 min. Quer fechar?<time>22:41</time></div>
+          <div class="msg c">Quero, pra Rua das Flores, 120<time>22:42</time></div>
+          <div class="msg a">Fechado! Segue o Pix de R$ 59,90 — assim que cair, a cozinha começa.<span class="pix"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M12 8v8"/></svg>pix copia e cola · R$ 59,90</span><time>22:42</time></div>
+        </div>
+        <div class="chat-status"><span>Pedido #148 · <b style="color:#5BAA86;font-weight:500">pago</b> · enviado pra cozinha</span><span>22:47</span></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- TRÁFEGO -->
+<section class="frente flip light alt" id="trafego">
+  <div class="container"><div class="grid">
+    <div class="copy reveal">
+      <span class="eyebrow">Tráfego pago, quando faz sentido</span>
+      <h2>Anúncio sem estrutura é dinheiro queimado. Por isso ele entra <span class="ouro">depois</span>.</h2>
+      <p class="lead">A RK nasceu gerindo anúncios — e foi por isso que virou estrutura. Campanha boa levando pra site ruim, WhatsApp sem resposta ou proposta perdida não vende. Quando a base está pronta, aí sim: Meta Ads e Google Ads operados pela mesma equipe.</p>
+      <div class="acc" data-acc>
+        <div class="acc-item open"><button class="acc-q" aria-expanded="true">Auditoria antes de qualquer canal<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Google, Instagram, concorrência, avaliações e geografia analisados antes de decidir onde anunciar. Nada de escolher o canal pela "cara" do nicho.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Meta Ads e Google Ads<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Estratégia, criativos, campanhas e otimização contínua. A verba de mídia é sua, paga direto pra plataforma — a gente cobra pela gestão.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Google Meu Negócio e busca local<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Perfil, categoria, horário e avaliações estruturados pra aparecer quando alguém da sua cidade procura o que você faz.</p></div></div></div>
+        <div class="acc-item"><button class="acc-q" aria-expanded="false">Relatório em linguagem de negócio<svg class="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button><div class="acc-a"><div><p>Quantas pessoas chegaram, quanto custou cada uma e o que muda no mês seguinte. Sem sigla, sem painel que ninguém entende.</p></div></div></div>
+      </div>
+      <div class="linha-caps"><span>Meta Ads</span><span>Google Ads</span><span>Google Meu Negócio</span><span>Pixel e API de conversões</span></div>
+      <div class="side-note">Verba mínima recomendada a partir de R$ 1.000/mês — definida depois da auditoria, nunca antes.</div>
+    </div>
+    <div class="mock-wrap cant reveal d1"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+      <div class="win light">
+        <div class="bar"><i></i><i></i><i></i><span class="t">anúncios · últimos 7 dias</span><span class="tag ok"><span class="dot live"></span>ativo</span></div>
+        <div class="dash" id="dash">
+          <div class="bars"><i style="height:38%"></i><i style="height:52%"></i><i style="height:46%"></i><i style="height:74%"></i><i style="height:60%"></i><i style="height:100%"></i><i style="height:82%"></i></div>
+          <div class="days"><span>seg</span><span>ter</span><span>qua</span><span>qui</span><span>sex</span><span>sáb</span><span>dom</span></div>
+          <div class="kpis"><div><b>186</b><small>conversas</small></div><div><b>R$ 5,40</b><small>por conversa</small></div><div><b>R$ 1.000</b><small>investidos</small></div></div>
+          <p class="fine">dados ilustrativos — cada negócio tem os seus</p>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<div class="band l-d" aria-hidden="true"></div>
+
+<!-- DEMO INTERATIVA -->
+<section class="sec dark mist" id="demo" style="padding-top:48px">
   <div class="container">
-    <div class="problema-inner reveal">
-      <h2>Ter um bom negócio não adianta se <span class="gold">as pessoas certas não conhecem você</span>.</h2>
-      <p>Você pode ter um ótimo produto, um excelente atendimento e entregar mais do que seus concorrentes.</p>
-      <p>Mas, se poucas pessoas descobrem sua empresa, as vendas acabam dependendo de indicação, alcance orgânico ou sorte.</p>
-      <p>É aí que entram os anúncios.</p>
+    <div class="demo reveal">
+      <div class="head">
+        <span class="eyebrow center">Experimente agora</span>
+        <h2>Veja como o cliente aceita uma proposta <span class="ouro">online</span></h2>
+        <p>Escolha uma opção como se fosse o cliente. É assim que funciona nos painéis que a RK entrega.</p>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-panel">
+          <div class="lbl"><span>Painel · opções da proposta</span><span class="tag gold">exemplo</span></div>
+          <button class="opt" data-title="Cerimônia" data-price="1900" data-items="Cerimônia religiosa ou civil|Voz e violão · 40 min|Deslocamento incluso"><span class="rad"></span><span><b>Cerimônia</b><small>Voz e violão · 40 min</small></span><span class="price tnum">R$ 1.900</span></button>
+          <button class="opt on" data-title="Cerimônia + recepção" data-price="2800" data-items="Cerimônia religiosa ou civil|Cocktail com repertório livre · 2 h|Músico de apoio|Deslocamento incluso"><span class="rad"></span><span><b>Cerimônia + recepção</b><small>Cerimônia e cocktail · 2 h</small></span><span class="price tnum">R$ 2.800</span></button>
+          <button class="opt" data-title="Completa" data-price="3900" data-items="Cerimônia religiosa ou civil|Cocktail e festa · 4 h|Banda de apoio|Som e iluminação|Deslocamento incluso"><span class="rad"></span><span><b>Completa</b><small>Cerimônia, cocktail e festa · 4 h</small></span><span class="price tnum">R$ 3.900</span></button>
+          <div class="demo-toast" id="demoToast"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Proposta aceita — o painel foi avisado e o seu WhatsApp também.</div>
+          <button class="reset" id="demoReset" hidden>refazer demonstração</button>
+        </div>
+        <div class="demo-site">
+          <div class="bar"><i></i><i></i><i></i><span class="url">seusite.com.br/proposta/?p=ana-e-pedro</span></div>
+          <div class="body">
+            <div class="kicker">Proposta para Ana &amp; Pedro · 14 de março</div>
+            <h3 id="demoTitle">Cerimônia + recepção</h3>
+            <div class="sub">Válida por 7 dias · pagamento em até 3 vezes</div>
+            <ul id="demoItems"></ul>
+            <div class="total"><small>Investimento</small><b id="demoTotal" class="tnum">R$ 2.800</b></div>
+            <button class="accept" id="demoAccept">Aceitar esta proposta</button>
+          </div>
+        </div>
+      </div>
+      <p class="fine">Demonstração com valores fictícios. O painel real está em <a href="https://painel.rkperformance.com.br" target="_blank" rel="noopener">painel.rkperformance.com.br</a> — entre como visitante.</p>
     </div>
   </div>
 </section>
 
-<!-- SOLUÇÃO / COMO AJUDAMOS -->
-<section id="solucao" class="servicos section-pad">
-  <div class="container">
-    <div class="sec-head center reveal">
-      <span class="label">Como ajudamos</span>
-      <h2>A gente coloca sua empresa na frente de <span class="gold">quem pode comprar de você</span>.</h2>
-      <p>Criamos e gerenciamos campanhas para alcançar as pessoas certas, despertar interesse e levar novos potenciais clientes até o seu negócio.</p>
-    </div>
-    <div class="ser-grid">
-      <div class="ser-card reveal delay-1">
-        <div class="ser-num">01</div>
-        <div class="ser-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-        <h3>Estratégia</h3>
-        <p>Entendemos sua empresa, sua oferta e o público que queremos alcançar.</p>
-      </div>
-      <div class="ser-card reveal delay-2">
-        <div class="ser-num">02</div>
-        <div class="ser-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 20h8"/><path d="M12 18v2"/></svg></div>
-        <h3>Anúncios</h3>
-        <p>Criamos e gerenciamos campanhas no Meta Ads e Google Ads.</p>
-      </div>
-      <div class="ser-card reveal delay-3">
-        <div class="ser-num">03</div>
-        <div class="ser-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4V8z"/></svg></div>
-        <h3>Criativos</h3>
-        <p>Definimos os conteúdos e anúncios que serão usados nas campanhas.</p>
-      </div>
-      <div class="ser-card reveal delay-4">
-        <div class="ser-num">04</div>
-        <div class="ser-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
-        <h3>Conversão</h3>
-        <p>Direcionamos as pessoas para o melhor caminho: WhatsApp, site, landing page ou outra estrutura de venda.</p>
-      </div>
-      <div class="ser-card reveal">
-        <div class="ser-num">05</div>
-        <div class="ser-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 6-6"/></svg></div>
-        <h3>Otimização</h3>
-        <p>Acompanhamos os resultados e ajustamos as campanhas continuamente.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="band d-l" aria-hidden="true"></div>
 
-<!-- STATS -->
-<section class="stats-strip" aria-label="Números da RK Performance">
-  <div class="container stats-row">
-    <div class="stat reveal"><b><span class="gold">+ de R$ 650 mil</span></b><span>Investidos em anúncios para nossos clientes</span></div>
-    <div class="stat reveal delay-1"><b><span class="gold">+ de 4 anos</span></b><span>Trabalhando com marketing e performance</span></div>
-    <div class="stat reveal delay-2"><b><span class="gold">+ de R$ 1,5 milhões</span></b><span>Faturados no digital</span></div>
-  </div>
-</section>
-
-<!-- ESTRUTURA -->
-<section id="estrutura" class="solucoes section-pad">
-  <div class="container">
-    <div class="sec-head center reveal">
-      <span class="label">Estrutura completa</span>
-      <h2>Quando o anúncio precisa de estrutura, <span class="gold">a gente também resolve</span>.</h2>
-      <p>Nem sempre o problema está apenas na campanha. Por isso, além da gestão de anúncios, a RK também pode desenvolver a estrutura necessária para transformar acessos em oportunidades de venda.</p>
-    </div>
-    <div class="sol-grid">
-      <div class="sol-card reveal delay-1">
-        <div class="sol-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h3>Landing Pages</h3>
-        <p>Páginas pensadas para transformar visitantes em contatos ou clientes.</p>
-      </div>
-      <div class="sol-card reveal delay-2">
-        <div class="sol-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
-        <h3>Sites</h3>
-        <p>Sites profissionais para apresentar sua empresa e fortalecer sua presença digital.</p>
-      </div>
-      <div class="sol-card reveal delay-3">
-        <div class="sol-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-        <h3>Automações</h3>
-        <p>Processos que tornam o atendimento e o acompanhamento de leads mais eficientes.</p>
-      </div>
-      <div class="sol-card reveal delay-4">
-        <div class="sol-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <h3>Soluções Digitais</h3>
-        <p>Aplicações e sistemas desenvolvidos de acordo com a necessidade da sua empresa.</p>
-      </div>
-    </div>
-    <div class="sol-cta reveal">
-      <p>Você não precisa contratar várias empresas diferentes para fazer sua estratégia funcionar.</p>
-    </div>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section id="como-funciona" class="processo section-pad">
+<!-- MÉTODO -->
+<section class="sec light" id="metodo">
   <div class="container">
     <div class="sec-head center reveal">
-      <span class="label">Passo a passo</span>
-      <h2>Como funciona?</h2>
+      <span class="eyebrow center">Como funciona</span>
+      <h2>Do diagnóstico à publicação, sem <span class="ouro">surpresa</span>.</h2>
     </div>
-  </div>
-  <div class="processo-wrap" id="processoWrap">
-    <div class="processo-track">
-      <div class="passo-card">
-        <div class="passo-num">01</div>
-        <h3>Diagnóstico</h3>
-        <p>Entendemos seu negócio, seus objetivos e sua estrutura atual.</p>
-        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      </div>
-      <div class="passo-card">
-        <div class="passo-num">02</div>
-        <h3>Estratégia</h3>
-        <p>Definimos público, oferta, canais, criativos e campanhas.</p>
-        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      </div>
-      <div class="passo-card">
-        <div class="passo-num">03</div>
-        <h3>Campanhas</h3>
-        <p>Criamos os anúncios e colocamos a estratégia no ar.</p>
-        <div class="passo-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      </div>
-      <div class="passo-card">
-        <div class="passo-num">04</div>
-        <h3>Otimização</h3>
-        <p>Acompanhamos os resultados e fazemos ajustes continuamente.</p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="processo-hint reveal">
-      <span>Arraste para o lado</span>
-      <span class="arrow-line"><span></span><span></span><span></span></span>
+    <div class="passos">
+      <div class="passo reveal"><div class="n">01</div><h3>Diagnóstico real</h3><p>Auditamos Google, Instagram, concorrência e o que você já tem. Você recebe um relatório, não um orçamento no chute.</p></div>
+      <div class="passo reveal d1"><div class="n">02</div><h3>Prévia navegável</h3><p>Você abre um link e vê seu site funcionando, com suas fotos e seu texto, antes de fechar. Só paga se gostar.</p><span class="tag">antes de pagar</span></div>
+      <div class="passo reveal d2"><div class="n">03</div><h3>Conteúdo e texto</h3><p>Fotos, vídeos e textos organizados com você. O que falta, a gente orienta como produzir.</p></div>
+      <div class="passo reveal"><div class="n">04</div><h3>Desenvolvimento</h3><p>Site, sistema ou automação construídos do zero, testados no celular e no computador.</p></div>
+      <div class="passo reveal d1"><div class="n">05</div><h3>Publicação e integrações</h3><p>Domínio, hospedagem, WhatsApp, Pixel, Analytics e Google Meu Negócio configurados. No ar com tudo medindo.</p></div>
+      <div class="passo reveal d2"><div class="n">06</div><h3>Evolução</h3><p>Novas páginas, novos idiomas, painel, campanhas. A estrutura cresce com o negócio — e o código continua seu.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PÚBLICO -->
-<section id="publico" class="publico section-pad">
+<div class="band l-d" aria-hidden="true"></div>
+
+<!-- PROJETOS -->
+<section class="sec dark mist" id="projetos">
   <div class="container">
-    <div class="sec-head center reveal">
-      <span class="label">Para quem é</span>
-      <h2>A RK é para empresas que <span class="gold">querem crescer</span>.</h2>
+    <div class="sec-head reveal" style="max-width:none"><div class="row"><div style="max-width:720px"><span class="eyebrow">Projetos no ar</span><h2>Entregas de verdade, que você pode <span class="ouro">abrir</span> agora.</h2></div><a class="link" href="https://instagram.com/rkperformance.digital" target="_blank" rel="noopener">Ver mais no Instagram <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    <div class="projetos">
+      <article class="proj reveal"><div class="shot cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="assets/img/jamilli-desktop.webp" alt="Site da Jamilli Vaz" loading="lazy" width="1200" height="750"><span class="url">jamillivaz.com.br</span></div><div class="body"><div class="kind">Cantora de casamentos · Guarapuava</div><h3>Jamilli Vaz</h3><p>Site cinematográfico com fotos e vídeos reais, propostas por casal com três opções e painel com senha pra acompanhar cada aceite.</p><div class="linha-caps"><span>Site</span><span>Propostas online</span><span>Painel</span></div><a class="link" href="https://jamillivaz.com.br" target="_blank" rel="noopener">Abrir site <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+      <article class="proj reveal d1"><div class="shot cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="assets/img/bruno-desktop.webp" alt="Site do Bruno Daner Sax" loading="lazy" width="1200" height="750"><span class="url">brunodanersax.com</span></div><div class="body"><div class="kind">DJ e saxofonista · Rio de Janeiro</div><h3>Bruno Daner Sax</h3><p>Migrado da Wix sem sair do ar, tradutor em três idiomas, SEO e proposta comercial online com painel.</p><div class="linha-caps"><span>Site</span><span>PT · EN · ES</span><span>Propostas</span></div><a class="link" href="https://brunodanersax.com" target="_blank" rel="noopener">Abrir site <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+      <article class="proj reveal d2"><div class="shot cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="assets/img/beboots-desktop.webp" alt="Site da dupla Be Boots" loading="lazy" width="1200" height="750"><span class="url">beboots.com.br</span></div><div class="body"><div class="kind">Dupla de DJs · São Paulo e Itália</div><h3>Be Boots</h3><p>Site de evento alto padrão com vídeo em tela cheia, tradutor em quatro idiomas e domínio próprio configurado do zero.</p><div class="linha-caps"><span>Site</span><span>4 idiomas</span><span>Domínio próprio</span></div><a class="link" href="https://beboots.com.br" target="_blank" rel="noopener">Abrir site <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+      <article class="proj reveal"><div class="shot cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="assets/img/painel-desktop.webp" alt="Página de proposta do painel da RK" loading="lazy" width="1200" height="750"><span class="url">painel.rkperformance.com.br</span></div><div class="body"><div class="kind">Demonstração pública · entre como visitante</div><h3>Painel de propostas</h3><p>Base do sistema de propostas e CRM pra músicos e prestadores de serviço: propostas, aceite, status e valores num painel só.</p><div class="linha-caps"><span>Sistema</span><span>Painel</span><span>Banco próprio</span></div><a class="link" href="https://painel.rkperformance.com.br" target="_blank" rel="noopener">Testar o painel <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+      <article class="proj reveal d1"><div class="shot cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="assets/img/cardapio-desktop.webp" alt="Cardápio digital com vídeo" loading="lazy" width="1200" height="750"><span class="url">demonstração</span></div><div class="body"><div class="kind">Demonstração · restaurante</div><h3>Cardápio digital</h3><p>Cardápio por QR code com vídeo dos pratos em loop, sem cadastro e sem aplicativo pra baixar.</p><div class="linha-caps"><span>Cardápio</span><span>QR code</span><span>Vídeo</span></div><a class="link" href="https://joaovitorrk.github.io/cardapio-demo/" target="_blank" rel="noopener">Ver demonstração <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+      <article class="proj text reveal d2"><div class="body"><div class="kind">Site + área administrativa</div><h3>Consultoria de posicionamento</h3><p>Site institucional com painel próprio: a cliente publica textos e e-books e edita o conteúdo do site sem tocar em código. Nome preservado a pedido da cliente.</p><div class="linha-caps"><span>Site</span><span>Área administrativa</span><span>Banco próprio</span></div></div></article>
     </div>
-    <div class="publico-intro reveal">
-      <p>Para negócios que:</p>
-      <ul>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Querem gerar mais oportunidades de venda através da internet</li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Têm um bom produto ou serviço</li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Querem alcançar mais pessoas certas</li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Entendem que marketing precisa de estratégia</li>
-        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Buscam crescimento com acompanhamento profissional</li>
+    <div class="mais reveal">
+      <div class="m"><small>Escola online · em implantação</small>Automação fiscal: a venda aprovada na plataforma de cursos é recebida, conferida e organizada pra contabilidade sem clique manual.</div>
+      <div class="m"><small>Moda</small>Provador virtual com IA e automação de direct pra perfis de moda — conteúdo revisado peça a peça antes de ir ao ar.</div>
+      <div class="m"><small>Em andamento</small>Prévias navegáveis no ar pra dermatologia, estética, advocacia e DJ de casamentos em São Paulo.</div>
+    </div>
+  </div>
+</section>
+
+<div class="band d-l" aria-hidden="true"></div>
+
+<!-- QUEM FAZ -->
+<section class="sec light sobre" id="sobre">
+  <div class="container"><div class="sobre-grid">
+    <figure class="reveal" style="margin:0"><div class="retrato cant in" style="aspect-ratio:4/5"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="assets/img/sobre-dupla.webp" alt="João Vitor e Nicoli" loading="lazy" width="1000" height="1250"></div><figcaption class="cap"><b>João Vitor &amp; Nicoli</b>RK Performance · Guarapuava, PR</figcaption></figure>
+    <div class="reveal d1">
+      <span class="eyebrow">Quem faz</span>
+      <h2>Uma dupla que constrói, não só <span class="ouro">gerencia</span>.</h2>
+      <p class="lead">A RK nasceu em Guarapuava gerindo anúncios pra negócios locais. Foi operando campanha que a gente entendeu o problema de verdade: o anúncio chegava, e a estrutura por trás não segurava o cliente.</p>
+      <p class="lead">Hoje a RK desenvolve a estrutura inteira — site, sistema, IA e automação. O João cuida de estratégia, desenvolvimento e dados, com formação em engenharia; a Nicoli, do atendimento e dos criativos. Atendemos empresas de todo o Brasil.</p>
+      <div class="pilares">
+        <div class="pilar"><span class="n">01</span><div><h3>Engenharia e dados</h3><p>Decisão por número, não por achismo. Cada projeto nasce de auditoria e termina medindo.</p></div></div>
+        <div class="pilar"><span class="n">02</span><div><h3>Estrutura antes de estética</h3><p>Site bonito que não carrega, não converte e não mede não serve. Cuidamos dos dois.</p></div></div>
+        <div class="pilar"><span class="n">03</span><div><h3>Você vê antes de pagar</h3><p>Prévia navegável antes de fechar. Se não convencer, não custa nada.</p></div></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- DÚVIDAS -->
+<section class="sec light alt" id="faq" style="padding-top:96px">
+  <div class="container">
+    <div class="sec-head center reveal"><span class="eyebrow center">Dúvidas frequentes</span><h2>O que costumam perguntar antes de <span class="ouro">fechar</span></h2></div>
+    <div class="faq-chips reveal" id="faqChips"><button class="on" data-f="todos">todos</button><button data-f="site">site</button><button data-f="sistema">sistema</button><button data-f="ia">IA</button><button data-f="trafego">tráfego</button><button data-f="prazo">prazo</button><button data-f="preco">preço</button></div>
+    <div class="faq-list reveal d1" id="faqList">
+      <div class="faq-item" data-f="site"><button class="faq-q" aria-expanded="false">Preciso já ter um site pra contratar a RK?<span class="plus"></span></button><div class="faq-a"><div><p>Não. Atendemos quem nunca teve site e quem tem um que não representa mais a empresa. No diagnóstico a gente diz o que faz sentido construir primeiro.</p></div></div></div>
+      <div class="faq-item" data-f="preco"><button class="faq-q" aria-expanded="false">Quanto custa?<span class="plus"></span></button><div class="faq-a"><div><p>Site e landing page têm valor fechado antes de começar, sem surpresa. Sistemas e automações são orçados depois do levantamento de escopo — nunca no chute, em reunião. Em todos os casos a prévia e o diagnóstico vêm antes de qualquer número.</p></div></div></div>
+      <div class="faq-item" data-f="prazo"><button class="faq-q" aria-expanded="false">Qual o prazo?<span class="plus"></span></button><div class="faq-a"><div><p>A prévia navegável sai em poucos dias. Site completo entre 2 e 4 semanas, dependendo do material. Sistemas e automações conforme o escopo combinado.</p></div></div></div>
+      <div class="faq-item" data-f="site"><button class="faq-q" aria-expanded="false">O site fica meu?<span class="plus"></span></button><div class="faq-a"><div><p>Sim. Domínio, código e hospedagem são seus. Não existe mensalidade obrigatória de plataforma — manutenção é opcional.</p></div></div></div>
+      <div class="faq-item" data-f="sistema"><button class="faq-q" aria-expanded="false">O que é o painel?<span class="plus"></span></button><div class="faq-a"><div><p>Uma área com senha onde você acompanha propostas, clientes, agenda e valores — ou atualiza o conteúdo do site. Simples de mexer e feito pro seu negócio, não um pacote adaptado.</p></div></div></div>
+      <div class="faq-item" data-f="ia"><button class="faq-q" aria-expanded="false">A IA vai responder meus clientes sozinha?<span class="plus"></span></button><div class="faq-a"><div><p>Dentro do que você define. O agente é treinado com as informações reais do negócio, responde o que sabe e passa pra você o que não sabe. Tudo é revisado antes de ir ao ar.</p></div></div></div>
+      <div class="faq-item" data-f="trafego"><button class="faq-q" aria-expanded="false">Vocês fazem anúncios no Google e no Instagram?<span class="plus"></span></button><div class="faq-a"><div><p>Sim — e é a mesma equipe que constrói a estrutura. A diferença é a ordem: campanha entra depois que site, WhatsApp e proposta estão prontos pra converter. A verba de mídia é paga por você direto pra plataforma.</p></div></div></div>
+      <div class="faq-item" data-f="prazo"><button class="faq-q" aria-expanded="false">Atendem fora de Guarapuava?<span class="plus"></span></button><div class="faq-a"><div><p>Sim. Todo o processo é online — já atendemos clientes no Rio de Janeiro, em São Paulo e no interior do Paraná.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="band l-d" aria-hidden="true"></div>
+
+<!-- CONTATO -->
+<section class="sec dark mist contato" id="contato">
+  <div class="container"><div class="grid">
+    <div class="reveal">
+      <span class="eyebrow">Fale com a RK</span>
+      <h2>Vamos construir a estrutura digital que sua empresa <span class="ouro">precisa</span>?</h2>
+      <p class="lead">Conte o cenário atual. A gente analisa sua presença digital, aponta os gargalos e mostra o que faz sentido construir primeiro — sem compromisso.</p>
+      <ul class="bul">
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Diagnóstico sem compromisso</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Resposta em até 1 dia útil</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Prévia navegável antes de fechar</li>
       </ul>
+      <div class="online"><span class="dot live"></span>Equipe RK · <b id="clock">--:--</b> em Guarapuava</div>
     </div>
-    <p class="publico-note reveal">Não importa onde sua empresa esteja. <span class="gold">Atendemos clientes de todo o Brasil.</span></p>
-    <div class="seg-grid reveal">
-      <div class="seg-card"><div class="ico">🩺</div><h3>Clínicas e consultórios</h3><p>Saúde, estética, odontologia e outros serviços especializados.</p></div>
-      <div class="seg-card"><div class="ico">🛠️</div><h3>Prestadores de serviços</h3><p>Empresas e profissionais que precisam gerar contatos, orçamentos ou agendamentos.</p></div>
-      <div class="seg-card"><div class="ico">🛒</div><h3>Lojas e e-commerces</h3><p>Negócios que querem alcançar mais pessoas e aumentar suas oportunidades de venda.</p></div>
-      <div class="seg-card"><div class="ico">🤝</div><h3>Empresas B2B</h3><p>Negócios que vendem produtos ou serviços para outras empresas.</p></div>
-      <div class="seg-card"><div class="ico">💻</div><h3>Infoprodutos e negócios digitais</h3><p>Cursos, mentorias, produtos digitais e empresas que vendem pela internet.</p></div>
-      <div class="seg-card"><div class="ico">📍</div><h3>Negócios locais com potencial de crescimento</h3><p>Restaurantes, academias, lojas, serviços e empresas que querem atrair mais clientes na sua região.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ESTRATÉGIA -->
-<section id="estrategia" class="estrategia section-pad">
-  <div class="container">
-    <div class="estrategia-box reveal">
-      <span class="label">Nossa abordagem</span>
-      <h2>Uma estratégia pensada <span class="gold">para o seu negócio</span>.</h2>
-      <p>Cada empresa tem um momento, uma estrutura e um objetivo diferente.</p>
-      <p>Por isso, antes de apresentar uma proposta, entendemos seu negócio e identificamos o que realmente faz sentido para você.</p>
-<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20conversar%20sobre%20uma%20estrat%C3%A9gia%20para%20minha%20empresa." class="btn btn-primary">Quero conversar com a RK</a>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="faq section-pad">
-  <div class="container">
-    <div class="sec-head center reveal">
-      <span class="label">FAQ</span>
-      <h2>Perguntas <span class="gold">frequentes</span></h2>
-    </div>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <button class="faq-q">Quanto preciso investir em anúncios?<span class="plus"></span></button>
-        <div class="faq-a"><p>O investimento depende do seu mercado, objetivo e estratégia. Na nossa conversa inicial, analisamos seu negócio e indicamos um valor adequado para começar.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Em quanto tempo começo a ver resultados?<span class="plus"></span></button>
-        <div class="faq-a"><p>Não existe um prazo igual para todas as empresas. Os resultados dependem da oferta, mercado, investimento, estrutura comercial e campanha. Pedimos um prazo mínimo de 3 meses para acompanhar os dados e otimizar continuamente para buscar a melhor performance possível.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">A RK atende empresas de todo o Brasil?<span class="plus"></span></button>
-        <div class="faq-a"><p>Sim. Todo o planejamento, acompanhamento e gestão podem ser realizados de forma online.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Preciso produzir os conteúdos dos anúncios?<span class="plus"></span></button>
-        <div class="faq-a"><p>Não necessariamente. Primeiro analisamos os materiais que sua empresa já possui. Se novos conteúdos forem necessários, orientamos exatamente o que precisa ser produzido.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Vocês trabalham com Meta Ads e Google Ads?<span class="plus"></span></button>
-        <div class="faq-a"><p>Sim. Definimos os canais de acordo com o seu negócio e com o comportamento do seu público.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section id="contato" class="cta-final">
-  <div class="cta-bg">
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920&auto=format&fit=crop" alt="" loading="lazy">
-  </div>
-  <div class="cta-overlay"></div>
-  <div class="container">
-    <div class="cta-inner reveal">
-      <span class="label">Vamos conversar</span>
-      <h2>Existem pessoas procurando <span class="gold">exatamente o que sua empresa oferece</span>.</h2>
-      <p>A RK ajuda sua empresa a chegar até elas. Converse com nossa equipe e descubra como os anúncios podem ajudar seu negócio a crescer.</p>
-<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20atrair%20mais%20clientes%20para%20o%20meu%20neg%C3%B3cio." class="btn btn-primary">Quero atrair mais clientes</a>
-      <p class="cta-note">Resposta rápida em horário comercial · Atendemos poucos clientes por mês — garanta sua vaga.</p>
-    </div>
-  </div>
+    <form class="form-card reveal d1" id="leadForm">
+      <span class="eyebrow">Diagnóstico gratuito</span>
+      <h3>Leva menos de um minuto e cai direto no nosso WhatsApp.</h3>
+      <p class="sub">Sem cadastro, sem spam. Abre uma conversa com o que você preencheu.</p>
+      <label for="fNome">Seu nome</label><input id="fNome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+      <label for="fEmp">Empresa ou negócio</label><input id="fEmp" name="empresa" type="text" autocomplete="organization" placeholder="Nome e cidade">
+      <label for="fNec">O que você precisa</label>
+      <select id="fNec" name="necessidade"><option>Site ou landing page</option><option>Sistema ou painel</option><option>Agente de IA ou automação</option><option>Tráfego pago</option><option>Ainda não sei — quero o diagnóstico</option></select>
+      <button class="btn btn-ouro" type="submit">Enviar pelo WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="fine">Atendemos poucos projetos por mês pra manter o padrão.</p>
+    </form>
+  </div></div>
 </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#topo" class="logo">
-          <span class="rk">RK</span>
-          <span class="sep" aria-hidden="true"></span>
-          <span class="perf">PERFORMANCE</span>
-        </a>
-        <p>Criamos anúncios online para aumentar sua visibilidade, atrair clientes e gerar novas oportunidades para o seu negócio.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Navegação</h4>
-        <a href="#solucao">Como ajudamos</a>
-        <a href="#estrutura">Estrutura</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#publico">Para quem é</a>
-        <a href="#faq">FAQ</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-<a href="https://wa.me/5542999246208">WhatsApp</a>
-        <a href="https://instagram.com/rkperformance.digital" target="_blank" rel="noopener">Instagram</a>
-        <a href="mailto:contato@rkperformance.com.br">contato@rkperformance.com.br</a>
-      </div>
+      <div class="footer-brand"><a href="#topo" class="logo"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></a><p>Sites, sistemas sob medida e inteligência artificial — a estrutura digital que faz sua empresa funcionar. E, quando faz sentido, os anúncios que levam as pessoas certas até ela.</p></div>
+      <div class="footer-col"><h4>Soluções</h4><a href="#sites">Sites e landing pages</a><a href="#sistemas">Sistemas e painéis</a><a href="#ia">IA e automação</a><a href="#trafego">Tráfego pago</a></div>
+      <div class="footer-col"><h4>RK</h4><a href="#projetos">Projetos</a><a href="#metodo">Como funciona</a><a href="#sobre">Quem faz</a><a href="#faq">Dúvidas frequentes</a></div>
+      <div class="footer-col"><h4>Contato</h4><a href="https://wa.me/5542999246208" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/rkperformance.digital" target="_blank" rel="noopener">Instagram</a><a href="mailto:contato@rkperformance.com.br">contato@rkperformance.com.br</a></div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span id="year">2026</span> RK Performance. Todos os direitos reservados.</span>
-      <span>Guarapuava / PR</span>
-    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> RK Performance</span><span>Guarapuava / PR · atendimento em todo o Brasil</span></div>
   </div>
 </footer>
 
-<!-- WHATSAPP FAB -->
-<a href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK%20Performance!%20Quero%20entender%20como%20funciona." class="wa-fab" aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<a class="wa-float" href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20RK!%20Quero%20um%20diagn%C3%B3stico%20da%20estrutura%20digital%20da%20minha%20empresa." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4.1c1.7.7 2.4.8 3.2.7a2.8 2.8 0 001.8-1.3 2.3 2.3 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<button class="totop" id="totop" aria-label="Voltar ao topo"><svg viewBox="0 0 48 48" width="46" height="46" style="position:absolute;inset:0"><circle class="ring" cx="24" cy="24" r="22"/></svg><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-<script>
-/* ===== PRELOADER ===== */
-(function(){
-  var bar = document.getElementById('preBar');
-  var num = document.getElementById('preNum');
-  var pre = document.getElementById('preloader');
-  var p = 0;
-  var timer = setInterval(function(){
-    p += Math.random() * 18 + 8;
-    if(p >= 100){ p = 100; clearInterval(timer);
-      setTimeout(function(){
-        pre.classList.add('hide');
-        document.body.style.overflow = '';
-        initHero();
-      }, 300);
-    }
-    bar.style.width = p + '%';
-    num.textContent = Math.floor(p) + '%';
-  }, 180);
-  document.body.style.overflow = 'hidden';
-  function initHero(){
-    setTimeout(function(){
-      document.querySelectorAll('.hero-title .line-inner').forEach(function(el){ el.classList.add('revealed'); });
-      document.querySelector('.hero-sub').classList.add('revealed');
-      document.querySelector('.hero-ctas').classList.add('revealed');
-      document.querySelector('.hero-stats').classList.add('revealed');
-    }, 200);
-  }
-})();
-
-/* ===== HEADER SCROLL ===== */
-(function(){
-  var header = document.getElementById('header');
-  function onScroll(){
-    if(window.scrollY > 50){ header.classList.add('scrolled'); }
-    else{ header.classList.remove('scrolled'); }
-  }
-  window.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
-})();
-
-/* ===== MENU MOBILE ===== */
-(function(){
-  var btn = document.getElementById('btnMenu');
-  var nav = document.getElementById('navMobile');
-  var links = nav.querySelectorAll('a');
-  function toggle(open){
-    btn.classList.toggle('active', open);
-    nav.classList.toggle('open', open);
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    document.body.style.overflow = open ? 'hidden' : '';
-  }
-  btn.addEventListener('click', function(){ toggle(!nav.classList.contains('open')); });
-  links.forEach(function(a){ a.addEventListener('click', function(){ toggle(false); }); });
-})();
-
-/* ===== REVEAL ON SCROLL ===== */
-(function(){
-  var els = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-  if(!('IntersectionObserver' in window)){
-    els.forEach(function(el){ el.classList.add('in-view'); });
-    return;
-  }
-  var obs = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        entry.target.classList.add('in-view');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
-  els.forEach(function(el){ obs.observe(el); });
-})();
-
-/* ===== PARALLAX ===== */
-(function(){
-  var targets = document.querySelectorAll('[data-parallax]');
-  if(!targets.length) return;
-  var ticking = false;
-  window.addEventListener('scroll', function(){
-    if(!ticking){
-      window.requestAnimationFrame(function(){
-        targets.forEach(function(t){
-          var img = t.querySelector('img');
-          var rect = t.getBoundingClientRect();
-          if(rect.bottom < 0 || rect.top > window.innerHeight) return;
-          var offset = rect.top * 0.25;
-          if(img) img.style.transform = 'translateY(' + offset + 'px) scale(1.1)';
-        });
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, {passive:true});
-})();
-
-/* ===== PROCESSO DRAG ===== */
-(function(){
-  var wrap = document.getElementById('processoWrap');
-  if(!wrap) return;
-  var isDown = false;
-  var startX, startScroll;
-  wrap.addEventListener('mousedown', function(e){
-    isDown = true; startX = e.pageX; startScroll = wrap.scrollLeft;
-    wrap.classList.add('dragging');
-  });
-  window.addEventListener('mouseup', function(){ isDown = false; wrap.classList.remove('dragging'); });
-  window.addEventListener('mousemove', function(e){
-    if(!isDown) return;
-    e.preventDefault();
-    wrap.scrollLeft = startScroll - (e.pageX - startX);
-  });
-})();
-
-/* ===== FAQ ACCORDION ===== */
-(function(){
-  var items = document.querySelectorAll('.faq-item');
-  items.forEach(function(item){
-    var q = item.querySelector('.faq-q');
-    var a = item.querySelector('.faq-a');
-    q.addEventListener('click', function(){
-      var isOpen = item.classList.contains('open');
-      items.forEach(function(i){
-        i.classList.remove('open');
-        i.querySelector('.faq-a').style.maxHeight = null;
-      });
-      if(!isOpen){
-        item.classList.add('open');
-        a.style.maxHeight = a.scrollHeight + 'px';
-      }
-    });
-  });
-})();
-
-/* ===== ANO ===== */
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+<script src="assets/site.js" defer></script>
 </body>
 </html>
