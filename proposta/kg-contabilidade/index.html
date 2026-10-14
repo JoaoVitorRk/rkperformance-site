@@ -191,7 +191,9 @@ ul,ol{list-style:none}
 .proj h3{font-size:24px;font-weight:300;margin:10px 0 10px}
 .proj p{color:var(--tinta2);margin-bottom:22px}
 .proj .link{margin-top:auto;align-self:flex-start}
-.mais{margin-top:56px}
+.projetos{row-gap:64px}
+.proj.mais{justify-content:center;padding:40px 36px;border-top:1px solid var(--fio-escuro);border-bottom:1px solid var(--fio-escuro);align-self:stretch}
+.proj.mais h3{font-size:26px;font-weight:200}
 
 /* tráfego (noite) */
 .trafego-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
@@ -284,6 +286,7 @@ ul,ol{list-style:none}
 }
 @media (max-width:860px){
   .opcoes,.projetos{grid-template-columns:1fr}
+  .proj.mais{padding:32px 0}
   .projetos{gap:56px}
   .opcao{padding:40px 0 44px}
   .opcao.destaque{padding:40px 28px 44px;margin:0 -28px}
@@ -471,9 +474,23 @@ ul,ol{list-style:none}
       <div class="sec-head rv">
         <span class="eyebrow">Portfólio</span>
         <h2>Projetos que já estão no <span class="ouro">ar</span>.</h2>
-        <p>Alguns sites que a RK criou para clientes de cidades diferentes, todos com domínio próprio, versão para celular e o mesmo cuidado que a K&amp;G vai receber.</p>
+        <p>Alguns sites que a RK criou para profissionais e empresas de áreas diferentes, todos com domínio próprio, versão para celular e o mesmo cuidado que a K&amp;G vai receber.</p>
       </div>
       <div class="projetos">
+        <article class="proj rv">
+          <a class="shot cant in" href="https://regieleholleben.com.br" target="_blank" rel="noopener"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="../../assets/img/regiele-desktop.webp" alt="Site da Regiele Holleben" width="1200" height="750" loading="lazy"><span class="url">regieleholleben.com.br</span></a>
+          <span class="rot">Consultoria de posicionamento</span>
+          <h3>Regiele Holleben</h3>
+          <p>Site com páginas de consultoria, e-books e artigos, e um painel em que ela mesma publica textos e edita o conteúdo sem mexer em código.</p>
+          <a class="link" href="https://regieleholleben.com.br" target="_blank" rel="noopener">Abrir site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </article>
+        <article class="proj rv">
+          <a class="shot cant in" href="https://lvb.escoladaelegancia.com.br/" target="_blank" rel="noopener"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="../../assets/img/escola-elegancia-desktop.webp" alt="Página da Escola da Elegância" width="1200" height="750" loading="lazy"><span class="url">escoladaelegancia.com.br</span></a>
+          <span class="rot">Escola online de imagem e estilo</span>
+          <h3>Escola da Elegância</h3>
+          <p>Vitrine com e-books, cursos, formações e mentorias numa página só, cada produto com descrição, valor e botão de compra.</p>
+          <a class="link" href="https://lvb.escoladaelegancia.com.br/" target="_blank" rel="noopener">Abrir site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </article>
         <article class="proj rv">
           <a class="shot cant in" href="https://jamillivaz.com.br" target="_blank" rel="noopener"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="../../assets/img/jamilli-desktop.webp" alt="Site da Jamilli Vaz" width="1200" height="750" loading="lazy"><span class="url">jamillivaz.com.br</span></a>
           <span class="rot">Cantora de casamentos · Guarapuava</span>
@@ -495,8 +512,13 @@ ul,ol{list-style:none}
           <p>Site de alto padrão com vídeo em tela cheia, tradução em quatro idiomas e domínio próprio configurado do zero.</p>
           <a class="link" href="https://beboots.com.br" target="_blank" rel="noopener">Abrir site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
         </article>
+        <article class="proj mais rv">
+          <span class="rot">E mais</span>
+          <h3>Sistemas, painéis e cardápio digital</h3>
+          <p>Painel de propostas com banco de dados próprio, cardápio por QR code com vídeo dos pratos e outros projetos no site da RK.</p>
+          <a class="link" href="https://rkperformance.com.br/#projetos" target="_blank" rel="noopener">Ver o portfólio completo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </article>
       </div>
-      <p class="mais rv"><a class="link" href="https://rkperformance.com.br/#projetos" target="_blank" rel="noopener">Ver o portfólio completo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></p>
     </div>
   </section>
 
@@ -599,7 +621,7 @@ ul,ol{list-style:none}
         </ol>
       </div>
       <figure class="equipe rv">
-        <div class="retrato cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="../../assets/img/sobre-dupla.webp" alt="João Vitor e Nicoli, da RK Performance" width="1000" height="1250" loading="lazy"></div>
+        <div class="retrato cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="../../assets/img/equipe-proposta.webp" alt="João Vitor e Nicoli, da RK Performance" width="1000" height="1250" loading="lazy"></div>
         <figcaption>
           <span class="rot">Quem cuida do projeto</span>
           <b>João Vitor &amp; Nicoli</b>
