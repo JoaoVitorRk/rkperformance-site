@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta · Clínica Patel · RK Performance</title>
+<meta name="description" content="Proposta da RK Performance para o site da Clínica Patel: página única ou site completo com uma página para cada tratamento.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#EADCD7">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="RK Performance">
+<meta property="og:title" content="Proposta · Site da Clínica Patel">
+<meta property="og:description" content="Os dois pacotes do site, o que vem em cada um e a condição para fechar até 22/10/2026.">
+<meta property="og:url" content="https://rkperformance.com.br/proposta/clinica-patel/">
+<meta property="og:image" content="https://rkperformance.com.br/proposta/clinica-patel/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/simbolo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --po:#EADCD7;--po2:#E2D0CA;--claro:#F5EDEA;
+  --blush:#F2CBC0;--rosa:#CEA29C;--rose:#B17F79;--rose-esc:#8E5F59;
+  --cacau:#6C443E;--cacau2:#573530;--cacau3:#432824;
+  --tinta:#4A2F2A;--tinta2:#6B4C46;
+  --linha:rgba(108,68,62,.2);--linha-clara:rgba(242,203,192,.22);
+  --mudo:rgba(242,203,192,.72);
+  --texto:"Spectral",Georgia,serif;--marca:"Marcellus","Spectral",serif;--rotulo:"Spectral",Georgia,serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--po);color:var(--tinta);font-family:var(--texto);font-weight:400;font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:300;line-height:1.1;letter-spacing:.005em;text-wrap:balance}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--rose-esc)}
+.escuro h2 em,.escuro h3 em{color:var(--blush)}
+p{text-wrap:pretty}
+b,strong{font-weight:500}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+:focus-visible{outline:1px solid var(--rose);outline-offset:4px}
+.envolve{width:min(100% - 40px,1180px);margin:0 auto}
+.num{font-variant-numeric:lining-nums tabular-nums}
+
+/* superfícies */
+.claro{background:var(--po);position:relative}
+.claro.alt{background:var(--po2)}
+.escuro{background:var(--cacau3);color:var(--blush);position:relative;overflow:clip}
+.sec{padding:112px 0}
+.aneis{position:absolute;pointer-events:none;fill:none;stroke:var(--rose);opacity:.35}
+.escuro .aneis{stroke:var(--blush);opacity:.12}
+
+/* rótulos */
+.rotulo{display:inline-flex;align-items:center;gap:12px;font-family:var(--rotulo);font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-variant-numeric:lining-nums;color:var(--rose-esc)}
+.rotulo::before{content:'';width:26px;height:1px;background:currentColor;opacity:.7}
+.escuro .rotulo{color:var(--blush)}
+.rot{font-family:var(--rotulo);font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-variant-numeric:lining-nums;color:var(--rose-esc)}
+.escuro .rot{color:var(--rosa)}
+.cab{max-width:720px;margin-bottom:56px}
+.cab h2{font-size:clamp(34px,4.4vw,54px);margin:20px 0 18px}
+.cab p{font-size:18px;color:var(--tinta2)}
+.escuro .cab p{color:var(--mudo)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:16px 28px;font-family:var(--rotulo);font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-variant-numeric:lining-nums;border:1px solid transparent;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s;white-space:nowrap}
+.btn .seta{width:30px;height:1px;background:currentColor;position:relative;transition:width .25s var(--ease)}
+.btn .seta::after{content:'';position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover .seta{width:38px}
+.btn-cheio{background:var(--cacau);color:var(--po)}
+.btn-cheio:hover{background:var(--cacau2)}
+.btn-fio{border-color:rgba(108,68,62,.45);color:var(--cacau)}
+.btn-fio:hover{border-color:var(--cacau);background:rgba(108,68,62,.06)}
+.link{display:inline-flex;align-items:center;gap:10px;font-family:var(--rotulo);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-variant-numeric:lining-nums;padding-bottom:4px;border-bottom:1px solid var(--linha);transition:border-color .25s,color .25s}
+.link:hover{border-color:var(--cacau)}
+.escuro .link{border-color:var(--linha-clara)}
+.escuro .link:hover{border-color:var(--blush)}
+.tag{font-family:var(--rotulo);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-variant-numeric:lining-nums;padding:5px 11px;background:var(--cacau);color:var(--po)}
+
+/* topo */
+.topo{border-bottom:1px solid var(--linha);background:var(--po)}
+.topo .envolve{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.topo .marca img{width:185px;height:auto}
+.topo .rot{color:var(--tinta2);text-align:right}
+
+/* abertura */
+.abertura{padding:88px 0 112px;overflow:clip}
+.abertura .aneis{width:760px;height:760px;right:-260px;top:-180px}
+.ab-grade{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.abertura h1{font-size:clamp(44px,5.6vw,74px);margin:24px 0 24px}
+.abertura .lead{font-size:19px;color:var(--tinta2);max-width:520px}
+.meta{display:grid;grid-template-columns:1.5fr 1fr 1fr;margin:40px 0 42px;border-top:1px solid var(--linha)}
+.meta>div{padding:16px 16px 0 0}
+.meta>div+div{padding-left:16px;border-left:1px solid var(--linha)}
+.meta dt{font-family:var(--rotulo);font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-variant-numeric:lining-nums;color:var(--rose-esc);margin-bottom:4px}
+.meta dd{font-size:16px;line-height:1.4}
+.meta dd small{display:block;font-size:14px;color:var(--tinta2)}
+.ctas{display:flex;align-items:center;flex-wrap:wrap;gap:28px}
+.vis{position:relative;padding-bottom:56px}
+.janela{background:var(--claro);border:1px solid var(--linha);box-shadow:0 40px 80px -42px rgba(67,40,36,.55)}
+.barra{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:1px solid var(--linha)}
+.barra span{width:8px;height:8px;border-radius:50%;background:rgba(108,68,62,.28)}
+.barra b{margin-left:12px;font-weight:400;font-size:12.5px;letter-spacing:.03em;color:var(--tinta2)}
+.fone{position:absolute;left:-40px;bottom:0;width:27%;background:var(--cacau3);padding:6px;border-radius:22px;box-shadow:0 30px 60px -24px rgba(67,40,36,.6);z-index:2}
+.fone img{border-radius:17px;width:100%}
+.legenda{display:block;margin-top:18px;font-style:italic;font-size:15px;color:var(--tinta2)}
+.vis .legenda{position:absolute;right:0;bottom:6px;margin:0;text-align:right;max-width:64%}
+
+/* três pontos da prévia */
+.tres{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha);margin-top:72px}
+.tres>div{padding:26px 28px 0 0}
+.tres>div+div{padding-left:28px;border-left:1px solid var(--linha)}
+.tres h3{font-size:22px;font-weight:400;margin-bottom:6px}
+.tres p{color:var(--tinta2);font-size:16px}
+
+/* pacotes */
+.pacotes{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.pacote{padding:46px 46px 50px;display:flex;flex-direction:column}
+.pacote:first-child{padding-left:0}
+.pacote.destaque{background:var(--claro);box-shadow:0 30px 70px -45px rgba(67,40,36,.45);position:relative}
+.pacote.destaque::before{content:'';position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--rose),var(--blush))}
+.pc-topo{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;min-height:30px}
+.pacote h3{font-size:clamp(27px,2.7vw,34px);margin:16px 0 12px}
+.pacote .desc{color:var(--tinta2);max-width:440px}
+.preco{display:flex;align-items:baseline;gap:10px;margin:28px 0;padding:22px 0;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.preco .rs{font-size:19px;color:var(--tinta2)}
+.preco .val{font-family:var(--marca);font-size:clamp(46px,5vw,60px);line-height:1;color:var(--cacau)}
+.preco .per{margin-left:auto;font-family:var(--rotulo);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-variant-numeric:lining-nums;color:var(--tinta2);text-align:right;line-height:1.5}
+.lista li{position:relative;padding:11px 0 11px 30px;border-bottom:1px solid var(--linha)}
+.lista li:last-child{border-bottom:0}
+.lista li::before{content:'';position:absolute;left:0;top:23px;width:16px;height:1px;background:var(--rose)}
+.lista li small{display:block;color:var(--tinta2);font-size:15px;line-height:1.5}
+.pacote .lista{margin-bottom:34px}
+.pacote .btn{margin-top:auto;align-self:flex-start}
+
+/* google */
+.g-grade{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.g-grade .cab{margin-bottom:0}
+.porques{margin-top:40px;border-top:1px solid var(--linha-clara)}
+.porques li{display:grid;grid-template-columns:56px 1fr;gap:6px;padding:22px 0;border-bottom:1px solid var(--linha-clara)}
+.porques .n{font-family:var(--marca);font-size:30px;line-height:1;color:var(--rosa)}
+.porques h3{font-size:21px;font-weight:400;color:var(--blush);margin-bottom:4px}
+.porques p{color:var(--mudo);font-size:16px}
+.busca{background:#FDFBFA;color:#202124;border-radius:14px;padding:22px 22px 26px;box-shadow:0 40px 80px -36px rgba(0,0,0,.6);font-family:Arial,Helvetica,sans-serif}
+.campo{display:flex;align-items:center;gap:12px;border:1px solid #dfe1e5;border-radius:24px;padding:11px 18px;font-size:15px;box-shadow:0 1px 6px rgba(32,33,36,.12)}
+.campo svg{width:17px;height:17px;flex:none;stroke:#5f6368;fill:none;stroke-width:2}
+.res{margin-top:24px}
+.res-site{display:flex;align-items:center;gap:10px}
+.res-site i{width:28px;height:28px;border-radius:50%;background:#F1E7E4 url(img/simbolo.svg) center/70% no-repeat;border:1px solid #e8e0dd;flex:none}
+.res-site span{font-size:14px;line-height:1.3;color:#202124}
+.res-site small{display:block;font-size:12px;color:#4d5156}
+.res h4{font-weight:400;font-size:19px;line-height:1.3;color:#1a0dab;margin:8px 0 4px}
+.res p{font-size:14px;line-height:1.55;color:#4d5156}
+.res.fantasma{opacity:.38;margin-top:22px;padding-top:20px;border-top:1px solid #eee}
+.res.fantasma b{display:block;height:10px;background:#dcdcdc;border-radius:5px;margin-top:9px}
+.res.fantasma b:first-child{width:46%;margin-top:0}.res.fantasma b:nth-child(2){width:78%;height:14px;background:#c9c6e6}.res.fantasma b:nth-child(3){width:92%}
+.escuro .legenda{color:var(--mudo)}
+
+/* páginas do pacote 2 */
+.paginas{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.dez{display:grid;grid-template-columns:1fr 1fr;column-gap:30px;border-top:1px solid var(--linha);counter-reset:pg}
+.dez li{counter-increment:pg;display:flex;gap:14px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--linha)}
+.dez li::before{content:counter(pg,decimal-leading-zero);font-family:var(--rotulo);font-size:12px;letter-spacing:.14em;color:var(--rose-esc);min-width:22px}
+.dez li em{display:block;font-size:14px;color:var(--rose-esc)}
+.grupo{grid-column:1/-1;padding:18px 0 8px!important;border-bottom:0!important}
+.grupo::before{content:none!important}
+.dez .grupo{counter-increment:none}
+.paginas .nota{margin-top:18px;font-size:15.5px;color:var(--tinta2)}
+
+/* investimento */
+.inv{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.tabela{width:100%;border-collapse:collapse}
+.tabela th,.tabela td{text-align:left;vertical-align:top;padding:18px 0;border-bottom:1px solid var(--linha)}
+.tabela tr:first-child th,.tabela tr:first-child td{border-top:1px solid var(--linha)}
+.tabela th{font-weight:400;font-size:17px;padding-right:18px}
+.tabela th small{display:block;font-size:15px;color:var(--tinta2)}
+.tabela td{text-align:right;white-space:nowrap}
+.tabela td b{display:block;font-family:var(--marca);font-weight:400;font-size:23px;color:var(--cacau)}
+.tabela td small{display:block;font-family:var(--rotulo);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-variant-numeric:lining-nums;color:var(--tinta2)}
+.pagto{margin-top:26px;color:var(--tinta2);font-size:16px}
+.pagto p+p{margin-top:10px}
+.pagto b{color:var(--tinta);font-weight:500}
+.escolha{background:var(--claro);padding:42px 42px 38px;box-shadow:0 30px 70px -45px rgba(67,40,36,.45);position:relative}
+.escolha::before{content:'';position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--rose),var(--blush))}
+.escolha h3{font-size:30px;margin:14px 0 22px}
+.op{display:grid;grid-template-columns:22px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--linha);cursor:pointer}
+.op input{position:absolute;opacity:0;pointer-events:none}
+.op .marca-r{width:18px;height:18px;border:1px solid rgba(108,68,62,.45);border-radius:50%;display:grid;place-items:center}
+.op .marca-r::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--cacau);opacity:0;transition:opacity .2s}
+.op input:checked+.marca-r{border-color:var(--cacau)}
+.op input:checked+.marca-r::after{opacity:1}
+.op input:focus-visible+.marca-r{outline:1px solid var(--rose);outline-offset:4px}
+.op .txt{font-size:16.5px;line-height:1.4}
+.op .txt small{display:block;font-size:14.5px;color:var(--tinta2)}
+.op b{font-family:var(--marca);font-weight:400;font-size:19px;white-space:nowrap}
+.total{margin:24px 0 28px;padding-top:16px;border-top:1px solid var(--linha)}
+.total b{display:block;font-family:var(--marca);font-weight:400;font-size:40px;line-height:1.1;margin:6px 0 4px;color:var(--cacau)}
+.total small{display:block;font-size:15px;color:var(--tinta2)}
+.escolha .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.escolha .btn-cheio{flex:1 1 auto}
+.aviso{margin-top:16px;font-size:14.5px;color:var(--tinta2)}
+
+/* passos + equipe */
+.fim{display:grid;grid-template-columns:1.1fr .9fr;gap:88px;align-items:start}
+.passos li{display:grid;grid-template-columns:64px 1fr;gap:8px;padding:22px 0;border-bottom:1px solid var(--linha-clara)}
+.passos li:first-child{padding-top:0}
+.passos .n{font-family:var(--marca);font-size:34px;line-height:1;color:var(--rosa)}
+.passos h3{font-size:21px;font-weight:400;margin-bottom:4px;color:var(--blush)}
+.passos p{color:var(--mudo);font-size:16px}
+.equipe{margin:0}
+.equipe .retrato{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--linha-clara)}
+.equipe .retrato img{width:100%;height:100%;object-fit:cover;object-position:top}
+.equipe figcaption{margin-top:20px}
+.equipe figcaption b{display:block;font-size:22px;font-weight:400;color:var(--blush)}
+.equipe figcaption p{color:var(--mudo);margin-top:8px;font-size:16px}
+.no-ar{margin-top:22px;padding-top:18px;border-top:1px solid var(--linha-clara)}
+.no-ar .rot{display:block;margin-bottom:10px}
+.contatos{display:flex;flex-wrap:wrap;gap:12px 22px}
+
+.rodape{padding:44px 0 52px;border-top:1px solid var(--linha-clara)}
+.rodape .envolve{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+.rodape img{width:150px}
+.rodape p{font-size:14px;color:var(--mudo)}
+
+/* revelação */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.btn,.btn .seta{transition:none}}
+
+/* rótulos em versal com números normais (o Spectral SC desenha 1 como I e 0 como O) e preços em Spectral fino */
+.rotulo{font-size:11.5px}.rot,.meta dt{font-size:11px}.tag{font-size:10.5px}.btn,.link{font-size:11.5px}
+.preco .per,.tabela td small{font-size:10.5px}
+.dez li::before{font-size:11px;font-variant-numeric:lining-nums}
+.preco .val,.tabela td b,.op b,.total b,.passos .n,.porques .n{font-family:var(--texto);font-weight:300;font-variant-numeric:lining-nums tabular-nums}
+.preco .val{font-size:clamp(48px,5.2vw,64px)}
+
+/* responsivo */
+@media (max-width:1020px){
+  .ab-grade,.g-grade,.inv,.fim,.paginas{grid-template-columns:1fr;gap:56px}
+  .vis{max-width:640px}
+  .fone{left:auto;right:-8px}
+  .vis .legenda{right:auto;left:0;text-align:left}
+  .equipe{max-width:420px}
+}
+@media (max-width:860px){
+  .pacotes,.tres{grid-template-columns:1fr}
+  .pacote{padding:40px 0 44px}
+  .pacote.destaque{padding:40px 24px 44px;margin:0 -20px}
+  .tres>div,.tres>div+div{padding:22px 0;border-left:0;border-bottom:1px solid var(--linha)}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .sec{padding:80px 0}
+  .topo .envolve{min-height:70px}
+  .topo .marca img{width:150px}
+  .topo .rot .longo{display:none}
+  .abertura{padding:52px 0 84px}
+  .abertura .lead{font-size:17.5px}
+  .meta{grid-template-columns:1fr 1fr}
+  .meta>div:first-child{grid-column:1/-1;padding-bottom:14px;border-bottom:1px solid var(--linha)}
+  .meta>div:nth-child(2){padding-left:0;border-left:0}
+  .ctas .btn{width:100%}
+  .vis{padding-bottom:0}
+  .fone{width:30%;right:-6px;bottom:-24px;border-radius:16px;padding:4px}
+  .fone img{border-radius:12px}
+  .vis .legenda{position:static;max-width:none;margin-top:48px}
+  .tres{margin-top:56px}
+  .preco{flex-wrap:wrap}
+  .preco .per{margin-left:0;flex-basis:100%;text-align:left}
+  .pacote .btn{align-self:stretch}
+  .dez{grid-template-columns:1fr}
+  .escolha{padding:32px 20px 30px;margin:0 -20px}
+  .op{grid-template-columns:22px 1fr;row-gap:2px}
+  .op b{grid-column:2}
+  .escolha .btn-cheio{width:100%}
+  .tabela td b{font-size:20px}
+  .busca{padding:18px 16px 22px}
+}
+</style>
+</head>
+<body class="no-js">
+
+<header class="topo">
+  <div class="envolve">
+    <a class="marca" href="https://patel.rkperformance.com.br/" target="_blank" rel="noopener" aria-label="Abrir a prévia do site da Clínica Patel"><img src="img/logo.svg" alt="Clínica Patel · Saúde &amp; Estética" width="185" height="34"></a>
+    <span class="rot">proposta da rk performance<span class="longo"> · 20/10/2026</span></span>
+  </div>
+</header>
+
+<main>
+  <!-- abertura -->
+  <section class="claro abertura">
+    <svg class="aneis" viewBox="0 0 760 760" aria-hidden="true"><circle cx="380" cy="380" r="370" stroke-width=".8"/><circle cx="380" cy="380" r="300" stroke-width=".8"/><circle cx="380" cy="380" r="230" stroke-width=".8"/></svg>
+    <div class="envolve ab-grade">
+      <div class="rv">
+        <span class="rotulo">proposta para a clínica patel</span>
+        <h1>Um site à altura da <em>Clínica Patel</em>.</h1>
+        <p class="lead">A prévia que vocês viram é um esboço de como pensamos a página, e é 100% editável. Fechando, vocês nos mandam todas as mudanças que quiserem e nós fazemos.</p>
+        <dl class="meta">
+          <div><dt>para</dt><dd>Dra. Nilane Françoise Patel<small>Clínica Patel · Guarapuava</small></dd></div>
+          <div><dt>data</dt><dd class="num">20/10/2026</dd></div>
+          <div><dt>condição até</dt><dd class="num">22/10/2026</dd></div>
+        </dl>
+        <div class="ctas">
+          <a class="btn btn-cheio" href="#pacotes">ver os pacotes <span class="seta" aria-hidden="true"></span></a>
+          <a class="link" href="https://patel.rkperformance.com.br/" target="_blank" rel="noopener">abrir a prévia</a>
+        </div>
+      </div>
+      <figure class="vis rv">
+        <div class="janela">
+          <div class="barra" aria-hidden="true"><span></span><span></span><span></span><b>clinicapatel.com.br</b></div>
+          <img src="img/previa-home.webp" alt="Página principal da prévia do site da Clínica Patel no computador" width="1440" height="900" fetchpriority="high">
+        </div>
+        <div class="fone"><img src="img/previa-celular.webp" alt="A mesma página no celular" width="640" height="1090"></div>
+        <figcaption class="legenda">A prévia, no computador e no celular</figcaption>
+      </figure>
+    </div>
+    <div class="envolve">
+      <div class="tres rv">
+        <div><h3>100% editável</h3><p>Textos, fotos, ordem e tratamentos mudam como vocês quiserem.</p></div>
+        <div><h3>Mudanças inclusas</h3><p>Todas as mudanças até a aprovação e mais 30 dias de acompanhamento depois de publicar.</p></div>
+        <div><h3>Sem mensalidade</h3><p>A hospedagem do site é gratuita. Não cobramos para deixar o site no ar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pacotes -->
+  <section class="claro alt sec" id="pacotes">
+    <div class="envolve">
+      <div class="cab rv">
+        <span class="rotulo">pacotes</span>
+        <h2>Duas formas de <em>começar</em>.</h2>
+        <p>Os dois partem da prévia, com o mesmo cuidado. O que muda é quantas páginas a Patel passa a ter no Google.</p>
+      </div>
+      <div class="pacotes">
+        <article class="pacote rv">
+          <div class="pc-topo"><span class="rot">pacote 1</span></div>
+          <h3>Site profissional em página única</h3>
+          <p class="desc">Tudo o que a paciente precisa para confiar e agendar, numa página só. É a versão que vocês viram na prévia.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val num">1.000</span><span class="per">pagamento único<br>até 22/10</span></div>
+          <ul class="lista">
+            <li>Os tratamentos da clínica<small>Do rosto e do corpo</small></li>
+            <li>A clínica e o espaço</li>
+            <li>As profissionais<small>A Dra. Nilane em destaque e a equipe</small></li>
+            <li>Botões de agendamento pelo WhatsApp<small>Com a mensagem pronta para cada tratamento</small></li>
+            <li>Avaliações do Google</li>
+            <li>Dúvidas frequentes, endereço e horário</li>
+          </ul>
+          <button class="btn btn-fio" type="button" data-escolher="1">escolher o pacote 1</button>
+        </article>
+        <article class="pacote destaque rv">
+          <div class="pc-topo"><span class="rot">pacote 2</span><span class="tag">recomendado</span></div>
+          <h3>Site completo, com uma página para cada tratamento</h3>
+          <p class="desc">A página principal e, ligada a ela, uma página para cada tratamento da clínica, preparada para aparecer no Google.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val num">2.500</span><span class="per">pagamento único<br>até 22/10</span></div>
+          <ul class="lista">
+            <li>Tudo do pacote 1</li>
+            <li>Uma página para cada tratamento<small>O que é, para quem é e para quem não é, como funciona, cuidados e dúvidas</small></li>
+            <li>SEO configurado em cada página<small>Título, descrição e endereço com o nome do tratamento e de Guarapuava</small></li>
+            <li>Site cadastrado no Google<small>Para o Google encontrar e ler todas as páginas</small></li>
+            <li>Agendamento com o tratamento na mensagem<small>A recepção já sabe o que a paciente procura</small></li>
+          </ul>
+          <button class="btn btn-cheio" type="button" data-escolher="2">escolher o pacote 2 <span class="seta" aria-hidden="true"></span></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- por que uma página por tratamento -->
+  <section class="escuro sec" id="google">
+    <svg class="aneis" viewBox="0 0 760 760" aria-hidden="true" style="width:820px;height:820px;left:-330px;bottom:-330px"><circle cx="380" cy="380" r="370" stroke-width=".8"/><circle cx="380" cy="380" r="300" stroke-width=".8"/><circle cx="380" cy="380" r="230" stroke-width=".8"/></svg>
+    <div class="envolve g-grade">
+      <div class="rv">
+        <div class="cab">
+          <span class="rotulo">por que o pacote 2</span>
+          <h2>No Google, cada busca encontra <em>uma página</em>.</h2>
+          <p>Quem pesquisa “preenchimento labial Guarapuava” procura o tratamento, não o nome da clínica. O Google mostra a página que melhor responde àquela busca. Hoje, as clínicas que aparecem nessas buscas têm uma página explicando o procedimento, e a Patel ainda não tem nenhuma.</p>
+        </div>
+        <ol class="porques">
+          <li><span class="n">1</span><div><h3>Uma página para cada busca</h3><p>Cada tratamento ganha a sua página, com o nome dele e de Guarapuava no título, do jeito que o Google lê. A Patel passa a disputar cada uma dessas buscas e sai na frente de quem não tem.</p></div></li>
+          <li><span class="n">2</span><div><h3>Menos curiosos no WhatsApp</h3><p>A paciente lê o que é, para quem não é e como funciona antes de chamar. Chega à recepção com as dúvidas respondidas e pronta para agendar.</p></div></li>
+          <li><span class="n">3</span><div><h3>Trabalha todos os dias</h3><p>A página fica no Google o tempo todo, sem custo de anúncio, recebendo quem procura aquele tratamento.</p></div></li>
+        </ol>
+      </div>
+      <figure class="rv" style="margin:0">
+        <div class="busca" role="img" aria-label="Simulação de busca no Google por preenchimento labial guarapuava, com a página da Clínica Patel no resultado">
+          <div class="campo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>preenchimento labial guarapuava</div>
+          <div class="res">
+            <div class="res-site"><i></i><span>Clínica Patel<small>clinicapatel.com.br › preenchimento-labial-guarapuava</small></span></div>
+            <h4>Preenchimento labial em Guarapuava · Clínica Patel</h4>
+            <p>Preenchimento labial com ácido hialurônico em Guarapuava: para quem é, como é feito, cuidados e dúvidas. Clínica Patel, biomédicas inscritas no CRBM-6.</p>
+          </div>
+          <div class="res fantasma" aria-hidden="true"><b></b><b></b><b></b></div>
+        </div>
+        <figcaption class="legenda">Simulação: é assim que a página de exemplo da prévia está preparada para aparecer no Google.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- as páginas do pacote 2 -->
+  <section class="claro sec" id="paginas">
+    <div class="envolve paginas">
+      <div class="rv">
+        <span class="rotulo">pacote 2</span>
+        <h2 style="font-size:clamp(32px,3.6vw,46px);margin:20px 0 26px">As páginas de cada <em>tratamento</em>.</h2>
+        <ol class="dez">
+          <li class="grupo"><span class="rot">rosto</span></li>
+          <li><span>Preenchimento labial<em>já pronta na prévia</em></span></li>
+          <li><span>Perfil e nariz</span></li>
+          <li><span>Linhas de expressão</span></li>
+          <li><span>Preenchimentos faciais</span></li>
+          <li><span>Bioestimulador de colágeno</span></li>
+          <li><span>Fios de sustentação</span></li>
+          <li><span>Tratamentos de pele</span></li>
+          <li class="grupo"><span class="rot">corpo</span></li>
+          <li><span>Bioestimulador corporal</span></li>
+          <li><span>Microvasos</span></li>
+          <li><span>Drenagem linfática</span></li>
+        </ol>
+        <p class="nota">A lista parte dos tratamentos da prévia. Vocês confirmam quais entram e a ordem.</p>
+      </div>
+      <figure class="rv" style="margin:0">
+        <div class="janela">
+          <div class="barra" aria-hidden="true"><span></span><span></span><span></span><b>clinicapatel.com.br/preenchimento-labial-guarapuava</b></div>
+          <img src="img/previa-labial.webp" alt="Página de preenchimento labial da prévia, exemplo de página de tratamento" width="1440" height="900" loading="lazy">
+        </div>
+        <figcaption class="legenda">Exemplo de página de tratamento, já na prévia</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- investimento -->
+  <section class="claro alt sec" id="investimento">
+    <div class="envolve">
+      <div class="cab rv">
+        <span class="rotulo">investimento</span>
+        <h2>Condição para fechar até <em class="num">22/10</em>.</h2>
+        <p>Valores especiais para fechamento em até 2 dias a partir da prévia.</p>
+      </div>
+      <div class="inv">
+        <div class="rv">
+          <table class="tabela">
+            <tr><th>Pacote 1<small>Site profissional em página única</small></th><td><b>R$ 1.000</b><small>pagamento único</small></td></tr>
+            <tr><th>Pacote 2<small>Site completo, uma página para cada tratamento</small></th><td><b>R$ 2.500</b><small>pagamento único</small></td></tr>
+            <tr><th>Hospedagem<small>Para deixar o site no ar</small></th><td><b>R$ 0</b><small>sem mensalidade</small></td></tr>
+            <tr><th>Domínio<small>O endereço .com.br, pago direto ao Registro.br</small></th><td><b>≈ R$ 40</b><small>por ano</small></td></tr>
+          </table>
+          <div class="pagto">
+            <p><b>Pagamento:</b> 50% para começar e 50% antes da publicação.</p>
+            <p><b>Endereço:</b> o clinicapatel.com.br venceu em setembro e ainda está no nome da Dra. Nilane. Ajudamos a renovar e configurar.</p>
+          </div>
+        </div>
+        <form class="escolha rv" id="escolha" onsubmit="return false">
+          <span class="rotulo">sua escolha</span>
+          <h3>Responda pelo <em>WhatsApp</em>.</h3>
+          <label class="op"><input type="radio" name="pacote" value="1"><span class="marca-r"></span><span class="txt">Pacote 1<small>Site profissional em página única</small></span><b>R$ 1.000</b></label>
+          <label class="op"><input type="radio" name="pacote" value="2" checked><span class="marca-r"></span><span class="txt">Pacote 2<small>Site completo, uma página para cada tratamento</small></span><b>R$ 2.500</b></label>
+          <div class="total" aria-live="polite">
+            <span class="rot">total</span>
+            <b id="t-valor">R$ 2.500</b>
+            <small>50% para começar e 50% antes da publicação</small>
+          </div>
+          <div class="acoes">
+            <a class="btn btn-cheio" id="aceitar" href="https://wa.me/5542999246208" target="_blank" rel="noopener">aceitar pelo whatsapp <span class="seta" aria-hidden="true"></span></a>
+            <a class="link" href="https://wa.me/5542999246208?text=Ol%C3%A1%2C%20Jo%C3%A3o!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20proposta%20do%20site%20da%20Cl%C3%ADnica%20Patel%3A%20" target="_blank" rel="noopener">tirar uma dúvida</a>
+          </div>
+          <p class="aviso">O botão abre o WhatsApp com a mensagem pronta. Nada é enviado sem vocês confirmarem.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- próximos passos -->
+  <section class="escuro sec" id="passos">
+    <div class="envolve fim">
+      <div class="rv">
+        <div class="cab">
+          <span class="rotulo">depois do aceite</span>
+          <h2>Próximos <em>passos</em>.</h2>
+        </div>
+        <ol class="passos">
+          <li><span class="n">1</span><div><h3>Escolha</h3><p>Vocês escolhem o pacote e respondem pelo WhatsApp.</p></div></li>
+          <li><span class="n">2</span><div><h3>Entrada e mudanças</h3><p>Pagamento de 50% e envio de tudo o que vocês querem mudar na prévia.</p></div></li>
+          <li><span class="n">3</span><div><h3>Ajustes e páginas</h3><p>Fazemos as mudanças e, no pacote 2, as páginas de cada tratamento, para vocês aprovarem.</p></div></li>
+          <li><span class="n">4</span><div><h3>Publicação</h3><p>O site vai ao ar no endereço da clínica, cadastrado no Google, e começam os 30 dias de acompanhamento.</p></div></li>
+        </ol>
+      </div>
+      <figure class="equipe rv">
+        <div class="retrato"><img src="../../assets/img/equipe-proposta.webp" alt="João Vitor e Nicoli, da RK Performance" width="1000" height="1250" loading="lazy"></div>
+        <figcaption>
+          <span class="rot">quem cuida do projeto</span>
+          <b>João Vitor &amp; Nicoli</b>
+          <p>Somos a RK Performance, aqui de Guarapuava. Criamos sites, sistemas e anúncios e acompanhamos cada projeto de perto, da prévia à publicação.</p>
+          <div class="no-ar">
+            <span class="rot">sites que já estão no ar</span>
+            <div class="contatos">
+              <a class="link" href="https://jamillivaz.com.br" target="_blank" rel="noopener">jamillivaz.com.br</a>
+              <a class="link" href="https://beboots.com.br" target="_blank" rel="noopener">beboots.com.br</a>
+              <a class="link" href="https://regieleholleben.com.br" target="_blank" rel="noopener">regieleholleben.com.br</a>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="escuro rodape">
+  <div class="envolve">
+    <img src="img/logo-claro.svg" alt="Clínica Patel" width="185" height="34">
+    <p>Proposta da RK Performance · condição válida até 22/10/2026 · <a href="https://rkperformance.com.br" target="_blank" rel="noopener">rkperformance.com.br</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.body.classList.remove('no-js');
+  var WA = 'https://wa.me/5542999246208?text=';
+  var P = {
+    '1': { nome: 'pacote 1 (site profissional em página única)', valor: 'R$ 1.000' },
+    '2': { nome: 'pacote 2 (site completo, com uma página para cada tratamento)', valor: 'R$ 2.500' }
+  };
+  var form = document.getElementById('escolha');
+  var aceitar = document.getElementById('aceitar');
+  var tValor = document.getElementById('t-valor');
+  function atualizar() {
+    var p = form.querySelector('input[name="pacote"]:checked').value;
+    tValor.textContent = P[p].valor;
+    var msg = 'Olá, João! Vimos a proposta do site da Clínica Patel e queremos seguir com o ' + P[p].nome + ', ' + P[p].valor + '. Podemos combinar os próximos passos?';
+    aceitar.href = WA + encodeURIComponent(msg);
+  }
+  form.addEventListener('change', atualizar);
+  atualizar();
+  document.querySelectorAll('[data-escolher]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      form.querySelector('input[name="pacote"][value="' + b.dataset.escolher + '"]').checked = true;
+      atualizar();
+      var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      form.scrollIntoView({ behavior: reduz ? 'auto' : 'smooth', block: 'center' });
+    });
+  });
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
