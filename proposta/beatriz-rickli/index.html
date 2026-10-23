@@ -2,684 +2,805 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Proposta · Beatriz Rickli · RK Performance</title>
-<meta name="description" content="Proposta da RK Performance para a Beatriz Rickli: direção de conteúdo e anúncios para a Engreen Engenharia e a Casa B. Interiores.">
+<meta name="description" content="Proposta da RK Performance para a Beatriz Rickli: consultoria de conteúdo e anúncios para a Engreen Engenharia e a Casa B. Interiores.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#f7f7f4">
+<meta name="theme-color" content="#F7F3EE">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="RK Performance">
-<meta property="og:title" content="Proposta · Direção de conteúdo e anúncios">
-<meta property="og:description" content="Engreen Engenharia e Casa B. Interiores: o que encontramos, a rotina de posts, os anúncios e três formatos de consultoria.">
+<meta property="og:title" content="Proposta · Beatriz Rickli">
+<meta property="og:description" content="Consultoria de conteúdo e anúncios para a Engreen e a Casa B. Preparada pela RK Performance em 23/10/2026.">
 <meta property="og:url" content="https://rkperformance.com.br/proposta/beatriz-rickli/">
 <meta property="og:image" content="https://rkperformance.com.br/proposta/beatriz-rickli/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316120F'/%3E%3Ctext x='32' y='41' font-family='Jost,Arial,sans-serif' font-size='24' font-weight='300' fill='%23C9A771' text-anchor='middle' letter-spacing='1'%3ERK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-/* Layout: prancha de projeto. Carimbo técnico no topo, cada seção é uma "folha" com rótulo na margem; marca-texto limão da Engreen e notas à mão em conhaque, como nas colagens da Casa B. */
-:root {
-  --papel: #f7f7f4;
-  --papel-2: #ebeee9;
-  --tinta: #1b3a43;
-  --tinta-2: #4d5d5d;
-  --linha: #c8d0cc;
-  --grade: rgba(27, 58, 67, .055);
-  --marca: #a6e969;
-  --marca-fundo: rgba(166, 233, 105, .85);
-  --sobre-marca: #12282e;
-  --nota: #8a4b20;
-  --barra: #1b3a43;
-  --barra-zero: #c9502d;
-  --f-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
-  --f-texto: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
-  --f-mao: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+:root{
+  --noite:#16120F;--noite2:#1E1813;--noite3:#2A2119;
+  --marfim:#F7F3EE;--marfim2:#EFE8DE;--branco:#FCFAF7;
+  --tinta:#2A211C;--tinta2:#6B5F55;--tinta3:#9A8E82;
+  --off:#F2EBE1;--mudo:#B3A595;--mudo2:#7C7064;
+  --dourado:#C9A771;--dourado2:#E2CB9A;--dourado3:#9E7F3F;--champanhe:#EFE3C8;
+  --fio:rgba(201,167,113,.32);--fio2:rgba(201,167,113,.55);--fio-escuro:rgba(42,33,28,.14);
+  --font:'Jost',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --papel: #0f1e22; --papel-2: #15292e; --tinta: #e4eae6; --tinta-2: #a5b4b1;
-    --linha: #2b434a; --grade: rgba(166, 233, 105, .05); --marca-fundo: rgba(166, 233, 105, .30);
-    --sobre-marca: #12282e; --nota: #e2a771; --barra: #a6e969; --barra-zero: #f08a63;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --papel: #0f1e22; --papel-2: #15292e; --tinta: #e4eae6; --tinta-2: #a5b4b1;
-  --linha: #2b434a; --grade: rgba(166, 233, 105, .05); --marca-fundo: rgba(166, 233, 105, .30);
-  --sobre-marca: #12282e; --nota: #e2a771; --barra: #a6e969; --barra-zero: #f08a63;
-  color-scheme: dark;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--marfim);color:var(--tinta);font-family:var(--font);font-weight:300;font-size:16.5px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font);font-weight:200;letter-spacing:.015em;line-height:1.12;text-wrap:balance}
+h3{font-weight:400;letter-spacing:.01em}
+strong,b{font-weight:500}
+p{text-wrap:pretty}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+:focus-visible{outline:1px solid var(--dourado);outline-offset:4px}
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 28px}
+.tnum{font-variant-numeric:tabular-nums lining-nums}
+.ouro{background:linear-gradient(100deg,#EFE3C8 0%,#C9A771 45%,#A8883F 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:300}
+.light .ouro{background:linear-gradient(100deg,#B08A45 0%,#9E7F3F 50%,#7A6230 100%);-webkit-background-clip:text;background-clip:text}
 
-* { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; overflow-x: hidden; }
-img { max-width: 100%; }
-body {
-  background: var(--papel);
-  color: var(--tinta);
-  font-family: var(--f-texto);
-  font-size: 1.02rem;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-.pagina {
-  max-width: 62rem;
-  margin: 0 auto;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 2rem 4rem;
-}
-h1, h2, h3 { font-family: var(--f-display); font-stretch: 78%; line-height: 1.08; text-wrap: balance; margin: 0; }
-h1 { font-size: clamp(2.2rem, 6vw, 3.9rem); font-weight: 700; letter-spacing: -.01em; }
-h2 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); font-weight: 700; }
-h3 { font-size: 1.25rem; font-weight: 650; font-stretch: 85%; }
-p { margin: 0; max-width: 65ch; }
-mark { background: linear-gradient(transparent 52%, var(--marca-fundo) 52%, var(--marca-fundo) 94%, transparent 94%); color: inherit; padding: 0 .1em; }
-.mao { font-family: var(--f-mao); color: var(--nota); font-size: 1.45rem; line-height: 1.15; font-weight: 600; }
-.rotulo { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; color: var(--tinta-2); }
-.num { font-variant-numeric: tabular-nums; }
-.fonte { font-size: .82rem; color: var(--tinta-2); }
+/* superfícies */
+.light{background:var(--marfim);color:var(--tinta);position:relative}
+.light.alt{background:var(--marfim2)}
+.light::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23C9A771' stroke-width='.6' opacity='.22'%3E%3Cpath d='M28 20l8 8-8 8-8-8z'/%3E%3Cpath d='M28 0v8M28 48v8M0 28h8M48 28h8'/%3E%3C/g%3E%3C/svg%3E")}
+.light>*{position:relative}
+.dark{background:var(--noite);color:var(--off);position:relative}
+.dark::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 75% 20%,rgba(201,167,113,.10),transparent 70%),radial-gradient(40% 40% at 10% 85%,rgba(120,90,60,.16),transparent 70%)}
+.dark>*{position:relative}
+.band{height:120px}
+.band.l-d{background:linear-gradient(to bottom,var(--marfim),var(--noite))}
+.band.d-l{background:linear-gradient(to bottom,var(--noite),var(--marfim))}
+.band.l2-d{background:linear-gradient(to bottom,var(--marfim2),var(--noite))}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:5;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:soft-light}
 
-/* carimbo */
-.carimbo {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  border: 1.5px solid var(--tinta);
-  font-family: var(--f-mono);
-  font-size: .8rem;
-  background: var(--papel);
-}
-.carimbo > div { padding: .55rem .7rem; border-right: 1px solid var(--linha); border-bottom: 1px solid var(--linha); min-width: 0; }
-.carimbo b { display: block; font-weight: 500; font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-2); margin-bottom: .1rem; }
-.c-proj { grid-column: span 3; } .c-cli { grid-column: span 3; border-right: 0 !important; }
-.c-resp { grid-column: span 2; } .c-data { grid-column: span 2; } .c-folhas { grid-column: span 2; border-right: 0 !important; }
-.carimbo > div:nth-last-child(-n+3) { border-bottom: 0; }
-@media (max-width: 640px) {
-  .carimbo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .c-proj, .c-cli { grid-column: span 2; border-right: 0 !important; }
-  .c-resp, .c-data, .c-folhas { grid-column: span 1; }
-  .c-folhas { grid-column: span 2; }
-  .c-data { border-right: 0 !important; }
-  .carimbo > div:nth-last-child(-n+3) { border-bottom: 1px solid var(--linha); }
-  .carimbo > div:last-child { border-bottom: 0; }
-}
+/* tipografia utilitária */
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--dourado)}
+.eyebrow::before{content:'';width:28px;height:1px;background:currentColor;opacity:.8}
+.light .eyebrow{color:var(--dourado3)}
+.rot{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3)}
+.dark .rot{color:var(--dourado)}
+.sec{padding:120px 0}
+.sec-head{max-width:720px;margin-bottom:64px}
+.sec-head h2{font-size:clamp(34px,4.4vw,54px);margin:22px 0 20px}
+.sec-head p{font-size:17.5px;line-height:1.75;color:var(--tinta2)}
+.dark .sec-head p{color:var(--mudo)}
 
-/* abertura */
-.abertura {
-  display: grid;
-  gap: 1.4rem;
-  padding-block: 3rem 2.5rem;
-  background-image: linear-gradient(var(--grade) 1px, transparent 1px), linear-gradient(90deg, var(--grade) 1px, transparent 1px);
-  background-size: 24px 24px;
-  background-position: -1px -1px;
-}
-.abertura .lead { font-size: 1.15rem; color: var(--tinta-2); }
-.equipe { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1.5px solid var(--tinta); margin-top: .6rem; }
-.equipe > div { padding: .9rem .9rem .9rem 0; border-right: 1px solid var(--linha); padding-left: .9rem; min-width: 0; }
-.equipe > div:first-child { padding-left: 0; }
-.equipe > div:last-child { border-right: 0; }
-.equipe strong { font-family: var(--f-display); font-stretch: 80%; font-size: 1.2rem; display: block; }
-.equipe span { font-size: .9rem; color: var(--tinta-2); }
-.equipe .rk strong { color: var(--tinta); }
-.equipe .rk { background: var(--marca-fundo); color: var(--sobre-marca); }
-.equipe .rk span, .equipe .rk strong { color: var(--sobre-marca); }
-@media (max-width: 640px) {
-  .equipe { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .equipe > div { padding-left: .8rem !important; border-bottom: 1px solid var(--linha); }
-  .equipe > div:nth-child(2n) { border-right: 0; }
-}
+/* botões e links */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:17px 30px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;border:1px solid transparent;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s,color .25s;white-space:nowrap;text-align:center}
+.btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-ouro{background:linear-gradient(100deg,#EFE3C8 0%,#C9A771 48%,#A8883F 100%);color:#1A130E;box-shadow:0 10px 30px rgba(42,33,28,.16)}
+.btn-ouro:hover{box-shadow:0 14px 34px rgba(201,167,113,.3)}
+.btn-fio{border-color:rgba(42,33,28,.35);color:var(--tinta)}
+.btn-fio:hover{border-color:var(--dourado3);color:var(--dourado3)}
+.dark .btn-fio{border-color:var(--fio2);color:var(--off)}
+.link{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid var(--fio-escuro);transition:color .25s,border-color .25s}
+.link:hover{color:var(--dourado3);border-color:var(--dourado3)}
+.dark .link{border-color:var(--fio)}
+.dark .link:hover{color:var(--dourado2);border-color:var(--dourado)}
+.link svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.tag{display:inline-flex;align-items:center;font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:5px 9px;border:1px solid rgba(158,127,63,.45);color:var(--dourado3);border-radius:2px;white-space:nowrap}
 
-/* folhas */
-.folha { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 1.5rem; border-top: 1.5px solid var(--tinta); padding-block: 2.2rem 2.6rem; }
-.folha-id { display: flex; flex-direction: column; gap: .2rem; }
-.folha-id .n { font-family: var(--f-display); font-stretch: 70%; font-size: 2.6rem; font-weight: 300; line-height: 1; color: var(--tinta-2); }
-.corpo { display: grid; gap: 1.4rem; min-width: 0; }
-@media (max-width: 760px) {
-  .folha { grid-template-columns: minmax(0, 1fr); gap: .8rem; }
-  .folha-id { flex-direction: row; align-items: baseline; gap: .7rem; }
-  .folha-id .n { font-size: 1.6rem; }
-}
+/* cantoneiras */
+.cant{position:relative}
+.cant>i{position:absolute;width:22px;height:22px;border:1px solid var(--dourado);pointer-events:none;z-index:3;display:block}
+.cant>i.c1{left:-8px;top:-8px;border-right:0;border-bottom:0}
+.cant>i.c2{right:-8px;top:-8px;border-left:0;border-bottom:0}
+.cant>i.c3{left:-8px;bottom:-8px;border-right:0;border-top:0}
+.cant>i.c4{right:-8px;bottom:-8px;border-left:0;border-top:0}
+.cant.in>i.c1{left:12px;top:12px}.cant.in>i.c2{right:12px;top:12px}.cant.in>i.c3{left:12px;bottom:12px}.cant.in>i.c4{right:12px;bottom:12px}
 
-/* listas e citações */
-.pedidos { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem 1.6rem; margin: 0; padding: 0; list-style: none; }
-.pedidos li { border-left: 2px solid var(--linha); padding-left: .9rem; min-width: 0; }
-.pedidos q { display: block; font-style: italic; color: var(--tinta-2); font-size: .93rem; margin-top: .25rem; quotes: "“" "”"; }
+/* janela de navegador */
+.win{background:var(--noite2);border:1px solid var(--fio)}
+.win-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--fio)}
+.win-bar span{width:8px;height:8px;border-radius:50%;background:rgba(242,235,225,.35)}
+.win-bar b{margin-left:12px;font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.06em;color:var(--mudo)}
+.win img{width:100%}
+.cap{display:block;margin-top:22px;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tinta3)}
+.dark .cap{color:var(--mudo2)}
 
-/* achados */
-.achados { counter-reset: achado; display: grid; gap: 1.2rem; margin: 0; padding: 0; list-style: none; }
-.achados li { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: .8rem; }
-.achados li::before { counter-increment: achado; content: counter(achado); font-family: var(--f-mono); font-size: .8rem; width: 1.9rem; height: 1.9rem; border: 1.5px solid var(--tinta); border-radius: 50%; display: grid; place-items: center; margin-top: .1rem; }
-.achados h3 { margin-bottom: .25rem; }
+/* topo */
+.topo{position:relative;z-index:10;border-bottom:1px solid var(--fio-escuro);background:var(--marfim)}
+.topo-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.logo{display:flex;align-items:center;gap:14px;font-weight:300;font-size:26px;letter-spacing:.08em;color:var(--tinta)}
+.logo .rk{color:var(--dourado3)}
+.dark .logo .rk{color:var(--dourado)}
+.logo .sep{width:1px;height:24px;background:var(--dourado);opacity:.7}
+.logo .perf{font-size:10px;font-weight:500;letter-spacing:.34em;opacity:.85}
+.topo .rot{color:var(--tinta2)}
 
-/* gráfico de avaliações */
-.grafico { display: grid; gap: .45rem; padding: 1.1rem 1.2rem; background: var(--papel-2); border-radius: 4px; }
-.barra { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) 2.2rem; gap: .7rem; align-items: center; font-size: .88rem; }
-.barra .trilho { height: .7rem; background: transparent; border-bottom: 1px dashed var(--linha); position: relative; }
-.barra .valor { position: absolute; left: 0; top: 0; bottom: 0; background: var(--barra); border-radius: 0 2px 2px 0; }
-.barra .n { font-family: var(--f-mono); text-align: right; }
-.barra.zero { color: var(--barra-zero); font-weight: 600; }
-.barra.zero .trilho { border-bottom-color: var(--barra-zero); }
-@media (max-width: 560px) {
-  .barra { grid-template-columns: minmax(0, 1fr) 2.2rem; }
-  .barra .trilho { grid-column: 1 / -1; grid-row: 2; }
-}
+/* hero */
+.hero{padding:96px 0 120px}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:72px;align-items:center}
+.hero h1{font-size:clamp(42px,5.6vw,70px);margin:26px 0 26px}
+.hero .lead{font-size:18px;line-height:1.75;color:var(--tinta2);max-width:540px}
+.meta{display:grid;grid-template-columns:1.5fr 1fr 1fr;margin:44px 0 46px;border-top:1px solid var(--fio-escuro)}
+.meta>div{padding:18px 18px 0 0}
+.meta>div+div{padding-left:18px;border-left:1px solid var(--fio-escuro)}
+.meta dt{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3);margin-bottom:6px}
+.meta dd{font-size:15.5px;font-weight:400;line-height:1.45}
+.meta dd small{display:block;font-size:13px;font-weight:300;color:var(--tinta2)}
+.ctas{display:flex;align-items:center;flex-wrap:wrap;gap:28px}
+.hero-vis{position:relative;margin:0 0 0 auto;width:100%;max-width:600px}
+.comp{position:relative;padding-bottom:58px}
+.hero-vis .win{box-shadow:0 40px 80px -40px rgba(42,33,28,.45)}
+.fone{position:absolute;left:-44px;bottom:0;width:27%;background:var(--noite);padding:6px;border-radius:22px;box-shadow:0 30px 60px -24px rgba(22,18,15,.55);z-index:4}
+.fone img{border-radius:17px;width:100%}
+.hero-vis .cap{margin-top:0;position:absolute;right:0;bottom:4px;text-align:right;max-width:66%}
 
-/* linha do tempo de posts */
-.tempo { overflow-x: auto; }
-.meses { display: grid; grid-template-columns: repeat(20, minmax(1.6rem, 1fr)); gap: 3px; min-width: 34rem; }
-.mes { display: grid; grid-template-rows: 3.2rem auto; gap: .2rem; text-align: center; }
-.mes .pilha { display: flex; flex-direction: column-reverse; align-items: center; gap: 3px; border-bottom: 1.5px solid var(--tinta); padding-bottom: 3px; }
-.mes .p { width: .62rem; height: .62rem; border-radius: 50%; background: var(--tinta); }
-.mes.vazio .pilha { border-bottom-color: var(--barra-zero); }
-.mes small { font-family: var(--f-mono); font-size: .6rem; color: var(--tinta-2); }
+/* o que ouvimos */
+.tres{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--fio-escuro)}
+.tres>div{padding:34px 34px 0 0}
+.tres>div+div{padding-left:34px;border-left:1px solid var(--fio-escuro)}
+.tres .num{font-size:44px;font-weight:200;line-height:1;color:var(--dourado3);font-variant-numeric:lining-nums}
+.tres h3{font-size:21px;margin:20px 0 10px}
+.tres p{color:var(--tinta2)}
 
-/* posts que funcionam */
-.posts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.posts figure { margin: 0; display: grid; gap: .4rem; min-width: 0; }
-.posts img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid var(--linha); display: block; }
-.posts figcaption { font-size: .85rem; color: var(--tinta-2); }
-.posts figcaption b { color: var(--tinta); font-family: var(--f-mono); font-weight: 500; }
-@media (max-width: 560px) { .posts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .posts figure:last-child { display: none; } }
+/* opções do site */
+.opcoes{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.opcao{padding:48px 48px 52px;display:flex;flex-direction:column}
+.opcao:first-child{padding-left:0}
+.opcao.destaque{background:var(--branco);box-shadow:0 30px 70px -45px rgba(42,33,28,.35)}
+.op-topo{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;min-height:28px}
+.opcao h3{font-size:clamp(26px,2.6vw,32px);font-weight:200;margin:18px 0 14px}
+.opcao .op-desc{color:var(--tinta2);max-width:440px}
+.preco{display:flex;align-items:baseline;gap:10px;margin:30px 0 30px;padding:24px 0;border-top:1px solid var(--fio-escuro);border-bottom:1px solid var(--fio-escuro)}
+.preco .rs{font-size:18px;font-weight:300;color:var(--tinta2)}
+.preco .val{font-size:clamp(46px,5vw,60px);font-weight:200;line-height:1;letter-spacing:.01em}
+.preco .per{margin-left:auto;font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta3);text-align:right}
+.lista li{position:relative;padding:11px 0 11px 30px;border-bottom:1px solid var(--fio-escuro);color:var(--tinta)}
+.lista li:last-child{border-bottom:0}
+.lista li::before{content:'';position:absolute;left:0;top:23px;width:16px;height:1px;background:var(--dourado3)}
+.lista li small{display:block;color:var(--tinta2);font-size:14.5px}
+.opcao .btn{margin-top:auto;align-self:flex-start}
+.opcao .lista{margin-bottom:36px}
 
-/* perfis */
-.perfis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
-.perfil { border: 1.5px solid var(--tinta); padding: 1.2rem 1.3rem 1.3rem; display: grid; gap: .8rem; align-content: start; min-width: 0; }
-.perfil .handle { font-family: var(--f-mono); font-size: .8rem; color: var(--tinta-2); }
-.perfil dl { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: .45rem .8rem; margin: 0; font-size: .93rem; }
-.perfil dt { font-family: var(--f-mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-2); padding-top: .2rem; }
-.perfil dd { margin: 0; }
-.ponte { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: baseline; }
-@media (max-width: 680px) { .perfis { grid-template-columns: minmax(0, 1fr); } }
+.comum{margin-top:88px;display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.comum h3{font-size:clamp(26px,2.8vw,34px);font-weight:200;margin-top:18px}
+.comum p{color:var(--tinta2);margin-top:16px}
+.duas{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;border-top:1px solid var(--fio-escuro)}
+.duas li{position:relative;padding:16px 0 16px 30px;border-bottom:1px solid var(--fio-escuro)}
+.duas li::before{content:'';position:absolute;left:0;top:28px;width:16px;height:1px;background:var(--dourado3)}
 
-/* matriz de pilares */
-.tabela { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; font-size: .92rem; }
-th, td { text-align: left; vertical-align: top; padding: .65rem .8rem; border-bottom: 1px solid var(--linha); }
-thead th { font-family: var(--f-mono); font-weight: 500; font-size: .7rem; letter-spacing: .09em; text-transform: uppercase; color: var(--tinta-2); border-bottom: 1.5px solid var(--tinta); }
-tbody th { font-family: var(--f-display); font-stretch: 85%; font-weight: 650; font-size: 1rem; white-space: nowrap; }
-.pilares { min-width: 36rem; }
+.paginas{margin-top:96px;display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.paginas h3{font-size:clamp(26px,2.8vw,34px);font-weight:200;margin:18px 0 14px}
+.paginas>div>p{color:var(--tinta2);margin-bottom:28px}
+.oito{display:grid;grid-template-columns:1fr 1fr;column-gap:32px;border-top:1px solid var(--fio-escuro);counter-reset:pg}
+.oito li{counter-increment:pg;display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--fio-escuro)}
+.oito li::before{content:counter(pg,decimal-leading-zero);font-size:10.5px;font-weight:500;letter-spacing:.18em;color:var(--dourado3);min-width:20px}
+.oito li em{font-style:normal;display:block;font-size:12.5px;color:var(--tinta3)}
 
-.pautas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
-.pautas ol { margin: .4rem 0 0; padding-left: 1.2rem; display: grid; gap: .45rem; }
-.pautas li { padding-left: .2rem; }
-.etapa { font-family: var(--f-mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; color: var(--tinta-2); border: 1px solid var(--linha); border-radius: 2px; padding: 0 .3rem; margin-left: .3rem; white-space: nowrap; }
-@media (max-width: 680px) { .pautas { grid-template-columns: minmax(0, 1fr); } }
+/* portfólio */
+.projetos{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.proj{display:flex;flex-direction:column}
+.proj .shot{display:block;overflow:hidden;background:var(--noite2);margin-bottom:26px}
+.proj .shot img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;transition:transform 1.2s var(--ease)}
+.proj .shot:hover img{transform:scale(1.03)}
+.proj .url{position:absolute;left:12px;bottom:12px;z-index:2;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--off);background:rgba(22,18,15,.72);padding:4px 9px}
+.proj h3{font-size:24px;font-weight:300;margin:10px 0 10px}
+.proj p{color:var(--tinta2);margin-bottom:22px}
+.proj .link{margin-top:auto;align-self:flex-start}
+.projetos{row-gap:64px}
+.proj.mais{justify-content:center;padding:40px 36px;border-top:1px solid var(--fio-escuro);border-bottom:1px solid var(--fio-escuro);align-self:stretch}
+.proj.mais h3{font-size:26px;font-weight:200}
 
-/* semana */
-.semana { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border: 1.5px solid var(--tinta); }
-.dia { border-right: 1px solid var(--linha); padding: .6rem .55rem .8rem; display: grid; gap: .4rem; align-content: start; min-height: 8.5rem; min-width: 0; }
-.dia:last-child { border-right: 0; }
-.dia > .rotulo { font-size: .66rem; }
-.tarefa { font-size: .8rem; line-height: 1.3; padding: .35rem .45rem; border-radius: 3px; background: var(--papel-2); }
-.tarefa.post { background: var(--tinta); color: var(--papel); }
-.tarefa.post small { display: block; opacity: .75; font-family: var(--f-mono); font-size: .62rem; letter-spacing: .05em; text-transform: uppercase; }
-.tarefa.st { background: transparent; border: 1px dashed var(--linha); }
-@media (max-width: 760px) {
-  .semana { grid-template-columns: minmax(0, 1fr); }
-  .dia { border-right: 0; border-bottom: 1px solid var(--linha); min-height: 0; grid-template-columns: 3rem minmax(0, 1fr); align-items: start; }
-  .dia:last-child { border-bottom: 0; }
-  .dia .itens { display: grid; gap: .35rem; }
-}
-.legenda { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; font-size: .82rem; color: var(--tinta-2); }
-.legenda i { display: inline-block; width: .8rem; height: .8rem; border-radius: 2px; vertical-align: -.1rem; margin-right: .35rem; }
-
-.duas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem; }
-@media (max-width: 680px) { .duas { grid-template-columns: minmax(0, 1fr); } }
-.quem { margin: 0; padding: 0; list-style: none; display: grid; gap: .55rem; }
-.quem li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: .7rem; font-size: .93rem; }
-.quem b { font-family: var(--f-display); font-stretch: 80%; font-size: 1.05rem; }
-
-/* fases */
-.fases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1.5px solid var(--tinta); }
-.fase { padding: 1rem 1.1rem 1.1rem 0; display: grid; gap: .5rem; align-content: start; min-width: 0; }
-.fase + .fase { border-left: 1px solid var(--linha); padding-left: 1.1rem; }
-.fase .quando { font-family: var(--f-mono); font-size: .72rem; color: var(--tinta-2); letter-spacing: .05em; text-transform: uppercase; }
-.fase ul { margin: 0; padding-left: 1.05rem; font-size: .92rem; display: grid; gap: .3rem; }
-.fase .verba { font-family: var(--f-mono); font-size: .82rem; border-top: 1px dashed var(--linha); padding-top: .5rem; }
-@media (max-width: 760px) {
-  .fases { grid-template-columns: minmax(0, 1fr); }
-  .fase + .fase { border-left: 0; padding-left: 0; border-top: 1px solid var(--linha); }
-}
-.funil { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; font-family: var(--f-mono); font-size: .82rem; }
-.funil span { border: 1px solid var(--tinta); padding: .25rem .55rem; border-radius: 2px; }
-.funil span.fim { background: var(--tinta); color: var(--papel); }
-.funil em { font-style: normal; color: var(--tinta-2); }
+/* tráfego (noite) */
+.trafego-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.trafego-grid .sec-head{margin-bottom:0}
+.preco-noite{margin-top:40px;padding:26px 0;border-top:1px solid var(--fio);border-bottom:1px solid var(--fio);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.preco-noite .rs{font-size:18px;color:var(--mudo)}
+.preco-noite .val{font-size:clamp(46px,5vw,60px);font-weight:200;line-height:1}
+.preco-noite .per{font-size:18px;color:var(--mudo)}
+.preco-noite small{flex-basis:100%;margin-top:10px;font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--dourado)}
+.passos li{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:26px 0;border-bottom:1px solid var(--fio)}
+.passos li:first-child{padding-top:0}
+.passos .n{font-size:44px;font-weight:200;line-height:1;color:var(--dourado);font-variant-numeric:lining-nums}
+.passos h3{font-size:20px;margin-bottom:6px;color:var(--off)}
+.passos p{color:var(--mudo)}
+.tres-noite{margin-top:88px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--fio)}
+.tres-noite>div{padding:30px 30px 0 0}
+.tres-noite>div+div{padding-left:30px;border-left:1px solid var(--fio)}
+.tres-noite h3{font-size:19px;margin:14px 0 10px;color:var(--off)}
+.tres-noite p,.tres-noite li{color:var(--mudo)}
+.tres-noite li{position:relative;padding-left:26px;margin-bottom:8px}
+.tres-noite li::before{content:'';position:absolute;left:0;top:13px;width:14px;height:1px;background:var(--dourado)}
 
 /* investimento */
-.opcoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.opcao { border: 1px solid var(--linha); padding: 1.2rem 1.2rem 1.3rem; display: grid; gap: .8rem; min-width: 0; position: relative; }
-.opcao.rec { border: 2px solid var(--tinta); box-shadow: 6px 6px 0 var(--marca-fundo); }
-.opcao .preco { font-family: var(--f-display); font-stretch: 75%; font-size: 2.5rem; font-weight: 700; line-height: 1; }
-.opcao .preco small { font-family: var(--f-texto); font-size: .9rem; font-weight: 400; color: var(--tinta-2); font-stretch: 100%; }
-.opcao .cond { font-size: .85rem; color: var(--tinta-2); margin-top: -.4rem; }
-.opcao ul { margin: 0; padding-left: 1.05rem; font-size: .9rem; display: grid; gap: .35rem; }
-.selo { position: absolute; top: -.75rem; left: 1rem; background: var(--marca); color: var(--sobre-marca); font-family: var(--f-mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; padding: .15rem .5rem; }
-.opcao .mao { font-size: 1.25rem; }
-@media (max-width: 820px) { .opcoes { grid-template-columns: minmax(0, 1fr); } }
-.compara { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .3rem 1.4rem; align-items: baseline; padding: 1rem 1.2rem; background: var(--papel-2); border-radius: 4px; }
-.compara .v { font-family: var(--f-mono); font-size: .95rem; text-align: right; white-space: nowrap; }
-.compara .destaque { font-weight: 700; }
-@media (max-width: 480px) { .compara { grid-template-columns: minmax(0, 1fr); } .compara .v { text-align: left; } }
+.inv-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.tabela{width:100%;border-collapse:collapse}
+.tabela th,.tabela td{text-align:left;vertical-align:top;padding:20px 0;border-bottom:1px solid var(--fio-escuro)}
+.tabela tr:first-child th,.tabela tr:first-child td{border-top:1px solid var(--fio-escuro)}
+.tabela th{font-weight:400;font-size:16.5px;padding-right:20px}
+.tabela th small{display:block;font-weight:300;font-size:14px;color:var(--tinta2)}
+.tabela td{text-align:right;white-space:nowrap}
+.tabela td b{display:block;font-size:22px;font-weight:300;font-variant-numeric:lining-nums}
+.tabela td small{display:block;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta3)}
+.pagto{margin-top:30px;color:var(--tinta2)}
+.pagto p+p{margin-top:10px}
+.pagto b{color:var(--tinta)}
 
-/* cronograma */
-.crono { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.crono > div { border-top: 3px solid var(--tinta); padding-top: .7rem; display: grid; gap: .5rem; align-content: start; min-width: 0; }
-.crono h3 { font-size: 1.4rem; }
-.crono ul { margin: 0; padding-left: 1.05rem; font-size: .92rem; display: grid; gap: .3rem; }
-@media (max-width: 680px) { .crono { grid-template-columns: minmax(0, 1fr); } }
-.passos { margin: 0; padding: 0; list-style: none; counter-reset: passo; display: grid; gap: .8rem; }
-.passos li { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: .7rem; }
-.passos li::before { counter-increment: passo; content: counter(passo); font-family: var(--f-display); font-stretch: 70%; font-size: 1.7rem; line-height: 1; color: var(--tinta-2); }
+.escolha{background:var(--branco);padding:44px 44px 40px;box-shadow:0 30px 70px -45px rgba(42,33,28,.35)}
+.escolha h3{font-size:28px;font-weight:200;margin:16px 0 26px}
+.escolha fieldset{border:0;margin-bottom:22px}
+.escolha legend{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3);margin-bottom:6px}
+.op{display:grid;grid-template-columns:22px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--fio-escuro);cursor:pointer}
+.op input{position:absolute;opacity:0;pointer-events:none}
+.op .marca{width:18px;height:18px;border:1px solid rgba(42,33,28,.4);display:grid;place-items:center;transition:border-color .2s}
+.op .marca.redonda{border-radius:50%}
+.op .marca::after{content:'';width:8px;height:8px;background:var(--dourado3);opacity:0;transition:opacity .2s}
+.op .marca.redonda::after{border-radius:50%}
+.op input:checked+.marca{border-color:var(--dourado3)}
+.op input:checked+.marca::after{opacity:1}
+.op input:focus-visible+.marca{outline:1px solid var(--dourado);outline-offset:4px}
+.op span.txt{font-size:15.5px;line-height:1.45}
+.op span.txt small{display:block;color:var(--tinta2);font-size:13.5px}
+.op b{font-weight:400;font-variant-numeric:lining-nums;white-space:nowrap}
+.total{display:grid;grid-template-columns:1fr 1fr;margin:26px 0 30px;border-top:1px solid var(--fio-escuro)}
+.total>div{padding:18px 18px 0 0}
+.total>div+div{padding-left:18px;border-left:1px solid var(--fio-escuro)}
+.total b{display:block;font-size:34px;font-weight:200;line-height:1.1;margin:8px 0 6px;font-variant-numeric:lining-nums}
+.total small{display:block;font-size:13px;color:var(--tinta2);line-height:1.5}
+.escolha .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.escolha .btn-ouro{flex:1 1 auto}
+.aviso{margin-top:18px;font-size:13px;color:var(--tinta3)}
 
-.rodape { border-top: 1.5px solid var(--tinta); padding-top: 1.2rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem 2rem; font-size: .85rem; color: var(--tinta-2); }
-.rodape strong { color: var(--tinta); font-family: var(--f-display); font-stretch: 80%; font-size: 1.05rem; }
-a { color: inherit; text-underline-offset: .2em; }
-:focus-visible { outline: 2px solid var(--nota); outline-offset: 2px; }
-@media (prefers-reduced-motion: no-preference) {
-  .barra .valor { animation: cresce .9s cubic-bezier(.2, .7, .2, 1) both; transform-origin: left; }
-  @keyframes cresce { from { transform: scaleX(.02); } to { transform: scaleX(1); } }
+/* próximos passos + equipe */
+.fim-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:88px;align-items:start}
+.equipe{margin:0}
+.equipe .retrato{aspect-ratio:4/5;overflow:hidden}
+.equipe .retrato img{width:100%;height:100%;object-fit:cover;object-position:top}
+.equipe figcaption{margin-top:22px}
+.equipe figcaption b{display:block;font-size:20px;font-weight:300;color:var(--off);letter-spacing:.02em}
+.equipe figcaption p{color:var(--mudo);margin-top:10px}
+.contatos{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px}
+
+.rodape{padding:56px 0 64px;border-top:1px solid var(--fio)}
+.rodape-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.rodape .logo{color:var(--off)}
+.rodape p{font-size:13px;color:var(--mudo2)}
+
+/* revelação */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.btn,.btn svg{transition:none}}
+
+/* responsivo */
+@media (max-width:1020px){
+  .hero-grid,.trafego-grid,.inv-grid,.fim-grid,.paginas,.comum{grid-template-columns:1fr;gap:56px}
+  .hero-vis{margin:0 auto 0 0;max-width:640px}
+  .fone{left:auto;right:-10px}
+  .hero-vis .cap{right:auto;left:0;text-align:left}
+  .equipe{max-width:440px}
+}
+@media (max-width:860px){
+  .opcoes,.projetos{grid-template-columns:1fr}
+  .proj.mais{padding:32px 0}
+  .projetos{gap:56px}
+  .opcao{padding:40px 0 44px}
+  .opcao.destaque{padding:40px 28px 44px;margin:0 -28px}
+  .tres,.tres-noite{grid-template-columns:1fr}
+  .tres>div,.tres>div+div,.tres-noite>div,.tres-noite>div+div{padding:28px 0;border-left:0;border-bottom:1px solid var(--fio-escuro)}
+  .tres-noite>div,.tres-noite>div+div{border-bottom-color:var(--fio)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .container{padding:0 20px}
+  .sec{padding:88px 0}
+  .band{height:88px}
+  .topo-in{min-height:72px}
+  .topo .rot .longo{display:none}
+  .logo{font-size:22px;gap:11px}
+  .hero{padding:56px 0 88px}
+  .hero .lead{font-size:16.5px}
+  .meta{grid-template-columns:1fr 1fr}
+  .meta>div:first-child{grid-column:1/-1;padding-bottom:16px;border-bottom:1px solid var(--fio-escuro)}
+  .meta>div:nth-child(2){padding-left:0;border-left:0}
+  .ctas{gap:22px}
+  .ctas .btn{width:100%}
+  .comp{padding-bottom:0}
+  .fone{width:30%;right:-6px;bottom:-26px;border-radius:16px;padding:4px}
+  .fone img{border-radius:12px}
+  .hero-vis .cap{position:static;max-width:none;margin-top:56px}
+  .opcao.destaque{padding:36px 20px 40px;margin:0 -20px}
+  .preco{flex-wrap:wrap}
+  .preco .per{margin-left:0;flex-basis:100%;text-align:left}
+  .opcao .btn{align-self:stretch}
+  .duas,.oito{grid-template-columns:1fr}
+  .passos li{grid-template-columns:56px 1fr}
+  .passos .n{font-size:36px}
+  .escolha{padding:32px 20px 30px;margin:0 -20px}
+  .op{grid-template-columns:22px 1fr;row-gap:2px}
+  .op b{grid-column:2}
+  .total{grid-template-columns:1fr}
+  .total>div+div{padding-left:0;border-left:0;border-top:1px solid var(--fio-escuro);margin-top:18px}
+  .escolha .btn-ouro{width:100%}
+  .tabela td b{font-size:19px}
+}
+
+/* extras da proposta de consultoria (Beatriz, 23/10/2026) */
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;padding:3px;background:var(--noite2)}
+.ig img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.fone img{aspect-ratio:9/16;object-fit:cover}
+.achados{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;border-top:1px solid var(--fio-escuro);margin-bottom:88px}
+.achados li{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:26px 0;border-bottom:1px solid var(--fio-escuro)}
+.achados .n{font-size:36px;font-weight:200;line-height:1;color:var(--dourado3);font-variant-numeric:lining-nums}
+.achados h3{font-size:20px;margin-bottom:6px}
+.achados p{color:var(--tinta2)}
+.diag-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.diag-grid .rot{display:block;margin-bottom:18px}
+.tabela.aval tr.voce{background:var(--branco)}
+.tabela.aval tr.voce th,.tabela.aval tr.voce td b{color:var(--dourado3);font-weight:500}
+.tabela.aval tr.voce th{padding-left:16px}
+.tabela.aval tr.voce td{padding-right:16px}
+.provas-in{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.provas figure{margin:0}
+.provas img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--noite2)}
+.provas figcaption{margin-top:12px;font-size:14px}
+.provas figcaption b{font-size:24px;font-weight:200;margin-right:4px}
+.provas figcaption small{display:block;color:var(--tinta2);font-size:13px}
+.duas li b{font-weight:500}
+.paginas .doze{align-self:start}
+.op3{grid-template-columns:repeat(3,1fr)}
+.op3 .opcao{padding:44px 34px 48px}
+.op3 .opcao:first-child{padding-left:0}
+.op3 .opcao:last-child{padding-right:0}
+.op3 .opcao h3{font-size:clamp(24px,2.2vw,28px)}
+.tres .quando{display:block;margin-top:18px}
+.tres .verba{margin-top:14px;font-size:13px;font-weight:500;letter-spacing:.06em;color:var(--dourado3)}
+#anuncios .comum{margin-top:72px}
+@media (max-width:1020px){
+  .diag-grid{grid-template-columns:1fr;gap:56px}
+  .op3{grid-template-columns:1fr}
+  .op3 .opcao,.op3 .opcao:first-child,.op3 .opcao:last-child{padding:40px 0 44px}
+  .op3 .opcao.destaque{padding:40px 28px 44px;margin:0 -28px}
+}
+@media (max-width:1020px){.op3 .opcao.destaque>i.c1,.op3 .opcao.destaque>i.c3{left:8px}.op3 .opcao.destaque>i.c2,.op3 .opcao.destaque>i.c4{right:8px}}
+@media (max-width:860px){
+  .achados{grid-template-columns:1fr}
+  .opcoes .opcao.destaque>i.c1,.opcoes .opcao.destaque>i.c3{left:8px}
+  .opcoes .opcao.destaque>i.c2,.opcoes .opcao.destaque>i.c4{right:8px}
+}
+@media (max-width:640px){
+  .op3 .opcao.destaque{padding:36px 20px 40px;margin:0 -20px}
+  .achados li{grid-template-columns:52px 1fr}
+  .provas-in{gap:10px}
+  .provas figcaption b{font-size:20px}
 }
 </style>
 </head>
-<body>
-<div class="pagina">
+<body class="no-js">
+<div class="grain" aria-hidden="true"></div>
 
-  <header class="carimbo" aria-label="Identificação da proposta">
-    <div class="c-proj"><b>Projeto</b>Direção de conteúdo e anúncios</div>
-    <div class="c-cli"><b>Cliente</b>Beatriz Rickli · Engreen Engenharia · Casa B. Interiores</div>
-    <div class="c-resp"><b>Responsável</b>RK Performance</div>
-    <div class="c-data"><b>Data</b><span class="num">23/10/2026</span></div>
-    <div class="c-folhas"><b>Folhas</b><span class="num">08</span> · validade até <span class="num">30/10/2026</span></div>
-  </header>
+<header class="topo">
+  <div class="container topo-in">
+    <a class="logo" href="https://rkperformance.com.br" aria-label="RK Performance"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></a>
+    <span class="rot">Proposta comercial<span class="longo"> · 23/10/2026</span></span>
+  </div>
+</header>
 
-  <section class="abertura">
-    <p class="rotulo">Proposta de consultoria</p>
-    <h1>Você já tem a obra, a câmera e quem anuncia. <mark>Falta a direção.</mark></h1>
-    <p class="lead">Uma consultoria para a sua equipe executar com método: o que postar, quando, como falar e como ler os números. A execução continua com vocês. A RK direciona, revisa e treina.</p>
-    <div class="equipe" aria-label="Quem faz o quê">
-      <div><strong>Beatriz</strong><span>o rosto, as histórias e a aprovação</span></div>
-      <div><strong>Alana</strong><span>câmera, edição e publicação</span></div>
-      <div><strong>Rafa</strong><span>anúncios e números da semana</span></div>
-      <div class="rk"><strong>RK</strong><span>estratégia, pautas, direção dos vídeos e treino</span></div>
-    </div>
-  </section>
-
-  <section class="folha" id="pedido">
-    <div class="folha-id"><span class="n">01</span><span class="rotulo">O que você pediu</span></div>
-    <div class="corpo">
-      <h2>Aproveitar a baixa para gravar, sem virar refém do Instagram</h2>
-      <ul class="pedidos">
-        <li><b>Mostrar o que já fez.</b><q>Já fiz um monte de obra, um monte de projeto, e não posto.</q></li>
-        <li><b>Um programa leve.</b><q>Não quero ficar postando vídeo todo dia.</q> Nem falar de forma técnica o tempo inteiro.</li>
-        <li><b>Cronograma e metas.</b> Frequência, o que postar, posicionamento e o jeito de falar no online.</li>
-        <li><b>Direção para o Rafa.</b> Segmentação, alcance e impulsionamento, sem tirar dele o papel do tráfego.</li>
-        <li><b>A Casa B. de pé.</b> Interiores e obra numa empresa só, do projeto à entrega.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="folha" id="achados">
-    <div class="folha-id"><span class="n">02</span><span class="rotulo">O que encontramos</span></div>
-    <div class="corpo">
-      <h2>Seu trabalho é bom. Quase ninguém está vendo.</h2>
-      <p class="fonte">Levantamento de 23/10/2026: Instagram público, Google, Google Maps, Biblioteca de Anúncios da Meta e IBGE.</p>
-
-      <ol class="achados">
-        <li><div>
-          <h3>Para o Google, a Engreen não existe</h3>
-          <p>Não há Perfil da Empresa nem site. Quem tem uma trinca ou vai receber um imóvel novo procura no Google, e encontra os concorrentes, todos com nota entre 4,6 e 5,0. A pergunta "quanto custa a vistoria de um imóvel novo?" aparece na própria busca de Guarapuava, e ninguém anuncia ali.</p>
-        </div></li>
-      </ol>
-
-      <figure class="grafico" aria-label="Avaliações no Google, outubro de 2026">
-        <p class="rotulo">Avaliações no Google · Prudentópolis e Guarapuava</p>
-        <div class="barra"><span>Karta Engenharia e Topografia</span><span class="trilho"><span class="valor" style="width:90%"></span></span><span class="n">36</span></div>
-        <div class="barra"><span>Otávio Ternoski · interiores</span><span class="trilho"><span class="valor" style="width:82.5%"></span></span><span class="n">33</span></div>
-        <div class="barra"><span>Brick Engenharia · Guarapuava</span><span class="trilho"><span class="valor" style="width:42.5%"></span></span><span class="n">17</span></div>
-        <div class="barra"><span>Deborah Hudema · eng. civil</span><span class="trilho"><span class="valor" style="width:27.5%"></span></span><span class="n">11</span></div>
-        <div class="barra"><span>GT Engenharia · laudos</span><span class="trilho"><span class="valor" style="width:25%"></span></span><span class="n">10</span></div>
-        <div class="barra zero"><span>Engreen</span><span class="trilho"></span><span class="n">0</span></div>
+<main>
+  <!-- abertura -->
+  <section class="light hero">
+    <div class="container hero-grid">
+      <div class="rv">
+        <span class="eyebrow">Proposta para a Beatriz Rickli</span>
+        <h1>A direção que falta para o seu trabalho <span class="ouro">aparecer</span>.</h1>
+        <p class="lead">Consultoria de conteúdo e de anúncios para a Engreen Engenharia e a Casa B. Interiores. A sua equipe grava, publica e anuncia. A RK define o que postar, quando, como falar e como ler os números.</p>
+        <dl class="meta">
+          <div><dt>Para</dt><dd>Beatriz Rickli<small>Engreen Engenharia · Casa B. Interiores</small></dd></div>
+          <div><dt>Data</dt><dd class="tnum">23/10/2026</dd></div>
+          <div><dt>Validade</dt><dd class="tnum">30/10/2026</dd></div>
+        </dl>
+        <div class="ctas">
+          <a class="btn btn-ouro" href="#formatos">Ver os formatos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="link" href="#diagnostico">O que encontramos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        </div>
+      </div>
+      <figure class="hero-vis rv">
+        <div class="comp">
+          <div class="win cant"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+            <div class="win-bar" aria-hidden="true"><span></span><span></span><span></span><b>instagram.com/engreen.engenharia</b></div>
+            <div class="ig">
+              <img src="img/2026-01-20_DTvUcOoEWgk_1_capa.jpg" alt="Fachada de edifício histórico pintada" width="420" height="525" fetchpriority="high">
+              <img src="img/2025-07-01_DLkUnGsu7fQ_1_capa.jpg" alt="Beatriz na capa do vídeo sobre engenharia diagnóstica" width="420" height="525">
+              <img src="img/2026-09-24_DdrlNqllkg3_1.jpg" alt="Estudo de layout Refúgio Atlântico" width="420" height="525">
+              <img src="img/2026-06-18_DZuq-N0EcHT_9.jpg" alt="Quarto da CASACOR PR 2026 com anotações" width="420" height="525">
+              <img src="img/2025-07-28_DMpw_wjMguF_2.jpg" alt="Fachada com paisagismo pronto" width="420" height="525">
+              <img src="img/2025-09-08_DOWKUaREQ-C_9.jpg" alt="Revestimentos em pedra natural" width="420" height="525">
+            </div>
+          </div>
+          <div class="fone"><img src="img/2026-09-12_DdMcxirkZh6_6.jpg" alt="Post da Casa B. Interiores em colagem" width="420" height="525"></div>
+        </div>
+        <figcaption class="cap">O trabalho já existe. Falta ritmo e método.</figcaption>
       </figure>
+    </div>
+  </section>
 
-      <ol class="achados" style="counter-reset: achado 1">
-        <li><div>
-          <h3>O feed não vende o que a bio vende</h3>
-          <p>A bio abre com engenharia diagnóstica, perícia e laudos. Nos 12 posts mais recentes aparecem 7 assuntos diferentes, e só 2 falam disso. Quem chega ao perfil não sabe o que contratar.</p>
-        </div></li>
-        <li><div>
-          <h3>O que dá resultado é transformação</h3>
-          <p>Os posts com mais curtidas são antes e depois e estudo de projeto. Isso confirma a sua intuição: dá para ser leve e mostrar resultado, sem aula técnica todo dia.</p>
-        </div></li>
+  <!-- o que ouvimos -->
+  <section class="light alt sec">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Ponto de partida</span>
+        <h2>O que ouvimos de <span class="ouro">você</span>.</h2>
+        <p>Você mandou propostas e todo mundo pediu para deixar para o ano que vem. A ideia é usar essa baixa para gravar e chegar em 2027 com o perfil trabalhando por você.</p>
+      </div>
+      <div class="tres rv">
+        <div><span class="num">01</span><h3>Mostrar o que já fez</h3><p>Muita obra e muito projeto entregues que nunca viraram post, e a Casa B. nascendo com interiores e obra numa empresa só.</p></div>
+        <div><span class="num">02</span><h3>Um ritmo leve</h3><p>Sem postar todo dia e sem falar de forma técnica o tempo inteiro. Um cronograma e metas que caibam na sua rotina.</p></div>
+        <div><span class="num">03</span><h3>Direção para a equipe</h3><p>A Alana grava, o Rafa cuida dos anúncios. Vocês executam; a gente orienta, revisa e ensina a ler os números.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- diagnóstico -->
+  <section class="light sec" id="diagnostico">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Diagnóstico</span>
+        <h2>Seu trabalho é bom. Quase ninguém está <span class="ouro">vendo</span>.</h2>
+        <p>Levantamento feito em 23/10/2026 nos dois perfis, no Google, no Google Maps e na Biblioteca de Anúncios da Meta.</p>
+      </div>
+
+      <ol class="achados rv">
+        <li><span class="n">01</span><div><h3>Para o Google, a Engreen não existe</h3><p>Não há Perfil da Empresa nem site. Quem tem uma trinca ou vai receber um imóvel novo procura no Google e encontra os concorrentes, todos com nota entre 4,6 e 5,0.</p></div></li>
+        <li><span class="n">02</span><div><h3>O feed não vende o que a bio vende</h3><p>A bio abre com engenharia diagnóstica, perícia e laudos. Nos 12 posts mais recentes aparecem 7 assuntos diferentes, e só 2 falam disso.</p></div></li>
+        <li><span class="n">03</span><div><h3>O que dá resultado é transformação</h3><p>Os posts com mais curtidas são antes e depois e estudo de projeto. Dá para ser leve e mostrar resultado, sem aula técnica todo dia.</p></div></li>
+        <li><span class="n">04</span><div><h3>O portfólio está parado</h3><p>Os 12 posts mais recentes cobrem 19 meses, com 5 meses sem nada no primeiro semestre de 2026. Cada obra entregue vale um antes e depois e um pedido de avaliação.</p></div></li>
+        <li><span class="n">05</span><div><h3>Dois perfis, uma pessoa só</h3><p>A Engreen tem 624 seguidores e segue 799 perfis; a Casa B. tem 28. Sem um papel claro para cada um, o trabalho dobra e o público se divide.</p></div></li>
+        <li><span class="n">06</span><div><h3>Espaço livre nos anúncios</h3><p>Ninguém anuncia vistoria ou laudo no Google da região. No Instagram, quase todos os anúncios de engenharia diagnóstica no Brasil são de cursos para engenheiros.</p></div></li>
       </ol>
 
-      <div class="posts">
-        <figure><img src="img/2026-01-20-DTvUcOoEWgk.jpg" alt="Fachada de edifício histórico pintada, reel de antes e depois" loading="lazy"><figcaption><b>47</b> curtidas · <b>16</b> comentários<br>Antes e depois, edifício histórico</figcaption></figure>
-        <figure><img src="img/2025-07-28-DMpw.jpg" alt="Casa com terreno de terra antes do paisagismo" loading="lazy"><figcaption><b>32</b> curtidas · <b>14</b> comentários<br>Paisagismo de fachada, antes e depois</figcaption></figure>
-        <figure><img src="img/2026-09-24-DdrlNqllkg3.jpg" alt="Planta baixa do estudo de layout Refúgio Atlântico" loading="lazy"><figcaption><b>21</b> curtidas · <b>8</b> comentários<br>Estudo de layout, Refúgio Atlântico</figcaption></figure>
-      </div>
-
-      <ol class="achados" style="counter-reset: achado 3">
-        <li><div>
-          <h3>O portfólio existe e está parado</h3>
-          <p>Os 12 posts mais recentes cobrem 19 meses, e entre janeiro e junho de 2026 foram 5 meses sem nada. Cada obra que você já entregou vale um antes e depois, um bastidor e um pedido de avaliação.</p>
-        </div></li>
-      </ol>
-
-      <div class="tempo" role="img" aria-label="Posts por mês de março de 2025 a outubro de 2026">
-        <div class="meses">
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>mar</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>abr</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>mai</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>jun</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span></div><small>jul</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>ago</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>set</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>out</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>nov</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>dez</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>jan</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>fev</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>mar</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>abr</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>mai</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>jun</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>jul</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>ago</small></div>
-          <div class="mes"><div class="pilha"><span class="p"></span></div><small>set</small></div>
-          <div class="mes vazio"><div class="pilha"></div><small>out</small></div>
+      <div class="diag-grid">
+        <div class="rv">
+          <span class="rot">Avaliações no Google · Prudentópolis e Guarapuava</span>
+          <table class="tabela aval">
+            <tr><th>Karta Engenharia e Topografia<small>Prudentópolis</small></th><td><b>36</b><small>nota 5,0</small></td></tr>
+            <tr><th>Otávio Lucas Ternoski<small>Interiores · Prudentópolis</small></th><td><b>33</b><small>nota 4,9</small></td></tr>
+            <tr><th>Brick Engenharia<small>Guarapuava</small></th><td><b>17</b><small>nota 5,0</small></td></tr>
+            <tr><th>Deborah Hudema<small>Engenharia civil · Prudentópolis</small></th><td><b>11</b><small>nota 4,7</small></td></tr>
+            <tr><th>GT Engenharia<small>Laudos · Guarapuava</small></th><td><b>10</b><small>nota 5,0</small></td></tr>
+            <tr class="voce"><th>Engreen Engenharia<small>Sem perfil no Google</small></th><td><b>0</b><small>sem nota</small></td></tr>
+          </table>
         </div>
-        <p class="fonte" style="margin-top:.5rem">Posts da Engreen por mês, de março de 2025 (esquerda) a outubro de 2026. Linha vermelha = mês sem post.</p>
-      </div>
-
-      <ol class="achados" style="counter-reset: achado 4">
-        <li><div>
-          <h3>Dois perfis, uma pessoa só</h3>
-          <p>A Engreen tem 624 seguidores e segue 799 perfis; a Casa B. tem 28. Sem um papel claro para cada um, você dobra o trabalho e divide um público que ainda é pequeno.</p>
-        </div></li>
-        <li><div>
-          <h3>A marca que dá para achar é o seu nome</h3>
-          <p>"Engreen" divide a busca com outras empresas (engreen.com.br é de outra área) e "Casa B." é genérico demais para o Google. "Beatriz Rickli", com o CREA, é único.</p>
-        </div></li>
-        <li><div>
-          <h3>Há espaço livre nos anúncios</h3>
-          <p>Ninguém anuncia vistoria ou laudo no Google da região. No Instagram, os anúncios de engenharia diagnóstica no Brasil são quase todos de cursos para engenheiros. Em Prudentópolis, o designer de interiores com mais avaliações já anuncia em vídeo, só que da loja de Natal.</p>
-        </div></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="folha" id="perfis">
-    <div class="folha-id"><span class="n">03</span><span class="rotulo">Um papel para cada perfil</span></div>
-    <div class="corpo">
-      <h2>A Casa B. desperta o desejo. A Engreen resolve o problema.</h2>
-      <div class="perfis">
-        <article class="perfil">
-          <div><h3>Casa B. Interiores</h3><span class="handle">@casab.interiores</span></div>
-          <dl>
-            <dt>Promessa</dt><dd>Projeto de interiores e obra com <mark>um responsável só</mark>, da concepção à entrega.</dd>
-            <dt>Para quem</dt><dd>Casais e famílias de Prudentópolis, Guarapuava e região que vão reformar, terminar ou mobiliar a casa. Casa de temporada.</dd>
-            <dt>Tom</dt><dd>Leve e editorial, você em primeira pessoa. A colagem com letra de mão que você já faz.</dd>
-            <dt>Ritmo</dt><dd>2 posts por semana</dd>
-          </dl>
-        </article>
-        <article class="perfil">
-          <div><h3>Engreen Engenharia</h3><span class="handle">@engreen.engenharia</span></div>
-          <dl>
-            <dt>Promessa</dt><dd>Descobrir a <mark>causa real</mark> antes de gastar com conserto. Laudo, vistoria, perícia e reforma técnica.</dd>
-            <dt>Para quem</dt><dd>Quem tem trinca, mofo ou infiltração; quem vai receber imóvel novo; vizinho de obra; síndico; advogado.</dd>
-            <dt>Tom</dt><dd>"Isso é normal?" Direto e sem jargão, a engenheira de confiança explicando.</dd>
-            <dt>Ritmo</dt><dd>1 post por semana</dd>
-          </dl>
-        </article>
-      </div>
-      <div class="ponte">
-        <p><b>A ponte entre os dois:</b> quando a obra tem projeto da Casa B. e engenharia da Engreen, o post sai em collab e aparece nos dois perfis com um esforço só. Seu nome aparece nos dois.</p>
-        <span class="mao">um trabalho, dois perfis</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="folha" id="conteudo">
-    <div class="folha-id"><span class="n">04</span><span class="rotulo">Como pensar cada post</span></div>
-    <div class="corpo">
-      <h2>Cada vídeo tem uma função: atrair, aproximar ou fazer pedir orçamento</h2>
-      <div class="tabela">
-        <table class="pilares">
-          <thead><tr><th scope="col">Etapa</th><th scope="col">Casa B.</th><th scope="col">Engreen</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Atrair</th><td>Transformação: antes e depois, ambiente pronto. Seu olhar: achados, feiras, materiais.</td><td>Isso é normal? Trinca, mofo, infiltração, piso estufado: o que é grave e o que não é.</td></tr>
-            <tr><th scope="row">Aproximar</th><td>Da concepção à obra: do esboço ao ambiente, uma decisão de projeto explicada em 30 segundos.</td><td>Caso real: problema, causa, solução. Sem endereço e com autorização do cliente.</td></tr>
-            <tr><th scope="row">Pedir orçamento</th><td>Como funciona contratar: etapas, prazo, quem responde por quê, depoimento de cliente.</td><td>Seus direitos e o momento certo: garantia de obra, vistoria antes das chaves, como funciona o laudo.</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="pautas">
-        <div>
-          <p class="rotulo">6 pautas · Casa B.</p>
-          <ol>
-            <li>"Esse quarto parecia menor do que era." Antes e depois de uma obra já entregue <span class="etapa">atrair</span></li>
-            <li>O erro que mais vejo em cozinha planejada <span class="etapa">atrair</span></li>
-            <li>3 achados da semana para a casa ter cara de casa <span class="etapa">atrair</span></li>
-            <li>Da planta ao ambiente pronto em 20 segundos <span class="etapa">aproximar</span></li>
-            <li>Projeto e obra com o mesmo responsável: o que muda para você <span class="etapa">orçamento</span></li>
-            <li>Quanto tempo leva reformar um banheiro de verdade <span class="etapa">orçamento</span></li>
-          </ol>
-        </div>
-        <div>
-          <p class="rotulo">6 pautas · Engreen</p>
-          <ol>
-            <li>Essa trinca é perigosa? Como saber <span class="etapa">atrair</span></li>
-            <li>O vizinho vai construir? Por que fazer a vistoria cautelar antes <span class="etapa">atrair</span></li>
-            <li>Pintaram três vezes e o mofo voltou. A causa estava em outro lugar <span class="etapa">aproximar</span></li>
-            <li>Vai receber as chaves? Faça isso antes de assinar <span class="etapa">aproximar</span></li>
-            <li>Quanto custa uma vistoria de imóvel novo? <span class="etapa">orçamento</span></li>
-            <li>Garantia de obra: o que a construtora tem que consertar <span class="etapa">orçamento</span></li>
-          </ol>
-        </div>
-      </div>
-      <p class="fonte">Cada pauta chega com direção, sem roteiro decorado: o gancho dos primeiros segundos, o que a Alana precisa mostrar e a frase que você não pode esquecer.</p>
-    </div>
-  </section>
-
-  <section class="folha" id="rotina">
-    <div class="folha-id"><span class="n">05</span><span class="rotulo">A rotina</span></div>
-    <div class="corpo">
-      <h2>3 posts por semana, gravados de uma vez</h2>
-      <p>Em vez de gravar toda semana, a Alana grava de 10 a 12 vídeos numa meia diária por mês, com a lista de cenas pronta. Em novembro, dois mutirões fazem o estoque de dezembro e janeiro: <mark>24 vídeos, 8 semanas</mark> de posts. A baixa de agora vira o conteúdo da alta.</p>
-      <div class="semana" aria-label="Semana modelo">
-        <div class="dia"><span class="rotulo">seg</span><div class="itens"><div class="tarefa">Beatriz confere as pautas da semana · 20 min</div></div></div>
-        <div class="dia"><span class="rotulo">ter</span><div class="itens"><div class="tarefa post"><small>Casa B.</small>Reel</div><div class="tarefa st">stories de obra</div></div></div>
-        <div class="dia"><span class="rotulo">qua</span><div class="itens"><div class="tarefa st">stories de obra</div></div></div>
-        <div class="dia"><span class="rotulo">qui</span><div class="itens"><div class="tarefa post"><small>Engreen</small>Reel</div></div></div>
-        <div class="dia"><span class="rotulo">sex</span><div class="itens"><div class="tarefa">Rafa anota os números · 15 min</div><div class="tarefa st">stories de obra</div></div></div>
-        <div class="dia"><span class="rotulo">sáb</span><div class="itens"><div class="tarefa post"><small>Casa B.</small>Carrossel ou colagem</div></div></div>
-        <div class="dia"><span class="rotulo">dom</span><div class="itens"></div></div>
-      </div>
-      <div class="legenda">
-        <span><i style="background:var(--tinta)"></i>post do feed</span>
-        <span><i style="border:1px dashed var(--linha)"></i>stories sem produção: obra, visita, material chegando</span>
-        <span><i style="background:var(--papel-2)"></i>tarefa curta</span>
-      </div>
-      <div class="duas">
-        <div>
-          <p class="rotulo">Quem faz o quê</p>
-          <ul class="quem">
-            <li><b>Beatriz</b><span>Conta as histórias, aparece quando quiser, aprova.</span></li>
-            <li><b>Alana</b><span>Grava nos mutirões, edita e publica.</span></li>
-            <li><b>Rafa</b><span>Monta e acompanha os anúncios, anota os números.</span></li>
-            <li><b>RK</b><span>Calendário, pautas, direção de cada vídeo, revisão quinzenal.</span></li>
-          </ul>
-        </div>
-        <div>
-          <p class="rotulo">Metas dos 90 dias</p>
-          <ul class="quem">
-            <li><b class="num">36</b><span>posts publicados, somando os dois perfis</span></li>
-            <li><b class="num">15</b><span>avaliações no Google, pedidas a clientes que você já atendeu</span></li>
-            <li><b>Alcance</b><span>medido na 1ª semana; a meta sai do número real, no primeiro encontro</span></li>
-            <li><b>Origem</b><span>toda conversa nova no WhatsApp anotada: Instagram, Google, indicação ou anúncio</span></li>
-          </ul>
+        <div class="provas rv">
+          <span class="rot">Os posts que mais funcionaram</span>
+          <div class="provas-in">
+            <figure><img src="img/2026-01-20_DTvUcOoEWgk_1_capa.jpg" alt="Reel de antes e depois de fachada histórica" width="420" height="525" loading="lazy"><figcaption><b class="tnum">47</b> curtidas<small>Antes e depois de fachada</small></figcaption></figure>
+            <figure><img src="img/2025-07-28_DMpw_wjMguF_1.jpg" alt="Casa antes do paisagismo" width="420" height="525" loading="lazy"><figcaption><b class="tnum">32</b> curtidas<small>Paisagismo, antes e depois</small></figcaption></figure>
+            <figure><img src="img/2026-09-24_DdrlNqllkg3_1.jpg" alt="Planta do estudo de layout" width="420" height="525" loading="lazy"><figcaption><b class="tnum">21</b> curtidas<small>Estudo de layout</small></figcaption></figure>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="folha" id="anuncios">
-    <div class="folha-id"><span class="n">06</span><span class="rotulo">Anúncios e Google</span></div>
-    <div class="corpo">
-      <h2>O Rafa no comando dos anúncios, com método</h2>
-      <p>O anúncio traz a conversa; quem fecha é você. A gente ensina o Rafa a montar, a esperar o tempo certo e a ler o que importa. A verba é paga por você direto à Meta, fora do valor da consultoria.</p>
-      <div class="fases">
-        <div class="fase">
-          <span class="quando">Novembro · fundação</span>
-          <h3>Google e base</h3>
-          <ul>
-            <li>Perfil da Empresa da Engreen no Google, com cada serviço listado</li>
-            <li>Pedido de avaliação aos clientes antigos, por link direto</li>
-            <li>Conta de anúncios no seu nome, Rafa como parceiro</li>
-          </ul>
-          <p class="verba">Verba: R$ 0</p>
-        </div>
-        <div class="fase">
-          <span class="quando">Dezembro e janeiro · teste</span>
-          <h3>Impulsionar o que já funcionou</h3>
-          <ul>
-            <li>Só posts que foram bem sem anúncio, cerca de 2 por mês</li>
-            <li>Público por cidade: Prudentópolis, Guarapuava, Irati e região</li>
-            <li>Idade ampla, sem empilhar interesses</li>
-          </ul>
-          <p class="verba">Verba sugerida: R$ 300 a 450 por mês</p>
-        </div>
-        <div class="fase">
-          <span class="quando">A partir de janeiro · captação</span>
-          <h3>Campanha de conversa</h3>
-          <ul>
-            <li>Um serviço de entrada: vistoria de imóvel novo ou laudo de infiltração</li>
-            <li>2 ou 3 vídeos testando o gancho, direto para o WhatsApp</li>
-            <li>Uma semana sem mexer antes de avaliar</li>
-          </ul>
-          <p class="verba">Verba sugerida: cerca de R$ 900 por mês</p>
-        </div>
+  <!-- estratégia dos perfis -->
+  <section class="light alt sec" id="perfis">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Estratégia</span>
+        <h2>Um papel para cada <span class="ouro">perfil</span>.</h2>
+        <p>A Casa B. desperta o desejo. A Engreen resolve o problema. E o seu nome aparece nos dois, porque é a marca que as pessoas conseguem procurar.</p>
       </div>
-      <div>
-        <p class="rotulo" style="margin-bottom:.5rem">O que o Rafa aprende a ler</p>
-        <div class="funil">
-          <span>alcance</span><em>→</em><span>cliques</span><em>→</em><span>conversas</span><em>→</em><span>orçamentos</span><em>→</em><span class="fim">contratos</span>
-        </div>
-        <p class="fonte" style="margin-top:.5rem">Mais custo por mil exibições, frequência e custo por conversa. O anúncio só está bom se o último número andar.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="folha" id="investimento">
-    <div class="folha-id"><span class="n">07</span><span class="rotulo">Investimento</span></div>
-    <div class="corpo">
-      <h2>Três formatos, do encontro único ao acompanhamento</h2>
       <div class="opcoes">
-        <article class="opcao">
-          <p class="rotulo">A · Sessão de direção</p>
-          <p class="preco num">R$ 700</p>
-          <p class="cond">à vista</p>
-          <ul>
-            <li>Estudo dos dois perfis (pronto)</li>
-            <li>1 encontro de 2 h com você, Alana e Rafa</li>
-            <li>Guia de direção: papel dos perfis, pilares, ritmo, checklists de gravação e de anúncios, passo a passo do Google</li>
-            <li>12 pautas com direção</li>
-            <li>7 dias de dúvidas pelo WhatsApp</li>
+        <article class="opcao rv">
+          <div class="op-topo"><span class="rot">@casab.interiores</span><span class="tag">2 posts por semana</span></div>
+          <h3>Casa B. Interiores</h3>
+          <p class="op-desc">Projeto de interiores e obra com um responsável só, da concepção à entrega.</p>
+          <ul class="lista">
+            <li>Para quem<small>Casais e famílias de Prudentópolis, Guarapuava e região que vão reformar, terminar ou mobiliar a casa. Casa de temporada.</small></li>
+            <li>Tom<small>Leve e editorial, você em primeira pessoa. A colagem com letra de mão que você já faz.</small></li>
+            <li>O que postar<small>Antes e depois, do esboço ao ambiente pronto, achados e referências, como funciona contratar.</small></li>
           </ul>
         </article>
-        <article class="opcao rec">
-          <span class="selo">Recomendado</span>
-          <p class="rotulo">B · Programa de 90 dias</p>
-          <p class="preco num">R$ 1.800</p>
-          <p class="cond">em 3 parcelas de R$ 600</p>
-          <ul>
-            <li>Tudo da sessão de direção</li>
-            <li>Calendário de novembro a janeiro com 36 pautas e direção de cada vídeo</li>
-            <li>Lista de cenas dos mutirões para a Alana</li>
-            <li>2 sessões de 1 h com o Rafa dentro do Gerenciador de Anúncios e revisão de cada campanha antes de ligar</li>
-            <li>6 encontros quinzenais de 1 h para revisar posts e números</li>
-            <li>Relatório mensal: o que funcionou e o que muda</li>
-            <li>Dúvidas pelo WhatsApp nos 90 dias, em horário comercial</li>
-          </ul>
-          <span class="mao">o acompanhamento que a Nicoli te adiantou</span>
-        </article>
-        <article class="opcao">
-          <p class="rotulo">C · Acompanhamento mensal</p>
-          <p class="preco num">R$ 450 <small>por mês</small></p>
-          <p class="cond">depois da sessão ou do programa</p>
-          <ul>
-            <li>1 encontro de 1h30 por mês</li>
-            <li>Pautas do mês com direção</li>
-            <li>Revisão dos números do Instagram e dos anúncios</li>
-            <li>Ajuste do calendário conforme a temporada</li>
+        <article class="opcao destaque cant rv"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+          <div class="op-topo"><span class="rot">@engreen.engenharia</span><span class="tag">1 post por semana</span></div>
+          <h3>Engreen Engenharia</h3>
+          <p class="op-desc">Descobrir a causa real antes de gastar com conserto. Laudo, vistoria, perícia e reforma técnica.</p>
+          <ul class="lista">
+            <li>Para quem<small>Quem tem trinca, mofo ou infiltração; quem vai receber imóvel novo; vizinho de obra; síndico; advogado.</small></li>
+            <li>Tom<small>"Isso é normal?" Direto e sem jargão, a engenheira de confiança explicando.</small></li>
+            <li>O que postar<small>Problemas comuns explicados, casos reais com autorização, direitos do comprador, como funciona o laudo.</small></li>
           </ul>
         </article>
       </div>
-      <div class="compara">
-        <span>Se uma agência fizesse posts e anúncios por você (faixa de mercado em 2026)</span><span class="v">R$ 2.100 a 5.000 por mês</span>
-        <span class="destaque">Programa de 90 dias com a RK, com a execução na sua equipe</span><span class="v destaque">R$ 600 por mês</span>
-      </div>
-      <p class="fonte">Não incluso: gravação, edição, publicação, operação da conta de anúncios, verba de anúncio, site e design de peças. Pagamento por Pix. Na opção B, a primeira parcela no início e as outras a cada 30 dias. Faixa de mercado: social media intermediário de R$ 1.500 a 3.500 por mês somado a gestor de tráfego freelancer de R$ 600 a 1.500 por mês.</p>
-    </div>
-  </section>
 
-  <section class="folha" id="cronograma">
-    <div class="folha-id"><span class="n">08</span><span class="rotulo">Cronograma</span></div>
-    <div class="corpo">
-      <h2>90 dias, da base à primeira campanha</h2>
-      <div class="crono">
+      <div class="comum rv">
         <div>
-          <span class="rotulo">Mês 1</span>
-          <h3>Novembro</h3>
-          <ul>
-            <li>Encontro de abertura com você, Alana e Rafa</li>
-            <li>Guia de direção e calendário entregues</li>
-            <li>Perfil do Google no ar e avaliações pedidas</li>
-            <li>Treino 1 do Rafa</li>
-            <li>Dois mutirões de gravação</li>
-          </ul>
+          <span class="eyebrow">Como pensar cada post</span>
+          <h3>Atrair, aproximar, pedir orçamento.</h3>
+          <p>Cada vídeo tem uma função. Quando a obra tem projeto da Casa B. e engenharia da Engreen, o post sai em conjunto e aparece nos dois perfis com um esforço só.</p>
         </div>
-        <div>
-          <span class="rotulo">Mês 2</span>
-          <h3>Dezembro</h3>
-          <ul>
-            <li>3 posts por semana rodando</li>
-            <li>Impulsionamento de teste</li>
-            <li>Treino 2 do Rafa</li>
-            <li>Primeiro relatório</li>
-          </ul>
-        </div>
-        <div>
-          <span class="rotulo">Mês 3</span>
-          <h3>Janeiro</h3>
-          <ul>
-            <li>Campanha de conversa do serviço de entrada</li>
-            <li>Mutirão de fevereiro planejado</li>
-            <li>Relatório final e plano dali em diante</li>
-          </ul>
-        </div>
+        <ul class="duas">
+          <li><b>Atrair:</b> transformação, ambiente pronto, "essa trinca é perigosa?"</li>
+          <li><b>Aproximar:</b> bastidor da obra, decisão de projeto em 30 segundos, caso real</li>
+          <li><b>Pedir orçamento:</b> como funciona contratar, prazo, o que está incluso</li>
+          <li><b>Prova:</b> depoimento de cliente e obra entregue, sempre com autorização</li>
+        </ul>
       </div>
-      <div>
-        <p class="rotulo" style="margin-bottom:.6rem">Para começar</p>
-        <ol class="passos">
-          <li><p>Você escolhe o formato (A, B ou C) até <b class="num">30/10</b>.</p></li>
-          <li><p>A gente marca o encontro de abertura num horário em que a Alana e o Rafa também possam estar.</p></li>
-          <li><p>Antes do encontro, você confirma o endereço da Engreen (o do CNPJ e o de um post antigo são diferentes) e separa fotos de 3 a 5 obras já entregues.</p></li>
+
+      <div class="paginas">
+        <div class="rv">
+          <span class="eyebrow">Exemplos</span>
+          <h3>12 pautas para começar.</h3>
+          <p>Cada pauta chega com direção, sem roteiro decorado: o gancho dos primeiros segundos, o que a Alana precisa mostrar e a frase que você não pode esquecer.</p>
+        </div>
+        <ol class="oito doze rv">
+          <li><span>"Esse quarto parecia menor do que era"<em>Casa B. · antes e depois</em></span></li>
+          <li><span>Essa trinca é perigosa? Como saber<em>Engreen · atrair</em></span></li>
+          <li><span>O erro que mais vejo em cozinha planejada<em>Casa B. · atrair</em></span></li>
+          <li><span>O vizinho vai construir? Faça a vistoria cautelar antes<em>Engreen · atrair</em></span></li>
+          <li><span>Da planta ao ambiente pronto em 20 segundos<em>Casa B. · aproximar</em></span></li>
+          <li><span>Pintaram três vezes e o mofo voltou<em>Engreen · caso real</em></span></li>
+          <li><span>3 achados da semana para a casa ter cara de casa<em>Casa B. · atrair</em></span></li>
+          <li><span>Vai receber as chaves? Faça isso antes de assinar<em>Engreen · aproximar</em></span></li>
+          <li><span>Projeto e obra com o mesmo responsável<em>Casa B. · orçamento</em></span></li>
+          <li><span>Quanto custa uma vistoria de imóvel novo?<em>Engreen · orçamento</em></span></li>
+          <li><span>Quanto tempo leva reformar um banheiro<em>Casa B. · orçamento</em></span></li>
+          <li><span>Garantia de obra: o que a construtora tem que consertar<em>Engreen · orçamento</em></span></li>
         </ol>
       </div>
     </div>
   </section>
 
-  <footer class="rodape">
-    <div><strong>RK Performance</strong><br>Sites, sistemas e inteligência artificial · rkperformance.com.br</div>
-    <div>João Vitor e Nicoli<br>Proposta preparada em 23/10/2026</div>
-  </footer>
+  <div class="band l2-d" aria-hidden="true"></div>
 
-</div>
+  <!-- rotina (noite) -->
+  <section class="dark sec" id="rotina">
+    <div class="container">
+      <div class="trafego-grid">
+        <div class="rv">
+          <div class="sec-head">
+            <span class="eyebrow">Rotina</span>
+            <h2>3 posts por semana, gravados <span class="ouro">de uma vez</span>.</h2>
+            <p>Em vez de gravar toda semana, a Alana grava de 10 a 12 vídeos numa meia diária por mês, com a lista de cenas pronta. Em novembro, dois mutirões fazem o estoque de dezembro e janeiro.</p>
+          </div>
+          <div class="preco-noite"><span class="val tnum">24</span><span class="per">vídeos em novembro</span><small>8 semanas de posts prontas antes da alta</small></div>
+        </div>
+        <ol class="passos rv">
+          <li><span class="n">01</span><div><h3>Mutirão de gravação</h3><p>Uma meia diária por mês com a Alana. Obras entregues, bastidores, você explicando, tudo de uma vez.</p></div></li>
+          <li><span class="n">02</span><div><h3>Segunda, 20 minutos</h3><p>Você confere as pautas da semana no calendário que a RK entrega pronto.</p></div></li>
+          <li><span class="n">03</span><div><h3>Terça, quinta e sábado</h3><p>Reel da Casa B. na terça, reel da Engreen na quinta, carrossel ou colagem da Casa B. no sábado.</p></div></li>
+          <li><span class="n">04</span><div><h3>Stories sem produção</h3><p>Três vezes por semana: obra, visita técnica, material chegando. Celular na mão, sem edição.</p></div></li>
+          <li><span class="n">05</span><div><h3>Sexta, 15 minutos</h3><p>O Rafa anota os números da semana numa planilha simples.</p></div></li>
+          <li><span class="n">06</span><div><h3>A cada 15 dias</h3><p>Encontro de 1 hora com a RK para revisar o que funcionou e ajustar o calendário.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="tres-noite rv">
+        <div><span class="rot">Quem faz o quê</span><h3>Cada um no seu papel</h3><ul><li>Beatriz: as histórias, o rosto, a aprovação</li><li>Alana: gravação, edição e publicação</li><li>Rafa: anúncios e números</li><li>RK: estratégia, pautas, direção e revisão</li></ul></div>
+        <div><span class="rot">Metas de 90 dias</span><h3>Constância primeiro</h3><ul><li>36 posts publicados, somando os dois perfis</li><li>Perfil no Google no ar e 15 avaliações de clientes antigos</li><li>Toda conversa nova anotada com a origem</li></ul></div>
+        <div><span class="rot">Alcance</span><h3>Meta com número real</h3><p>Medimos o alcance na primeira semana e definimos a meta de crescimento no primeiro encontro mensal, com o número na mão, sem chute.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
+
+  <!-- anúncios e google -->
+  <section class="light sec" id="anuncios">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Anúncios e Google</span>
+        <h2>O Rafa no comando dos anúncios, com <span class="ouro">método</span>.</h2>
+        <p>O anúncio traz a conversa; quem fecha é você. A gente ensina o Rafa a montar, a esperar o tempo certo e a ler o que importa. A verba é paga por você direto à Meta, fora do valor da consultoria.</p>
+      </div>
+      <div class="tres rv">
+        <div><span class="num">01</span><span class="rot quando">Novembro</span><h3>Google e base</h3><p>Perfil da Empresa da Engreen no Google com cada serviço listado, pedido de avaliação aos clientes antigos e conta de anúncios no seu nome, com o Rafa como parceiro.</p><p class="verba">Verba: R$ 0</p></div>
+        <div><span class="num">02</span><span class="rot quando">Dezembro e janeiro</span><h3>Impulsionar o que já funcionou</h3><p>Só posts que foram bem sem anúncio, cerca de 2 por mês, para Prudentópolis, Guarapuava, Irati e região. Idade ampla, sem empilhar interesses.</p><p class="verba">Verba sugerida: R$ 300 a 450 por mês</p></div>
+        <div><span class="num">03</span><span class="rot quando">A partir de janeiro</span><h3>Campanha de conversa</h3><p>Um serviço de entrada, como vistoria de imóvel novo ou laudo de infiltração, com 2 ou 3 vídeos testando o gancho, direto para o WhatsApp.</p><p class="verba">Verba sugerida: cerca de R$ 900 por mês</p></div>
+      </div>
+      <div class="comum rv">
+        <div>
+          <span class="eyebrow">O que o Rafa aprende a ler</span>
+          <h3>O anúncio só está bom se o último número andar.</h3>
+        </div>
+        <ul class="duas">
+          <li>Alcance e frequência</li>
+          <li>Custo por mil exibições e taxa de clique</li>
+          <li>Custo por conversa no WhatsApp</li>
+          <li>Conversas, orçamentos e contratos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- formatos -->
+  <section class="light alt sec" id="formatos">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Formatos</span>
+        <h2>Três formas de <span class="ouro">começar</span>.</h2>
+        <p>Do encontro único ao acompanhamento de 90 dias. Em todos, a execução fica com a sua equipe e a direção fica com a gente.</p>
+      </div>
+      <div class="opcoes op3">
+        <article class="opcao rv">
+          <div class="op-topo"><span class="rot">Formato A</span></div>
+          <h3>Sessão de direção</h3>
+          <p class="op-desc">O que você imaginou: uma conversa de 2 horas, saindo com o plano na mão.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">700</span><span class="per">à vista</span></div>
+          <ul class="lista">
+            <li>Estudo dos dois perfis<small>Já feito, resumido nesta proposta</small></li>
+            <li>1 encontro de 2 horas<small>Com você, a Alana e o Rafa</small></li>
+            <li>Guia de direção<small>Papel dos perfis, pilares, ritmo, checklists de gravação e de anúncios, passo a passo do Google</small></li>
+            <li>12 pautas com direção</li>
+            <li>7 dias de dúvidas pelo WhatsApp</li>
+          </ul>
+          <button class="btn btn-fio" type="button" data-escolher="A">Escolher o formato A</button>
+        </article>
+
+        <article class="opcao destaque cant rv"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+          <div class="op-topo"><span class="rot">Formato B</span><span class="tag">Recomendado</span></div>
+          <h3>Programa de 90 dias</h3>
+          <p class="op-desc">A sessão de direção e o acompanhamento até a primeira campanha rodar.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">1.800</span><span class="per">3 × R$ 600</span></div>
+          <ul class="lista">
+            <li>Tudo do formato A</li>
+            <li>Calendário de novembro a janeiro<small>36 pautas com a direção de cada vídeo</small></li>
+            <li>Lista de cenas dos mutirões para a Alana</li>
+            <li>2 treinos de 1 hora com o Rafa<small>Dentro do Gerenciador de Anúncios, e revisão de cada campanha antes de ligar</small></li>
+            <li>6 encontros quinzenais de 1 hora<small>Para revisar posts e números</small></li>
+            <li>Relatório mensal<small>O que funcionou e o que muda</small></li>
+            <li>Dúvidas pelo WhatsApp nos 90 dias</li>
+          </ul>
+          <button class="btn btn-ouro" type="button" data-escolher="B">Escolher o formato B <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </article>
+
+        <article class="opcao rv">
+          <div class="op-topo"><span class="rot">Formato C</span></div>
+          <h3>Acompanhamento mensal</h3>
+          <p class="op-desc">Para seguir depois da sessão ou do programa, no ritmo que der.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">450</span><span class="per">por mês</span></div>
+          <ul class="lista">
+            <li>1 encontro de 1h30 por mês</li>
+            <li>Pautas do mês com direção</li>
+            <li>Revisão dos números<small>Do Instagram e dos anúncios</small></li>
+            <li>Ajuste do calendário conforme a temporada</li>
+          </ul>
+          <button class="btn btn-fio" type="button" data-escolher="C">Escolher o formato C</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- investimento -->
+  <section class="light sec" id="investimento">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Investimento</span>
+        <h2>Resumo dos <span class="ouro">valores</span>.</h2>
+      </div>
+      <div class="inv-grid">
+        <div class="rv">
+          <table class="tabela">
+            <tr><th>Formato A · Sessão de direção<small>Encontro de 2 horas e guia de direção</small></th><td><b>R$ 700</b><small>à vista</small></td></tr>
+            <tr><th>Formato B · Programa de 90 dias<small>Novembro a janeiro, com acompanhamento</small></th><td><b>R$ 1.800</b><small>3 × R$ 600</small></td></tr>
+            <tr><th>Formato C · Acompanhamento mensal<small>Depois da sessão ou do programa</small></th><td><b>R$ 450</b><small>por mês</small></td></tr>
+            <tr><th>Verba dos anúncios<small>Paga direto à Meta</small></th><td><b>Você define</b><small>sugestão na proposta</small></td></tr>
+          </table>
+          <div class="pagto">
+            <p><b>Pagamento:</b> Pix. Formato B com a primeira parcela no início e as outras a cada 30 dias.</p>
+            <p><b>Comparação:</b> uma agência que fizesse posts e anúncios por você custaria de R$ 2.100 a R$ 5.000 por mês (faixa de mercado em 2026). No formato B, são R$ 600 por mês com a execução na sua equipe.</p>
+            <p><b>Não incluso:</b> gravação, edição, publicação, operação da conta de anúncios, verba de anúncio, site e design de peças.</p>
+          </div>
+        </div>
+
+        <form class="escolha rv" id="escolha" onsubmit="return false">
+          <span class="eyebrow">Sua escolha</span>
+          <h3>Escolha e envie pelo WhatsApp.</h3>
+          <fieldset>
+            <legend>Formato</legend>
+            <label class="op"><input type="radio" name="formato" value="A"><span class="marca redonda"></span><span class="txt">Sessão de direção<small>Formato A</small></span><b>R$ 700</b></label>
+            <label class="op"><input type="radio" name="formato" value="B" checked><span class="marca redonda"></span><span class="txt">Programa de 90 dias<small>Formato B, recomendado</small></span><b>3 × R$ 600</b></label>
+            <label class="op"><input type="radio" name="formato" value="C"><span class="marca redonda"></span><span class="txt">Acompanhamento mensal<small>Formato C</small></span><b>R$ 450/mês</b></label>
+          </fieldset>
+          <div class="total" aria-live="polite">
+            <div><span class="rot">Investimento</span><b id="t-valor">R$ 1.800</b><small id="t-cond">Em 3 parcelas de R$ 600, uma por mês</small></div>
+            <div><span class="rot">Começa com</span><b id="t-inicio">Abertura</b><small id="t-inicio-txt">Encontro de 2 horas com você, a Alana e o Rafa</small></div>
+          </div>
+          <div class="acoes">
+            <a class="btn btn-ouro" id="aceitar" href="https://wa.me/5542999246208" target="_blank" rel="noopener">Aceitar pelo WhatsApp <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="link" id="duvida" href="https://wa.me/5542999246208?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20proposta%20de%20consultoria%20da%20RK%3A%20" target="_blank" rel="noopener">Tirar uma dúvida</a>
+          </div>
+          <p class="aviso">O botão abre o WhatsApp com a mensagem pronta. Nada é enviado sem você confirmar.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="band l-d" aria-hidden="true"></div>
+
+  <!-- próximos passos -->
+  <section class="dark sec" id="passos">
+    <div class="container fim-grid">
+      <div class="rv">
+        <div class="sec-head">
+          <span class="eyebrow">Depois do aceite</span>
+          <h2>Próximos <span class="ouro">passos</span>.</h2>
+        </div>
+        <ol class="passos">
+          <li><span class="n">01</span><div><h3>Escolha e aceite</h3><p>Você escolhe o formato e responde pelo WhatsApp.</p></div></li>
+          <li><span class="n">02</span><div><h3>Encontro de abertura</h3><p>Marcamos um horário em que a Alana e o Rafa também possam estar. Antes, você confirma o endereço da Engreen e separa fotos de 3 a 5 obras entregues.</p></div></li>
+          <li><span class="n">03</span><div><h3>Guia e calendário</h3><p>Entregamos o guia de direção e as pautas. No formato B, o calendário completo até janeiro.</p></div></li>
+          <li><span class="n">04</span><div><h3>Google e gravação</h3><p>Perfil da Empresa no ar, pedido de avaliações enviado e o primeiro mutirão de gravação.</p></div></li>
+          <li><span class="n">05</span><div><h3>Posts e anúncios</h3><p>Os posts começam a sair e o Rafa liga os primeiros anúncios com a nossa revisão.</p></div></li>
+        </ol>
+      </div>
+      <figure class="equipe rv">
+        <div class="retrato cant in"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><img src="../../assets/img/equipe-proposta.webp" alt="João Vitor e Nicoli, da RK Performance" width="1000" height="1250" loading="lazy"></div>
+        <figcaption>
+          <span class="rot">Quem cuida do projeto</span>
+          <b>João Vitor &amp; Nicoli</b>
+          <p>Somos a RK Performance, de Guarapuava (PR). Criamos sites, sistemas e anúncios para empresas de todo o Brasil e acompanhamos cada projeto de perto, do primeiro rascunho às campanhas.</p>
+          <div class="contatos">
+            <a class="link" href="https://wa.me/5542999246208" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="link" href="https://www.instagram.com/rkperformance.digital/" target="_blank" rel="noopener">Instagram</a>
+            <a class="link" href="https://rkperformance.com.br" target="_blank" rel="noopener">Site</a>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="dark rodape">
+  <div class="container rodape-in">
+    <a class="logo" href="https://rkperformance.com.br" aria-label="RK Performance"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></a>
+    <p>Proposta válida até 30/10/2026 · contato@rkperformance.com.br</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.body.classList.remove('no-js');
+  var WA = 'https://wa.me/5542999246208?text=';
+  var F = {
+    A: { nome: 'a sessão de direção (formato A), R$ 700 à vista', valor: 'R$ 700', cond: 'À vista, por Pix', inicio: 'Abertura', inicioTxt: 'Encontro de 2 horas com você, a Alana e o Rafa' },
+    B: { nome: 'o programa de 90 dias (formato B), em 3 parcelas de R$ 600', valor: 'R$ 1.800', cond: 'Em 3 parcelas de R$ 600, uma por mês', inicio: 'Abertura', inicioTxt: 'Encontro de 2 horas com você, a Alana e o Rafa' },
+    C: { nome: 'o acompanhamento mensal (formato C), R$ 450 por mês', valor: 'R$ 450/mês', cond: 'Mensal, por Pix', inicio: '1h30', inicioTxt: 'Primeiro encontro mensal, com as pautas do mês' }
+  };
+  var form = document.getElementById('escolha');
+  var aceitar = document.getElementById('aceitar');
+  function atualizar() {
+    var f = F[form.querySelector('input[name="formato"]:checked').value];
+    document.getElementById('t-valor').textContent = f.valor;
+    document.getElementById('t-cond').textContent = f.cond;
+    document.getElementById('t-inicio').textContent = f.inicio;
+    document.getElementById('t-inicio-txt').textContent = f.inicioTxt;
+    var msg = 'Olá! Li a proposta de consultoria da RK e quero seguir com ' + f.nome + '. Podemos marcar o primeiro encontro?';
+    aceitar.href = WA + encodeURIComponent(msg);
+  }
+  form.addEventListener('change', atualizar);
+  atualizar();
+
+  document.querySelectorAll('[data-escolher]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      form.querySelector('input[name="formato"][value="' + b.dataset.escolher + '"]').checked = true;
+      atualizar();
+      var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      form.scrollIntoView({ behavior: reduz ? 'auto' : 'smooth', block: 'center' });
+    });
+  });
+
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
 </body>
 </html>
