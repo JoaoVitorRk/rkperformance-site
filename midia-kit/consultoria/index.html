@@ -536,9 +536,9 @@ ul,ol{list-style:none}
           <div class="op-topo"><span class="rot">Plano 2</span><span class="tag">Recomendado</span></div>
           <h3>Programa de 90 dias</h3>
           <p class="op-desc">A sessão de direção e o acompanhamento até a rotina e os anúncios rodarem.</p>
-          <div class="preco"><span class="rs">R$</span><span class="val tnum">2.070</span><span class="per">3 × R$ 690</span></div>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">1.800</span><span class="per">3 × R$ 600</span></div>
           <ul class="lista">
-            <li>Tudo da sessão de direção</li>
+            <li>Tudo da sessão de direção<small>Avulsa, ela custa R$ 690. No programa, cada mês sai por R$ 600</small></li>
             <li>Calendário de 90 dias<small>36 pautas com a direção de cada vídeo</small></li>
             <li>Lista de cenas para gravar tudo de uma vez<small>Meia diária de gravação por mês</small></li>
             <li>2 treinos de 1 hora de anúncios<small>Dentro do Gerenciador de Anúncios, com revisão de cada campanha antes de ligar</small></li>
@@ -596,7 +596,7 @@ ul,ol{list-style:none}
           <fieldset>
             <legend>Plano</legend>
             <label class="op"><input type="radio" name="plano" value="sessao"><span class="marca redonda"></span><span class="txt">Sessão de direção<small>1 encontro, guia e 12 pautas</small></span><b>R$ 690</b></label>
-            <label class="op"><input type="radio" name="plano" value="programa" checked><span class="marca redonda"></span><span class="txt">Programa de 90 dias<small>Sessão, calendário, treinos e encontros</small></span><b>3 × R$ 690</b></label>
+            <label class="op"><input type="radio" name="plano" value="programa" checked><span class="marca redonda"></span><span class="txt">Programa de 90 dias<small>Sessão, calendário, treinos e encontros</small></span><b>3 × R$ 600</b></label>
             <label class="op"><input type="radio" name="plano" value="completo"><span class="marca redonda"></span><span class="txt">Direção completa<small>Programa, revisão, gravação e campanha</small></span><b>3 × R$ 990</b></label>
           </fieldset>
           <fieldset>
@@ -604,7 +604,7 @@ ul,ol{list-style:none}
             <label class="op"><input type="checkbox" name="acomp" value="1"><span class="marca"></span><span class="txt">Seguir com o acompanhamento mensal<small>Começa quando o plano termina</small></span><b>R$ 490/mês</b></label>
           </fieldset>
           <div class="total" aria-live="polite">
-            <div><span class="rot">Investimento</span><b id="t-valor">R$ 2.070</b><small id="t-cond">Em 3 parcelas de R$ 690, uma por mês</small></div>
+            <div><span class="rot">Investimento</span><b id="t-valor">R$ 1.800</b><small id="t-cond">Em 3 parcelas de R$ 600, uma por mês</small></div>
             <div><span class="rot">Depois do plano</span><b id="t-depois">Sem compromisso</b><small id="t-depois-txt">O acompanhamento é opcional</small></div>
           </div>
           <div class="acoes">
@@ -664,7 +664,7 @@ ul,ol{list-style:none}
   var WA = 'https://wa.me/5542999246208?text=';
   var P = {
     sessao: { nome: 'a sessão de direção (R$ 690 à vista)', valor: 'R$ 690', cond: 'À vista, por Pix, antes do encontro' },
-    programa: { nome: 'o programa de 90 dias (3 × R$ 690)', valor: 'R$ 2.070', cond: 'Em 3 parcelas de R$ 690, uma por mês' },
+    programa: { nome: 'o programa de 90 dias (3 × R$ 600)', valor: 'R$ 1.800', cond: 'Em 3 parcelas de R$ 600, uma por mês' },
     completo: { nome: 'a direção completa (3 × R$ 990)', valor: 'R$ 2.970', cond: 'Em 3 parcelas de R$ 990, uma por mês' }
   };
   var form = document.getElementById('escolha');
