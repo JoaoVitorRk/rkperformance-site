@@ -336,12 +336,46 @@ ul,ol{list-style:none}
 .opcoes.dois{grid-template-columns:repeat(2,1fr);max-width:1000px}
 @media (min-width:1021px){.opcoes.dois .op-desc{min-height:3.4em}}
 
+.seo{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:104px;padding-top:72px;border-top:1px solid var(--fio-escuro)}
+.seo h3{font-size:clamp(28px,3vw,38px);font-weight:200;margin:20px 0 18px}
+.seo>div>p{color:var(--tinta2);font-size:17px;line-height:1.75}
+.seo .lista{margin-top:26px}
+.busca-fig{margin:0}
+.busca{background:#FDFBFA;color:#202124;border-radius:14px;padding:22px 22px 26px;box-shadow:0 40px 80px -40px rgba(42,33,28,.45);font-family:Arial,Helvetica,sans-serif;border:1px solid var(--fio-escuro)}
+.campo{display:flex;align-items:center;gap:12px;border:1px solid #dfe1e5;border-radius:24px;padding:11px 18px;font-size:15px;box-shadow:0 1px 6px rgba(32,33,36,.12)}
+.campo svg{width:17px;height:17px;flex:none;stroke:#5f6368;fill:none;stroke-width:2}
+.res{margin-top:24px}
+.res-site{display:flex;align-items:center;gap:10px}
+.res-site i{width:28px;height:28px;border-radius:50%;background:url(img/monograma.svg) center/100% no-repeat;flex:none}
+.res-site span{font-size:14px;line-height:1.3;color:#202124}
+.res-site small{display:block;font-size:12px;color:#4d5156}
+.res h4{font-weight:400;font-size:19px;line-height:1.3;color:#1a0dab;margin:8px 0 4px}
+.res p{font-size:14px;line-height:1.55;color:#4d5156}
+.res.fantasma{opacity:.38;margin-top:22px;padding-top:20px;border-top:1px solid #eee}
+.res.fantasma b{display:block;height:10px;background:#dcdcdc;border-radius:5px;margin-top:9px}
+.res.fantasma b:first-child{width:46%;margin-top:0}
+.res.fantasma b:nth-child(2){width:78%;height:14px;background:#c9c6e6}
+.res.fantasma b:nth-child(3){width:92%}
+.busca-fig .cap{margin-top:22px}
+
+.pdf{display:grid;grid-template-columns:1fr 1fr;margin-top:44px;border-top:1px solid var(--fio)}
+.pdf>div{padding:24px 26px 0 0}
+.pdf>div+div{padding-left:26px;border-left:1px solid var(--fio)}
+.pdf p{color:var(--mudo);margin-top:10px;font-size:15.5px}
+.pdf>div:first-child .rot{color:var(--mudo2)}
+.pdf>div+div p{color:var(--off)}
+
 @media (max-width:1020px){
+  .seo{grid-template-columns:1fr;gap:48px}
   .fones{grid-template-columns:repeat(2,1fr);row-gap:48px}
   .opcoes.dois{grid-template-columns:1fr}
   .hero-vis .fone{right:-10px}
 }
 @media (max-width:640px){
+  .seo{margin-top:80px;padding-top:56px}
+  .busca{padding:18px 16px 22px}
+  .pdf{grid-template-columns:1fr}
+  .pdf>div+div{padding-left:0;border-left:0;border-top:1px solid var(--fio);margin-top:22px}
   .hero-vis .comp{padding-bottom:0}
   .fones{gap:16px;row-gap:40px}
   .fones figcaption b{font-size:16px}
@@ -420,13 +454,37 @@ ul,ol{list-style:none}
           <p>E chega no WhatsApp já sabendo quem você é.</p>
         </div>
         <ul class="duas">
-          <li><b>Google e WhatsApp com o seu nome.</b> O link compartilhado mostra Rodrigo Mantega, a sua foto e a sua descrição.</li>
+          <li><b>WhatsApp com o seu nome.</b> O link compartilhado mostra Rodrigo Mantega, a sua foto e a sua descrição.</li>
           <li><b>Casamentos dentro da página.</b> Filmes, fotos e feedbacks sem mandar ninguém para fora.</li>
           <li><b>Abertura em filme</b>, nítida no celular e no computador, com botão de som.</li>
           <li><b>Marcas e palcos</b> que você já fez, num bloco só para quem contrata evento.</li>
           <li><b>Sets e remixes</b> tocando na própria página.</li>
           <li><b>No seu domínio</b>, rodrigomantega.com.br, sem mensalidade de hospedagem.</li>
         </ul>
+      </div>
+      <div class="seo">
+        <div class="rv">
+          <span class="eyebrow">SEO configurado</span>
+          <h3>No Google, na frente de quem <span class="ouro">não tem</span>.</h3>
+          <p>O casal que procura um DJ pesquisa “DJ de casamento em São Paulo”, não o seu nome. A página sai com o SEO configurado para essas buscas, o que ajuda a ranquear melhor e a aparecer na frente dos concorrentes nas pesquisas.</p>
+          <ul class="lista">
+            <li>Título e descrição com o seu nome e “DJ de casamento em São Paulo”</li>
+            <li>Dados estruturados<small>Para o Google ler quem você é, o que faz e onde atende</small></li>
+            <li>Sitemap e cadastro no Google Search Console<small>Para o Google encontrar e ler a página inteira</small></li>
+          </ul>
+        </div>
+        <figure class="busca-fig rv">
+          <div class="busca" role="img" aria-label="Simulação de busca no Google por DJ de casamento em São Paulo, com a página do Rodrigo Mantega no resultado">
+            <div class="campo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>dj de casamento em são paulo</div>
+            <div class="res">
+              <div class="res-site"><i></i><span>Rodrigo Mantega<small>rodrigomantega.com.br</small></span></div>
+              <h4>Rodrigo Mantega · DJ de casamentos em São Paulo</h4>
+              <p>DJ de casamentos e eventos exclusivos em São Paulo. 25 anos de pista, Rock in Rio, The Town, Fórmula 1 e Bridal Guide da Constance Zahn.</p>
+            </div>
+            <div class="res fantasma" aria-hidden="true"><b></b><b></b><b></b></div>
+          </div>
+          <figcaption class="cap">Simulação de como a página fica preparada para aparecer no Google</figcaption>
+        </figure>
       </div>
       <div class="acoes-sec rv">
         <a class="btn btn-fio" href="https://joaovitorrk.github.io/rodrigo-mantega-site/" target="_blank" rel="noopener">Abrir a sua página <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
@@ -445,6 +503,10 @@ ul,ol{list-style:none}
           <span class="eyebrow">Opção 2 · a proposta automática</span>
           <h2>Cada casal recebe a <span class="ouro">sua</span> proposta.</h2>
           <p>Você monta a sua proposta padrão uma vez, com as suas opções, valores e condições. Depois, cada casal recebe um link só dele, com o nome, a data e o local, no visual da sua página.</p>
+        </div>
+        <div class="pdf rv">
+          <div><span class="rot">PDF</span><p>A cada orçamento, abrir o arquivo, trocar nome, data e valores, exportar e mandar.</p></div>
+          <div><span class="rot">Proposta online</span><p>Nada de editar PDF. A proposta é dinâmica e sai personalizada para cada casal, em 1 minuto.</p></div>
         </div>
         <ol class="passos rv" style="margin-top:56px">
           <li><span class="n">1</span><div><h3>O casal pede orçamento</h3><p>Pelo WhatsApp ou pelo botão da sua página.</p></div></li>
@@ -503,7 +565,8 @@ ul,ol{list-style:none}
             <li>Feedbacks dos noivos em vídeo</li>
             <li>Sets e remixes tocando na página</li>
             <li>Agende a sua data pelo WhatsApp<small>Com a mensagem pronta</small></li>
-            <li>Google e WhatsApp mostrando o seu nome<small>Título, descrição e imagem de compartilhamento</small></li>
+            <li>SEO configurado para o Google<small>Título, descrição, dados estruturados, sitemap e cadastro no Search Console</small></li>
+            <li>WhatsApp mostrando o seu nome<small>Com a sua foto no link compartilhado</small></li>
             <li>No seu domínio, sem mensalidade de hospedagem</li>
             <li>Mudanças até a aprovação<small>E 30 dias de acompanhamento depois de publicar</small></li>
           </ul>
@@ -517,7 +580,7 @@ ul,ol{list-style:none}
           <div class="preco"><span class="rs">R$</span><span class="val tnum">3.000</span><span class="per">pagamento único</span></div>
           <ul class="lista">
             <li>Tudo da opção 1</li>
-            <li>Uma proposta para cada casal<small>Nome, data, local e as suas opções, num link só dele, no visual da sua página</small></li>
+            <li>Proposta online para cada casal<small>Dinâmica e personalizada, sem editar PDF: nome, data, local e as suas opções num link só dele</small></li>
             <li>A sua proposta padrão<small>Opções, valores, adicionais e condições, montados uma vez com você</small></li>
             <li>Aceite pelo WhatsApp<small>Com a opção escolhida na mensagem</small></li>
             <li>Painel com senha<small>No celular e no computador</small></li>
