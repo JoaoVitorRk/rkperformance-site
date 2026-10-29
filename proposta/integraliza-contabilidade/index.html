@@ -742,7 +742,7 @@ ul,ol{list-style:none}
         <span class="eyebrow">Dúvidas frequentes</span>
         <h2>Antes de <span class="ouro">decidir</span>.</h2>
         <p>As perguntas que mais recebemos sobre site, Google e investimento, respondidas em poucas linhas.</p>
-        <a class="link js-duvida" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Ficou outra dúvida? Fale com o João</a>
+        <a class="link js-duvida" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Ficou outra dúvida? Fale com a gente</a>
       </div>
       <div class="faq rv">
         <details><summary>A página que vimos já é a definitiva?<i></i></summary><p>Ela é a base, pronta e funcionando. Até a aprovação, ajustamos com vocês textos, fotos e a ordem dos blocos, sem custo a mais.</p></details>
@@ -780,7 +780,7 @@ ul,ol{list-style:none}
   };
   var form = document.getElementById('escolha');
   var aceitar = document.getElementById('aceitar');
-  var msgDuvida = WA + encodeURIComponent('Olá, João! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta do site: ');
+  var msgDuvida = WA + encodeURIComponent('Olá, RK! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta do site: ');
   document.getElementById('duvida').href = msgDuvida;
   document.querySelectorAll('.js-duvida').forEach(function (a) { a.href = msgDuvida; });
   document.querySelectorAll('.faq details').forEach(function (d) {
@@ -793,7 +793,7 @@ ul,ol{list-style:none}
     var o = form.querySelector('input[name="opcao"]:checked').value;
     document.getElementById('t-valor').textContent = P[o].valor;
     document.getElementById('t-entrada').textContent = P[o].entrada;
-    var msg = 'Olá, João! Aqui é da Integraliza. Vimos a proposta da RK e queremos seguir com ' + P[o].nome + ', ' + P[o].valor + '. Podemos combinar os próximos passos?';
+    var msg = 'Olá, RK! Aqui é da Integraliza. Vimos a proposta da RK e queremos seguir com ' + P[o].nome + ', ' + P[o].valor + '. Podemos combinar os próximos passos?';
     aceitar.href = WA + encodeURIComponent(msg);
   }
   form.addEventListener('change', atualizar);
