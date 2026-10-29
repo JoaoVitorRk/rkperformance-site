@@ -383,7 +383,24 @@ ul,ol{list-style:none}
 .hoje .tres .q{display:inline-block;font-family:var(--mono);font-size:13px;color:var(--tinta);background:var(--branco);border:1px solid var(--fio-escuro);border-radius:999px;padding:6px 14px}
 .hoje .tres h3{font-size:19px}
 
+/* dúvidas frequentes */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.faq-grid .sec-head{margin-bottom:0;position:sticky;top:110px}
+.faq-grid .sec-head .link{display:inline-block;margin-top:28px}
+.faq details{border-top:1px solid var(--fio-escuro)}
+.faq details:last-child{border-bottom:1px solid var(--fio-escuro)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-size:19px;font-weight:300;line-height:1.4;color:var(--tinta)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{position:relative;flex:none;width:34px;height:34px;border:1px solid var(--fio2);border-radius:50%;transition:background .3s}
+.faq summary i::before,.faq summary i::after{content:'';position:absolute;left:50%;top:50%;width:12px;height:1px;background:var(--dourado3);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s var(--ease)}
+.faq details[open] summary i{background:rgba(201,167,113,.14)}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{padding:0 58px 24px 0;color:var(--tinta2);font-size:16px;line-height:1.75;max-width:640px}
+
 @media (max-width:1020px){
+  .faq-grid{grid-template-columns:1fr;gap:40px}
+  .faq-grid .sec-head{position:static}
   .seo{grid-template-columns:1fr;gap:48px}
   .busca-fig{position:static}
   .fones{grid-template-columns:repeat(2,1fr);row-gap:48px}
@@ -405,6 +422,8 @@ ul,ol{list-style:none}
   .dez-topo{margin-top:72px}
   .traz ul{grid-template-columns:1fr}
   .hoje{margin-top:80px;padding-top:56px}
+  .faq summary{font-size:17px;padding:20px 0}
+  .faq details p{padding-right:0;font-size:15.5px}
 }
 </style>
 </head>
@@ -652,7 +671,7 @@ ul,ol{list-style:none}
             <tr><th>Opção 2<small>O site completo com 10 páginas e SEO</small></th><td><b>R$ 2.500</b><small>pagamento único</small></td></tr>
             <tr><th>Hospedagem<small>Para deixar o site no ar</small></th><td><b>R$ 0</b><small>sem custo</small></td></tr>
             <tr><th>Mensalidade<small>Da RK Performance</small></th><td><b>Não tem</b><small>nenhuma</small></td></tr>
-            <tr><th>Domínio<small>Registrado no nome de vocês</small></th><td><b>À parte</b><small>cerca de R$ 40 por ano</small></td></tr>
+            <tr><th>Domínio<small>Registrado no nome de vocês</small></th><td><b>À parte</b><small>cerca de R$&nbsp;40 por ano</small></td></tr>
           </table>
           <div class="pagto">
             <p><b>Pagamento:</b> 50% para começar e 50% antes da publicação, por Pix.</p>
@@ -713,6 +732,35 @@ ul,ol{list-style:none}
       </figure>
     </div>
   </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
+
+  <!-- dúvidas frequentes -->
+  <section class="light sec" id="duvidas">
+    <div class="container faq-grid">
+      <div class="sec-head rv">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Antes de <span class="ouro">decidir</span>.</h2>
+        <p>As perguntas que mais recebemos sobre site, Google e investimento, respondidas em poucas linhas.</p>
+        <a class="link js-duvida" href="https://wa.me/5542999246208" target="_blank" rel="noopener">Ficou outra dúvida? Fale com o João</a>
+      </div>
+      <div class="faq rv">
+        <details><summary>A página que vimos já é a definitiva?<i></i></summary><p>Ela é a base, pronta e funcionando. Até a aprovação, ajustamos com vocês textos, fotos e a ordem dos blocos, sem custo a mais.</p></details>
+        <details><summary>Qual é a diferença entre a opção 1 e a opção 2?<i></i></summary><p>A opção 1 é a página única, ideal para quem chega pelo Instagram ou recebe o link no WhatsApp. A opção 2 soma 10 páginas dedicadas, uma para cada serviço, e a configuração de SEO, para cada serviço aparecer nas pesquisas do Google.</p></details>
+        <details><summary>Por que 10 páginas aparecem melhor no Google do que uma?<i></i></summary><p>O Google mostra a página que melhor responde a cada pesquisa. Uma página inteira sobre georreferenciamento responde melhor a quem pesquisa "georreferenciamento em Prudentópolis" do que um parágrafo dentro de uma página que fala de tudo.</p></details>
+        <details><summary>Em quanto tempo o site aparece no Google?<i></i></summary><p>Depois do envio pelo Google Search Console, o Google costuma ler as páginas novas em poucos dias. Ganhar posição nas pesquisas leva de algumas semanas a alguns meses, e o Search Console mostra essa evolução.</p></details>
+        <details><summary>Vocês garantem o primeiro lugar no Google?<i></i></summary><p>Não, e ninguém sério garante: a posição é decidida pelo próprio Google e muda com o tempo. O que garantimos é cada página preparada com tudo o que o Google usa para entender e mostrar o site.</p></details>
+        <details><summary>Tem mensalidade ou custo para manter o site no ar?<i></i></summary><p>Não. O pagamento é único e a hospedagem não tem custo. O único gasto anual é o domínio, cerca de R$&nbsp;40 por ano, pago por vocês direto ao Registro.br.</p></details>
+        <details><summary>O domínio fica no nome de quem?<i></i></summary><p>No nome de vocês. A RK só cuida da configuração, então o endereço do site é sempre da Integraliza.</p></details>
+        <details><summary>Quem escreve os textos das 10 páginas?<i></i></summary><p>A RK escreve, a partir do que vocês já publicam e do que conversarmos. A Maria Beatriz revisa cada página antes de ir ao ar, para conferir a parte técnica e as regras do CFC.</p></details>
+        <details><summary>O que vocês precisam de nós?<i></i></summary><p>As fotos originais dos sócios, o número de registro do escritório no CRC e o horário das duas unidades. Na opção 2, também a confirmação das fichas no Google, que o próprio Google pede ao dono da empresa.</p></details>
+        <details><summary>Depois de publicado, podemos pedir mudanças?<i></i></summary><p>Sim. Nos 30 dias depois da publicação, os ajustes estão incluídos. Depois disso, novas mudanças são combinadas com a RK.</p></details>
+        <details><summary>Os anúncios no Google estão incluídos?<i></i></summary><p>Não. A proposta cobre o site e a configuração para as pesquisas do Google sem pagar por clique. Se um dia vocês quiserem anunciar, cada página já está pronta para receber o anúncio do seu serviço.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <div class="band l-d" aria-hidden="true"></div>
 </main>
 
 <footer class="dark rodape">
@@ -732,7 +780,15 @@ ul,ol{list-style:none}
   };
   var form = document.getElementById('escolha');
   var aceitar = document.getElementById('aceitar');
-  document.getElementById('duvida').href = WA + encodeURIComponent('Olá, João! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta do site: ');
+  var msgDuvida = WA + encodeURIComponent('Olá, João! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta do site: ');
+  document.getElementById('duvida').href = msgDuvida;
+  document.querySelectorAll('.js-duvida').forEach(function (a) { a.href = msgDuvida; });
+  document.querySelectorAll('.faq details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      d.parentNode.querySelectorAll('details[open]').forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
   function atualizar() {
     var o = form.querySelector('input[name="opcao"]:checked').value;
     document.getElementById('t-valor').textContent = P[o].valor;
