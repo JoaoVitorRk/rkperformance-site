@@ -22,12 +22,12 @@ Site one-page premium e dinâmico da RK Performance — fundo escuro, dourado me
 
 | Canal | Valor |
 |---|---|
-| WhatsApp | `5542999246208` |
+| WhatsApp | `5542999833348` |
 | Instagram | `@rkperformance.digital` |
 | E-mail | `contato@rkperformance.com.br` |
 | Domínio | `https://rkperformance.com.br` |
 
-> ⚠️ Para alterar o WhatsApp, abra `index.html` e substitua todas as ocorrências de `5542999246208` pelo novo número no formato internacional (ex.: `5542999999999`).
+> ⚠️ Para alterar o WhatsApp, abra `index.html` e substitua todas as ocorrências de `5542999833348` pelo novo número no formato internacional (ex.: `5542999999999`).
 
 ## 🚀 Como publicar na Hostinger via GitHub (Integração Direta)
 
@@ -66,7 +66,7 @@ Se o domínio `rkperformance.com.br` foi comprado na Hostinger, ele já estará 
 ### 5. Verifique o site
 
 - Acesse `https://rkperformance.com.br`
-- Teste os links do WhatsApp (devem abrir com o número `5542999246208`)
+- Teste os links do WhatsApp (devem abrir com o número `5542999833348`)
 - Teste o menu mobile e as animações
 - Verifique no Google Search Console se o domínio está indexado
 
@@ -74,7 +74,7 @@ Se o domínio `rkperformance.com.br` foi comprado na Hostinger, ele já estará 
 
 | O que mudar | Onde |
 |---|---|
-| Número WhatsApp | Buscar `5542999246208` (formato internacional) |
+| Número WhatsApp | Buscar `5542999833348` (formato internacional) |
 | Preços dos pacotes | Seção `Pacotes` no HTML |
 | Instagram | Link já aponta para `@rkperformance.digital` |
 | Imagens de fundo | URLs do Unsplash em `https://images.unsplash.com/...` |

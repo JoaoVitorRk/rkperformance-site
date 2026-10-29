@@ -195,6 +195,6 @@
     e.preventDefault();
     const nome = $('#fNome').value.trim(), emp = $('#fEmp').value.trim(), nec = $('#fNec').value;
     const msg = 'Olá, RK! Sou ' + (nome || '…') + (emp ? ', da ' + emp : '') + '. Preciso de: ' + nec + '. Quero o diagnóstico gratuito.';
-    window.open('https://wa.me/5542999246208?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    window.open('https://wa.me/5542999833348?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   });
 })();
