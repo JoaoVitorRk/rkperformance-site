@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="pt-BR" data-opcao="janela">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kauany &amp; Luciano · Identidade visual do casamento</title>
+<meta name="description" content="Quatro caminhos para a identidade visual do casamento de Kauany e Luciano, em 3 de abril de 2027.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://rkperformance.com.br/proposta/kauany-luciano/">
+<meta property="og:title" content="Kauany &amp; Luciano · Identidade visual">
+<meta property="og:description" content="Quatro caminhos para o jardim encantado de vocês. Navegue e escolha o seu.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rkperformance.com.br/proposta/kauany-luciano/">
+<meta property="og:image" content="https://rkperformance.com.br/proposta/kauany-luciano/assets/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#f9e9e4">
+<link rel="icon" type="image/webp" href="assets/monograma-2-mini.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Gilda+Display&family=Sorts+Mill+Goudy:ital@0;1&family=Ballet&family=Cinzel:wght@400;500&family=Old+Standard+TT:ital@0;1&family=Monsieur+La+Doulaise&family=IM+Fell+English:ital@0;1&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;1,400&family=Italiana&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --barra:112px;
+  --mini:62px;
+  --iris-x:50%;
+  --iris-y:50%;
+  --saida:cubic-bezier(.16,1,.3,1);
+}
+[data-opcao=janela]{
+  --fundo:#f9e9e4;--papel:#fffdf6;--tinta:#3f5877;--metal:#a97c30;--realce:#e7b3a8;
+  --f-nome:'Luxurious Script',cursive;--f-titulo:'Gilda Display',serif;--f-texto:'Sorts Mill Goudy',serif;
+  --nome-tam:clamp(3.1rem,11vw,5.2rem);--texto-tam:1.14rem;--raio:999px;
+}
+[data-opcao=camafeu]{
+  --fundo:#dbe6f0;--papel:#f6f9fb;--tinta:#24344c;--metal:#7f5e20;--realce:#8ea7c7;
+  --f-nome:'Ballet',cursive;--f-titulo:'Cinzel',serif;--f-texto:'Old Standard TT',serif;
+  --nome-tam:clamp(2.2rem,9.4vw,4.4rem);--texto-tam:1.1rem;--raio:999px;
+}
+[data-opcao=carta]{
+  --fundo:#fbf2d6;--papel:#fffcf0;--tinta:#34506f;--metal:#7f8a5c;--realce:#eec3ba;
+  --f-nome:'Monsieur La Doulaise',cursive;--f-titulo:'IM Fell English',serif;--f-texto:'Ibarra Real Nova',serif;
+  --nome-tam:clamp(2.4rem,10.4vw,4.8rem);--texto-tam:1.2rem;--raio:6px;
+}
+[data-opcao=traco]{
+  --fundo:#eae3f2;--papel:#f8f5fb;--tinta:#3f3358;--metal:#94741f;--realce:#c9bce0;
+  --f-nome:'Italiana',serif;--f-titulo:'Italiana',serif;--f-texto:'Spectral',serif;
+  --nome-tam:clamp(2.5rem,9vw,4.4rem);--texto-tam:1.06rem;--raio:0;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--metal) var(--fundo);background:var(--fundo)}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--f-texto);font-size:var(--texto-tam);line-height:1.55;font-variant-numeric:lining-nums;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%}
+h1,h2,h3,p,ul,figure{margin:0;padding:0}
+ul{list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:inherit;text-underline-offset:.22em}
+::selection{background:var(--realce);color:var(--tinta)}
+:focus-visible{outline:2px solid var(--tinta);outline-offset:3px}
+
+/* abertura */
+.capa{display:none}
+.js .capa{display:block;position:fixed;inset:0;z-index:30;overflow:hidden;pointer-events:auto;cursor:pointer}
+.capa-iris{position:absolute;left:50%;top:50%;width:300px;height:390px;margin:-195px 0 0 -150px;border-radius:50%;background:#fffdf6;box-shadow:0 0 0 300vmax #fffdf6;will-change:transform}
+.capa-oval{position:absolute;left:50%;top:50%;width:300px;height:390px;margin:-195px 0 0 -150px;color:#a97c30}
+.capa-oval ellipse{fill:none;stroke:currentColor;stroke-width:1;stroke-dasharray:1100;stroke-dashoffset:1100;vector-effect:non-scaling-stroke}
+.capa-oval ellipse+ellipse{stroke-width:.6}
+.capa-nomes{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;text-align:center;padding:0 40px;color:#3f5877;opacity:0}
+.capa-nomes b{font:400 2.75rem/1.1 'Luxurious Script',cursive;display:block}
+.capa-nomes span{font:400 1rem/1.4 'Gilda Display',serif;letter-spacing:.06em;margin-top:.5rem}
+.capa.vai .capa-oval ellipse{animation:traca 1.15s var(--saida) forwards}
+.capa.vai .capa-oval ellipse+ellipse{animation-delay:.12s}
+.capa.vai .capa-nomes{animation:surge .8s ease-out .3s forwards}
+.capa.abre{pointer-events:none}
+.capa.abre .capa-oval,.capa.abre .capa-nomes{animation:some .3s ease-out forwards}
+.capa.abre .capa-iris{background:transparent;animation:abre 1s cubic-bezier(.65,0,.2,1) forwards}
+@keyframes traca{to{stroke-dashoffset:0}}
+@keyframes surge{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes some{to{opacity:0}}
+@keyframes abre{from{transform:scale(1)}to{transform:scale(10)}}
+
+/* troca de aba: a opção nova abre em oval a partir do monograma */
+::view-transition-image-pair(root){isolation:auto}
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal;height:100%}
+::view-transition-new(root){animation:iris .9s cubic-bezier(.55,.05,.25,1) both}
+@keyframes iris{
+  from{clip-path:ellipse(0vmax 0vmax at var(--iris-x) var(--iris-y))}
+  to{clip-path:ellipse(115vmax 135vmax at var(--iris-x) var(--iris-y))}
+}
+.painel.entra{animation:surge .5s ease-out}
+
+/* topo */
+.topo{text-align:center;padding:clamp(20px,3.4vw,36px) 20px clamp(12px,1.6vw,18px)}
+.topo h1{font-family:var(--f-nome);font-weight:400;font-size:var(--nome-tam);line-height:1.18;color:var(--tinta)}
+.topo p{max-width:36em;margin:.3rem auto 0;font-size:1.02rem;line-height:1.42;text-wrap:balance}
+
+/* abas: no celular as miniaturas sobem com a rolagem e só os nomes ficam presos no alto */
+.cabeca{display:contents}
+.abas{position:sticky;top:calc(-1*(var(--mini) + 13px));z-index:10;background:var(--fundo);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:8px max(8px,env(safe-area-inset-left));border-bottom:1px solid color-mix(in srgb,var(--tinta) 22%,transparent)}
+.aba{display:flex;flex-direction:column;align-items:center;gap:5px;min-height:44px;padding:2px 2px 4px;text-align:center;color:var(--tinta);border-radius:4px;-webkit-tap-highlight-color:transparent}
+.aba-mini{display:grid;place-items:center;width:52px;height:var(--mini);border-radius:50%;overflow:hidden;background:var(--aba-fundo);box-shadow:0 0 0 1px color-mix(in srgb,var(--tinta) 22%,transparent);transition:box-shadow .2s}
+.aba-mini img{width:82%;height:82%;object-fit:contain}
+.aba-nome{font-family:var(--aba-fonte);font-size:var(--aba-tam,.86rem);line-height:1.12;letter-spacing:var(--aba-esp,0);padding-bottom:2px;border-bottom:1.5px solid transparent}
+.aba[aria-selected=true] .aba-mini{box-shadow:0 0 0 1.5px var(--fundo),0 0 0 3px var(--tinta)}
+.aba[aria-selected=true] .aba-nome{border-bottom-color:var(--tinta)}
+
+/* prancha */
+.prancha{display:grid;grid-template-columns:minmax(0,1fr)}
+.placa{position:relative;display:grid;place-items:center;padding:26px 20px 20px;overflow:hidden;isolation:isolate}
+.placa img{width:min(88vw,620px);height:auto;max-height:max(320px,calc(100svh - 330px));object-fit:contain;filter:drop-shadow(0 10px 18px color-mix(in srgb,var(--tinta) 11%,transparent))}
+.placa.com-padrao{padding-block:44px}
+.placa.com-padrao::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--padrao) center/cover}
+.placa.com-padrao::after{content:"";position:absolute;inset:0;z-index:-1;background:var(--fundo);opacity:var(--veu,.5)}
+[data-opcao=traco] .placa img{filter:none;width:min(78vw,560px)}
+[data-opcao=traco] .placa.com-padrao{padding-block:96px}
+
+.ficha{padding:clamp(28px,5vw,72px) 20px clamp(44px,6vw,88px);min-width:0}
+.abertura h2{font-family:var(--f-titulo);font-weight:400;font-size:clamp(2.7rem,9.5vw,4.5rem);line-height:1.04;letter-spacing:-.01em;text-wrap:balance}
+.abertura p{margin-top:.9rem;max-width:34em;text-wrap:pretty}
+[data-opcao=camafeu] .abertura h2{font-size:clamp(2.3rem,8.4vw,3.8rem);letter-spacing:.04em}
+[data-opcao=carta] .abertura h2{font-style:italic}
+
+.bloco{margin-top:clamp(52px,7vw,80px)}
+.bloco h3{font-family:var(--f-titulo);font-weight:400;font-size:clamp(1.6rem,4.8vw,2.1rem);line-height:1.15;margin-bottom:1.15rem}
+.nota{margin-top:1.1rem;font-size:.96em;max-width:34em;text-wrap:pretty}
+
+/* títulos de seção: cada opção com o seu gesto */
+[data-opcao=janela] .bloco h3::after{content:"";display:block;width:84px;height:9px;margin-top:.5rem;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='9'%3E%3Cpath d='M0 8.2C3 8.2 4 1 10.5 1S18 8.2 21 8.2' fill='none' stroke='%23a97c30' stroke-width='1'/%3E%3C/svg%3E") repeat-x left center}
+[data-opcao=camafeu] .bloco h3{text-align:center;font-size:clamp(1.12rem,3.4vw,1.4rem);font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+[data-opcao=camafeu] .bloco h3::before{content:"";display:block;width:46px;height:46px;margin:0 auto .55rem;background:url(assets/ornamento-2.webp) center/contain no-repeat}
+[data-opcao=carta] .bloco h3{font-style:italic;font-size:clamp(1.9rem,5.6vw,2.4rem);padding-bottom:13px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='14' viewBox='0 0 150 14'%3E%3Cpath d='M1 9c22-7 40-7 58-3s34 6 50 1 26-5 40-2c-16 0-26 4-38 6-9 1-12-3-3-5' fill='none' stroke='%2334506f' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat left bottom}
+[data-opcao=traco] .bloco h3{display:flex;align-items:center;gap:16px;font-size:clamp(1.9rem,5.6vw,2.5rem)}
+[data-opcao=traco] .bloco h3::after{content:"";flex:1;height:1px;background:var(--metal)}
+
+/* paleta */
+.cores{--col:3;display:flex;flex-wrap:wrap;justify-content:center;gap:18px 12px}
+[data-opcao=janela] .cores{--col:4}
+.cores li{flex:0 0 calc((100% - (var(--col) - 1)*12px)/var(--col));min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:.92em;line-height:1.2;gap:8px}
+.amostra{display:block;width:100%;max-width:112px;aspect-ratio:4/5;background:var(--c);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tinta) 20%,transparent)}
+[data-opcao=janela] .amostra{border-radius:999px 999px 6px 6px}
+[data-opcao=camafeu] .amostra{width:84%;border-radius:50%;box-shadow:0 0 0 3px var(--fundo),0 0 0 4px var(--metal)}
+[data-opcao=carta] .amostra{aspect-ratio:1;border-radius:50% 46% 52% 48%/48% 52% 46% 50%}
+[data-opcao=traco] .cores{display:block}
+[data-opcao=traco] .cores li{display:block;text-align:left;padding:.66rem .9rem;background:var(--c);color:var(--cor-fita,var(--tinta));font-size:.98em;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tinta) 10%,transparent)}
+[data-opcao=traco] .amostra{display:none}
+
+/* tipografia */
+.tipos>div+div{margin-top:1.5rem;padding-top:1.3rem;border-top:1px solid color-mix(in srgb,var(--tinta) 22%,transparent)}
+.tipos p{overflow-wrap:break-word}
+.tipos small{display:block;margin-top:.3rem;font-size:.86em}
+.t-nome{font-family:var(--f-nome);font-size:min(var(--nome-tam),var(--nome-max,4rem));line-height:1.2}
+[data-opcao=camafeu]{--nome-max:3.05rem}
+[data-opcao=carta]{--nome-max:3.5rem}
+.t-titulo{font-family:var(--f-titulo);font-size:clamp(1.4rem,4.8vw,1.95rem);line-height:1.22}
+[data-opcao=camafeu] .t-titulo{font-size:clamp(1.05rem,3.6vw,1.45rem);letter-spacing:.1em;text-transform:uppercase}
+[data-opcao=carta] .t-titulo{font-style:italic}
+
+/* flores */
+.flores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 8px}
+.flores li{display:flex;flex-direction:column;align-items:center;text-align:center;font-size:.9em;line-height:1.2;gap:7px}
+.flores img{width:100%;height:clamp(100px,27vw,172px);object-fit:contain}
+
+/* padronagem */
+.padronagem{padding:0}
+.padronagem-texto{padding:0 20px;margin-bottom:1.15rem}
+.padronagem img{width:100%;height:clamp(320px,68vw,640px);object-fit:cover}
+
+/* decisão */
+.decisao{background:var(--tinta);color:var(--papel);text-align:center;padding:clamp(52px,8vw,96px) 20px clamp(40px,6vw,64px)}
+.decisao ::selection{background:var(--papel);color:var(--tinta)}
+.decisao :focus-visible{outline-color:var(--papel)}
+.decisao h3{font-family:var(--f-titulo);font-weight:400;font-size:clamp(2.1rem,7.4vw,3.2rem);line-height:1.12;text-wrap:balance}
+[data-opcao=camafeu] .decisao h3{font-size:clamp(1.6rem,5.6vw,2.5rem);letter-spacing:.04em}
+[data-opcao=carta] .decisao h3{font-style:italic}
+.decisao>p{max-width:32em;margin:.8rem auto 0;text-wrap:pretty}
+.botoes{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:1.8rem}
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:.6em;width:100%;max-width:440px;min-height:54px;padding:.8em 1.5em;border-radius:var(--raio);font-size:1.06rem;line-height:1.2;text-decoration:none;transition:background-color .2s,color .2s,transform .25s var(--saida)}
+.botao svg{flex:none;width:1.15em;height:1.15em}
+.botao:hover{transform:translateY(-2px)}
+.botao:active{transform:none}
+.botao.um{background:var(--papel);color:var(--tinta)}
+.botao.um:hover{background:var(--realce)}
+.botao.dois{box-shadow:inset 0 0 0 1px var(--papel);color:var(--papel)}
+.botao.dois:hover{background:var(--papel);color:var(--tinta)}
+.decisao .aviso{margin-top:1rem;font-size:.92em}
+.proxima{display:inline-flex;align-items:center;gap:.5em;margin-top:2.4rem;min-height:44px;text-decoration:underline;text-underline-offset:.28em;text-decoration-thickness:1px}
+.proxima svg{width:1.1em;height:1.1em;transition:transform .25s var(--saida)}
+.proxima:hover svg{transform:translateX(4px)}
+
+.rodape{background:var(--tinta);color:var(--papel);text-align:center;padding:0 20px max(26px,env(safe-area-inset-bottom));font-size:.88rem}
+
+@media (min-width:1000px){
+  .cabeca{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:28px;position:sticky;top:0;z-index:10;background:var(--fundo);padding:8px clamp(20px,3vw,44px);border-bottom:1px solid color-mix(in srgb,var(--tinta) 22%,transparent)}
+  .topo{padding:0;text-align:left}
+  .topo h1{font-size:min(var(--nome-tam),var(--nome-topo,3.1rem));line-height:1.14;white-space:nowrap}
+  [data-opcao=camafeu]{--nome-topo:2.6rem}
+  [data-opcao=carta]{--nome-topo:2.9rem}
+  [data-opcao=traco]{--nome-topo:2.5rem}
+  .topo p{margin:0;font-size:.92rem;max-width:30em;line-height:1.3;text-wrap:pretty}
+  .abas{position:static;display:flex;justify-content:flex-end;gap:clamp(8px,1.5vw,26px);padding:0;border:0;background:none}
+  .aba{flex-direction:row;gap:11px;padding:2px 6px 2px 2px}
+  .aba-mini{width:44px;height:54px}
+  .aba-nome{font-size:calc(var(--aba-tam,.86rem)*1.14);white-space:nowrap}
+  .prancha{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)}
+  .placa{position:sticky;top:var(--barra);height:calc(100dvh - var(--barra));padding:clamp(24px,3vw,44px);grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr)}
+  .placa img{width:100%;height:100%;max-width:760px;max-height:100%}
+  [data-opcao=traco] .placa img{width:78%;max-width:640px}
+  [data-opcao=traco] .placa.com-padrao{padding-block:44px}
+  .ficha{padding-inline:clamp(28px,4vw,72px)}
+  .cores{--col:6;justify-content:flex-start}
+  [data-opcao=janela] .cores{--col:7}
+  .botoes{flex-direction:row;justify-content:center;flex-wrap:wrap}
+  .botao{width:auto}
+  .padronagem-texto{max-width:1320px;margin-inline:auto;padding-inline:clamp(28px,4vw,72px)}
+}
+@media (min-width:1000px) and (max-width:1219px){
+  .topo p{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  ::view-transition-new(root){animation:none}
+  .botao,.proxima svg{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="capa" id="capa" aria-hidden="true">
+  <div class="capa-iris"></div>
+  <svg class="capa-oval" viewBox="0 0 300 390"><ellipse cx="150" cy="195" rx="148" ry="193"/><ellipse cx="150" cy="195" rx="141" ry="186"/></svg>
+  <div class="capa-nomes"><b>Kauany &amp; Luciano</b><span>3 de abril de 2027</span></div>
+</div>
+
+<div class="cabeca" id="cabeca">
+  <header class="topo">
+    <h1>Kauany &amp; Luciano</h1>
+    <p>Quatro caminhos para o jardim encantado de vocês. Navegue pelas abas e nos conte qual é o seu.</p>
+  </header>
+  <div class="abas" id="abas" role="tablist" aria-label="Opções de identidade visual"></div>
+</div>
+
+<main id="paineis"></main>
+
+<script>
+const WHATSAPP='5542999833348';
+const FLORES=[['hortensia','Hortênsia'],['rosa','Rosa de jardim'],['cravo','Cravo'],['delphinium','Delphinium'],['lisianthus','Lisianthus'],['flor-de-cera','Flor-de-cera'],['mosquitinho','Mosquitinho'],['folhagem','Folhagem'],['laco','Laço']];
+const NOTA_FLORES='As flores seguem o que você nos contou até agora. Depois da conversa com a decoradora, ajustamos o que for preciso. O laço é a ideia que você mencionou.';
+const OPCOES=[
+  {id:'janela',n:1,titulo:'Janela em Flor',fundo:'#f9e9e4',fonte:"'Gilda Display',serif",abaTam:'.9rem',
+   conceito:'O oval ganha um recorte antigo, como uma janela aberta para o jardim, e as flores do casamento entram pelos dois lados. É a opção mais trabalhada e a mais colorida das quatro.',
+   alt:'Monograma K e L em azul, dentro de uma moldura oval recortada em dourado, com hortênsias, rosas, cravos e delphiniums nos dois lados.',
+   tam:[1416,1600],
+   cores:[['Marfim','#fffdf6'],['Rosa de jardim','#e7b3a8'],['Hortênsia','#a9bcdc'],['Cravo manteiga','#f3d395'],['Delphinium','#b9a9d6'],['Azul-tinta','#3f5877'],['Dourado antigo','#b98c3e']],
+   fontes:['Luxurious Script','Gilda Display','Sorts Mill Goudy'],
+   pergunta:'É a Janela em Flor?'},
+  {id:'camafeu',n:2,titulo:'Camafeu',fundo:'#dbe6f0',fonte:"'Cinzel',serif",abaTam:'.78rem',abaEsp:'.05em',veu:.46,
+   conceito:'Um oval duplo com ornamentos, como uma joia antiga de família, todo em dourado envelhecido. As flores aparecem em traço de gravura, sem cor, para quem prefere o lado dourado do vintage.',
+   alt:'Monograma K e L em dourado envelhecido, dentro de um oval duplo com ornamentos no alto e na base, sobre uma padronagem azul de flores em gravura.',
+   tam:[1057,1600],padraoPlaca:true,
+   cores:[['Louça','#f6f9fb'],['Porcelana azul','#dbe6f0'],['Hortênsia fechada','#8ea7c7'],['Ouro velho','#b8924a'],['Bronze','#8f6b28'],['Azul-noite','#24344c']],
+   fontes:['Ballet','Cinzel','Old Standard TT'],
+   pergunta:'É o Camafeu?'},
+  {id:'carta',n:3,titulo:'Carta de Amor',fundo:'#fbf2d6',fonte:"'IM Fell English',serif",abaTam:'.9rem',abaEstilo:'italic',
+   conceito:'As iniciais escritas à mão, com a leveza de uma carta antiga, dentro de um oval fino. Uma guirlanda pequena de flores coloridas sustenta o desenho sem pesar.',
+   alt:'Monograma K e L em caligrafia azul, dentro de um oval fino verde-sálvia, com uma guirlanda delicada de flores coloridas na base.',
+   tam:[1510,1600],
+   cores:[['Papel de carta','#fffcf0'],['Manteiga','#fbf2d6'],['Rosa-chá','#eec3ba'],['Delphinium claro','#c9bce0'],['Sálvia','#a3a97f'],['Azul-caneta','#34506f']],
+   fontes:['Monsieur La Doulaise','IM Fell English','Ibarra Real Nova'],
+   pergunta:'É a Carta de Amor?'},
+  {id:'traco',n:4,titulo:'Um Só Traço',fundo:'#eae3f2',fonte:"'Italiana',serif",abaTam:'.98rem',veu:.18,
+   conceito:'A perna do K continua no L: as duas letras viram um único traço. É o desenho mais limpo das quatro, e o vintage vem do campo de flores em volta, como um papel vegetal estampado.',
+   alt:'Monograma K e L em dourado, com as duas letras unidas num só traço, sobre uma padronagem clara de flores em aquarela.',
+   tam:[1600,1143],padraoPlaca:true,
+   cores:[['Véu','#f8f5fb'],['Delphinium claro','#eae3f2'],['Rosa-bebê','#f3cdd0'],['Hortênsia clara','#bcd0ec'],['Cravo manteiga','#f6e49c'],['Ouro','#b08c2e','#241b38'],['Ameixa','#3f3358','#fff']],
+   fontes:['Italiana','Italiana','Spectral'],
+   pergunta:'É o Um Só Traço?'}
+];
+const ICONE_ZAP='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2a2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>';
+const ICONE_SETA='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>';
+
+const zap=t=>`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t)}`;
+
+function htmlPainel(o,i){
+  const seguinte=OPCOES[(i+1)%OPCOES.length];
+  const estiloPlaca=o.padraoPlaca?` style="--padrao:url(assets/padrao-${o.n}.webp);--veu:${o.veu}"`:'';
+  return `<article class="painel" id="painel-${o.id}" role="tabpanel" aria-labelledby="aba-${o.id}" data-tema="${o.id}" hidden>
+  <div class="prancha">
+    <figure class="placa${o.padraoPlaca?' com-padrao':''}" data-secao="monograma"${estiloPlaca}>
+      <img src="assets/monograma-${o.n}.webp" width="${o.tam[0]}" height="${o.tam[1]}" alt="${o.alt}" ${i===0?'fetchpriority="high"':'loading="lazy"'}>
+    </figure>
+    <div class="ficha">
+      <div class="abertura">
+        <h2>${o.titulo}</h2>
+        <p>${o.conceito}</p>
+      </div>
+      <section class="bloco" data-secao="paleta">
+        <h3>Paleta</h3>
+        <ul class="cores">${o.cores.map(([nome,hex,letra])=>`<li title="${hex}" style="--c:${hex}${letra?`;--cor-fita:${letra}`:''}"><i class="amostra"></i><span>${nome}</span></li>`).join('')}</ul>
+      </section>
+      <section class="bloco" data-secao="tipografia">
+        <h3>Tipografia</h3>
+        <div class="tipos">
+          <div><p class="t-nome">Kauany &amp; Luciano</p><small>Nomes: ${o.fontes[0]}</small></div>
+          <div><p class="t-titulo">Casamento, 3 de abril de 2027</p><small>Títulos: ${o.fontes[1]}</small></div>
+          <div><p>Cerimônia na Igreja Luterana de Prudentópolis. Recepção na Gretha Eventos.</p><small>Textos: ${o.fontes[2]}</small></div>
+        </div>
+      </section>
+      <section class="bloco" data-secao="elementos">
+        <h3>Elementos</h3>
+        <ul class="flores">${FLORES.map(([arq,nome])=>`<li><img src="assets/elem-${o.n}-${arq}.webp" alt="" loading="lazy"><span>${nome}</span></li>`).join('')}</ul>
+        <p class="nota">${NOTA_FLORES}</p>
+      </section>
+    </div>
+  </div>
+  <section class="bloco padronagem" data-secao="padronagem">
+    <div class="padronagem-texto"><h3>Padronagem</h3></div>
+    <img src="assets/padrao-${o.n}.webp" alt="Amostra da padronagem de fundo desta opção, com as flores do casamento." loading="lazy">
+  </section>
+  <section class="decisao" data-secao="escolha">
+    <h3>${o.pergunta}</h3>
+    <p>Depois da sua escolha, seguimos para os convites.</p>
+    <div class="botoes">
+      <a class="botao um" target="_blank" rel="noopener" href="${zap(`Olá, Nicoli! Aqui é a Kauany. Escolhi a opção "${o.titulo}" para a identidade do nosso casamento.`)}">${ICONE_ZAP}Escolho esta</a>
+      <a class="botao dois" target="_blank" rel="noopener" href="${zap(`Olá, Nicoli! Aqui é a Kauany. Gostei da opção "${o.titulo}", mas quero alguns ajustes: `)}">Gostei dessa, mas quero alguns ajustes</a>
+    </div>
+    <p class="aviso">Os dois botões abrem o WhatsApp com a mensagem pronta.</p>
+    <button class="proxima" type="button" data-ir="${seguinte.id}">Ver ${i===OPCOES.length-1?'de novo':'a próxima'}: ${seguinte.titulo}${ICONE_SETA}</button>
+  </section>
+</article>`;
+}
+
+const raiz=document.documentElement;
+const abas=document.getElementById('abas');
+const paineis=document.getElementById('paineis');
+abas.innerHTML=OPCOES.map(o=>`<button class="aba" id="aba-${o.id}" role="tab" type="button" aria-controls="painel-${o.id}" aria-selected="false" tabindex="-1" style="--aba-fundo:${o.fundo};--aba-fonte:${o.fonte};--aba-tam:${o.abaTam};--aba-esp:${o.abaEsp||0};${o.abaEstilo?`font-style:${o.abaEstilo};`:''}"><span class="aba-mini"><img src="assets/monograma-${o.n}-mini.webp" alt=""></span><span class="aba-nome">${o.titulo}</span></button>`).join('');
+paineis.innerHTML=OPCOES.map(htmlPainel).join('')+'<footer class="rodape">Identidade visual por <a href="https://rkperformance.com.br" target="_blank" rel="noopener">RK Performance</a></footer>';
+const rodape=paineis.querySelector('.rodape');
+
+const reduzir=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let atual=null;
+
+const celular=matchMedia('(max-width: 999px)');
+
+/* altura do que fica preso no alto da tela */
+function alturaPresa(){
+  if(celular.matches)return abas.offsetHeight-parseFloat(getComputedStyle(raiz).getPropertyValue('--mini'))-13;
+  return document.getElementById('cabeca').offsetHeight;
+}
+
+function medirBarra(){
+  raiz.style.setProperty('--barra',alturaPresa()+'px');
+}
+
+function secaoNaTela(){
+  if(!atual)return null;
+  const painel=document.getElementById('painel-'+atual);
+  const linha=innerHeight*.42;
+  let achada=null;
+  painel.querySelectorAll('.bloco[data-secao],.decisao[data-secao]').forEach(s=>{
+    if(s.getBoundingClientRect().top<=linha)achada=s.dataset.secao;
+  });
+  return achada;
+}
+
+function aplicar(id,secao,paraOTopo){
+  const o=OPCOES.find(x=>x.id===id)||OPCOES[0];
+  document.querySelectorAll('.painel').forEach(p=>{p.hidden=p.dataset.tema!==o.id});
+  document.querySelectorAll('.aba').forEach(a=>{
+    const ativa=a.id==='aba-'+o.id;
+    a.setAttribute('aria-selected',ativa);
+    a.tabIndex=ativa?0:-1;
+  });
+  raiz.dataset.opcao=o.id;
+  document.querySelector('meta[name=theme-color]').content=o.fundo;
+  atual=o.id;
+  if(location.hash.slice(1)!==o.id)history.replaceState(null,'','#'+o.id);
+  if(paraOTopo){
+    scrollTo(0,0);
+  }else if(secao){
+    const alvo=document.querySelector(`#painel-${o.id} [data-secao="${secao}"]`);
+    if(alvo)scrollTo(0,alvo.getBoundingClientRect().top+scrollY-alturaPresa()-14);
+  }
+  medirBarra();
+}
+
+function trocar(id,paraOTopo){
+  if(id===atual)return;
+  const secao=paraOTopo?null:secaoNaTela();
+  const novoPainel=document.getElementById('painel-'+id);
+  if(document.startViewTransition&&!reduzir){
+    const placa=document.querySelector(`#painel-${atual} .placa img`);
+    const r=placa&&placa.getBoundingClientRect();
+    const visivel=r&&r.bottom>0&&r.top<innerHeight&&!paraOTopo;
+    raiz.style.setProperty('--iris-x',visivel?(r.left+r.width/2)+'px':'50%');
+    raiz.style.setProperty('--iris-y',visivel?(r.top+r.height/2)+'px':'50%');
+    document.startViewTransition(()=>aplicar(id,secao,paraOTopo));
+  }else{
+    aplicar(id,secao,paraOTopo);
+    if(!reduzir){novoPainel.classList.remove('entra');void novoPainel.offsetWidth;novoPainel.classList.add('entra')}
+  }
+}
+
+abas.addEventListener('click',e=>{
+  const a=e.target.closest('.aba');
+  if(a)trocar(a.id.replace('aba-',''));
+});
+abas.addEventListener('keydown',e=>{
+  const lista=[...abas.querySelectorAll('.aba')];
+  const i=lista.indexOf(document.activeElement);
+  if(i<0)return;
+  let n=null;
+  if(e.key==='ArrowRight')n=(i+1)%lista.length;
+  if(e.key==='ArrowLeft')n=(i-1+lista.length)%lista.length;
+  if(e.key==='Home')n=0;
+  if(e.key==='End')n=lista.length-1;
+  if(n===null)return;
+  e.preventDefault();
+  lista[n].focus();
+  trocar(lista[n].id.replace('aba-',''));
+});
+paineis.addEventListener('click',e=>{
+  const b=e.target.closest('[data-ir]');
+  if(b)trocar(b.dataset.ir,true);
+});
+addEventListener('hashchange',()=>{
+  const id=location.hash.slice(1);
+  if(OPCOES.some(o=>o.id===id))trocar(id);
+});
+
+addEventListener('resize',medirBarra);
+
+const abaDoLink=OPCOES.some(o=>o.id===location.hash.slice(1))?location.hash.slice(1):null;
+aplicar(abaDoLink||'janela');
+medirBarra();
+
+/* carrega as fontes e os monogramas das outras abas com a página parada */
+addEventListener('load',()=>{
+  const carregar=()=>{
+    if(document.fonts)["'Gilda Display'","'Sorts Mill Goudy'","'Ballet'","'Cinzel'","'Old Standard TT'","'Monsieur La Doulaise'","'IM Fell English'","'Ibarra Real Nova'","'Italiana'","'Spectral'"].forEach(f=>document.fonts.load(`20px ${f}`,'Kauany é'));
+    OPCOES.forEach(o=>{new Image().src=`assets/monograma-${o.n}.webp`;if(o.padraoPlaca)new Image().src=`assets/padrao-${o.n}.webp`});
+  };
+  ('requestIdleCallback' in window)?requestIdleCallback(carregar):setTimeout(carregar,600);
+});
+
+/* abertura: roda sozinha uma vez por visita; tocar, rolar ou apertar tecla adianta */
+(function(){
+  const capa=document.getElementById('capa');
+  let visto=false;
+  try{visto=sessionStorage.getItem('kl-capa')==='1';sessionStorage.setItem('kl-capa','1')}catch(e){}
+  if(visto||reduzir||abaDoLink){capa.remove();return}
+  document.body.style.overflow='hidden';
+  let aberta=false;
+  const abrir=()=>{
+    if(aberta)return;
+    aberta=true;
+    document.body.style.overflow='';
+    capa.classList.add('abre');
+    setTimeout(()=>capa.remove(),1050);
+  };
+  const comecar=()=>{
+    capa.classList.add('vai');
+    setTimeout(abrir,1750);
+  };
+  ['pointerdown','wheel','touchmove','keydown'].forEach(ev=>addEventListener(ev,abrir,{once:true,passive:true}));
+  const f=document.fonts?document.fonts.load("52px 'Luxurious Script'",'Kauany'):Promise.resolve();
+  Promise.race([f,new Promise(r=>setTimeout(r,500))]).then(comecar);
+})();
+</script>
+</body>
+</html>
