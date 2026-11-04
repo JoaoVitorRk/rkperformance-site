@@ -23,7 +23,7 @@ Site one-page premium e dinâmico da RK Performance — fundo escuro, dourado me
 | Canal | Valor |
 |---|---|
 | WhatsApp | `5542999833348` |
-| Instagram | `@rkperformance.digital` |
+| Instagram | `@rkperformance__` |
 | E-mail | `contato@rkperformance.com.br` |
 | Domínio | `https://rkperformance.com.br` |
 
@@ -76,7 +76,7 @@ Se o domínio `rkperformance.com.br` foi comprado na Hostinger, ele já estará 
 |---|---|
 | Número WhatsApp | Buscar `5542999833348` (formato internacional) |
 | Preços dos pacotes | Seção `Pacotes` no HTML |
-| Instagram | Link já aponta para `@rkperformance.digital` |
+| Instagram | Link já aponta para `@rkperformance__` |
 | Imagens de fundo | URLs do Unsplash em `https://images.unsplash.com/...` |
 | Textos | Todo o conteúdo está no próprio `index.html` |
 
