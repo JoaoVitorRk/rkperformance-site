@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta completa · Integraliza Contabilidade e Agrimensura · RK Performance</title>
+<meta name="description" content="Proposta da RK Performance para levar a Integraliza para fora: site completo, portal do agro, vídeos a campo, Instagram e Facebook, Google das duas unidades e anúncios na Meta, num plano só.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="RK Performance">
+<meta property="og:title" content="Proposta completa · Integraliza Contabilidade e Agrimensura">
+<meta property="og:description" content="O site, o portal do agro, os vídeos a campo, as redes e o Google num plano só. Preparada pela RK Performance para a reunião de 18/11/2026.">
+<meta name="theme-color" content="#F7F3EE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316120F'/%3E%3Ctext x='32' y='41' font-family='Jost,Arial,sans-serif' font-size='24' font-weight='300' fill='%23C9A771' text-anchor='middle' letter-spacing='1'%3ERK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#16120F;--noite2:#1E1813;--noite3:#2A2119;
+  --marfim:#F7F3EE;--marfim2:#EFE8DE;--branco:#FCFAF7;
+  --tinta:#2A211C;--tinta2:#6B5F55;--tinta3:#9A8E82;
+  --off:#F2EBE1;--mudo:#B3A595;--mudo2:#7C7064;
+  --dourado:#C9A771;--dourado2:#E2CB9A;--dourado3:#9E7F3F;--champanhe:#EFE3C8;
+  --fio:rgba(201,167,113,.32);--fio2:rgba(201,167,113,.55);--fio-escuro:rgba(42,33,28,.14);
+  --font:'Jost',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--marfim);color:var(--tinta);font-family:var(--font);font-weight:300;font-size:16.5px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font);font-weight:200;letter-spacing:.015em;line-height:1.12;text-wrap:balance}
+h3{font-weight:400;letter-spacing:.01em}
+strong,b{font-weight:500}
+p{text-wrap:pretty}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+:focus-visible{outline:1px solid var(--dourado);outline-offset:4px}
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 28px}
+.tnum{font-variant-numeric:tabular-nums lining-nums}
+.ouro{background:linear-gradient(100deg,#EFE3C8 0%,#C9A771 45%,#A8883F 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:300}
+.light .ouro{background:linear-gradient(100deg,#B08A45 0%,#9E7F3F 50%,#7A6230 100%);-webkit-background-clip:text;background-clip:text}
+
+/* superfícies */
+.light{background:var(--marfim);color:var(--tinta);position:relative}
+.light.alt{background:var(--marfim2)}
+.light::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23C9A771' stroke-width='.6' opacity='.22'%3E%3Cpath d='M28 20l8 8-8 8-8-8z'/%3E%3Cpath d='M28 0v8M28 48v8M0 28h8M48 28h8'/%3E%3C/g%3E%3C/svg%3E")}
+.light>*{position:relative}
+.dark{background:var(--noite);color:var(--off);position:relative}
+.dark::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 75% 20%,rgba(201,167,113,.10),transparent 70%),radial-gradient(40% 40% at 10% 85%,rgba(120,90,60,.16),transparent 70%)}
+.dark>*{position:relative}
+.band{height:120px}
+.band.l-d{background:linear-gradient(to bottom,var(--marfim),var(--noite))}
+.band.d-l{background:linear-gradient(to bottom,var(--noite),var(--marfim))}
+.band.l2-d{background:linear-gradient(to bottom,var(--marfim2),var(--noite))}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:5;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:soft-light}
+
+/* tipografia utilitária */
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--dourado)}
+.eyebrow::before{content:'';width:28px;height:1px;background:currentColor;opacity:.8}
+.light .eyebrow{color:var(--dourado3)}
+.rot{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3)}
+.dark .rot{color:var(--dourado)}
+.sec{padding:120px 0}
+.sec-head{max-width:720px;margin-bottom:64px}
+.sec-head h2{font-size:clamp(34px,4.4vw,54px);margin:22px 0 20px}
+.sec-head p{font-size:17.5px;line-height:1.75;color:var(--tinta2)}
+.dark .sec-head p{color:var(--mudo)}
+
+/* botões e links */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:17px 30px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;border:1px solid transparent;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s,color .25s;white-space:nowrap;text-align:center}
+.btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-ouro{background:linear-gradient(100deg,#EFE3C8 0%,#C9A771 48%,#A8883F 100%);color:#1A130E;box-shadow:0 10px 30px rgba(42,33,28,.16)}
+.btn-ouro:hover{box-shadow:0 14px 34px rgba(201,167,113,.3)}
+.btn-fio{border-color:rgba(42,33,28,.35);color:var(--tinta)}
+.btn-fio:hover{border-color:var(--dourado3);color:var(--dourado3)}
+.link{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding-bottom:4px;border-bottom:1px solid var(--fio-escuro);transition:color .25s,border-color .25s}
+.link:hover{color:var(--dourado3);border-color:var(--dourado3)}
+.dark .link{border-color:var(--fio)}
+.dark .link:hover{color:var(--dourado2);border-color:var(--dourado)}
+.link svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.tag{display:inline-flex;align-items:center;font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:5px 9px;border:1px solid rgba(158,127,63,.45);color:var(--dourado3);border-radius:2px;white-space:nowrap}
+
+/* cantoneiras */
+.cant{position:relative}
+.cant>i{position:absolute;width:22px;height:22px;border:1px solid var(--dourado);pointer-events:none;z-index:3;display:block}
+.cant>i.c1{left:-8px;top:-8px;border-right:0;border-bottom:0}
+.cant>i.c2{right:-8px;top:-8px;border-left:0;border-bottom:0}
+.cant>i.c3{left:-8px;bottom:-8px;border-right:0;border-top:0}
+.cant>i.c4{right:-8px;bottom:-8px;border-left:0;border-top:0}
+.cant.in>i.c1{left:12px;top:12px}.cant.in>i.c2{right:12px;top:12px}.cant.in>i.c3{left:12px;bottom:12px}.cant.in>i.c4{right:12px;bottom:12px}
+
+/* janela */
+.win{background:var(--noite2);border:1px solid var(--fio)}
+.win-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--fio)}
+.win-bar span{width:8px;height:8px;border-radius:50%;background:rgba(242,235,225,.35)}
+.win-bar b{margin-left:12px;font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.06em;color:var(--mudo)}
+.cap{display:block;margin-top:22px;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tinta3)}
+.dark .cap{color:var(--mudo2)}
+
+/* topo */
+.topo{position:relative;z-index:10;border-bottom:1px solid var(--fio-escuro);background:var(--marfim)}
+.topo-in{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.logo{display:flex;align-items:center;gap:14px;font-weight:300;font-size:26px;letter-spacing:.08em;color:var(--tinta)}
+.logo .rk{color:var(--dourado3)}
+.dark .logo .rk{color:var(--dourado)}
+.logo .sep{width:1px;height:24px;background:var(--dourado);opacity:.7}
+.logo .perf{font-size:10px;font-weight:500;letter-spacing:.34em;opacity:.85}
+.topo .rot{color:var(--tinta2)}
+
+/* hero */
+.hero{padding:96px 0 120px}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:72px;align-items:center}
+.hero h1{font-size:clamp(42px,5.6vw,70px);margin:26px 0 26px}
+.hero .lead{font-size:18px;line-height:1.75;color:var(--tinta2);max-width:540px}
+.meta{display:grid;grid-template-columns:1.5fr 1fr 1fr;margin:44px 0 46px;border-top:1px solid var(--fio-escuro)}
+.meta>div{padding:18px 18px 0 0}
+.meta>div+div{padding-left:18px;border-left:1px solid var(--fio-escuro)}
+.meta dt{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3);margin-bottom:6px}
+.meta dd{font-size:15.5px;font-weight:400;line-height:1.45}
+.meta dd small{display:block;font-size:13px;font-weight:300;color:var(--tinta2)}
+.meta dd.tnum{white-space:nowrap}
+.ctas{display:flex;align-items:center;flex-wrap:wrap;gap:28px}
+.hero-vis{position:relative;margin:0 0 0 auto;width:100%;max-width:600px}
+.comp{position:relative;padding-bottom:58px}
+.hero-vis .win{box-shadow:0 40px 80px -40px rgba(42,33,28,.45)}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;padding:3px;background:var(--noite2)}
+.reels img{width:100%;aspect-ratio:9/16;object-fit:cover}
+.fone{position:absolute;left:-44px;bottom:0;width:27%;background:var(--noite);padding:6px;border-radius:22px;box-shadow:0 30px 60px -24px rgba(22,18,15,.55);z-index:4}
+.fone img{border-radius:17px;width:100%;aspect-ratio:9/16;object-fit:cover}
+.hero-vis .cap{margin-top:0;position:absolute;right:0;bottom:4px;text-align:right;max-width:66%}
+
+/* três pontos */
+.tres{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--fio-escuro)}
+.tres>div{padding:34px 34px 0 0}
+.tres>div+div{padding-left:34px;border-left:1px solid var(--fio-escuro)}
+.tres .num{font-size:44px;font-weight:200;line-height:1;color:var(--dourado3);font-variant-numeric:lining-nums}
+.tres h3{font-size:21px;margin:20px 0 10px}
+.tres p{color:var(--tinta2)}
+
+/* exemplos */
+.exemplos{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.exemplos figure{margin:0}
+.exemplos .shot{background:var(--noite2);padding:5px;border-radius:20px;box-shadow:0 30px 60px -36px rgba(22,18,15,.5)}
+.exemplos .shot img{border-radius:15px;width:100%;aspect-ratio:9/16;object-fit:cover}
+.exemplos figcaption{margin-top:20px}
+.exemplos figcaption b{display:block;font-size:18px;font-weight:400}
+.exemplos figcaption p{color:var(--tinta2);font-size:15px;margin-top:6px}
+.nota{margin-top:40px;font-size:13.5px;color:var(--tinta3);max-width:720px}
+.comum{margin-top:88px;display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
+.comum h3{font-size:clamp(26px,2.8vw,34px);font-weight:200;margin-top:18px}
+.comum p{color:var(--tinta2);margin-top:16px}
+.duas{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;border-top:1px solid var(--fio-escuro)}
+.duas li{position:relative;padding:16px 0 16px 30px;border-bottom:1px solid var(--fio-escuro)}
+.duas li::before{content:'';position:absolute;left:0;top:28px;width:16px;height:1px;background:var(--dourado3)}
+.duas li b{font-weight:500}
+
+/* processo (noite) */
+.trafego-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.trafego-grid .sec-head{margin-bottom:0}
+.preco-noite{margin-top:40px;padding:26px 0;border-top:1px solid var(--fio);border-bottom:1px solid var(--fio);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.preco-noite .val{font-size:clamp(46px,5vw,60px);font-weight:200;line-height:1}
+.preco-noite .per{font-size:18px;color:var(--mudo)}
+.preco-noite small{flex-basis:100%;margin-top:10px;font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--dourado)}
+.passos li{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:26px 0;border-bottom:1px solid var(--fio)}
+.passos li:first-child{padding-top:0}
+.passos .n{font-size:44px;font-weight:200;line-height:1;color:var(--dourado);font-variant-numeric:lining-nums}
+.passos h3{font-size:20px;margin-bottom:6px;color:var(--off)}
+.passos p{color:var(--mudo)}
+
+/* planos */
+.opcoes{display:grid;grid-template-columns:repeat(3,1fr);align-items:stretch}
+.opcao{padding:44px 34px 48px;display:flex;flex-direction:column}
+.opcao:first-child{padding-left:0}
+.opcao:last-child{padding-right:0}
+.opcao.destaque{background:var(--branco);box-shadow:0 30px 70px -45px rgba(42,33,28,.35);padding-left:34px;padding-right:34px}
+.op-topo{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;min-height:28px}
+.opcao h3{font-size:clamp(24px,2.2vw,28px);font-weight:200;margin:18px 0 14px}
+.opcao .op-desc{color:var(--tinta2)}
+.preco{display:flex;align-items:baseline;gap:10px;margin:30px 0 30px;padding:24px 0;border-top:1px solid var(--fio-escuro);border-bottom:1px solid var(--fio-escuro);flex-wrap:wrap}
+.preco .rs{font-size:18px;font-weight:300;color:var(--tinta2)}
+.preco .val{font-size:clamp(44px,4.4vw,56px);font-weight:200;line-height:1;letter-spacing:.01em}
+.preco .per{margin-left:auto;font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta3);text-align:right}
+.lista li{position:relative;padding:11px 0 11px 30px;border-bottom:1px solid var(--fio-escuro);color:var(--tinta)}
+.lista li:last-child{border-bottom:0}
+.lista li::before{content:'';position:absolute;left:0;top:23px;width:16px;height:1px;background:var(--dourado3)}
+.lista li small{display:block;color:var(--tinta2);font-size:14.5px}
+.opcao .btn{margin-top:auto;align-self:flex-start}
+.opcao .lista{margin-bottom:36px}
+
+/* adicionais e condições */
+.inv-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.tabela{width:100%;border-collapse:collapse}
+.tabela th,.tabela td{text-align:left;vertical-align:top;padding:20px 0;border-bottom:1px solid var(--fio-escuro)}
+.tabela tr:first-child th,.tabela tr:first-child td{border-top:1px solid var(--fio-escuro)}
+.tabela th{font-weight:400;font-size:16.5px;padding-right:20px}
+.tabela th small{display:block;font-weight:300;font-size:14px;color:var(--tinta2)}
+.tabela td{text-align:right;white-space:nowrap}
+.tabela td b{display:block;font-size:22px;font-weight:300;font-variant-numeric:lining-nums}
+.tabela td small{display:block;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta3)}
+.pagto{margin-top:30px;color:var(--tinta2)}
+.pagto p+p{margin-top:10px}
+.pagto b{color:var(--tinta)}
+
+.escolha{background:var(--branco);padding:44px 44px 40px;box-shadow:0 30px 70px -45px rgba(42,33,28,.35)}
+.escolha h3{font-size:28px;font-weight:200;margin:16px 0 26px}
+.escolha fieldset{border:0;margin-bottom:22px}
+.escolha legend{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3);margin-bottom:6px}
+.op{display:grid;grid-template-columns:22px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--fio-escuro);cursor:pointer}
+.op input{position:absolute;opacity:0;pointer-events:none}
+.op .marca{width:18px;height:18px;border:1px solid rgba(42,33,28,.4);display:grid;place-items:center;transition:border-color .2s}
+.op .marca.redonda{border-radius:50%}
+.op .marca::after{content:'';width:8px;height:8px;background:var(--dourado3);opacity:0;transition:opacity .2s}
+.op .marca.redonda::after{border-radius:50%}
+.op input:checked+.marca{border-color:var(--dourado3)}
+.op input:checked+.marca::after{opacity:1}
+.op input:focus-visible+.marca{outline:1px solid var(--dourado);outline-offset:4px}
+.op span.txt{font-size:15.5px;line-height:1.45}
+.op span.txt small{display:block;color:var(--tinta2);font-size:13.5px}
+.op b{font-weight:400;font-variant-numeric:lining-nums;white-space:nowrap}
+.total{display:grid;grid-template-columns:1fr 1fr;margin:26px 0 30px;border-top:1px solid var(--fio-escuro)}
+.total>div{padding:18px 18px 0 0}
+.total>div+div{padding-left:18px;border-left:1px solid var(--fio-escuro)}
+.total b{display:block;font-size:34px;font-weight:200;line-height:1.1;margin:8px 0 6px;font-variant-numeric:lining-nums}
+.total small{display:block;font-size:13px;color:var(--tinta2);line-height:1.5}
+.escolha .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.escolha .btn-ouro{flex:1 1 auto}
+.aviso{margin-top:18px;font-size:13px;color:var(--tinta3)}
+
+/* equipe */
+.fim-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:88px;align-items:start}
+.equipe{margin:0}
+.equipe .retrato{aspect-ratio:4/5;overflow:hidden}
+.equipe .retrato img{width:100%;height:100%;object-fit:cover;object-position:top}
+.equipe figcaption{margin-top:22px}
+.equipe figcaption b{display:block;font-size:20px;font-weight:300;color:var(--off);letter-spacing:.02em}
+.equipe figcaption p{color:var(--mudo);margin-top:10px}
+.contatos{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px}
+.rodape{padding:56px 0 64px;border-top:1px solid var(--fio)}
+.rodape-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.rodape .logo{color:var(--off)}
+.rodape p{font-size:13px;color:var(--mudo2)}
+
+/* revelação */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.btn,.btn svg{transition:none}}
+@media print{.rv{opacity:1!important;transform:none!important}.grain{display:none}.escolha{display:none}}
+
+/* responsivo */
+@media (max-width:1020px){
+  .hero-grid,.trafego-grid,.inv-grid,.fim-grid,.comum{grid-template-columns:1fr;gap:56px}
+  .hero-vis{margin:0 auto 0 0;max-width:640px}
+  .fone{left:auto;right:-10px}
+  .hero-vis .cap{right:auto;left:0;text-align:left}
+  .equipe{max-width:440px}
+  .opcoes{grid-template-columns:1fr}
+  .opcao,.opcao:first-child,.opcao:last-child{padding:40px 0 44px}
+  .opcao.destaque{padding:40px 28px 44px;margin:0 -28px}
+  .opcao.destaque>i.c1,.opcao.destaque>i.c3{left:8px}.opcao.destaque>i.c2,.opcao.destaque>i.c4{right:8px}
+  .exemplos{grid-template-columns:repeat(2,1fr);row-gap:48px}
+}
+@media (max-width:860px){
+  .tres{grid-template-columns:1fr}
+  .tres>div,.tres>div+div{padding:28px 0;border-left:0;border-bottom:1px solid var(--fio-escuro)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .container{padding:0 20px}
+  .sec{padding:88px 0}
+  .band{height:88px}
+  .topo-in{min-height:72px}
+  .topo .rot .longo{display:none}
+  .logo{font-size:22px;gap:11px}
+  .hero{padding:56px 0 88px}
+  .hero .lead{font-size:16.5px}
+  .meta{grid-template-columns:1fr 1fr}
+  .meta>div:first-child{grid-column:1/-1;padding-bottom:16px;border-bottom:1px solid var(--fio-escuro)}
+  .meta>div:nth-child(2){padding-left:0;border-left:0}
+  .ctas{gap:22px}
+  .ctas .btn{width:100%}
+  .comp{padding-bottom:0}
+  .fone{width:30%;right:-6px;bottom:-26px;border-radius:16px;padding:4px}
+  .fone img{border-radius:12px}
+  .hero-vis .cap{position:static;max-width:none;margin-top:56px}
+  .opcao.destaque{padding:36px 20px 40px;margin:0 -20px}
+  .preco .per{margin-left:0;flex-basis:100%;text-align:left}
+  .opcao .btn{align-self:stretch}
+  .duas{grid-template-columns:1fr}
+  .exemplos{gap:16px;row-gap:40px}
+  .exemplos figcaption b{font-size:16px}
+  .passos li{grid-template-columns:56px 1fr}
+  .passos .n{font-size:36px}
+  .escolha{padding:32px 20px 30px;margin:0 -20px}
+  .op{grid-template-columns:22px 1fr;row-gap:2px}
+  .op b{grid-column:2}
+  .total{grid-template-columns:1fr}
+  .total>div+div{padding-left:0;border-left:0;border-top:1px solid var(--fio-escuro);margin-top:18px}
+  .escolha .btn-ouro{width:100%}
+  .tabela td b{font-size:19px}
+}
+</style>
+<style>
+/* proposta completa da Integraliza */
+.hero-vis .win img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.hero-vis .fone img{aspect-ratio:600/1298;object-position:top}
+.hero-vis .comp{padding-bottom:58px}
+.hero-grid>*{min-width:0}
+.win-bar b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* o que vimos */
+.achados{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--fio-escuro)}
+.achados>div{padding:28px 22px 30px 0}
+.achados>div+div{padding-left:22px;border-left:1px solid var(--fio-escuro)}
+.achados .grande{display:block;font-size:clamp(34px,3.4vw,46px);font-weight:200;line-height:1;color:var(--dourado3);font-variant-numeric:lining-nums tabular-nums}
+.achados h3{font-size:17px;font-weight:400;margin-top:16px;line-height:1.35}
+.achados p{color:var(--tinta2);font-size:14.5px;margin-top:8px}
+
+/* fases */
+.fases{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--fio)}
+.fase{padding:34px 34px 10px 0}
+.fase+.fase{padding-left:34px;border-left:1px solid var(--fio)}
+.fase .quando{font-family:var(--mono);font-size:12.5px;color:var(--dourado2)}
+.fase h3{font-size:clamp(24px,2.4vw,30px);font-weight:200;color:var(--off);margin:12px 0 18px}
+.fase ul li{position:relative;padding:10px 0 10px 24px;color:var(--mudo);font-size:15.5px;border-bottom:1px solid var(--fio)}
+.fase ul li:last-child{border-bottom:0}
+.fase ul li::before{content:'';position:absolute;left:0;top:21px;width:12px;height:1px;background:var(--dourado)}
+
+/* todo mês */
+.blocos{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.bloco{background:var(--branco);border:1px solid var(--fio-escuro);border-radius:18px;padding:30px 28px 26px}
+.bloco .n{font-size:30px;font-weight:200;color:var(--dourado3);line-height:1}
+.bloco h3{font-size:20px;font-weight:400;margin:14px 0 6px}
+.bloco .pede{font-size:13.5px;color:var(--dourado3);font-style:italic}
+.bloco ul{margin-top:16px;border-top:1px solid var(--fio-escuro)}
+.bloco li{padding:10px 0;border-bottom:1px solid var(--fio-escuro);font-size:15px;color:var(--tinta2)}
+.bloco li:last-child{border-bottom:0}
+.bloco li b{color:var(--tinta);font-weight:400}
+
+/* painel do agro */
+.painel-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.painel-grid figure{margin:0}
+.painel-grid .shot{border-radius:14px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.6);border:1px solid var(--fio)}
+.painel-grid .shot img{width:100%;display:block}
+.painel-grid h2{font-size:clamp(34px,3.75vw,54px);font-weight:200;line-height:1.12;margin-top:18px;color:var(--off)}
+.painel-grid .lista li{color:var(--off)}
+.painel-grid .lista li small{color:var(--mudo)}
+
+/* bônus */
+.bonus-tab{width:100%;border-collapse:collapse;margin-top:6px}
+.bonus-tab th,.bonus-tab td{text-align:left;padding:18px 0;border-bottom:1px solid var(--fio-escuro);vertical-align:top}
+.bonus-tab th{font-weight:400;font-size:17px;padding-right:24px}
+.bonus-tab th small{display:block;color:var(--tinta2);font-size:14.5px;margin-top:4px}
+.bonus-tab td{white-space:nowrap;font-size:15px;color:var(--tinta2);padding-left:18px}
+.bonus-tab td b{display:block;color:var(--tinta);font-weight:400;font-size:16px}
+.bonus-tab tr.soma th,.bonus-tab tr.soma td{border-bottom:0;padding-top:24px}
+.bonus-tab tr.soma td b{color:var(--dourado3);font-size:22px;font-weight:300}
+.bonus-tab thead th{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado3);padding:0 0 12px}
+.bonus-tab thead th+th{padding-left:18px}
+.prazo{display:inline-flex;align-items:center;gap:10px;margin-top:28px;font-family:var(--mono);font-size:13px;color:var(--tinta);background:var(--branco);border:1px solid var(--fio-escuro);border-radius:999px;padding:8px 16px}
+.prazo i{width:7px;height:7px;border-radius:50%;background:var(--dourado3)}
+
+/* números que acompanhamos */
+.medir{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--fio-escuro);margin-top:8px}
+.medir>div{padding:24px 20px 6px 0}
+.medir>div+div{padding-left:20px;border-left:1px solid var(--fio-escuro)}
+.medir b{display:block;font-size:17px;font-weight:400}
+.medir p{color:var(--tinta2);font-size:14.5px;margin-top:6px}
+
+/* dúvidas frequentes */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.faq-grid .sec-head{margin-bottom:0;position:sticky;top:110px}
+.faq-grid .sec-head .link{display:inline-block;margin-top:28px}
+.faq details{border-top:1px solid var(--fio-escuro)}
+.faq details:last-child{border-bottom:1px solid var(--fio-escuro)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-size:19px;font-weight:300;line-height:1.4;color:var(--tinta)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{position:relative;flex:none;width:34px;height:34px;border:1px solid var(--fio2);border-radius:50%;transition:background .3s}
+.faq summary i::before,.faq summary i::after{content:'';position:absolute;left:50%;top:50%;width:12px;height:1px;background:var(--dourado3);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s var(--ease)}
+.faq details[open] summary i{background:rgba(201,167,113,.14)}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.faq details p{padding:0 58px 24px 0;color:var(--tinta2);font-size:16px;line-height:1.75;max-width:640px}
+
+@media (max-width:1020px){
+  .achados{grid-template-columns:repeat(2,1fr)}
+  .achados>div{padding-left:0!important;border-left:0!important;border-bottom:1px solid var(--fio-escuro);padding-right:20px}
+  .fases{grid-template-columns:1fr}
+  .fase,.fase+.fase{padding:30px 0 10px;border-left:0;border-bottom:1px solid var(--fio)}
+  .blocos{grid-template-columns:1fr 1fr}
+  .painel-grid{grid-template-columns:1fr;gap:44px}
+  .medir{grid-template-columns:1fr 1fr}
+  .medir>div:nth-child(3){padding-left:0;border-left:0}
+  .faq-grid{grid-template-columns:1fr;gap:40px}
+  .faq-grid .sec-head{position:static}
+  .hero-vis .fone{right:0}
+}
+html,body{overflow-x:clip}
+@media (max-width:640px){
+  .achados{grid-template-columns:1fr}
+  .blocos{grid-template-columns:1fr}
+  .bonus-tab th{font-size:16px}
+  .bonus-tab td{white-space:normal;font-size:14px}
+  .medir{grid-template-columns:1fr}
+  .medir>div,.medir>div+div{padding-left:0;border-left:0;border-bottom:1px solid var(--fio-escuro);padding-bottom:20px}
+  .hero-vis .comp{padding-bottom:0}
+  .tabela td,.tabela td b,.tabela td small{white-space:normal}
+  .escolha .total b{font-size:clamp(28px,8vw,36px)}
+  .faq summary{font-size:17px;padding:20px 0}
+  .faq details p{padding-right:0;font-size:15.5px}
+}
+</style>
+</head>
+<body class="no-js">
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topo">
+  <div class="container topo-in">
+    <div class="logo"><span class="rk">RK</span><span class="sep"></span><span class="perf">PERFORMANCE</span></div>
+    <span class="rot">Proposta completa<span class="longo"> · 18/11/2026</span></span>
+  </div>
+</header>
+
+<main>
+  <!-- abertura -->
+  <section class="light hero">
+    <div class="container hero-grid">
+      <div class="rv">
+        <span class="eyebrow">Proposta para a Integraliza</span>
+        <h1>Levar a Integraliza <span class="ouro">para fora</span>.</h1>
+        <p class="lead">Em 2026 vocês arrumaram a casa: equipe, processos e sistemas. Agora o escritório comporta muito mais clientes, e muita gente ainda não sabe de tudo o que vocês oferecem. Esta proposta junta num plano só o que a Maria Beatriz pediu: o site sempre atualizado, os vídeos a campo e as redes com a RK. Inclui também o Google, que é o que mais falta hoje.</p>
+        <dl class="meta">
+          <div><dt>Para</dt><dd>Maria Beatriz e Jackson Bonetti<small>Integraliza · Prudentópolis e Irati</small></dd></div>
+          <div><dt>Data</dt><dd class="tnum">18/11/2026</dd></div>
+          <div><dt>Válida até</dt><dd class="tnum">30/11/2026</dd></div>
+        </dl>
+        <div class="ctas">
+          <a class="btn btn-ouro" href="#plano">Ver o plano <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="link" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o Painel do agro</a>
+        </div>
+      </div>
+      <figure class="hero-vis rv">
+        <div class="comp">
+          <div class="win">
+            <div class="win-bar" aria-hidden="true"><span></span><span></span><span></span><b>integraliza.rkperformance.com.br/portal</b></div>
+            <img src="img/painel-computador.webp" alt="O Painel do agro da Integraliza no computador, com o título O mercado do produtor, hoje" width="1440" height="900" fetchpriority="high">
+          </div>
+          <div class="fone"><img src="img/painel-celular.webp" alt="O mesmo painel no celular" width="600" height="1298"></div>
+        </div>
+        <figcaption class="cap">O Painel do agro, já no ar e atualizado sozinho todo dia</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- o que vimos -->
+  <section class="light alt sec" id="vimos">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">O que vimos</span>
+        <h2>Uma referência no agro que o <span class="ouro">digital</span> ainda não mostra.</h2>
+        <p>Antes de montar o plano, olhamos o Google, o Instagram, os anúncios da região e os números do campo de Prudentópolis e Irati.</p>
+      </div>
+      <div class="achados rv">
+        <div><span class="grande">0</span><h3>avaliações no Google</h3><p>A ficha ativa está como "Escritório da empresa", sem telefone nem site. A única avaliação ficou numa ficha antiga, marcada como fechada.</p></div>
+        <div><span class="grande">Irati</span><h3>não existe no Maps</h3><p>A unidade nova ainda não tem ficha no Google, então quem procura contador em Irati não encontra vocês.</p></div>
+        <div><span class="grande">10×</span><h3>mais curtidas com gente real</h3><p>Os posts com a equipe e os eventos rendem dez vezes mais que as artes técnicas. A ideia dos vídeos a campo vai na direção certa.</p></div>
+        <div><span class="grande">9 mil</span><h3>estabelecimentos rurais</h3><p>Só nas duas cidades (IBGE). Soja, fumo, feijão, leite e suínos, os temas que vocês querem gravar, são as maiores atividades da região.</p></div>
+        <div><span class="grande">set</span><h3>de 2026</h3><p>Desde setembro, um escritório da cidade posicionado no agro anuncia na Meta. Quem chegar primeiro ao produtor no digital ocupa esse lugar.</p></div>
+      </div>
+      <p class="nota rv">E 2027 traz um momento de decisão em massa: a exigência de CNPJ para parte dos produtores rurais, além da reforma tributária. Foi o tema do post de vocês, e é o assunto que vai fazer o produtor procurar um contador do agro.</p>
+    </div>
+  </section>
+
+  <div class="band l2-d" aria-hidden="true"></div>
+
+  <!-- fases -->
+  <section class="dark sec" id="fases">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">O caminho</span>
+        <h2>Em três fases, na <span class="ouro">ordem</span> certa.</h2>
+        <p>Primeiro a base, depois o conteúdo e por último o anúncio. Anunciar antes de o Google e o site estarem prontos é pagar para levar gente a uma porta fechada.</p>
+      </div>
+      <div class="fases rv">
+        <div class="fase">
+          <span class="quando">mês 1</span>
+          <h3>A fundação</h3>
+          <ul>
+            <li>As fichas do Google arrumadas, como escritório de contabilidade, e a de Irati criada</li>
+            <li>A rotina de avaliações com os clientes de hoje</li>
+            <li>O site completo no domínio de vocês, com o Painel do agro</li>
+            <li>A medição ligada: Search Console, Pixel da Meta e os cliques no WhatsApp</li>
+            <li>A bio do Instagram dentro das regras do CFC</li>
+          </ul>
+        </div>
+        <div class="fase">
+          <span class="quando">a partir do mês 1</span>
+          <h3>Conteúdo e portal</h3>
+          <ul>
+            <li>A primeira diária a campo, já no primeiro mês</li>
+            <li>O Instagram e o Facebook com o calendário do agro</li>
+            <li>Uma notícia por semana no portal, revisada pela Maria Beatriz</li>
+            <li>As 10 páginas de serviço recebendo as visitas do Google</li>
+          </ul>
+        </div>
+        <div class="fase">
+          <span class="quando">a partir do mês 2</span>
+          <h3>Os anúncios</h3>
+          <ul>
+            <li>Anúncios na Meta nos momentos de decisão do produtor: imposto de renda, ITR, custeio e o CNPJ de 2027</li>
+            <li>Público das duas cidades e das vizinhas, e de quem já viu os vídeos</li>
+            <li>Google Ads quando o Search Console mostrar busca suficiente (opcional)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
+
+  <!-- todo mês -->
+  <section class="light sec" id="mes">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">O que a RK faz todo mês</span>
+        <h2>Tudo o que vocês pediram, <span class="ouro">num lugar só</span>.</h2>
+        <p>Uma equipe cuidando do conteúdo, do site, do Google e dos anúncios, com a mesma linguagem do agro em tudo.</p>
+      </div>
+      <div class="blocos rv">
+        <article class="bloco">
+          <span class="n">01</span>
+          <h3>Vídeos a campo</h3>
+          <span class="pede">"ir para campo, em leiteria, suinocultura, fumo, grãos"</span>
+          <ul>
+            <li><b>Uma diária de gravação por mês</b> com a RK, em propriedades da região</li>
+            <li>Roteiro e pauta de cada visita, com a autorização de imagem do produtor</li>
+            <li>Cada diária rende os reels do mês e um vídeo maior para o YouTube</li>
+          </ul>
+        </article>
+        <article class="bloco">
+          <span class="n">02</span>
+          <h3>Instagram e Facebook</h3>
+          <span class="pede">"um pacote para vocês cuidarem das nossas redes"</span>
+          <ul>
+            <li><b>20 publicações por mês:</b> 12 reels com edição em motion e 8 carrosséis ou posts</li>
+            <li>Stories cinco vezes por semana</li>
+            <li>Comentários e mensagens respondidos em horário comercial</li>
+          </ul>
+        </article>
+        <article class="bloco">
+          <span class="n">03</span>
+          <h3>O portal do agro</h3>
+          <span class="pede">"Selic, dólar, commodities, previsão do tempo, reforma tributária"</span>
+          <ul>
+            <li><b>O Painel do agro</b>, atualizado sozinho todo dia</li>
+            <li>Uma notícia por semana, escrita pela RK e revisada pela Maria Beatriz</li>
+            <li>Cada notícia levando para a página do serviço certo</li>
+          </ul>
+        </article>
+        <article class="bloco">
+          <span class="n">04</span>
+          <h3>O Google das duas unidades</h3>
+          <span class="pede">o que mais falta hoje</span>
+          <ul>
+            <li>As fichas de Prudentópolis e Irati cuidadas, com fotos e serviços</li>
+            <li>Publicações semanais no Google e a rotina de avaliações</li>
+            <li>O Search Console mostrando quais pesquisas trazem visitas</li>
+          </ul>
+        </article>
+        <article class="bloco">
+          <span class="n">05</span>
+          <h3>Anúncios na Meta</h3>
+          <span class="pede">a partir do mês 2</span>
+          <ul>
+            <li>Gestão das campanhas e os criativos a partir dos vídeos</li>
+            <li>Os momentos de decisão do calendário do agro</li>
+            <li>A verba é de vocês, paga direto à Meta</li>
+          </ul>
+        </article>
+        <article class="bloco">
+          <span class="n">06</span>
+          <h3>Calendário, relatório e reunião</h3>
+          <span class="pede">para vocês saberem o que está funcionando</span>
+          <ul>
+            <li>Calendário do mês aprovado antes de começar</li>
+            <li>Relatório a cada 15 dias e uma reunião por mês</li>
+            <li>Nada vai ao ar sem a aprovação de vocês</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="band l-d" aria-hidden="true"></div>
+
+  <!-- painel do agro -->
+  <section class="dark sec" id="painel">
+    <div class="container painel-grid">
+      <figure class="rv">
+        <div class="shot"><img src="img/painel-campo.webp" alt="A tabela de preços ao produtor no Paraná do Painel do agro: soja, milho, feijão-preto, feijão de cor e trigo" width="1440" height="900" loading="lazy"></div>
+        <figcaption class="cap">Preços ao produtor no Paraná, no painel que já está no ar</figcaption>
+      </figure>
+      <div class="rv">
+        <span class="eyebrow">Já pronto, sem custo</span>
+        <h2>O Painel do <span class="ouro">agro</span> já existe.</h2>
+        <p style="color:var(--mudo);margin-top:18px">Fizemos o painel antes da reunião para vocês verem funcionando. Com o plano, ele entra no site no domínio de vocês, sem custo a mais.</p>
+        <ul class="lista" style="margin-top:28px">
+          <li>Selic, dólar e inflação<small>Do Banco Central, atualizados todo dia às 6h</small></li>
+          <li>Preço ao produtor no Paraná<small>Soja, milho, feijão, trigo, leite, suínos e boi gordo, da Secretaria da Agricultura</small></li>
+          <li>Previsão do tempo de 5 dias<small>De Prudentópolis e de Irati</small></li>
+          <li>Notícias da semana<small>As que mudam a rotina do produtor, explicadas pela equipe de vocês</small></li>
+        </ul>
+        <div class="ctas" style="margin-top:34px"><a class="btn btn-ouro" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o painel <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
+
+  <!-- o plano -->
+  <section class="light alt sec" id="plano">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">O plano</span>
+        <h2>Um plano, com a <span class="ouro">abertura</span> de presente.</h2>
+        <p>O plano mensal cobre o conteúdo, as redes, a gravação e os anúncios. Para quem fecha agora, a condição de abertura soma o que completa o trabalho, sem custo nos 6 primeiros meses.</p>
+      </div>
+      <div class="opcoes dois">
+        <article class="opcao rv">
+          <div class="op-topo"><span class="rot">Todo mês</span></div>
+          <h3>O plano do agro</h3>
+          <p class="op-desc">Conteúdo, redes, gravação e anúncios, com relatório e reunião.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">3.290</span><span class="per">por mês</span></div>
+          <ul class="lista">
+            <li>20 publicações por mês no Instagram<small>12 reels com edição em motion e 8 carrosséis ou posts</small></li>
+            <li>Stories cinco vezes por semana</li>
+            <li>Uma gravação por mês com a RK</li>
+            <li>Roteiro e calendário pelo calendário do agro</li>
+            <li>Comentários e mensagens em horário comercial</li>
+            <li>Gestão dos anúncios na Meta<small>A partir do mês 2, com a verba à parte</small></li>
+            <li>Relatório quinzenal e reunião mensal</li>
+          </ul>
+        </article>
+
+        <article class="opcao destaque cant rv"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+          <div class="op-topo"><span class="rot">Condição de abertura</span><span class="tag">Até 30/11/2026</span></div>
+          <h3>O que entra de presente</h3>
+          <p class="op-desc">Nos 6 primeiros meses, sem custo a mais.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">1.350</span><span class="per">por mês em bônus</span></div>
+          <ul class="lista">
+            <li>A gravação vira uma diária a campo<small>Até 5 horas em propriedades da região, em vez de 3 horas</small></li>
+            <li>O Facebook com as mesmas publicações</li>
+            <li>O YouTube com o vídeo maior de cada diária</li>
+            <li>Uma notícia por semana no portal do agro</li>
+            <li>O Google das duas unidades<small>Publicações semanais e a rotina de avaliações</small></li>
+            <li>Implantação isenta</li>
+            <li>O Painel do agro, já pronto</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="rv" style="margin-top:72px">
+        <table class="bonus-tab">
+          <thead><tr><th>O que entra na abertura</th><th>Na tabela da RK</th><th>Na abertura</th></tr></thead>
+          <tbody>
+            <tr><th>Diária a campo<small>Até 5 horas em propriedades, no lugar da gravação de 3 horas</small></th><td><b>R$ 290</b>por mês</td><td><b>Incluída</b>6 meses</td></tr>
+            <tr><th>Facebook<small>As mesmas publicações, adaptadas</small></th><td><b>R$ 190</b>por mês</td><td><b>Incluído</b>6 meses</td></tr>
+            <tr><th>YouTube<small>O vídeo maior de cada diária a campo</small></th><td><b>R$ 190</b>por mês</td><td><b>Incluído</b>6 meses</td></tr>
+            <tr><th>Portal do agro<small>Uma notícia por semana, revisada pela Maria Beatriz</small></th><td><b>R$ 390</b>por mês</td><td><b>Incluído</b>6 meses</td></tr>
+            <tr><th>Google das duas unidades<small>Publicações semanais e a rotina de avaliações</small></th><td><b>R$ 290</b>por mês</td><td><b>Incluído</b>6 meses</td></tr>
+            <tr><th>Implantação<small>Diagnóstico, identidade de edição, medição e as fichas do Google</small></th><td><b>R$ 390</b>uma vez</td><td><b>Isenta</b></td></tr>
+            <tr><th>Painel do agro<small>Indicadores, preços ao produtor e clima, atualizados todo dia</small></th><td><b>Já pronto</b></td><td><b>Incluído</b>no site</td></tr>
+            <tr class="soma"><th>Bônus da abertura<small>R$ 1.350 por mês nos 6 primeiros meses, mais a implantação</small></th><td></td><td><b>R$ 8.490</b>sem custo</td></tr>
+          </tbody>
+        </table>
+        <span class="prazo"><i></i>Condição de abertura para fechar até 30/11/2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- investimento -->
+  <section class="light sec" id="investimento">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Investimento</span>
+        <h2>Resumo dos <span class="ouro">valores</span>.</h2>
+        <p>O site completo, com as 10 páginas de serviço e a configuração do Google, entra parcelado junto com as primeiras mensalidades.</p>
+      </div>
+      <div class="inv-grid">
+        <div class="rv">
+          <table class="tabela">
+            <tr><th>Plano do agro<small>Todo mês, a partir da assinatura</small></th><td><b>R$ 3.290</b><small>por mês</small></td></tr>
+            <tr><th>Site completo<small>Página principal, 10 páginas de serviço, SEO e o Painel do agro, em 4 parcelas junto com as primeiras mensalidades</small></th><td><b>R$ 2.500</b><small>4 × R$ 625</small></td></tr>
+            <tr><th>Bônus da abertura<small>Os 6 primeiros meses</small></th><td><b>R$ 0</b><small>R$ 8.490 em bônus</small></td></tr>
+            <tr><th>Verba de anúncio<small>Paga direto à Meta, a partir do mês 2; sugestão a partir de R$&nbsp;1.000 por mês</small></th><td><b>À parte</b><small>da Meta</small></td></tr>
+            <tr><th>Domínio<small>Registrado no nome de vocês</small></th><td><b>À parte</b><small>cerca de R$&nbsp;40 por ano</small></td></tr>
+          </table>
+          <div class="pagto">
+            <p><b>Pagamento:</b> mensalidade antecipada por Pix até o dia 5. Nos 4 primeiros meses, R$ 3.915 (a mensalidade mais a parcela do site); depois, R$ 3.290.</p>
+            <p><b>Contrato:</b> 6 meses, o tempo da condição de abertura. Depois, segue mês a mês, com aviso de 30 dias para encerrar.</p>
+          </div>
+        </div>
+
+        <form class="escolha rv" id="escolha" onsubmit="return false">
+          <span class="eyebrow">Sua escolha</span>
+          <h3>Vamos levar a Integraliza para fora?</h3>
+          <div class="total" aria-live="polite">
+            <div><span class="rot">Nos 4 primeiros meses</span><b>R$ 3.915</b><small>por mês, com a parcela do site</small></div>
+            <div><span class="rot">Depois</span><b>R$ 3.290</b><small>por mês</small></div>
+          </div>
+          <div class="acoes">
+            <a class="btn btn-ouro" id="aceitar" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Aceitar pelo WhatsApp <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="link" id="duvida" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Tirar uma dúvida</a>
+          </div>
+          <p class="aviso">O botão abre o WhatsApp com a mensagem pronta. Nada é enviado sem vocês confirmarem.</p>
+        </form>
+      </div>
+
+      <div class="rv" style="margin-top:96px">
+        <span class="eyebrow">O que vamos acompanhar</span>
+        <h3 style="font-size:clamp(26px,2.8vw,34px);font-weight:200;margin:18px 0 26px">Os números do relatório a cada 15 dias.</h3>
+        <div class="medir">
+          <div><b>Avaliações no Google</b><p>Das duas unidades, com a rotina pedindo aos clientes de hoje.</p></div>
+          <div><b>Pesquisas e visitas</b><p>Quais buscas do Google trazem gente para cada página de serviço.</p></div>
+          <div><b>Alcance dos vídeos</b><p>Quantas pessoas da região viram o conteúdo do mês.</p></div>
+          <div><b>Conversas no WhatsApp</b><p>Os cliques vindos do site e dos anúncios, por serviço.</p></div>
+        </div>
+        <p class="nota" style="margin-top:28px">Seguindo as regras do CFC, nada promete resultado: nem número de clientes, nem posição no Google. O que garantimos é o trabalho completo e os números à vista de vocês.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band l-d" aria-hidden="true"></div>
+
+  <!-- próximos passos -->
+  <section class="dark sec" id="passos">
+    <div class="container fim-grid">
+      <div>
+        <div class="sec-head rv" style="margin-bottom:48px">
+          <span class="eyebrow">Depois do aceite</span>
+          <h2>Próximos <span class="ouro">passos</span>.</h2>
+        </div>
+        <ol class="passos rv">
+          <li><span class="n">1</span><div><h3>Aceite e contrato</h3><p>Vocês aceitam, assinamos o contrato e vocês pagam a primeira mensalidade com a primeira parcela do site.</p></div></li>
+          <li><span class="n">2</span><div><h3>Semana 1: acessos e Google</h3><p>Os acessos ao Instagram, ao Facebook, ao Gerenciador da Meta e às fichas do Google. Arrumamos as fichas, criamos a de Irati e começamos a rotina de avaliações.</p></div></li>
+          <li><span class="n">3</span><div><h3>A primeira diária a campo</h3><p>Combinamos com vocês as propriedades e os produtores que topam aparecer, e o calendário do mês sai para a aprovação.</p></div></li>
+          <li><span class="n">4</span><div><h3>O site no domínio de vocês</h3><p>Escrevemos as 10 páginas de serviço, a Maria Beatriz revisa, e o site entra no ar com o Painel do agro.</p></div></li>
+        </ol>
+      </div>
+      <figure class="equipe rv">
+        <div class="retrato"><img src="img/equipe.webp" alt="João Vitor e Nicoli, da RK Performance" width="1000" height="1250" loading="lazy"></div>
+        <figcaption>
+          <span class="rot">Quem cuida da Integraliza</span>
+          <b>João Vitor &amp; Nicoli</b>
+          <p>Somos a RK Performance, do Paraná. Criamos sites, sistemas, conteúdo e soluções com IA, e acompanhamos cada cliente de perto.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
+
+  <!-- dúvidas frequentes -->
+  <section class="light sec" id="duvidas">
+    <div class="container faq-grid">
+      <div class="sec-head rv">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Antes de <span class="ouro">decidir</span>.</h2>
+        <p>O que costuma aparecer quando um escritório começa a cuidar do digital, respondido em poucas linhas.</p>
+        <a class="link js-duvida" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Ficou outra dúvida? Fale com a gente</a>
+      </div>
+      <div class="faq rv">
+        <details><summary>Quem aparece nos vídeos a campo?<i></i></summary><p>A equipe de vocês e os produtores que aceitarem, sempre com autorização de imagem por escrito. Nenhum dado fiscal do produtor aparece na tela.</p></details>
+        <details><summary>O conteúdo segue as regras do CFC?<i></i></summary><p>Sim. Sem preço de honorário, sem comparação com outros escritórios e sem promessa de resultado, com os dados de registro onde o CFC pede. A Maria Beatriz revisa o que for técnico antes de ir ao ar.</p></details>
+        <details><summary>Quem aprova as publicações?<i></i></summary><p>Vocês. O calendário do mês sai para aprovação antes de começar, e cada peça passa por vocês pelo link ou pelo WhatsApp. Nada vai ao ar sem o ok.</p></details>
+        <details><summary>A verba dos anúncios está no plano?<i></i></summary><p>Não. O plano cobre a gestão e os criativos. A verba é de vocês e vai direto para a Meta, a partir do mês 2, e combinamos o valor juntos depois do primeiro mês de conteúdo.</p></details>
+        <details><summary>O que acontece depois dos 6 meses?<i></i></summary><p>O plano segue mês a mês. Os bônus da abertura terminam, e vocês escolhem quais manter pelo valor da tabela, com tudo o que os relatórios mostraram até ali.</p></details>
+        <details><summary>Podemos encerrar quando quisermos?<i></i></summary><p>Depois dos 6 primeiros meses, sim, com aviso de 30 dias. O site, o domínio e as fichas do Google continuam de vocês.</p></details>
+        <details><summary>Vocês garantem clientes novos?<i></i></summary><p>Não, e as regras do CFC também não permitem prometer. O que garantimos é o trabalho completo todo mês, e os números de cada 15 dias mostram o que está trazendo gente.</p></details>
+        <details><summary>O que precisamos fazer?<i></i></summary><p>Liberar os acessos, mandar as fotos originais dos sócios e o número de registro do escritório no CRC, combinar as diárias com os produtores e reservar uma hora por mês para a reunião.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <div class="band l-d" aria-hidden="true"></div>
+</main>
+
+<footer class="dark rodape">
+  <div class="container rodape-in">
+    <div class="logo"><span class="rk">RK</span><span class="sep"></span><span class="perf">PERFORMANCE</span></div>
+    <p>Proposta da RK Performance · válida até 30/11/2026 · <a href="https://rkperformance.com.br" target="_blank" rel="noopener">rkperformance.com.br</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.body.classList.remove('no-js');
+  var WA = 'https://wa.me/5542999833348?text=';
+  var msgAceite = 'Olá, RK! Aqui é da Integraliza. Vimos a proposta completa e queremos seguir com o plano do agro, R$ 3.290 por mês, com o site completo e a condição de abertura. Podemos combinar os próximos passos?';
+  var msgDuvida = WA + encodeURIComponent('Olá, RK! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta completa: ');
+  document.getElementById('aceitar').href = WA + encodeURIComponent(msgAceite);
+  document.getElementById('duvida').href = msgDuvida;
+  document.querySelectorAll('.js-duvida').forEach(function (a) { a.href = msgDuvida; });
+  document.querySelectorAll('.faq details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (!d.open) return;
+      d.parentNode.querySelectorAll('details[open]').forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
