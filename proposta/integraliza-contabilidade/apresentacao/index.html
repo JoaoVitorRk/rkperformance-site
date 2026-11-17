@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Apresentação · Integraliza · RK Performance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16120F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=DM+Mono:wght@400&display=swap">
+<style>
+/* Layout: levantamento em 14 marcos. Cada tela é um marco do terreno, com numeral vazado; as curvas de nível (a agrimensura da Integraliza) correm ao fundo das telas de noite, e a faixa de cotações ao vivo do Painel do agro costura a abertura à noite. Identidade da RK (DESIGN.md v2). */
+:root {
+  --noite: #16120F; --noite2: #1E1813; --noite3: #2A2119;
+  --marfim: #F7F3EE; --marfim2: #EFE8DE; --branco: #FCFAF7;
+  --tinta: #2A211C; --tinta2: #6B5F55; --tinta3: #9A8E82;
+  --off: #F2EBE1; --mudo: #B3A595; --mudo2: #7C7064;
+  --dourado: #C9A771; --dourado2: #E2CB9A; --dourado3: #9E7F3F; --champanhe: #EFE3C8;
+  --fio: rgba(201,167,113,.32); --fio2: rgba(201,167,113,.55); --fio-escuro: rgba(42,33,28,.14);
+  --font: "Jost", "Century Gothic", system-ui, sans-serif;
+  --mono: "DM Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
+body { background: var(--marfim); color: var(--tinta); font-family: var(--font); font-weight: 300; font-size: 17px; line-height: 1.65; overflow-x: clip; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { font-weight: 200; letter-spacing: .015em; line-height: 1.12; text-wrap: balance; }
+h3 { font-weight: 400; font-size: 20px; line-height: 1.3; letter-spacing: .01em; }
+strong, b { font-weight: 500; }
+p { text-wrap: pretty; }
+img { display: block; max-width: 100%; height: auto; }
+ul, ol { list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+:focus-visible { outline: 1px solid var(--dourado); outline-offset: 4px; }
+.container { position: relative; z-index: 2; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }
+.ouro { background: linear-gradient(100deg, #EFE3C8 0%, #C9A771 45%, #A8883F 100%); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 300; }
+.claro .ouro { background: linear-gradient(100deg, #B08A45 0%, #9E7F3F 50%, #7A6230 100%); -webkit-background-clip: text; background-clip: text; }
+.tnum { font-variant-numeric: tabular-nums lining-nums; }
+
+/* superfícies */
+.tela { position: relative; overflow: clip; }
+.claro { background: var(--marfim); color: var(--tinta); }
+.claro.alt { background: var(--marfim2); }
+.claro::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23C9A771' stroke-width='.6' opacity='.22'%3E%3Cpath d='M28 20l8 8-8 8-8-8z'/%3E%3Cpath d='M28 0v8M28 48v8M0 28h8M48 28h8'/%3E%3C/g%3E%3C/svg%3E"); }
+.escuro { background: var(--noite); color: var(--off); }
+.escuro::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(60% 50% at 75% 20%, rgba(201,167,113,.10), transparent 70%), radial-gradient(40% 40% at 10% 85%, rgba(120,90,60,.16), transparent 70%); }
+.band { position: relative; height: 120px; }
+.band.c-e { background: linear-gradient(to bottom, var(--marfim), var(--noite)); }
+.band.e-c { background: linear-gradient(to bottom, var(--noite), var(--marfim)); }
+.band.e-a { background: linear-gradient(to bottom, var(--noite), var(--marfim2)); }
+.band.a-e { background: linear-gradient(to bottom, var(--marfim2), var(--noite)); }
+.band.c-a { height: 64px; background: linear-gradient(to bottom, var(--marfim), var(--marfim2)); }
+.grao { position: fixed; inset: -50%; width: 200%; height: 200%; pointer-events: none; z-index: 20; opacity: .05; mix-blend-mode: soft-light; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+/* curvas de nível */
+.curvas { position: absolute; z-index: 0; pointer-events: none; width: min(1100px, 92vw); aspect-ratio: 1; right: -16vw; top: 50%; margin-top: calc(min(1100px, 92vw) / -2); }
+.curvas.esq { right: auto; left: -18vw; }
+.curvas path { fill: none; stroke: var(--dourado); stroke-width: 1; opacity: .2; vector-effect: non-scaling-stroke; }
+.claro .curvas path { stroke: var(--dourado3); opacity: .26; }
+.curvas g { transform-origin: 500px 500px; will-change: transform; }
+
+/* tela de apresentação no computador */
+@media (min-width: 1000px) and (min-height: 620px) {
+  .tela.cheia { min-height: 100vh; display: flex; align-items: center; }
+  .tela.cheia > .container { padding-block: 72px; }
+}
+.tela > .container { padding-block: 88px; }
+
+/* tela grande (TV da sala, monitor): tudo cresce junto, e a altura da tela desconta a ampliação */
+@media (min-width: 1700px) and (min-height: 900px) {
+  main, .rodape { zoom: 1.22; }
+  .tela.cheia, .tela.abertura { min-height: calc(100vh / 1.22); }
+}
+/* notebook de tela baixa: tudo encolhe junto para cada tela caber sem rolar */
+@media (min-width: 1000px) and (min-height: 701px) and (max-height: 800px) {
+  main, .rodape { zoom: .9; }
+  .tela.cheia, .tela.abertura { min-height: calc(100vh / .9); }
+}
+@media (min-width: 1000px) and (min-height: 620px) and (max-height: 700px) {
+  main, .rodape { zoom: .82; }
+  .tela.cheia, .tela.abertura { min-height: calc(100vh / .82); }
+}
+
+/* numeral vazado e coordenada */
+.romano { position: absolute; z-index: 1; top: 20px; right: 32px; font-size: clamp(80px, 10.5vw, 160px); font-weight: 200; line-height: 1; letter-spacing: .02em; color: transparent; -webkit-text-stroke: 1px rgba(201,167,113,.3); pointer-events: none; user-select: none; }
+.romano.esq { right: auto; left: 32px; }
+.romano.baixo { top: auto; bottom: 18px; }
+.claro .romano { -webkit-text-stroke-color: rgba(158,127,63,.28); }
+.coord { font-family: var(--mono); font-size: 11.5px; letter-spacing: .08em; color: var(--tinta3); }
+.escuro .coord { color: var(--mudo2); }
+
+/* tipografia utilitária */
+.olho { display: inline-flex; align-items: center; gap: 14px; font-size: 11px; font-weight: 500; letter-spacing: .26em; text-transform: uppercase; color: var(--dourado); }
+.olho::before { content: ""; width: 28px; height: 1px; background: currentColor; opacity: .8; }
+.claro .olho { color: var(--dourado3); }
+.rot { font-size: 10.5px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--dourado3); }
+.escuro .rot { color: var(--dourado); }
+.titulo { font-size: clamp(34px, 4.6vw, 62px); margin: 22px 0 22px; }
+.titulo.menor { font-size: clamp(30px, 3.7vw, 50px); }
+.lead { font-size: 19px; line-height: 1.7; color: var(--tinta2); max-width: 56ch; }
+.escuro .lead { color: var(--mudo); }
+.nota { font-size: 13.5px; color: var(--tinta3); }
+.escuro .nota { color: var(--mudo2); }
+
+/* cantoneiras */
+.cant { position: relative; }
+.cant > i { position: absolute; width: 22px; height: 22px; border: 1px solid var(--dourado); pointer-events: none; z-index: 3; display: block; }
+.cant > i.c1 { left: -8px; top: -8px; border-right: 0; border-bottom: 0; }
+.cant > i.c2 { right: -8px; top: -8px; border-left: 0; border-bottom: 0; }
+.cant > i.c3 { left: -8px; bottom: -8px; border-right: 0; border-top: 0; }
+.cant > i.c4 { right: -8px; bottom: -8px; border-left: 0; border-top: 0; }
+
+/* 01. abertura */
+.logo { display: flex; align-items: center; gap: 14px; font-weight: 300; font-size: 26px; letter-spacing: .08em; color: var(--tinta); }
+.logo .rk { color: var(--dourado3); }
+.escuro .logo, .rodape .logo { color: var(--off); }
+.escuro .logo .rk, .rodape .logo .rk { color: var(--dourado); }
+.logo .sep { width: 1px; height: 24px; background: var(--dourado); opacity: .7; }
+.logo .perf { font-size: 10px; font-weight: 500; letter-spacing: .34em; opacity: .85; }
+.abertura { min-height: 100vh; display: flex; flex-direction: column; }
+.topo { position: relative; z-index: 3; border-bottom: 1px solid var(--fio-escuro); }
+.topo .container { padding-block: 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; }
+.hero { flex: 1; display: flex; align-items: center; }
+.hero .container { padding-block: 40px 48px; display: grid; grid-template-columns: 1fr 1.02fr; gap: 72px; align-items: center; }
+.hero h1 { font-size: clamp(44px, 5.2vw, 76px); margin: 22px 0 22px; }
+.meta { display: grid; grid-template-columns: 1.4fr .9fr 1.1fr; margin-top: 32px; border-top: 1px solid var(--fio-escuro); }
+.meta > div { padding: 16px 16px 0 0; }
+.meta > div + div { padding-left: 16px; border-left: 1px solid var(--fio-escuro); }
+.meta dt { font-size: 10.5px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--dourado3); margin-bottom: 6px; }
+.meta dd { font-size: 15.5px; font-weight: 400; line-height: 1.45; }
+.meta dd small { display: block; font-size: 13px; font-weight: 300; color: var(--tinta2); }
+.comp { position: relative; aspect-ratio: 1 / 1.02; width: 100%; max-height: 74vh; }
+.comp .f1 { position: absolute; right: 0; top: 0; width: 78%; height: 86%; }
+.comp .f2 { position: absolute; left: 0; bottom: 0; width: 46%; height: 44%; z-index: 4; box-shadow: 0 0 0 8px var(--marfim), 0 40px 70px -30px rgba(42,33,28,.5); }
+.moldura { overflow: hidden; background: var(--noite2); height: 100%; }
+.moldura img { width: 100%; height: 100%; object-fit: cover; will-change: transform; }
+.moldura img[data-par] { position: relative; top: -8%; height: 116%; }
+.comp .f2 img { object-position: 50% 30%; }
+.selo { position: absolute; z-index: 5; right: -18px; bottom: 0; width: 136px; height: 136px; }
+.selo svg { width: 100%; height: 100%; display: block; }
+.selo .gira { transform-origin: 100px 100px; will-change: transform; }
+.selo text { font-family: var(--font); font-weight: 500; font-size: 13.5px; letter-spacing: .24em; fill: var(--dourado3); }
+.selo .num { font-weight: 200; font-size: 50px; letter-spacing: .04em; fill: var(--tinta); }
+
+/* a faixa de cotações */
+.band.com-faixa { z-index: 6; overflow: visible; }
+.faixa { position: absolute; left: -4vw; right: -4vw; top: 50%; margin-top: -29px; transform: rotate(-1.4deg); background: var(--branco); border-top: 1px solid var(--dourado); border-bottom: 1px solid var(--dourado); box-shadow: 0 0 0 3px var(--branco), 0 24px 50px -24px rgba(22,18,15,.55); overflow: hidden; white-space: nowrap; padding: 15px 0; color: var(--tinta); }
+.faixa .trilha { display: inline-block; will-change: transform; }
+.faixa .lote { display: inline-block; }
+.faixa .it { font-size: 12px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--tinta2); }
+.faixa .it b { font-family: var(--mono); font-weight: 400; font-size: 16px; letter-spacing: .02em; color: var(--tinta); margin-left: 12px; text-transform: none; }
+.faixa i { font-style: normal; color: var(--dourado3); margin: 0 24px; font-size: 11px; vertical-align: 1px; }
+
+/* telas com foto sangrando */
+.sangra { position: absolute; z-index: 1; top: 0; bottom: 0; right: 0; width: 60%; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 48%); mask-image: linear-gradient(to right, transparent 0%, #000 48%); }
+.sangra img { position: absolute; left: 0; top: -9%; width: 100%; height: 118%; object-fit: cover; filter: brightness(.78) saturate(.92); will-change: transform; }
+.sangra::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, var(--noite) 0%, rgba(22,18,15,0) 22%), linear-gradient(to bottom, var(--noite) 0%, rgba(22,18,15,0) 14%); }
+.metade { max-width: 640px; }
+.pergunta { font-size: clamp(36px, 4.8vw, 68px); margin: 26px 0 30px; }
+.pautas { display: flex; flex-wrap: wrap; gap: 8px 28px; border-top: 1px solid var(--fio); padding-top: 18px; color: var(--mudo); font-size: 15.5px; }
+
+/* 03. o que ouvimos */
+.ganchos { border-top: 1px solid var(--fio-escuro); margin-top: 26px; }
+.ganchos li { display: grid; grid-template-columns: 62px minmax(0, 1fr) 190px; gap: 12px; align-items: baseline; padding: 17px 0; border-bottom: 1px solid var(--fio-escuro); }
+.ganchos .n { font-size: 30px; font-weight: 200; color: var(--dourado3); font-variant-numeric: lining-nums; line-height: 1.1; }
+.ganchos q { quotes: "“" "”"; font-size: clamp(20px, 2.25vw, 30px); font-weight: 200; line-height: 1.22; }
+.ganchos li > span:last-child { text-align: right; font-size: 10px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--dourado3); }
+
+/* 04. achados */
+.achados { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 30px; border-top: 1px solid var(--fio); }
+.achados li { padding: 22px 20px 0 0; }
+.achados li + li { padding-left: 20px; border-left: 1px solid var(--fio); }
+.achados .g { display: block; font-size: clamp(46px, 5.4vw, 84px); font-weight: 200; line-height: 1; letter-spacing: .005em; font-variant-numeric: lining-nums; }
+.achados h3 { font-size: 16px; font-weight: 400; color: var(--off); margin: 12px 0 6px; }
+.achados p { font-size: 14.5px; line-height: 1.5; color: var(--mudo); }
+
+/* trato: colunas de números */
+.trato { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 30px; border-top: 1px solid var(--fio-escuro); }
+.trato > div { padding: 16px 18px 0 0; }
+.trato > div + div { padding-left: 18px; border-left: 1px solid var(--fio-escuro); }
+.trato b { display: block; font-size: 26px; font-weight: 200; line-height: 1.15; font-variant-numeric: lining-nums; }
+.trato span { display: block; font-size: 14px; line-height: 1.4; color: var(--tinta2); margin-top: 3px; }
+.trato.q4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.escuro .trato { border-top-color: var(--fio); }
+.escuro .trato > div + div { border-left-color: var(--fio); }
+.escuro .trato b { color: var(--off); }
+.escuro .trato span { color: var(--mudo); }
+
+/* 05. o momento */
+.duas { display: grid; grid-template-columns: 1.15fr minmax(260px, 340px); gap: 88px; align-items: center; }
+.fone { position: relative; background: #0d0a08; padding: 8px; border-radius: 30px; box-shadow: 0 50px 90px -40px rgba(22,18,15,.75), 0 0 0 1px var(--fio); }
+.fone img { border-radius: 23px; width: 100%; }
+.fone figcaption { position: absolute; left: 0; right: 0; bottom: -34px; text-align: center; }
+
+/* 06. painel */
+.painel-grade { display: grid; grid-template-columns: .82fr 1.18fr; gap: 64px; align-items: center; }
+.vivo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--fio); border-bottom: 1px solid var(--fio); margin: 26px 0 20px; }
+.vivo > div { padding: 14px 14px 14px 0; }
+.vivo > div + div { padding-left: 16px; border-left: 1px solid var(--fio); }
+.vivo small { display: block; font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--dourado); }
+.vivo b { display: block; font-family: var(--mono); font-weight: 400; font-size: clamp(18px, 1.65vw, 24px); white-space: nowrap; color: var(--off); font-variant-numeric: tabular-nums lining-nums; margin-top: 4px; }
+.vivo span { font-size: 12.5px; color: var(--mudo2); }
+.pulso { display: inline-flex; align-items: center; gap: 9px; font-family: var(--mono); font-size: 12px; color: var(--mudo); }
+.pulso::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #9BC98A; box-shadow: 0 0 0 4px rgba(155,201,138,.16); }
+.janela { background: #0d0a08; border-radius: 10px; padding: 26px 6px 6px; position: relative; box-shadow: 0 60px 100px -50px rgba(0,0,0,.9), 0 0 0 1px var(--fio); }
+.janela::before { content: ""; position: absolute; left: 12px; top: 10px; width: 7px; height: 7px; border-radius: 50%; background: #4a3f36; box-shadow: 13px 0 0 #4a3f36, 26px 0 0 #4a3f36; }
+.janela img { border-radius: 5px; width: 100%; }
+.claro .janela { box-shadow: 0 50px 90px -50px rgba(42,33,28,.7), 0 0 0 1px var(--fio-escuro); }
+.telas { position: relative; padding: 0 0 7% 0; }
+.telas .cel { position: absolute; right: -14px; bottom: 0; width: 23%; background: #0d0a08; padding: 5px; border-radius: 20px; box-shadow: 0 40px 70px -30px rgba(0,0,0,.95), 0 0 0 1px var(--fio2); }
+.telas .cel img { border-radius: 15px; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border: 1px solid rgba(42,33,28,.35); border-radius: 2px; font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; transition: border-color .25s, color .25s, background .25s; }
+.btn:hover { border-color: var(--dourado3); color: var(--dourado3); }
+.escuro .btn { border-color: var(--fio2); color: var(--dourado2); }
+.escuro .btn:hover { border-color: var(--dourado2); color: #fff; }
+.btn.cheio { background: linear-gradient(100deg, #EFE3C8 0%, #C9A771 55%, #B8975A 100%); border-color: transparent; color: var(--noite); }
+.btn.cheio:hover { color: var(--noite); filter: brightness(1.06); }
+.btn svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.acoes { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; margin-top: 24px; }
+
+/* 07. o começo */
+.papeis { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 30px; }
+.papeis h3 { font-size: 28px; font-weight: 200; margin: 6px 0 12px; }
+.linhas { border-top: 1px solid var(--fio-escuro); }
+.linhas li { position: relative; padding: 11px 0 11px 30px; border-bottom: 1px solid var(--fio-escuro); font-size: 16px; line-height: 1.5; }
+.linhas li::before { content: ""; position: absolute; left: 0; top: 23px; width: 16px; height: 1px; background: var(--dourado3); }
+.escuro .linhas { border-top-color: var(--fio); }
+.escuro .linhas li { border-bottom-color: var(--fio); color: var(--off); }
+.escuro .linhas li::before { background: var(--dourado); }
+.linhas li small { display: block; color: var(--tinta2); font-size: 14px; }
+.escuro .linhas li small { color: var(--mudo); }
+.linhas.aperta li { padding-block: 9px; font-size: 15.5px; }
+.linhas.aperta li::before { top: 21px; }
+
+/* 08. todo mês */
+.blocos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 44px; margin-top: 26px; border-top: 1px solid var(--fio); }
+.blocos li { padding: 20px 0 20px; border-bottom: 1px solid var(--fio); display: grid; grid-template-columns: 50px minmax(0, 1fr); gap: 4px; align-content: start; }
+.blocos .n { font-size: 30px; font-weight: 200; line-height: 1.05; color: var(--dourado); font-variant-numeric: lining-nums; }
+.blocos h3 { font-size: 20px; font-weight: 300; color: var(--off); }
+.blocos h3 em { font-style: normal; font-size: 9.5px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--noite); background: var(--dourado); padding: 2px 7px 1px; margin-left: 8px; vertical-align: 3px; white-space: nowrap; }
+.blocos q { display: block; quotes: "“" "”"; font-size: 14px; color: var(--dourado2); margin: 3px 0 7px; line-height: 1.4; }
+.blocos p { font-size: 15px; line-height: 1.5; color: var(--mudo); }
+
+/* 10. planos */
+.planos { display: grid; grid-template-columns: 1fr 1.08fr; gap: 56px; margin-top: 28px; align-items: start; }
+.plano { padding: 26px 28px 24px; border: 1px solid var(--fio); background: rgba(30,24,19,.55); }
+.plano.rec { border-color: var(--fio2); background: rgba(42,33,25,.7); }
+.plano .cab { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.plano .selinho { font-size: 9.5px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--noite); background: var(--dourado); padding: 3px 9px 2px; }
+.plano h3 { font-size: 28px; font-weight: 200; color: var(--off); margin: 4px 0 2px; }
+.preco { display: flex; align-items: baseline; gap: 10px; margin: 10px 0 14px; }
+.preco b { font-size: clamp(44px, 4.6vw, 66px); font-weight: 200; line-height: 1; white-space: nowrap; font-variant-numeric: lining-nums; }
+.preco small { font-size: 14px; color: var(--mudo); }
+.claro .preco small { color: var(--tinta2); }
+
+/* 11. o site */
+.site-grade { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
+.dez { display: flex; align-items: center; gap: 22px; margin: 0 0 14px; }
+.dez b { font-size: clamp(88px, 9vw, 132px); font-weight: 200; line-height: .86; color: transparent; -webkit-text-stroke: 1px var(--dourado3); font-variant-numeric: lining-nums; }
+.dez span { font-size: 19px; line-height: 1.4; color: var(--tinta2); max-width: 18ch; }
+
+/* 12. a busca por serviço */
+.busca-grade { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
+.buscador { display: flex; align-items: center; gap: 14px; margin: 2px 0 22px; padding: 15px 24px; max-width: 520px; border: 1px solid var(--fio2); border-radius: 40px; background: rgba(252,250,247,.05); font-family: var(--mono); font-size: 17px; color: var(--off); white-space: nowrap; overflow: hidden; }
+.buscador svg { width: 18px; height: 18px; flex: none; stroke: var(--dourado); fill: none; stroke-width: 1.6; stroke-linecap: round; }
+.buscador i { width: 1px; height: 20px; flex: none; background: var(--dourado2); margin-left: -10px; }
+.buscas-cab { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) 16px; gap: 14px; padding-bottom: 10px; }
+.buscas { border-top: 1px solid var(--fio); }
+.buscas a { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) 16px; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--fio); transition: padding .35s, background .35s; }
+.buscas a:hover, .buscas li.on a { padding-left: 10px; background: linear-gradient(90deg, rgba(201,167,113,.13), transparent 85%); }
+.buscas .q { font-family: var(--mono); font-size: 13.5px; color: var(--mudo); transition: color .35s; }
+.buscas li.on .q { color: var(--dourado2); }
+.buscas b { font-weight: 400; font-size: 16px; color: var(--off); }
+.buscas svg { width: 13px; height: 13px; align-self: center; stroke: var(--dourado); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
+/* 13. condição de abertura */
+.bonus-grade { display: grid; grid-template-columns: .82fr 1.18fr; gap: 72px; align-items: center; }
+.gigante { display: block; font-size: clamp(64px, 8.6vw, 132px); font-weight: 200; line-height: .95; font-variant-numeric: lining-nums; margin: 16px 0 10px; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; vertical-align: top; padding: 15px 16px 15px 0; border-bottom: 1px solid var(--fio-escuro); }
+thead th { font-size: 10.5px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--dourado3); border-top: 1px solid var(--fio-escuro); }
+tbody th { font-weight: 400; font-size: 17px; }
+tbody th small { display: block; font-weight: 300; font-size: 14px; color: var(--tinta2); line-height: 1.45; }
+td { font-family: var(--mono); font-size: 14.5px; white-space: nowrap; font-variant-numeric: tabular-nums lining-nums; }
+td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--dourado3); padding-right: 0; text-align: right; }
+
+/* 14. fechamento */
+.hoje { border-top: 1px solid var(--fio); margin: 24px 0 26px; max-width: 520px; }
+.hoje li { display: grid; grid-template-columns: 54px minmax(0, 1fr); padding: 11px 0; border-bottom: 1px solid var(--fio); align-items: baseline; font-size: 19px; font-weight: 300; color: var(--off); }
+.hoje .n { font-size: 26px; font-weight: 200; color: var(--dourado); font-variant-numeric: lining-nums; }
+.equipe { display: flex; align-items: center; gap: 22px; margin-top: 30px; }
+.equipe.canto { position: absolute; z-index: 3; right: 32px; bottom: 84px; margin: 0; max-width: 400px; padding: 18px 22px 18px 20px; background: rgba(22,18,15,.74); border: 1px solid var(--fio); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.bonus-grade .trato b { font-size: 21px; white-space: nowrap; }
+.equipe .ret { width: 92px; height: 112px; flex: none; }
+.equipe .moldura img { object-position: top; }
+.equipe b { display: block; font-size: 20px; font-weight: 300; color: var(--off); }
+.equipe p { color: var(--mudo); font-size: 15px; max-width: 42ch; }
+.rodape { position: relative; z-index: 2; border-top: 1px solid var(--fio); background: var(--noite); }
+.rodape .container { padding-block: 34px 88px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+.rodape p { font-size: 13px; color: var(--mudo2); }
+
+/* controle da apresentação */
+.controle { position: fixed; z-index: 25; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 2px; background: rgba(22,18,15,.9); border: 1px solid var(--fio); border-radius: 2px; color: var(--off); padding: 3px; }
+.controle button { width: 34px; height: 34px; display: grid; place-items: center; color: var(--dourado2); }
+.controle button:hover { color: #fff; }
+.controle svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.controle output { min-width: 66px; text-align: center; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; color: var(--off); }
+.progresso { position: fixed; z-index: 25; left: 0; top: 0; height: 2px; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, #A8883F, #E2CB9A); pointer-events: none; }
+
+/* responsivo */
+@media (max-width: 999px) {
+  .hero .container, .duas, .painel-grade, .site-grade, .bonus-grade, .busca-grade { grid-template-columns: minmax(0, 1fr); gap: 52px; }
+  .papeis, .planos { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+  .blocos { grid-template-columns: minmax(0, 1fr); }
+  .achados { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .achados li, .achados li + li { padding: 20px 16px 20px 0; border-left: 0; border-bottom: 1px solid var(--fio); }
+  .abertura { min-height: 0; }
+  .comp { max-height: none; max-width: 620px; }
+  .duas .fone { width: min(300px, 76vw); justify-self: center; margin-bottom: 34px; }
+  .sangra { position: relative; width: 100%; height: 78vw; max-height: 560px; -webkit-mask-image: none; mask-image: none; }
+  .sangra::after { background: linear-gradient(to top, var(--noite) 0%, rgba(22,18,15,0) 44%), linear-gradient(to bottom, var(--noite) 0%, rgba(22,18,15,0) 14%); }
+  .tela.empilha { display: flex; flex-direction: column; }
+  .tela.empilha > .container { margin-top: -70px; padding-top: 0; }
+  .metade { max-width: none; }
+  .equipe.canto { position: static; max-width: none; margin-top: 30px; padding: 0; background: none; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .romano, .romano.esq, .romano.baixo { font-size: 88px; top: 14px; bottom: auto; left: auto; right: 16px; }
+  .curvas { width: 150vw; right: -60vw; margin-top: -75vw; }
+  .curvas.esq { left: -60vw; }
+  .trato.q4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trato.q4 > div, .trato.q4 > div + div { padding: 14px 12px 14px 0; border-left: 0; border-bottom: 1px solid var(--fio-escuro); }
+  .escuro .trato.q4 > div { border-bottom-color: var(--fio); }
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .container { padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+  .tela > .container { padding-block: 72px; }
+  .band { height: 88px; }
+  .logo { font-size: 22px; gap: 11px; }
+  .topo .rot { display: none; }
+  .hero .container { padding-block: 40px 60px; }
+  .meta { grid-template-columns: 1fr 1fr; }
+  .meta > div:first-child { grid-column: 1 / -1; padding-bottom: 14px; border-bottom: 1px solid var(--fio-escuro); }
+  .meta > div:nth-child(2) { padding-left: 0; border-left: 0; }
+  .selo { width: 104px; height: 104px; right: -8px; }
+  .faixa .it b { font-size: 14px; }
+  .faixa i { margin: 0 16px; }
+  .ganchos li { grid-template-columns: 44px minmax(0, 1fr); }
+  .ganchos li > span:last-child { grid-column: 2; text-align: left; }
+  .achados { grid-template-columns: minmax(0, 1fr); }
+  .trato { grid-template-columns: minmax(0, 1fr); }
+  .trato > div, .trato > div + div { padding: 12px 0; border-left: 0; border-bottom: 1px solid var(--fio-escuro); }
+  .vivo b { font-size: 20px; }
+  .plano { padding: 22px 20px; }
+  .dez { gap: 14px; }
+  td, th { padding-right: 10px; }
+  td.pres { display: none; }
+  .controle { display: none; }
+  .buscador { font-size: 14px; padding: 13px 18px; }
+  .buscas-cab { display: none; }
+  .buscas a { grid-template-columns: minmax(0, 1fr) 16px; gap: 2px 12px; }
+  .buscas .q { grid-column: 1 / -1; }
+  .telas .cel { right: -6px; width: 27%; }
+}
+</style>
+</head>
+<body>
+<div class="grao" aria-hidden="true"></div>
+<div class="progresso" id="progresso" aria-hidden="true"></div>
+
+<main>
+  <!-- 01 · abertura -->
+  <section class="tela claro abertura" id="t1" data-numero="01">
+    <svg class="curvas" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="7"><g></g></svg>
+    <div class="topo"><div class="container">
+      <span class="logo"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></span>
+      <span class="rot">Reunião · 18/11/2026</span>
+    </div></div>
+    <div class="hero"><div class="container">
+      <div class="rv">
+        <span class="olho">Proposta para a Integraliza</span>
+        <h1>Levar a Integraliza para <span class="ouro">fora</span>.</h1>
+        <p class="lead">Em 2026 vocês arrumaram a casa. Agora é hora de o produtor da região saber tudo o que o escritório faz.</p>
+        <dl class="meta">
+          <div><dt>Para</dt><dd>Maria Beatriz e Jackson Bonetti<small>Integraliza Contabilidade e Agrimensura</small></dd></div>
+          <div><dt>Data</dt><dd class="tnum">18/11/2026<small>com a RK</small></dd></div>
+          <div><dt>Unidades</dt><dd>Prudentópolis<small>e Irati, no Paraná</small></dd></div>
+        </dl>
+      </div>
+      <figure class="comp rv">
+        <div class="f1 cant"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><div class="moldura"><img src="img/campo.webp" alt="Lavouras em curvas de nível ao amanhecer, com araucárias" width="1600" height="905" data-vivo="1" fetchpriority="high"></div></div>
+        <div class="f2"><div class="moldura"><img src="img/equipe-integraliza.webp" alt="A equipe da Integraliza reunida" width="900" height="808"></div></div>
+        <div class="selo" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="98" fill="#F7F3EE" stroke="#C9A771" stroke-width="1"/>
+            <circle cx="100" cy="100" r="58" fill="none" stroke="#C9A771" stroke-width=".7"/>
+            <g class="gira" id="giro">
+              <defs><path id="circulo" d="M100 100 m-76 0 a76 76 0 1 1 152 0 a76 76 0 1 1 -152 0"/></defs>
+              <text><textPath href="#circulo">INTEGRALIZA · PRUDENTÓPOLIS E IRATI · 2027 ·</textPath></text>
+            </g>
+            <text class="num" x="100" y="117" text-anchor="middle">RK</text>
+          </svg>
+        </div>
+      </figure>
+    </div></div>
+  </section>
+
+  <div class="band c-e com-faixa" aria-hidden="true">
+    <div class="faixa"><div class="trilha" id="trilha"><span class="lote"><span class="it">Selic<b>13,75%</b></span><i>◆</i><span class="it">Dólar<b>R$ 5,73</b></span><i>◆</i><span class="it">IPCA 12 meses<b>4,63%</b></span><i>◆</i><span class="it">Soja<b>R$ 135,53</b></span><i>◆</i><span class="it">Milho<b>R$ 52,88</b></span><i>◆</i><span class="it">Feijão-preto<b>R$ 229,45</b></span><i>◆</i><span class="it">Trigo<b>R$ 79,38</b></span><i>◆</i><span class="it">Leite<b>R$ 2,82</b></span><i>◆</i><span class="it">Suínos<b>R$ 5,53</b></span><i>◆</i><span class="it">Boi gordo<b>R$ 373,06</b></span><i>◆</i></span></div></div>
+  </div>
+
+  <!-- 02 · escuta -->
+  <section class="tela escuro cheia empilha" id="t2" data-numero="02">
+    <span class="romano esq" aria-hidden="true">02</span>
+    <div class="sangra"><img src="img/palestra.webp" alt="A equipe da Integraliza com os participantes da palestra sobre formação de preço, em novembro de 2026" width="1500" height="1125" style="object-position:50% 46%" data-par=".07"></div>
+    <div class="container">
+      <div class="metade rv">
+        <span class="olho">Antes de tudo, vocês</span>
+        <h2 class="pergunta">O que precisa acontecer em 2027 para vocês dizerem que <span class="ouro">valeu a pena</span>?</h2>
+        <div class="pautas"><span>Os clientes de hoje</span><span>Quem vocês querem atrair</span><span>Quanto a estrutura comporta</span><span>Quem grava e quem atende</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band e-c" aria-hidden="true"></div>
+
+  <!-- 03 · o que ouvimos -->
+  <section class="tela claro cheia" id="t3" data-numero="03">
+    <span class="romano" aria-hidden="true">03</span>
+    <div class="container">
+      <div class="rv">
+        <span class="olho">O áudio de 29/10, nas palavras de vocês</span>
+        <h2 class="titulo">Foi isto que <span class="ouro">ouvimos</span>.</h2>
+      </div>
+      <ol class="ganchos rv">
+        <li><span class="n">1</span><q>Levar dados de Selic, taxa de dólar, preço de commodities, previsão do tempo.</q><span>O Painel do agro</span></li>
+        <li><span class="n">2</span><q>Ir para campo, em leiteria, suinocultura, fumo, atividade de grãos nas lavouras.</q><span>Os vídeos a campo</span></li>
+        <li><span class="n">3</span><q>Fechar um pacote para vocês cuidarem das nossas redes sociais.</q><span>Instagram e Facebook</span></li>
+        <li><span class="n">4</span><q>Muita gente não sabe de tudo o que a gente oferece.</q><span>O site e o Google</span></li>
+      </ol>
+      <p class="nota rv" style="margin-top:18px">Cada frase virou uma parte desta proposta.</p>
+    </div>
+  </section>
+
+  <div class="band c-e" aria-hidden="true"></div>
+
+  <!-- 04 · o que vimos -->
+  <section class="tela escuro cheia" id="t4" data-numero="04">
+    <svg class="curvas" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="3"><g></g></svg>
+    <span class="romano" aria-hidden="true">04</span>
+    <div class="container">
+      <div class="rv">
+        <span class="olho">O que vimos</span>
+        <h2 class="titulo" style="max-width:900px">Uma referência no agro que o digital ainda não <span class="ouro">mostra</span>.</h2>
+      </div>
+      <ol class="achados rv">
+        <li><span class="g ouro">0</span><h3>avaliações no Google</h3><p>A ficha ativa está como "Escritório da empresa", sem telefone nem site.</p></li>
+        <li><span class="g ouro">Irati</span><h3>não existe no Maps</h3><p>Quem procura contador em Irati não encontra a unidade nova.</p></li>
+        <li><span class="g ouro">10×</span><h3>mais curtidas com gente real</h3><p>Os posts com a equipe e os eventos rendem dez vezes mais que as artes técnicas.</p></li>
+        <li><span class="g ouro">9 mil</span><h3>estabelecimentos rurais</h3><p>Só nas duas cidades. Soja, fumo, feijão, leite e suínos são as maiores atividades.</p></li>
+        <li><span class="g ouro">set</span><h3>de 2026</h3><p>Desde setembro, um escritório da cidade posicionado no agro anuncia na Meta.</p></li>
+      </ol>
+      <p class="nota rv" style="margin-top:24px">Google, Instagram e biblioteca de anúncios da Meta, conferidos de novo em 17/11/2026. Estabelecimentos: IBGE, Censo Agropecuário 2017.</p>
+    </div>
+  </section>
+
+  <div class="band e-a" aria-hidden="true"></div>
+
+  <!-- 05 · o momento -->
+  <section class="tela claro alt cheia" id="t5" data-numero="05">
+    <span class="romano esq baixo" aria-hidden="true">05</span>
+    <div class="container duas">
+      <div class="rv">
+        <span class="olho">O momento</span>
+        <h2 class="titulo">2027 é ano de <span class="ouro">decisão</span> no campo.</h2>
+        <p class="lead">A exigência de CNPJ para parte dos produtores e a reforma tributária vão fazer o produtor procurar um contador do agro. Vocês já falam disso: foi o post de 05/11.</p>
+        <div class="trato q4">
+          <div><b class="tnum">9 mil</b><span>estabelecimentos rurais nas duas cidades</span></div>
+          <div><b class="tnum">R$ 512,7 mi</b><span>em soja, por ano</span></div>
+          <div><b class="tnum">R$ 408,8 mi</b><span>em fumo, por ano</span></div>
+          <div><b class="tnum">38 mi</b><span>de litros de leite, por ano</span></div>
+        </div>
+        <p class="nota" style="margin-top:16px">Prudentópolis e Irati somadas. IBGE: Censo Agropecuário 2017, Produção Agrícola Municipal 2024 e Pesquisa da Pecuária Municipal 2024.</p>
+      </div>
+      <figure class="fone rv">
+        <img src="img/post-reforma.webp" alt="Post da Integraliza de 05/11/2026: Produtor rural, a reforma tributária vai mudar seus impostos?" width="720" height="960" loading="lazy">
+        <figcaption class="rot">O post de vocês · 05/11</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="band a-e" aria-hidden="true"></div>
+
+  <!-- 06 · painel do agro -->
+  <section class="tela escuro cheia" id="t6" data-numero="06">
+    <span class="romano" aria-hidden="true">06</span>
+    <div class="container painel-grade">
+      <div class="rv">
+        <span class="olho">O pedido do áudio, já funcionando</span>
+        <h2 class="titulo">O Painel do agro já <span class="ouro">existe</span>.</h2>
+        <p class="lead">Fizemos antes da reunião, para vocês verem funcionando. Ele busca os números sozinho, todo dia, sem ninguém da equipe mexer.</p>
+        <div class="vivo">
+          <div><small>Selic</small><b id="v-selic">13,75%</b><span>ao ano</span></div>
+          <div><small>Dólar</small><b id="v-dolar">R$ 5,73</b><span>PTAX de venda</span></div>
+          <div><small>Soja</small><b id="v-soja">R$ 135,53</b><span>saca, ao produtor no PR</span></div>
+        </div>
+        <span class="pulso" id="v-data">Painel atualizado em 16/11/2026 às 16:14</span>
+        <div class="acoes">
+          <a class="btn cheio" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o painel ao vivo <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          <span class="nota">Vale R$ 1.900. Entra de presente até 30/11.</span>
+        </div>
+      </div>
+      <div class="telas rv">
+        <div class="janela"><img src="img/painel-indicadores.webp" alt="O Painel do agro no computador: Selic, dólar e inflação com gráficos" width="1440" height="900" loading="lazy"></div>
+        <div class="cel"><img src="img/painel-celular.webp" alt="O Painel do agro no celular" width="640" height="1090" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band e-c" aria-hidden="true"></div>
+
+  <!-- 07 · o começo -->
+  <section class="tela claro cheia" id="t7" data-numero="07">
+    <span class="romano" aria-hidden="true">07</span>
+    <div class="container">
+      <div class="rv">
+        <span class="olho">O começo</span>
+        <h2 class="titulo" style="max-width:900px">Um mês para estruturar. No segundo, tudo <span class="ouro">rodando</span>.</h2>
+      </div>
+      <div class="papeis rv">
+        <div>
+          <span class="rot">Mês 1 · estruturação e dados</span>
+          <h3>A base pronta</h3>
+          <ul class="linhas aperta">
+            <li>O site completo no domínio de vocês, com o painel e as notícias</li>
+            <li>As fichas do Google arrumadas, a de Irati criada e a rotina de avaliações</li>
+            <li>A medição ligada: Search Console, Pixel da Meta e cliques no WhatsApp</li>
+            <li>A identidade de edição dos vídeos e a bio dentro das regras do CFC</li>
+            <li>A primeira diária a campo e as primeiras publicações no ar</li>
+          </ul>
+        </div>
+        <div>
+          <span class="rot">A partir do mês 2 · 100%</span>
+          <h3>Tudo rodando</h3>
+          <ul class="linhas aperta">
+            <li>As 20 publicações do mês, com o calendário do agro</li>
+            <li>Uma diária a campo por mês, com o conteúdo do mês inteiro</li>
+            <li>O site trabalhando sozinho: painel e notícias atualizados todo dia</li>
+            <li>No plano com tráfego, os anúncios usando os dados do mês 1</li>
+            <li>O relatório e a reunião mostrando o que está trazendo gente</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band c-e" aria-hidden="true"></div>
+
+  <!-- 08 · todo mês -->
+  <section class="tela escuro cheia" id="t8" data-numero="08">
+    <svg class="curvas esq" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="11"><g></g></svg>
+    <span class="romano" aria-hidden="true">08</span>
+    <div class="container">
+      <div class="rv">
+        <span class="olho">O que a RK faz todo mês</span>
+        <h2 class="titulo menor">Tudo o que vocês pediram, num lugar <span class="ouro">só</span>.</h2>
+      </div>
+      <ol class="blocos rv">
+        <li><span class="n">1</span><div><h3>Vídeos a campo</h3><q>ir para campo, em leiteria, suinocultura, fumo, grãos</q><p>Uma diária de gravação por mês em propriedades da região, com roteiro e autorização de imagem. Rende os reels do mês.</p></div></li>
+        <li><span class="n">2</span><div><h3>Instagram e Facebook</h3><q>um pacote para vocês cuidarem das nossas redes</q><p>20 publicações por mês: 12 reels com edição em motion e 8 carrosséis ou posts. Calendário aprovado antes.</p></div></li>
+        <li><span class="n">3</span><div><h3>O site sempre atualizado</h3><q>Selic, dólar, commodities, previsão do tempo</q><p>O painel atualizado sozinho, as notícias do agro direto dos sites do governo e a manutenção do site.</p></div></li>
+        <li><span class="n">4</span><div><h3>Relatório e reunião</h3><p>Os números das redes e do site todo mês, e uma reunião para combinar o mês seguinte. Nada vai ao ar sem a aprovação de vocês.</p></div></li>
+        <li><span class="n">5</span><div><h3>Anúncios<em>plano 2</em></h3><p>Meta e Google nos momentos de decisão do produtor: imposto de renda, ITR, custeio e o CNPJ de 2027. Até 3 criativos por mês.</p></div></li>
+        <li><span class="n">6</span><div><h3>O Google das unidades<em>plano 2</em></h3><p>As fichas de Prudentópolis e Irati cuidadas todo mês, com publicações semanais e a rotina de avaliações.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="band e-a" aria-hidden="true"></div>
+
+  <!-- 09 · o que acompanhamos -->
+  <section class="tela claro alt cheia" id="t9" data-numero="09">
+    <span class="romano" aria-hidden="true">09</span>
+    <div class="container">
+      <div class="rv">
+        <span class="olho">O que vamos acompanhar</span>
+        <h2 class="titulo">Sem promessa. Com os números à <span class="ouro">vista</span>.</h2>
+        <p class="lead">As regras do CFC não permitem prometer cliente, e a gente também não promete. O que garantimos é o trabalho completo e o relatório mostrando o que está trazendo gente.</p>
+      </div>
+      <div class="trato q4 rv">
+        <div><b>Avaliações no Google</b><span>Das duas unidades, com a rotina pedindo aos clientes de hoje.</span></div>
+        <div><b>Pesquisas e visitas</b><span>Quais buscas do Google trazem gente para cada página de serviço.</span></div>
+        <div><b>Alcance dos vídeos</b><span>Quantas pessoas da região viram o conteúdo do mês.</span></div>
+        <div><b>Conversas no WhatsApp</b><span>Os cliques vindos do site e, no plano 2, dos anúncios.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band a-e" aria-hidden="true"></div>
+
+  <!-- 10 · os planos -->
+  <section class="tela escuro cheia" id="t10" data-numero="10">
+    <span class="romano" aria-hidden="true">10</span>
+    <div class="container">
+      <div class="rv">
+        <span class="olho">Os planos</span>
+        <h2 class="titulo menor">Dois planos para o serviço do <span class="ouro">mês</span>.</h2>
+      </div>
+      <div class="planos rv">
+        <div class="plano">
+          <div class="cab"><span class="rot">Plano 1</span></div>
+          <h3>Redes sociais</h3>
+          <div class="preco"><b class="tnum">R$ 2.490</b><small>por mês</small></div>
+          <ul class="linhas aperta">
+            <li>Uma diária a campo por mês, de até 5 horas</li>
+            <li>20 publicações: 12 reels e 8 carrosséis ou posts</li>
+            <li>Instagram e Facebook, com o calendário do agro</li>
+            <li>Painel e notícias do agro atualizados todo dia</li>
+            <li>Manutenção do site, relatório e reunião mensais</li>
+          </ul>
+        </div>
+        <div class="plano rec cant"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+          <div class="cab"><span class="rot">Plano 2</span><span class="selinho">Recomendado</span></div>
+          <h3>Redes sociais e tráfego</h3>
+          <div class="preco"><b class="tnum ouro">R$ 3.290</b><small>por mês</small></div>
+          <ul class="linhas aperta">
+            <li>Tudo do plano 1</li>
+            <li>Gestão dos anúncios na Meta e no Google Ads</li>
+            <li>Até 3 criativos de anúncio por mês</li>
+            <li>O Google das duas unidades, com publicações semanais</li>
+            <li>Relatório a cada 15 dias<small>À parte, essas peças somariam R$ 1.470 por mês. No plano, são R$ 800 a mais.</small></li>
+          </ul>
+        </div>
+      </div>
+      <p class="nota rv" style="margin-top:22px;max-width:900px">Contrato de 6 meses; depois, mês a mês, com aviso de 30 dias. No plano 2, a verba dos anúncios é de vocês e vai direto para as plataformas, a partir de R$&nbsp;1.000 por mês.</p>
+    </div>
+  </section>
+
+  <div class="band e-c" aria-hidden="true"></div>
+
+  <!-- 11 · o site -->
+  <section class="tela claro cheia" id="t11" data-numero="11">
+    <span class="romano" aria-hidden="true">11</span>
+    <div class="container site-grade">
+      <div class="rv">
+        <span class="olho">Entregue uma vez</span>
+        <h2 class="titulo menor">O site completo, a porta de <span class="ouro">entrada</span>.</h2>
+        <div class="dez"><b aria-hidden="true">10</b><span>páginas de serviço, uma para cada pesquisa do Google</span></div>
+        <ul class="linhas aperta">
+          <li>A página principal da prévia, ajustada com vocês</li>
+          <li>SEO configurado, com o Search Console</li>
+          <li>O Painel do agro e as notícias, no domínio de vocês</li>
+          <li>Sem mensalidade de hospedagem<small>Só o domínio, cerca de R$ 40 por ano.</small></li>
+        </ul>
+        <div class="preco"><b class="tnum ouro">R$ 2.500</b><small>uma vez, com 50% para começar e 50% na publicação</small></div>
+      </div>
+      <div class="rv">
+        <div class="janela"><img src="img/site-capa.webp" alt="A página principal da prévia do site da Integraliza" width="1440" height="900" loading="lazy"></div>
+        <div class="acoes" style="justify-content:flex-end"><a class="btn" href="https://integraliza.rkperformance.com.br/" target="_blank" rel="noopener">Abrir a prévia <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band c-e" aria-hidden="true"></div>
+
+  <!-- 12 · a busca por serviço -->
+  <section class="tela escuro cheia" id="t12" data-numero="12">
+    <svg class="curvas esq" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="5"><g></g></svg>
+    <span class="romano" aria-hidden="true">12</span>
+    <div class="container busca-grade">
+      <div class="rv">
+        <span class="olho">Por que uma página por serviço</span>
+        <h2 class="titulo menor">Ninguém pesquisa "contabilidade". Pesquisa o que <span class="ouro">precisa</span>.</h2>
+        <div class="buscador" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg><span id="digita">georreferenciamento em irati</span><i id="cursor"></i></div>
+        <p class="lead">O Google mostra a página que melhor responde a cada pesquisa. Uma página que fala de tudo disputa todas com pouca força. Uma página dedicada disputa a pesquisa daquele serviço.</p>
+        <p class="nota" style="margin-top:14px">As 10 páginas já estão prontas na prévia. Toque em uma pesquisa para abrir a página que responde a ela.</p>
+      </div>
+      <div class="rv">
+        <div class="buscas-cab"><span class="rot">O que a pessoa pesquisa</span><span class="rot">A página que responde</span></div>
+        <ol class="buscas" id="buscas">
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/contabilidade-rural/" target="_blank" rel="noopener"><span class="q">contabilidade rural prudentópolis</span><b>Contabilidade rural e LCDPR</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/imposto-de-renda-produtor-rural/" target="_blank" rel="noopener"><span class="q">imposto de renda produtor rural</span><b>Imposto de renda do produtor</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/nota-fiscal-produtor-rural/" target="_blank" rel="noopener"><span class="q">nota fiscal produtor rural</span><b>Nota fiscal eletrônica do produtor</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/projetos-custeio-investimento/" target="_blank" rel="noopener"><span class="q">projeto de custeio agrícola</span><b>Projetos de custeio e investimento</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/georreferenciamento/" target="_blank" rel="noopener"><span class="q">georreferenciamento em irati</span><b>Georreferenciamento e cartório</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/contabilidade-empresarial/" target="_blank" rel="noopener"><span class="q">contador para empresa em irati</span><b>Contabilidade empresarial</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/consultoria-tributaria/" target="_blank" rel="noopener"><span class="q">planejamento tributário</span><b>Consultoria e auditoria tributária</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/imposto-de-renda/" target="_blank" rel="noopener"><span class="q">declaração de imposto de renda</span><b>Imposto de renda pessoa física</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/reforma-tributaria/" target="_blank" rel="noopener"><span class="q">reforma tributária produtor rural</span><b>Preparação para a reforma tributária</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+          <li><a href="https://integraliza.rkperformance.com.br/servicos/certificado-digital/" target="_blank" rel="noopener"><span class="q">certificado digital prudentópolis</span><b>Certificado digital</b><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <div class="band e-a" aria-hidden="true"></div>
+
+  <!-- 13 · condição de abertura -->
+  <section class="tela claro alt cheia" id="t13" data-numero="13">
+    <span class="romano esq baixo" aria-hidden="true">13</span>
+    <div class="container bonus-grade">
+      <div class="rv">
+        <span class="olho">Condição de abertura · até 30/11/2026</span>
+        <span class="gigante ouro tnum">R$ 3.190</span>
+        <h2 class="titulo menor" style="margin-top:0">em bônus para quem fecha até 30/11.</h2>
+        <p class="lead">O preço do plano é o da tabela. De presente entra o que já está pronto e o que é feito uma vez só.</p>
+      </div>
+      <div class="rv">
+        <table>
+          <thead><tr><th>Bônus</th><th>Valor</th><th></th></tr></thead>
+          <tbody>
+            <tr><th>Painel do agro<small>Indicadores, preços ao produtor e clima, atualizados sozinhos.</small></th><td>R$ 1.900</td><td class="pres">De presente</td></tr>
+            <tr><th>Agente de notícias do agro<small>Publica no site as notícias dos órgãos do governo, com o crédito de cada fonte.</small></th><td>R$ 900</td><td class="pres">De presente</td></tr>
+            <tr><th>Implantação do plano<small>Diagnóstico, identidade de edição, medição e o calendário do agro.</small></th><td>R$ 390</td><td class="pres">Isenta</td></tr>
+          </tbody>
+        </table>
+        <div class="trato">
+          <div><b class="tnum">R$ 2.490 ou 3.290</b><span>o plano, por mês</span></div>
+          <div><b class="tnum">R$ 2.500</b><span>o site, uma vez</span></div>
+          <div><b class="tnum">R$ 0</b><span>os bônus da abertura</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band a-e" aria-hidden="true"></div>
+
+  <!-- 14 · fechamento -->
+  <section class="tela escuro cheia empilha" id="t14" data-numero="14">
+    <div class="sangra"><img src="img/campo.webp" alt="Lavouras em curvas de nível ao amanhecer" width="1600" height="905" style="object-position:62% 50%" data-par=".07"></div>
+    <div class="container">
+      <div class="metade rv">
+        <span class="olho">Para começar</span>
+        <h2 class="titulo">Faz sentido começarmos na <span class="ouro">semana que vem</span>?</h2>
+        <ol class="hoje">
+          <li><span class="n">1</span>O plano escolhido</li>
+          <li><span class="n">2</span>Contrato e primeiro Pix</li>
+          <li><span class="n">3</span>Acessos e Google na semana 1</li>
+          <li><span class="n">4</span>A data da primeira diária a campo</li>
+        </ol>
+        <a class="btn cheio" href="https://rkperformance.com.br/proposta/integraliza-contabilidade/plano/" target="_blank" rel="noopener">Abrir a proposta completa <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+      <div class="equipe canto rv">
+        <div class="ret cant"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><div class="moldura"><img src="img/equipe-rk.webp" alt="João Vitor e Nicoli, da RK Performance" width="800" height="1000" loading="lazy"></div></div>
+        <div><b>João Vitor &amp; Nicoli</b><p>Somos a RK Performance, do Paraná, e acompanhamos cada cliente de perto.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <span class="logo"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></span>
+    <p>Reunião · Integraliza Contabilidade e Agrimensura · 18/11/2026</p>
+  </div>
+</footer>
+
+<nav class="controle" aria-label="Controle da apresentação">
+  <button type="button" id="ant" aria-label="Tela anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <output id="pos" aria-live="polite">01 / 14</output>
+  <button type="button" id="prox" aria-label="Próxima tela"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <button type="button" id="cheia" aria-label="Tela cheia"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+</nav>
+<script>
+(function () {
+  /* Movimento por requestAnimationFrame e Web Animations: o Windows do João está com "reduzir movimento" ligado, e a apresentação precisa continuar viva. O conteúdo fica visível em repouso; o movimento é lento e de pouca amplitude. */
+  var telas = Array.prototype.slice.call(document.querySelectorAll('.tela'));
+  var pos = document.getElementById('pos'), barra = document.getElementById('progresso');
+  var total = telas[telas.length - 1].getAttribute('data-numero');
+  var atual = 0;
+
+  function topoDe(el) { return el.getBoundingClientRect().top + window.scrollY; }
+  function ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  function marcar(i) {
+    atual = i;
+    pos.textContent = telas[i].getAttribute('data-numero') + ' / ' + total;
+    barra.style.transform = 'scaleX(' + ((i + 1) / telas.length).toFixed(4) + ')';
+  }
+  var indoAte = null;
+  function irPara(i) {
+    i = Math.max(0, Math.min(telas.length - 1, i));
+    var de = window.scrollY, ate = topoDe(telas[i]), ini = performance.now(), dur = 800;
+    indoAte = i;
+    marcar(i);
+    function passo(t) {
+      if (indoAte !== i) return;
+      var p = Math.min(1, (t - ini) / dur);
+      window.scrollTo(0, de + (ate - de) * ease(p));
+      if (p < 1) requestAnimationFrame(passo); else indoAte = null;
+    }
+    requestAnimationFrame(passo);
+  }
+  function telaAtual() {
+    if (indoAte !== null) return indoAte;
+    var meio = window.scrollY + window.innerHeight * .45, achada = 0;
+    telas.forEach(function (t, i) { if (topoDe(t) <= meio) achada = i; });
+    return achada;
+  }
+  document.getElementById('prox').addEventListener('click', function () { irPara(telaAtual() + 1); });
+  document.getElementById('ant').addEventListener('click', function () { irPara(telaAtual() - 1); });
+  document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.target.closest && e.target.closest('a, button, input, textarea') && (e.key === ' ' || e.key === 'Enter')) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); irPara(telaAtual() + 1); }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); irPara(telaAtual() - 1); }
+    if (e.key === 'Home') { e.preventDefault(); irPara(0); }
+    if (e.key === 'End') { e.preventDefault(); irPara(telas.length - 1); }
+    if (e.key === 'f' || e.key === 'F') telaCheia();
+  });
+  function telaCheia() {
+    try {
+      if (document.fullscreenElement) { document.exitFullscreen(); }
+      else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().catch(function () {}); }
+    } catch (err) {}
+  }
+  document.getElementById('cheia').addEventListener('click', telaCheia);
+  window.addEventListener('scroll', function () {
+    if (indoAte !== null) return;
+    var i = telaAtual();
+    if (i !== atual) marcar(i);
+  }, { passive: true });
+  marcar(0);
+
+  /* aparição ao entrar na tela: o estado inicial só existe no instante da animação */
+  if ('IntersectionObserver' in window && Element.prototype.animate) {
+    var vistos = new IntersectionObserver(function (ents) {
+      ents.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        vistos.unobserve(en.target);
+        en.target.animate([{ opacity: 0, transform: 'translateY(26px)' }, { opacity: 1, transform: 'none' }], { duration: 900, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'backwards' });
+      });
+    }, { rootMargin: '0px 0px -4% 0px' });
+    document.querySelectorAll('.rv').forEach(function (el) { vistos.observe(el); });
+  }
+
+  /* curvas de nível: anéis fechados com relevo, desenhados em código */
+  var grupos = [];
+  document.querySelectorAll('svg.curvas').forEach(function (svg) {
+    var s = +svg.getAttribute('data-semente') || 1, g = svg.querySelector('g'), d = '';
+    function fase(k) { var x = Math.sin(s * 12.9898 + k * 78.233) * 43758.5453; return (x - Math.floor(x)) * Math.PI * 2; }
+    var p1 = fase(1), p2 = fase(2), p3 = fase(3);
+    for (var i = 0; i < 12; i++) {
+      var r = 46 + i * 38, pts = [];
+      for (var j = 0; j < 120; j++) {
+        var a = j / 120 * Math.PI * 2;
+        var k = 1 + .12 * Math.sin(2 * a + p1 + i * .05) + .075 * Math.sin(3 * a + p2 + i * .26) + .04 * Math.sin(5 * a + p3 - i * .4);
+        pts.push((500 + Math.cos(a) * r * k).toFixed(1) + ' ' + (500 + Math.sin(a) * r * k * .92).toFixed(1));
+      }
+      d += '<path d="M' + pts.join('L') + 'Z"/>';
+    }
+    g.innerHTML = d;
+    grupos.push({ g: g, k: s });
+  });
+
+  /* cotações: o painel publicado, com os números de 16/11/2026 de reserva */
+  function br(v, casas) { return Number(v).toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas }); }
+  function ultimo(serie) { return serie.atual || serie.historico[serie.historico.length - 1]; }
+  var trilha = document.getElementById('trilha'), largura = 0, x = 0;
+  function lote(itens) {
+    return '<span class="lote">' + itens.map(function (it) { return '<span class="it">' + it[0] + '<b>' + it[1] + '</b></span><i>◆</i>'; }).join('') + '</span>';
+  }
+  function medir() { largura = trilha.firstElementChild.getBoundingClientRect().width; }
+  function repetir(html) { trilha.innerHTML = html + html + html; medir(); }
+  repetir(trilha.innerHTML);
+  window.addEventListener('resize', medir);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(medir);
+  if (window.fetch) {
+    fetch('https://integraliza.rkperformance.com.br/data/agro.json', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) {
+        var f = d.financeiro, selic = ultimo(f.selic).valor, dolar = ultimo(f.dolar).valor, ipca = ultimo(f.ipca12m).valor;
+        var itens = [['Selic', br(selic, 2) + '%'], ['Dólar', 'R$ ' + br(dolar, 2)], ['IPCA 12 meses', br(ipca, 2) + '%']];
+        var soja = null;
+        (d.campo || []).forEach(function (c) {
+          if (c.produto === 'Feijão de cor') return;
+          itens.push([c.produto, 'R$ ' + br(c.valor, 2)]);
+          if (c.produto === 'Soja') soja = c.valor;
+        });
+        repetir(lote(itens));
+        document.getElementById('v-selic').textContent = br(selic, 2) + '%';
+        document.getElementById('v-dolar').textContent = 'R$ ' + br(dolar, 2);
+        if (soja !== null) document.getElementById('v-soja').textContent = 'R$ ' + br(soja, 2);
+        if (d.atualizado) document.getElementById('v-data').textContent = 'Painel atualizado em ' + d.atualizado.replace(' ', ' às ');
+      })
+      .catch(function () {});
+  }
+
+  /* a busca: digita cada pesquisa e acende a página que responde a ela */
+  var digita = document.getElementById('digita'), cursor = document.getElementById('cursor');
+  var linhas = Array.prototype.slice.call(document.querySelectorAll('#buscas li'));
+  var qual = 4, letra = 0, apagando = false;
+  function escreve() {
+    var texto = linhas[qual].querySelector('.q').textContent, espera = 55;
+    if (!apagando) {
+      letra++;
+      if (letra === 1) linhas.forEach(function (l, i) { l.classList.toggle('on', i === qual); });
+      if (letra >= texto.length) { apagando = true; espera = 2300; }
+    } else {
+      letra -= 2;
+      espera = 22;
+      if (letra <= 0) { letra = 0; apagando = false; qual = (qual + 1) % linhas.length; espera = 380; }
+    }
+    digita.textContent = texto.slice(0, letra);
+    setTimeout(escreve, espera);
+  }
+  if (digita && linhas.length) { letra = linhas[qual].querySelector('.q').textContent.length; apagando = true; linhas[qual].classList.add('on'); setTimeout(escreve, 2600); }
+
+  /* faixa, selo, zoom lento, parallax e deriva das curvas */
+  var giro = document.getElementById('giro');
+  var vivos = document.querySelectorAll('[data-vivo]'), pars = document.querySelectorAll('[data-par]');
+  var antes = performance.now();
+  function quadro(t) {
+    var dt = Math.min(64, t - antes); antes = t;
+    x -= dt * .04;
+    if (largura && -x >= largura) x += largura;
+    trilha.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)';
+    if (cursor) cursor.style.opacity = (t % 1000 < 520) ? 1 : 0;
+    giro.style.transform = 'rotate(' + (t * .009 % 360).toFixed(2) + 'deg)';
+    vivos.forEach(function (el) {
+      el.style.transform = 'scale(' + (1.04 + .03 * Math.sin(t / 7000)).toFixed(4) + ')';
+    });
+    grupos.forEach(function (c) {
+      c.g.style.transform = 'rotate(' + (Math.sin(t / 21000 + c.k) * 7).toFixed(3) + 'deg) scale(' + (1 + .03 * Math.sin(t / 13000 + c.k)).toFixed(4) + ')';
+    });
+    var alt = window.innerHeight;
+    pars.forEach(function (el) {
+      var r = el.parentElement.getBoundingClientRect();
+      if (r.bottom < -80 || r.top > alt + 80) return;
+      var d = (r.top + r.height / 2 - alt / 2) / alt;
+      var lim = r.height * .1, v = Math.max(-lim, Math.min(lim, -d * alt * +el.getAttribute('data-par')));
+      el.style.transform = 'translate3d(0,' + v.toFixed(1) + 'px,0) scale(1.06)';
+    });
+    requestAnimationFrame(quadro);
+  }
+  requestAnimationFrame(quadro);
+})();
+</script>
+</body>
+</html>
