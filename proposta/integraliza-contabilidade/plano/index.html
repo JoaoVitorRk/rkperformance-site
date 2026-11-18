@@ -422,6 +422,12 @@ ul,ol{list-style:none}
   .faq details p{padding-right:0;font-size:15.5px}
 }
 html,body{overflow-x:clip}
+/* abertura: o celular vai para a direita, para não cobrir o título do print do computador, e mostra o topo do painel */
+.fone img{object-position:top}
+@media (min-width:1021px){
+  .hero-vis .fone{left:auto;right:-40px;width:22%}
+  .hero-vis .cap{right:auto;left:0;text-align:left}
+}
 /* escuro menos fechado, com uma cena do campo ao fundo de cada dobra escura */
 :root{--noite:#1E1914;--noite2:#27201A;--noite3:#32281F}
 .dark.sec{isolation:isolate}
@@ -478,7 +484,7 @@ html,body{overflow-x:clip}
         <div class="comp">
           <div class="win">
             <div class="win-bar" aria-hidden="true"><span></span><span></span><span></span><b>integraliza.rkperformance.com.br/portal</b></div>
-            <img src="img/painel-computador.webp" alt="O Painel do agro da Integraliza no computador, com o título O mercado do produtor, hoje" width="1440" height="900" fetchpriority="high">
+            <img src="img/painel-computador.webp" alt="O Painel do agro da Integraliza no computador: Selic, dólar e inflação do dia, cada um com o seu gráfico" width="1440" height="900" fetchpriority="high">
           </div>
           <div class="fone"><img src="img/painel-celular.webp" alt="O mesmo painel no celular" width="600" height="1298"></div>
         </div>
