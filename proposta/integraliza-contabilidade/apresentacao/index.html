@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=DM+Mono:wght@400&display=swap">
 <style>
-/* Layout: levantamento em 14 marcos. Cada tela é um marco do terreno, com numeral vazado; as curvas de nível (a agrimensura da Integraliza) correm ao fundo das telas de noite, e a faixa de cotações ao vivo do Painel do agro costura a abertura à noite. Identidade da RK (DESIGN.md v2). */
+/* Layout: levantamento em 14 marcos. Cada tela é um marco do terreno, com numeral vazado; as telas de noite têm uma cena do campo escurecida ao fundo, e a faixa de cotações do Painel do agro costura a abertura à noite. Identidade da RK (DESIGN.md v2). */
 :root {
-  --noite: #16120F; --noite2: #1E1813; --noite3: #2A2119;
+  --noite: #1E1914; --noite2: #27201A; --noite3: #32281F;
   --marfim: #F7F3EE; --marfim2: #EFE8DE; --branco: #FCFAF7;
   --tinta: #2A211C; --tinta2: #6B5F55; --tinta3: #9A8E82;
   --off: #F2EBE1; --mudo: #B3A595; --mudo2: #7C7064;
@@ -145,14 +145,17 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .selo text { font-family: var(--font); font-weight: 500; font-size: 13.5px; letter-spacing: .24em; fill: var(--dourado3); }
 .selo .num { font-weight: 200; font-size: 50px; letter-spacing: .04em; fill: var(--tinta); }
 
-/* a faixa de cotações */
+/* a faixa de cotações: reta e parada, com os números do dia */
 .band.com-faixa { z-index: 6; overflow: visible; }
-.faixa { position: absolute; left: -4vw; right: -4vw; top: 50%; margin-top: -29px; transform: rotate(-1.4deg); background: var(--branco); border-top: 1px solid var(--dourado); border-bottom: 1px solid var(--dourado); box-shadow: 0 0 0 3px var(--branco), 0 24px 50px -24px rgba(22,18,15,.55); overflow: hidden; white-space: nowrap; padding: 15px 0; color: var(--tinta); }
-.faixa .trilha { display: inline-block; will-change: transform; }
-.faixa .lote { display: inline-block; }
-.faixa .it { font-size: 12px; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; color: var(--tinta2); }
+.faixa { position: absolute; left: 0; right: 0; top: 50%; translate: 0 -50%; background: var(--branco); border-top: 1px solid var(--dourado); border-bottom: 1px solid var(--dourado); box-shadow: 0 24px 50px -28px rgba(22,18,15,.5); padding: 15px 24px; color: var(--tinta); }
+.faixa .trilha { display: block; }
+.faixa .lote { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 6px 0; }
+.faixa .it { font-size: 11.5px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--tinta2); padding: 0 26px; white-space: nowrap; }
+.faixa .it + .it { border-left: 1px solid var(--fio2); }
 .faixa .it b { font-family: var(--mono); font-weight: 400; font-size: 16px; letter-spacing: .02em; color: var(--tinta); margin-left: 12px; text-transform: none; }
-.faixa i { font-style: normal; color: var(--dourado3); margin: 0 24px; font-size: 11px; vertical-align: 1px; }
+
+/* telas de noite com uma cena do campo ao fundo */
+.escuro.com-foto::after { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(180deg, var(--noite) 0%, rgb(30 25 20 / .8) 20%, rgb(30 25 20 / .8) 80%, var(--noite) 100%), radial-gradient(85% 90% at 50% 50%, rgb(30 25 20 / 0), rgb(30 25 20 / .5) 100%), var(--foto) center / cover no-repeat; }
 
 /* telas com foto sangrando */
 .sangra { position: absolute; z-index: 1; top: 0; bottom: 0; right: 0; width: 60%; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 48%); mask-image: linear-gradient(to right, transparent 0%, #000 48%); }
@@ -345,8 +348,12 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   .meta > div:first-child { grid-column: 1 / -1; padding-bottom: 14px; border-bottom: 1px solid var(--fio-escuro); }
   .meta > div:nth-child(2) { padding-left: 0; border-left: 0; }
   .selo { width: 104px; height: 104px; right: -8px; }
-  .faixa .it b { font-size: 14px; }
-  .faixa i { margin: 0 16px; }
+  .faixa { padding: 12px 10px; }
+  .faixa .it { padding: 0 12px; font-size: 10px; letter-spacing: .14em; }
+  .faixa .it b { font-size: 13px; margin-left: 7px; }
+  .faixa .it { padding: 0 8px; letter-spacing: .1em; }
+  .faixa .it + .it { border-left: 0; }
+  .faixa .it:nth-child(3), .faixa .it:nth-child(n+5) { display: none; }
   .ganchos li { grid-template-columns: 44px minmax(0, 1fr); }
   .ganchos li > span:last-child { grid-column: 2; text-align: left; }
   .achados { grid-template-columns: minmax(0, 1fr); }
@@ -373,14 +380,12 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
 <main>
   <!-- 01 · abertura -->
   <section class="tela claro abertura" id="t1" data-numero="01">
-    <svg class="curvas" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="7"><g></g></svg>
     <div class="topo"><div class="container">
       <span class="logo"><span class="rk">RK</span><span class="sep" aria-hidden="true"></span><span class="perf">PERFORMANCE</span></span>
       <span class="rot">Reunião · 18/11/2026</span>
     </div></div>
     <div class="hero"><div class="container">
       <div class="rv">
-        <span class="olho">Proposta para a Integraliza</span>
         <h1>Levar a Integraliza para <span class="ouro">fora</span>.</h1>
         <p class="lead">Em 2026 vocês arrumaram a casa. Agora é hora de o produtor da região saber tudo o que o escritório faz.</p>
         <dl class="meta">
@@ -408,7 +413,7 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   </section>
 
   <div class="band c-e com-faixa" aria-hidden="true">
-    <div class="faixa"><div class="trilha" id="trilha"><span class="lote"><span class="it">Selic<b>13,75%</b></span><i>◆</i><span class="it">Dólar<b>R$ 5,73</b></span><i>◆</i><span class="it">IPCA 12 meses<b>4,63%</b></span><i>◆</i><span class="it">Soja<b>R$ 135,53</b></span><i>◆</i><span class="it">Milho<b>R$ 52,88</b></span><i>◆</i><span class="it">Feijão-preto<b>R$ 229,45</b></span><i>◆</i><span class="it">Trigo<b>R$ 79,38</b></span><i>◆</i><span class="it">Leite<b>R$ 2,82</b></span><i>◆</i><span class="it">Suínos<b>R$ 5,53</b></span><i>◆</i><span class="it">Boi gordo<b>R$ 373,06</b></span><i>◆</i></span></div></div>
+    <div class="faixa"><div class="trilha" id="trilha"><span class="lote"><span class="it">Selic<b>13,75%</b></span><span class="it">Dólar<b>R$ 5,79</b></span><span class="it">IPCA 12 meses<b>4,63%</b></span><span class="it">Soja<b>R$ 135,53</b></span><span class="it">Milho<b>R$ 52,88</b></span><span class="it">Leite<b>R$ 2,82</b></span></span></div></div>
   </div>
 
   <!-- 02 · escuta -->
@@ -417,7 +422,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <div class="sangra"><img src="img/palestra.webp" alt="A equipe da Integraliza com os participantes da palestra sobre formação de preço, em novembro de 2026" width="1500" height="1125" style="object-position:50% 46%" data-par=".07"></div>
     <div class="container">
       <div class="metade rv">
-        <span class="olho">Antes de tudo, vocês</span>
         <h2 class="pergunta">O que precisa acontecer em 2027 para vocês dizerem que <span class="ouro">valeu a pena</span>?</h2>
         <div class="pautas"><span>Os clientes de hoje</span><span>Quem vocês querem atrair</span><span>Quanto a estrutura comporta</span><span>Quem grava e quem atende</span></div>
       </div>
@@ -431,7 +435,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <span class="romano" aria-hidden="true">03</span>
     <div class="container">
       <div class="rv">
-        <span class="olho">O áudio de 29/10, nas palavras de vocês</span>
         <h2 class="titulo">Foi isto que <span class="ouro">ouvimos</span>.</h2>
       </div>
       <ol class="ganchos rv">
@@ -440,19 +443,17 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
         <li><span class="n">3</span><q>Fechar um pacote para vocês cuidarem das nossas redes sociais.</q><span>Instagram e Facebook</span></li>
         <li><span class="n">4</span><q>Muita gente não sabe de tudo o que a gente oferece.</q><span>O site e o Google</span></li>
       </ol>
-      <p class="nota rv" style="margin-top:18px">Cada frase virou uma parte desta proposta.</p>
+      <p class="nota rv" style="margin-top:18px">Palavras do áudio de 29/10. Cada frase virou uma parte desta proposta.</p>
     </div>
   </section>
 
   <div class="band c-e" aria-hidden="true"></div>
 
   <!-- 04 · o que vimos -->
-  <section class="tela escuro cheia" id="t4" data-numero="04">
-    <svg class="curvas" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="3"><g></g></svg>
+  <section class="tela escuro cheia com-foto" style="--foto:url(img/fundo-talhoes.webp)" id="t4" data-numero="04">
     <span class="romano" aria-hidden="true">04</span>
     <div class="container">
       <div class="rv">
-        <span class="olho">O que vimos</span>
         <h2 class="titulo" style="max-width:900px">Uma referência no agro que o digital ainda não <span class="ouro">mostra</span>.</h2>
       </div>
       <ol class="achados rv">
@@ -473,7 +474,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <span class="romano esq baixo" aria-hidden="true">05</span>
     <div class="container duas">
       <div class="rv">
-        <span class="olho">O momento</span>
         <h2 class="titulo">2027 é ano de <span class="ouro">decisão</span> no campo.</h2>
         <p class="lead">A exigência de CNPJ para parte dos produtores e a reforma tributária vão fazer o produtor procurar um contador do agro. Vocês já falam disso: foi o post de 05/11.</p>
         <div class="trato q4">
@@ -494,11 +494,10 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   <div class="band a-e" aria-hidden="true"></div>
 
   <!-- 06 · painel do agro -->
-  <section class="tela escuro cheia" id="t6" data-numero="06">
+  <section class="tela escuro cheia com-foto" style="--foto:url(img/fundo-soja.webp)" id="t6" data-numero="06">
     <span class="romano" aria-hidden="true">06</span>
     <div class="container painel-grade">
       <div class="rv">
-        <span class="olho">O pedido do áudio, já funcionando</span>
         <h2 class="titulo">O Painel do agro já <span class="ouro">existe</span>.</h2>
         <p class="lead">Fizemos antes da reunião, para vocês verem funcionando. Ele busca os números sozinho, todo dia, sem ninguém da equipe mexer.</p>
         <div class="vivo">
@@ -526,7 +525,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <span class="romano" aria-hidden="true">07</span>
     <div class="container">
       <div class="rv">
-        <span class="olho">O começo</span>
         <h2 class="titulo" style="max-width:900px">Um mês para estruturar. No segundo, tudo <span class="ouro">rodando</span>.</h2>
       </div>
       <div class="papeis rv">
@@ -559,13 +557,11 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   <div class="band c-e" aria-hidden="true"></div>
 
   <!-- 08 · todo mês -->
-  <section class="tela escuro cheia" id="t8" data-numero="08">
-    <svg class="curvas esq" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="11"><g></g></svg>
+  <section class="tela escuro cheia com-foto" style="--foto:url(img/fundo-leite.webp)" id="t8" data-numero="08">
     <span class="romano" aria-hidden="true">08</span>
     <div class="container">
       <div class="rv">
-        <span class="olho">O que a RK faz todo mês</span>
-        <h2 class="titulo menor">Tudo o que vocês pediram, num lugar <span class="ouro">só</span>.</h2>
+        <h2 class="titulo menor">Todo mês, tudo o que vocês pediram num lugar <span class="ouro">só</span>.</h2>
       </div>
       <ol class="blocos rv">
         <li><span class="n">1</span><div><h3>Vídeos a campo</h3><q>ir para campo, em leiteria, suinocultura, fumo, grãos</q><p>Uma diária de gravação por mês em propriedades da região, com roteiro e autorização de imagem. Rende os reels do mês.</p></div></li>
@@ -585,7 +581,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <span class="romano" aria-hidden="true">09</span>
     <div class="container">
       <div class="rv">
-        <span class="olho">O que vamos acompanhar</span>
         <h2 class="titulo">Sem promessa. Com os números à <span class="ouro">vista</span>.</h2>
         <p class="lead">As regras do CFC não permitem prometer cliente, e a gente também não promete. O que garantimos é o trabalho completo e o relatório mostrando o que está trazendo gente.</p>
       </div>
@@ -601,11 +596,10 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   <div class="band a-e" aria-hidden="true"></div>
 
   <!-- 10 · os planos -->
-  <section class="tela escuro cheia" id="t10" data-numero="10">
+  <section class="tela escuro cheia com-foto" style="--foto:url(img/fundo-trigo.webp)" id="t10" data-numero="10">
     <span class="romano" aria-hidden="true">10</span>
     <div class="container">
       <div class="rv">
-        <span class="olho">Os planos</span>
         <h2 class="titulo menor">Dois planos para o serviço do <span class="ouro">mês</span>.</h2>
       </div>
       <div class="planos rv">
@@ -645,7 +639,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <span class="romano" aria-hidden="true">11</span>
     <div class="container site-grade">
       <div class="rv">
-        <span class="olho">Entregue uma vez</span>
         <h2 class="titulo menor">O site completo, a porta de <span class="ouro">entrada</span>.</h2>
         <div class="dez"><b aria-hidden="true">10</b><span>páginas de serviço, uma para cada pesquisa do Google</span></div>
         <ul class="linhas aperta">
@@ -666,12 +659,10 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   <div class="band c-e" aria-hidden="true"></div>
 
   <!-- 12 · a busca por serviço -->
-  <section class="tela escuro cheia" id="t12" data-numero="12">
-    <svg class="curvas esq" viewBox="0 0 1000 1000" aria-hidden="true" data-semente="5"><g></g></svg>
+  <section class="tela escuro cheia com-foto" style="--foto:url(img/fundo-silos.webp)" id="t12" data-numero="12">
     <span class="romano" aria-hidden="true">12</span>
     <div class="container busca-grade">
       <div class="rv">
-        <span class="olho">Por que uma página por serviço</span>
         <h2 class="titulo menor">Ninguém pesquisa "contabilidade". Pesquisa o que <span class="ouro">precisa</span>.</h2>
         <div class="buscador" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg><span id="digita">georreferenciamento em irati</span><i id="cursor"></i></div>
         <p class="lead">O Google mostra a página que melhor responde a cada pesquisa. Uma página que fala de tudo disputa todas com pouca força. Uma página dedicada disputa a pesquisa daquele serviço.</p>
@@ -702,7 +693,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <span class="romano esq baixo" aria-hidden="true">13</span>
     <div class="container bonus-grade">
       <div class="rv">
-        <span class="olho">Condição de abertura · até 30/11/2026</span>
         <span class="gigante ouro tnum">R$ 3.190</span>
         <h2 class="titulo menor" style="margin-top:0">em bônus para quem fecha até 30/11.</h2>
         <p class="lead">O preço do plano é o da tabela. De presente entra o que já está pronto e o que é feito uma vez só.</p>
@@ -732,7 +722,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     <div class="sangra"><img src="img/campo.webp" alt="Lavouras em curvas de nível ao amanhecer" width="1600" height="905" style="object-position:62% 50%" data-par=".07"></div>
     <div class="container">
       <div class="metade rv">
-        <span class="olho">Para começar</span>
         <h2 class="titulo">Faz sentido começarmos na <span class="ouro">semana que vem</span>?</h2>
         <ol class="hoje">
           <li><span class="n">1</span>O plano escolhido</li>
@@ -859,10 +848,10 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   function ultimo(serie) { return serie.atual || serie.historico[serie.historico.length - 1]; }
   var trilha = document.getElementById('trilha'), largura = 0, x = 0;
   function lote(itens) {
-    return '<span class="lote">' + itens.map(function (it) { return '<span class="it">' + it[0] + '<b>' + it[1] + '</b></span><i>◆</i>'; }).join('') + '</span>';
+    return '<span class="lote">' + itens.map(function (it) { return '<span class="it">' + it[0] + '<b>' + it[1] + '</b></span>'; }).join('') + '</span>';
   }
   function medir() { largura = trilha.firstElementChild.getBoundingClientRect().width; }
-  function repetir(html) { trilha.innerHTML = html + html + html; medir(); }
+  function repetir(html) { trilha.innerHTML = html; }
   repetir(trilha.innerHTML);
   window.addEventListener('resize', medir);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(medir);
@@ -874,7 +863,7 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
         var itens = [['Selic', br(selic, 2) + '%'], ['Dólar', 'R$ ' + br(dolar, 2)], ['IPCA 12 meses', br(ipca, 2) + '%']];
         var soja = null;
         (d.campo || []).forEach(function (c) {
-          if (c.produto === 'Feijão de cor') return;
+          if (['Soja', 'Milho', 'Leite'].indexOf(c.produto) < 0) { return; }
           itens.push([c.produto, 'R$ ' + br(c.valor, 2)]);
           if (c.produto === 'Soja') soja = c.valor;
         });
@@ -913,9 +902,6 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   var antes = performance.now();
   function quadro(t) {
     var dt = Math.min(64, t - antes); antes = t;
-    x -= dt * .04;
-    if (largura && -x >= largura) x += largura;
-    trilha.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)';
     if (cursor) cursor.style.opacity = (t % 1000 < 520) ? 1 : 0;
     giro.style.transform = 'rotate(' + (t * .009 % 360).toFixed(2) + 'deg)';
     vivos.forEach(function (el) {
