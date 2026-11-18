@@ -422,6 +422,8 @@ ul,ol{list-style:none}
   .faq details p{padding-right:0;font-size:15.5px}
 }
 html,body{overflow-x:clip}
+/* aparição mais ligeira: o bloco começa a surgir um pouco antes de entrar na tela e termina mais rápido */
+@media (prefers-reduced-motion: no-preference){.rv{transform:translateY(16px);transition:opacity .55s var(--ease),transform .55s var(--ease)}}
 </style>
 </head>
 <body class="no-js">
@@ -872,7 +874,7 @@ html,body{overflow-x:clip}
   if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
   var io = new IntersectionObserver(function (es) {
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { rootMargin: '0px 0px -8% 0px' });
+  }, { rootMargin: '0px 0px 6% 0px' });
   els.forEach(function (el) { io.observe(el); });
 })();
 </script>
