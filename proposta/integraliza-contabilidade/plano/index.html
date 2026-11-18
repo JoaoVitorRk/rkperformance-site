@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Proposta completa · Integraliza Contabilidade e Agrimensura · RK Performance</title>
-<meta name="description" content="Proposta da RK Performance para levar a Integraliza para fora: o site completo, o Painel do agro, os vídeos a campo e as redes, com ou sem anúncios, rodando já no segundo mês.">
+<title>Proposta por etapas · Integraliza Contabilidade e Agrimensura · RK Performance</title>
+<meta name="description" content="Proposta da RK Performance para a Integraliza, por prioridade: primeiro o site e o Google das duas unidades, depois a presença do mês e os anúncios.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="RK Performance">
-<meta property="og:title" content="Proposta completa · Integraliza Contabilidade e Agrimensura">
-<meta property="og:description" content="O site, o Painel do agro, os vídeos a campo e as redes, com ou sem anúncios. Preparada pela RK Performance para a reunião de 18/11/2026.">
+<meta property="og:title" content="Proposta por etapas · Integraliza Contabilidade e Agrimensura">
+<meta property="og:description" content="Primeiro o site e o Google das duas unidades; depois a presença do mês e os anúncios. Preparada pela RK Performance depois da reunião de 18/11/2026.">
 <meta name="theme-color" content="#F7F3EE">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2316120F'/%3E%3Ctext x='32' y='41' font-family='Jost,Arial,sans-serif' font-size='24' font-weight='300' fill='%23C9A771' text-anchor='middle' letter-spacing='1'%3ERK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -516,6 +516,61 @@ html,body{overflow-x:clip}
 }
 /* aparição mais ligeira: o bloco começa a surgir um pouco antes de entrar na tela e termina mais rápido */
 @media (prefers-reduced-motion: no-preference){.rv{transform:translateY(16px);transition:opacity .55s var(--ease),transform .55s var(--ease)}}
+/* proposta por etapas (18/11/2026, depois da reunião) */
+#etapas{--foto:url(img/fundo-talhoes.webp)}
+#trafego{--foto:url(img/fundo-estrada.webp)}
+.fases.tres{grid-template-columns:repeat(3,1fr)}
+.fases.tres .fase{display:flex;flex-direction:column;padding:34px 30px 0 0}
+.fases.tres .fase+.fase{padding-left:30px}
+.fase .custo{margin-top:auto;display:flex;align-items:baseline;gap:4px 8px;flex-wrap:wrap;padding:18px 0 4px;border-top:1px solid var(--fio);color:var(--off)}
+.fase ul{margin-bottom:18px}
+.fase .custo b{font-size:28px;font-weight:200;line-height:1.1;font-variant-numeric:lining-nums tabular-nums}
+.fase .custo span{color:var(--mudo);font-size:14.5px;margin-right:12px}
+.google-card{margin-top:28px;display:grid;grid-template-columns:.92fr 1.08fr;gap:36px 60px;align-items:start;padding:50px 56px 44px;background:var(--branco);border:1px solid var(--fio2);box-shadow:0 30px 60px -48px rgba(42,33,28,.4)}
+.google-card h3{font-size:clamp(26px,2.8vw,36px);font-weight:200;line-height:1.15;margin-top:16px}
+.google-card p{color:var(--tinta2);margin-top:14px;font-size:17px;line-height:1.7;max-width:44ch}
+.google-card .preco{margin:28px 0 0}
+.google-card .lista{border-top:1px solid var(--fio-escuro)}
+.mes-grid{display:grid;grid-template-columns:.84fr 1.16fr;gap:68px;align-items:start}
+.mes-grid>*{min-width:0}
+.compara{width:100%;border-collapse:collapse}
+.compara th,.compara td{text-align:left;vertical-align:top;padding:15px 0;border-bottom:1px solid var(--fio-escuro);font-size:15.5px;line-height:1.5}
+.compara thead th{font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--dourado3);padding:0 0 14px}
+.compara thead th small{display:block;margin-top:6px;font-size:15px;letter-spacing:0;text-transform:none;font-weight:400;color:var(--tinta)}
+.compara thead th+th,.compara td{padding-left:18px}
+.compara tbody th{font-weight:400;color:var(--tinta);width:30%}
+.compara td{color:var(--tinta2);width:35%}
+.compara td.agora{color:var(--tinta)}
+.porque{margin-top:22px;color:var(--tinta2);font-size:16.5px;line-height:1.75}
+.porque+.porque{margin-top:12px}
+.trafego-grid>*{min-width:0}
+.trafego-grid .sec-head h2{font-size:clamp(32px,3.6vw,48px)}
+.preco-noite .rs{font-size:20px;color:var(--mudo)}
+.ancora{margin-top:22px;color:var(--mudo);font-size:16.5px;line-height:1.7;max-width:46ch}
+.ancora b{font-weight:400;color:var(--off)}
+#trafego .lista{border-top:1px solid var(--fio)}
+#trafego .lista li{color:var(--off);border-color:var(--fio);padding-top:15px;padding-bottom:15px}
+#trafego .lista li::before{background:var(--dourado);top:28px}
+#trafego .lista li small{color:var(--mudo)}
+#trafego .btn-fio{color:var(--off);border-color:var(--fio)}
+.escolha fieldset+fieldset{margin-top:6px}
+@media (max-width:1020px){
+  .fases.tres{grid-template-columns:1fr}
+  .fases.tres .fase,.fases.tres .fase+.fase{padding:30px 0 22px;border-left:0}
+  .google-card{grid-template-columns:1fr;padding:40px 32px 34px}
+  .mes-grid{grid-template-columns:1fr;gap:56px}
+  .trafego-grid{grid-template-columns:1fr;gap:44px}
+}
+@media (max-width:640px){
+  .google-card{margin:22px -20px 0;padding:36px 20px 30px;border-left:0;border-right:0}
+  .compara thead{display:none}
+  .compara tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;padding:16px 0;border-bottom:1px solid var(--fio-escuro)}
+  .compara th,.compara td{display:block;padding:0;border:0;width:auto}
+  .compara tbody th{grid-column:1/-1;width:auto;font-size:16.5px}
+  .compara td{font-size:14.5px}
+  .compara td::before{content:attr(data-r);display:block;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--dourado3);margin-bottom:3px}
+  #trafego .btn{width:100%}
+}
 </style>
 </head>
 <body class="no-js">
@@ -524,7 +579,7 @@ html,body{overflow-x:clip}
 <header class="topo">
   <div class="container topo-in">
     <div class="logo"><span class="rk">RK</span><span class="sep"></span><span class="perf">PERFORMANCE</span></div>
-    <span class="rot">Proposta completa<span class="longo"> · 18/11/2026</span></span>
+    <span class="rot">Proposta por etapas<span class="longo"> · 18/11/2026</span></span>
   </div>
 </header>
 
@@ -533,27 +588,27 @@ html,body{overflow-x:clip}
   <section class="light hero">
     <div class="container hero-grid">
       <div class="rv">
-        <h1>Levar a Integraliza <span class="ouro">para fora</span>.</h1>
-        <p class="lead">Em 2026 vocês arrumaram a casa: equipe, processos e sistemas. Agora o escritório comporta muito mais clientes, e muita gente ainda não sabe de tudo o que vocês oferecem. Esta proposta reúne o que a Maria Beatriz pediu: o site sempre atualizado, os vídeos a campo e as redes com a RK, com a opção de incluir os anúncios.</p>
+        <h1>Começar pelo que vem <span class="ouro">primeiro</span>.</h1>
+        <p class="lead">Na reunião de 18/11 vocês viram o projeto inteiro e pediram para começar aos poucos. Reorganizamos a proposta por prioridade: primeiro a base, que é o site e o Google das duas unidades; depois a presença do mês, num formato mais leve; e os anúncios, quando fizer sentido. Cada etapa tem o seu valor e pode ser fechada sozinha.</p>
         <dl class="meta">
           <div><dt>Para</dt><dd>Maria Beatriz e Jackson Bonetti<small>Integraliza · Prudentópolis e Irati</small></dd></div>
           <div><dt>Data</dt><dd class="tnum">18/11/2026</dd></div>
           <div><dt>Válida até</dt><dd class="tnum">30/11/2026</dd></div>
         </dl>
         <div class="ctas">
-          <a class="btn btn-ouro" href="#planos">Ver os planos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="link" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o Painel do agro</a>
+          <a class="btn btn-ouro" href="#etapas">Ver as etapas <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="link" href="https://integraliza.rkperformance.com.br/" target="_blank" rel="noopener">Abrir a prévia do site</a>
         </div>
       </div>
       <figure class="hero-vis rv">
         <div class="comp">
           <div class="win">
-            <div class="win-bar" aria-hidden="true"><span></span><span></span><span></span><b>integraliza.rkperformance.com.br/portal</b></div>
-            <img src="img/painel-computador.webp" alt="O Painel do agro da Integraliza no computador: Selic, dólar e inflação do dia, cada um com o seu gráfico" width="1440" height="900" fetchpriority="high">
+            <div class="win-bar" aria-hidden="true"><span></span><span></span><span></span><b>integraliza.rkperformance.com.br</b></div>
+            <img src="img/site-capa.webp" alt="A abertura da prévia do site da Integraliza: Ao lado de quem faz o campo crescer" width="1440" height="900" fetchpriority="high">
           </div>
-          <div class="fone"><img src="img/painel-celular.webp" alt="O mesmo painel no celular" width="600" height="1298"></div>
+          <div class="fone"><img src="img/painel-celular.webp" alt="O Painel do agro no celular" width="600" height="1298"></div>
         </div>
-        <figcaption class="cap">O Painel do agro, já no ar e atualizado sozinho todo dia</figcaption>
+        <figcaption class="cap">A prévia do site e o Painel do agro, já no ar</figcaption>
       </figure>
     </div>
   </section>
@@ -563,13 +618,13 @@ html,body{overflow-x:clip}
     <div class="container">
       <div class="sec-head rv">
         <h2>Uma referência no agro que o <span class="ouro">digital</span> ainda não mostra.</h2>
-        <p>Antes de montar a proposta, olhamos o Google, o Instagram, os anúncios da região e os números do campo de Prudentópolis e Irati.</p>
+        <p>Antes de montar a proposta, olhamos o Google, o Instagram, os anúncios da região e os números do campo de Prudentópolis e Irati. É daqui que sai a ordem das prioridades.</p>
       </div>
       <div class="achados rv">
         <div><span class="grande">0</span><h3>avaliações no Google</h3><p>A ficha ativa está como "Escritório da empresa", sem telefone nem site. A única avaliação ficou numa ficha antiga, marcada como fechada.</p></div>
         <div><span class="grande">Irati</span><h3>não existe no Maps</h3><p>A unidade nova ainda não tem ficha no Google, então quem procura contador em Irati não encontra vocês.</p></div>
-        <div><span class="grande">10×</span><h3>mais curtidas com gente real</h3><p>Os posts com a equipe e os eventos rendem dez vezes mais que as artes técnicas. A ideia dos vídeos a campo vai na direção certa.</p></div>
-        <div><span class="grande">9 mil</span><h3>estabelecimentos rurais</h3><p>Só nas duas cidades (IBGE). Soja, fumo, feijão, leite e suínos, os temas que vocês querem gravar, são as maiores atividades da região.</p></div>
+        <div><span class="grande">10×</span><h3>mais curtidas com gente real</h3><p>Os posts com a equipe e os eventos rendem dez vezes mais que as artes técnicas. Por isso os posts do mês usam, sempre que der, fotos de vocês.</p></div>
+        <div><span class="grande">9 mil</span><h3>estabelecimentos rurais</h3><p>Só nas duas cidades (IBGE). Soja, fumo, feijão, leite e suínos são as maiores atividades da região.</p></div>
         <div><span class="grande">22</span><h3>anúncios de um concorrente</h3><p>Um escritório da cidade, também voltado ao agro, anuncia no Instagram e no Facebook desde setembro. Quem chegar primeiro ao produtor no digital ocupa esse lugar.</p></div>
       </div>
       <p class="nota rv">E 2027 traz um momento de decisão em massa: a exigência de CNPJ para parte dos produtores rurais, além da reforma tributária. Foi o tema do post de vocês, e é o assunto que vai fazer o produtor procurar um contador do agro.</p>
@@ -578,35 +633,43 @@ html,body{overflow-x:clip}
 
   <div class="band l2-d" aria-hidden="true"></div>
 
-  <!-- os dois meses -->
-  <section class="dark sec" id="meses">
+  <!-- as três etapas -->
+  <section class="dark sec" id="etapas">
     <div class="container">
       <div class="sec-head rv">
-        <h2>Um mês para estruturar. No segundo, <span class="ouro">tudo rodando</span>.</h2>
-        <p>No primeiro mês a RK monta a base e já começa a publicar, enquanto a medição coleta os dados. A partir do segundo mês, o plano roda por inteiro.</p>
+        <h2>Três etapas, na ordem que faz <span class="ouro">diferença</span>.</h2>
+        <p>Cada etapa funciona sozinha e prepara a seguinte. Vocês decidem quando passar de uma para a outra.</p>
       </div>
-      <div class="fases rv">
+      <div class="fases tres rv">
         <div class="fase">
-          <span class="quando">mês 1 · estruturação e dados</span>
-          <h3>A base pronta</h3>
+          <span class="quando">prioridade 1 · agora</span>
+          <h3>A base</h3>
           <ul>
-            <li><b>O site completo</b> no domínio de vocês, com o Painel do agro e as notícias</li>
-            <li><b>As fichas do Google</b> arrumadas como escritório de contabilidade, a de Irati criada e a rotina de avaliações começando</li>
-            <li><b>A medição ligada:</b> Search Console, Pixel da Meta e os cliques no WhatsApp</li>
-            <li><b>A identidade de edição</b> dos vídeos e a bio do Instagram dentro das regras do CFC</li>
-            <li><b>A primeira diária a campo</b> e as primeiras publicações no ar</li>
+            <li><b>O site completo</b> no domínio de vocês, com o SEO configurado</li>
+            <li><b>O Google Meu Negócio</b> de Prudentópolis corrigido e o de Irati criado</li>
+            <li><b>O Painel do agro</b> com as notícias, de presente até 30/11</li>
           </ul>
+          <div class="custo"><b class="tnum">R$ 2.500</b><span>o site</span><b class="tnum">R$ 300</b><span>o Google</span></div>
         </div>
         <div class="fase">
-          <span class="quando">a partir do mês 2 · 100%</span>
-          <h3>Tudo rodando</h3>
+          <span class="quando">prioridade 2 · todo mês</span>
+          <h3>A presença do mês</h3>
           <ul>
-            <li><b>As 20 publicações do mês</b> no Instagram e no Facebook, com o calendário do agro</li>
-            <li><b>Uma diária a campo por mês</b>, com o conteúdo do mês inteiro</li>
-            <li><b>O site trabalhando sozinho:</b> painel e notícias atualizados todo dia</li>
-            <li><b>No plano com tráfego,</b> os anúncios na Meta e no Google, usando os dados do mês 1</li>
-            <li><b>O relatório e a reunião</b> mostrando o que está trazendo gente</li>
+            <li><b>8 posts por mês</b>, dois por semana, no Instagram e no Facebook</li>
+            <li><b>A manutenção do site</b>, com até 4 alterações por mês</li>
+            <li><b>O Google das duas unidades</b> acompanhado todo mês</li>
           </ul>
+          <div class="custo"><b class="tnum">R$ 800</b><span>por mês</span></div>
+        </div>
+        <div class="fase">
+          <span class="quando">prioridade 3 · quando fizer sentido</span>
+          <h3>Os anúncios</h3>
+          <ul>
+            <li><b>Gestão na Meta ou no Google</b>, conforme o objetivo de vocês</li>
+            <li><b>Campanhas</b> nos momentos de decisão do produtor</li>
+            <li><b>A verba é de vocês</b>, paga direto às plataformas</li>
+          </ul>
+          <div class="custo"><b class="tnum">R$ 1.000</b><span>por mês</span></div>
         </div>
       </div>
     </div>
@@ -614,156 +677,19 @@ html,body{overflow-x:clip}
 
   <div class="band d-l" aria-hidden="true"></div>
 
-  <!-- todo mês -->
-  <section class="light sec" id="mes">
+  <!-- prioridade 1: site e google -->
+  <section class="light alt sec" id="base">
     <div class="container">
       <div class="sec-head rv">
-        <h2>Tudo o que vocês pediram, <span class="ouro">num lugar só</span>.</h2>
-        <p>Uma equipe cuidando do conteúdo, do site e, se vocês quiserem, dos anúncios, com a mesma linguagem do agro em tudo.</p>
-      </div>
-      <div class="blocos rv">
-        <article class="bloco">
-          <span class="n">01</span>
-          <h3>Vídeos a campo</h3>
-          <span class="pede">"ir para campo, em leiteria, suinocultura, fumo, grãos"</span>
-          <ul>
-            <li><b>Uma diária de gravação por mês</b> com a RK, em propriedades da região</li>
-            <li>Roteiro e pauta de cada visita, com a autorização de imagem do produtor</li>
-            <li>Cada diária rende os reels do mês, editados com motion</li>
-          </ul>
-        </article>
-        <article class="bloco">
-          <span class="n">02</span>
-          <h3>Instagram e Facebook</h3>
-          <span class="pede">"um pacote para vocês cuidarem das nossas redes"</span>
-          <ul>
-            <li><b>20 publicações por mês:</b> 12 reels com edição em motion e 8 carrosséis ou posts</li>
-            <li>As mesmas publicações no Facebook</li>
-            <li>Calendário do mês aprovado antes de começar</li>
-          </ul>
-        </article>
-        <article class="bloco">
-          <span class="n">03</span>
-          <h3>O site sempre atualizado</h3>
-          <span class="pede">"Selic, dólar, commodities, previsão do tempo, reforma tributária"</span>
-          <ul>
-            <li><b>O Painel do agro</b>, atualizado sozinho todo dia</li>
-            <li><b>As notícias do agro</b> publicadas por um agente direto dos sites do governo, com o crédito de cada fonte</li>
-            <li><b>A manutenção do site</b>, incluída no plano</li>
-          </ul>
-        </article>
-        <article class="bloco">
-          <span class="n">04</span>
-          <h3>Relatório e reunião</h3>
-          <span class="pede">para vocês saberem o que está funcionando</span>
-          <ul>
-            <li>Relatório todo mês com os números das redes e do site</li>
-            <li>Uma reunião por mês para combinar o mês seguinte</li>
-            <li>Nada vai ao ar sem a aprovação de vocês</li>
-          </ul>
-        </article>
-        <article class="bloco">
-          <span class="n">05</span>
-          <h3>Anúncios na Meta e no Google</h3>
-          <span class="so">No plano com tráfego</span>
-          <ul>
-            <li>Campanhas nos momentos de decisão do produtor: imposto de renda, ITR, custeio e o CNPJ de 2027</li>
-            <li>Até 3 criativos de anúncio por mês, feitos dos vídeos</li>
-            <li>A verba é de vocês, paga direto às plataformas</li>
-          </ul>
-        </article>
-        <article class="bloco">
-          <span class="n">06</span>
-          <h3>O Google das duas unidades</h3>
-          <span class="so">No plano com tráfego</span>
-          <ul>
-            <li>As fichas de Prudentópolis e Irati cuidadas todo mês</li>
-            <li>Publicações semanais no Google e a rotina de avaliações</li>
-            <li>Dashboard de resultados on-line, atualizado todo dia</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <div class="band l-d" aria-hidden="true"></div>
-
-  <!-- painel do agro -->
-  <section class="dark sec" id="painel">
-    <div class="container painel-grid">
-      <figure class="rv">
-        <div class="shot"><img src="img/painel-campo.webp" alt="A tabela de preços ao produtor no Paraná do Painel do agro: soja, milho, feijão-preto, feijão de cor e trigo" width="1440" height="900" loading="lazy"></div>
-        <figcaption class="cap">Preços ao produtor no Paraná, no painel que já está no ar</figcaption>
-      </figure>
-      <div class="rv">
-        <span class="eyebrow">De presente para quem fecha até 30/11</span>
-        <h2>O Painel do <span class="ouro">agro</span> já existe.</h2>
-        <p style="color:var(--mudo);margin-top:18px">Vocês pediram dados sempre atualizados. Fizemos o painel antes da reunião para vocês verem funcionando: ele busca os números sozinho, todo dia, sem ninguém da equipe precisar mexer.</p>
-        <ul class="lista" style="margin-top:28px">
-          <li>Selic, dólar e inflação<small>Do Banco Central, todo dia</small></li>
-          <li>Preço ao produtor no Paraná<small>Soja, milho, feijão, trigo, leite, suínos e boi gordo, da Secretaria da Agricultura</small></li>
-          <li>Previsão do tempo de 5 dias<small>De Prudentópolis e de Irati</small></li>
-          <li>Notícias do agro<small>Do Ministério da Agricultura, da Receita e de outros órgãos do governo, com o crédito de cada fonte</small></li>
-          <li>Atualização automática todo dia<small>Se uma fonte sair do ar, o painel mantém o último valor e segue funcionando</small></li>
-        </ul>
-        <div class="valor-painel">
-          <span class="rot">Valor do painel com as notícias</span>
-          <b>R$ 2.200</b>
-          <span class="d">de presente na condição de abertura, com a atualização diária incluída no plano</span>
-        </div>
-        <div class="ctas" style="margin-top:30px"><a class="btn btn-ouro" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o painel <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="band d-l" aria-hidden="true"></div>
-
-  <!-- os planos -->
-  <section class="light alt sec" id="planos">
-    <div class="container">
-      <div class="sec-head rv">
-        <h2>Dois planos para o <span class="ouro">serviço</span> do mês.</h2>
-        <p>Os dois têm os vídeos a campo, as redes, o site atualizado e a manutenção dele. O segundo soma os anúncios e o Google das duas unidades. O site é à parte, porque é entregue uma vez só.</p>
-      </div>
-      <div class="opcoes dois">
-        <article class="opcao rv">
-          <div class="op-topo"><span class="rot">Plano 1</span></div>
-          <h3>Redes sociais</h3>
-          <p class="op-desc">Os vídeos a campo, o Instagram, o Facebook e o site sempre atualizado.</p>
-          <div class="preco"><span class="rs">R$</span><span class="val tnum">2.490</span><span class="per">por mês</span></div>
-          <ul class="lista">
-            <li>Uma diária a campo por mês<small>Até 5 horas em propriedades da região</small></li>
-            <li>20 publicações por mês<small>12 reels com edição em motion e 8 carrosséis ou posts</small></li>
-            <li>Instagram e Facebook</li>
-            <li>Roteiro e calendário pelo calendário do agro</li>
-            <li>Painel e notícias do agro atualizados todo dia</li>
-            <li>Manutenção do site incluída<small>Até 4 alterações por mês</small></li>
-            <li>Relatório e reunião todo mês</li>
-          </ul>
-          <button class="btn btn-fio" type="button" data-escolher="1">Escolher o plano 1</button>
-        </article>
-
-        <article class="opcao destaque cant rv"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
-          <div class="op-topo"><span class="rot">Plano 2</span><span class="tag">Recomendado</span></div>
-          <h3>Redes sociais e tráfego</h3>
-          <p class="op-desc">Tudo do plano 1, mais os anúncios e o Google das duas unidades.</p>
-          <div class="preco"><span class="rs">R$</span><span class="val tnum">3.290</span><span class="per">por mês</span></div>
-          <ul class="lista">
-            <li>Tudo do plano 1</li>
-            <li>Gestão dos anúncios na Meta<small>Instagram e Facebook, com público das duas cidades e das vizinhas</small></li>
-            <li>Gestão do Google Ads<small>Nas pesquisas de quem procura o serviço, levando para a página certa do site</small></li>
-            <li>Até 3 criativos de anúncio por mês</li>
-            <li>O Google das duas unidades<small>Publicações semanais e a rotina de avaliações</small></li>
-            <li>Dashboard de resultados on-line<small>Atualizado todo dia, para vocês acompanharem quando quiserem</small></li>
-          </ul>
-          <button class="btn btn-ouro" type="button" data-escolher="2">Escolher o plano 2 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        </article>
+        <span class="eyebrow">Prioridade 1 · a base</span>
+        <h2>O site e o Google das duas <span class="ouro">unidades</span>.</h2>
+        <p>O post, o anúncio e a indicação levam para o mesmo lugar: a pessoa pesquisa o nome de vocês no Google e abre o site. Hoje a ficha de Prudentópolis está sem telefone e a de Irati não existe. Por isso a base vem antes de tudo.</p>
       </div>
 
       <div class="site-destaque rv" id="site">
         <div class="sd-texto">
           <h3>O site completo, a porta de <span class="ouro">entrada</span>.</h3>
-          <p>O Google, os anúncios e os vídeos levam para ele. É no site que o produtor entende tudo o que vocês fazem e chama no WhatsApp já sabendo o assunto.</p>
+          <p>É no site que o produtor entende tudo o que vocês fazem e chama no WhatsApp já sabendo o assunto. Ele já está pronto na prévia: falta ajustar com vocês e publicar.</p>
           <div class="sd-preco"><span class="rs">R$</span><span class="val tnum ouro">2.500</span><span class="per">uma vez<small>50% para começar e 50% na publicação</small></span></div>
           <div class="sd-acoes">
             <a class="btn btn-ouro" href="https://integraliza.rkperformance.com.br/" target="_blank" rel="noopener">Ver a prévia <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -778,87 +704,177 @@ html,body{overflow-x:clip}
         </div>
         <ul class="sd-numeros">
           <li><b class="tnum">10</b><span>páginas de serviço, uma para cada pesquisa do Google. Já estão prontas na prévia.</span></li>
-          <li><b class="tnum">2</b><span>fichas do Google arrumadas: a de Prudentópolis corrigida e a de Irati criada.</span></li>
+          <li><b class="tnum">1</b><span>domínio de vocês. A RK cuida da publicação e de toda a configuração.</span></li>
           <li><b class="tnum">R$ 0</b><span>de mensalidade de hospedagem. Só o domínio, cerca de R$&nbsp;40 por ano.</span></li>
         </ul>
         <ul class="sd-lista">
-          <li><b>A página principal</b> da prévia, ajustada com vocês</li>
+          <li><b>A página principal e as 10 de serviço</b>, ajustadas com vocês</li>
+          <li><b>Publicação no domínio de vocês</b>, com tudo configurado pela RK</li>
           <li><b>SEO configurado</b>, com o Search Console e os dados do escritório para o Google</li>
-          <li><b>O Painel do agro e as notícias</b> no domínio de vocês</li>
-          <li><b>A manutenção</b> fica dentro do plano do mês, depois de publicado</li>
+          <li><b>O Painel do agro e as notícias</b>, de presente para quem fecha até 30/11</li>
         </ul>
       </div>
 
-      <div class="bonus rv">
-        <div class="bonus-cab">
-          <h3 class="sub">Dois bônus para quem fecha até <span class="ouro">30/11</span>.</h3>
-          <p>O preço do plano é o da tabela. De presente entra o que já está pronto e o que é feito uma vez só.</p>
+      <div class="google-card rv" id="google">
+        <div>
+          <span class="rot">Também na prioridade 1</span>
+          <h3>O Google Meu Negócio das duas unidades.</h3>
+          <p>É a ficha que aparece no Google e no Maps quando alguém pesquisa "contabilidade em Prudentópolis" ou o nome de vocês. Com as duas fichas certas, fica mais fácil encontrar o escritório.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">300</span><span class="per">uma vez<br>as duas unidades</span></div>
         </div>
-        <ol class="bonus-cards">
-          <li>
-            <span class="b-tag">De presente</span>
-            <h4>Painel do agro com as notícias</h4>
-            <p>Selic, dólar, preços ao produtor, clima e as notícias dos órgãos do governo, com o crédito de cada fonte. Tudo atualizado sozinho todo dia. Já está no ar: vocês veem funcionando antes de assinar.</p>
-            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 2.200</b></div>
-          </li>
-          <li>
-            <span class="b-tag">Isenta</span>
-            <h4>Implantação do plano</h4>
-            <p>Diagnóstico, identidade de edição dos vídeos, medição ligada, o calendário do agro e, no plano 2, o dashboard montado, para o primeiro mês já sair com publicação no ar.</p>
-            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 990</b></div>
-          </li>
-        </ol>
-        <div class="bonus-soma">
-          <div><span>Bônus somados</span><b class="tnum ouro">R$ 3.190</b></div>
-          <p>em bônus, sem custo, para quem fecha até <b>30/11/2026</b>.</p>
-        </div>
-      </div>
-
-      <div class="rv" style="margin-top:64px">
-        <table class="bonus-tab">
-          <thead><tr><th>Já dentro dos planos</th><th>À parte</th><th>No plano</th></tr></thead>
-          <tbody>
-            <tr><th>Manutenção do site<small>Até 4 alterações por mês</small></th><td><b>R$ 150</b>por mês</td><td><b>Incluída</b>nos dois</td></tr>
-            <tr><th>Facebook<small>As mesmas publicações do Instagram, adaptadas</small></th><td><b>R$ 190</b>por mês</td><td><b>Incluído</b>nos dois</td></tr>
-            <tr><th>Anúncios na Meta e no Google, mais o Google das duas unidades<small>No plano 2</small></th><td><b>R$ 1.470</b>por mês</td><td><b>R$ 800</b>a mais que o plano 1</td></tr>
-          </tbody>
-        </table>
+        <ul class="lista">
+          <li>A ficha de Prudentópolis corrigida<small>Como escritório de contabilidade, com telefone, site, horário e fotos</small></li>
+          <li>A ficha de Irati criada<small>Para a unidade nova aparecer no Google e no Maps</small></li>
+          <li>As duas ligadas ao site<small>Quem acha a ficha chega à página certa</small></li>
+          <li>O link para pedir avaliações<small>Pronto para vocês enviarem aos clientes de hoje</small></li>
+          <li>Pode ser fechado sozinho<small>Se vocês quiserem começar só pelo Google, antes do site</small></li>
+        </ul>
       </div>
     </div>
   </section>
+
+  <div class="band l2-d" aria-hidden="true"></div>
+
+  <!-- painel do agro: o bônus -->
+  <section class="dark sec" id="painel">
+    <div class="container painel-grid">
+      <figure class="rv">
+        <div class="shot"><img src="img/painel-campo.webp" alt="A tabela de preços ao produtor no Paraná do Painel do agro: soja, milho, feijão-preto, feijão de cor e trigo" width="1440" height="900" loading="lazy"></div>
+        <figcaption class="cap">Preços ao produtor no Paraná, no painel que já está no ar</figcaption>
+      </figure>
+      <div class="rv">
+        <span class="eyebrow">De presente para quem fecha o site até 30/11</span>
+        <h2>O Painel do <span class="ouro">agro</span> entra junto.</h2>
+        <p style="color:var(--mudo);margin-top:18px">Vocês pediram dados sempre atualizados. O painel já está pronto e vai para o domínio de vocês junto com o site: ele busca os números sozinho, todo dia, sem ninguém da equipe precisar mexer.</p>
+        <ul class="lista" style="margin-top:28px">
+          <li>Selic, dólar e inflação<small>Do Banco Central, todo dia</small></li>
+          <li>Preço ao produtor no Paraná<small>Soja, milho, feijão, trigo, leite, suínos e boi gordo, da Secretaria da Agricultura</small></li>
+          <li>Previsão do tempo de 5 dias<small>De Prudentópolis e de Irati</small></li>
+          <li>Notícias do agro<small>Do Ministério da Agricultura, da Receita e de outros órgãos do governo, com o crédito de cada fonte</small></li>
+        </ul>
+        <div class="valor-painel">
+          <span class="rot">Valor do painel com as notícias</span>
+          <b>R$ 2.200</b>
+          <span class="d">de presente para quem fecha o site até 30/11/2026</span>
+        </div>
+        <div class="ctas" style="margin-top:30px"><a class="btn btn-ouro" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o painel <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
+
+  <!-- prioridade 2: a presença do mês -->
+  <section class="light sec" id="mes">
+    <div class="container">
+      <div class="sec-head rv">
+        <span class="eyebrow">Prioridade 2 · todo mês</span>
+        <h2>A presença do mês, num formato mais <span class="ouro">leve</span>.</h2>
+        <p>Vocês contaram que hoje não há agenda para gravar a campo todo mês. Então o mês fica com posts em imagem, que não pedem gravação, e com o cuidado do site e do Google.</p>
+      </div>
+      <div class="mes-grid">
+        <article class="opcao destaque cant rv"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+          <div class="op-topo"><span class="rot">Presença do mês</span></div>
+          <h3>Posts, site e Google cuidados</h3>
+          <p class="op-desc">Dois posts por semana e a base sempre em dia.</p>
+          <div class="preco"><span class="rs">R$</span><span class="val tnum">800</span><span class="per">por mês</span></div>
+          <ul class="lista">
+            <li>8 posts por mês<small>Dois por semana, em arte ou carrossel, com os temas e as fotos de vocês</small></li>
+            <li>Instagram e Facebook<small>A mesma publicação nas duas redes</small></li>
+            <li>Calendário do mês aprovado antes<small>Nada vai ao ar sem a aprovação de vocês</small></li>
+            <li>Manutenção do site<small>Até 4 alterações por mês</small></li>
+            <li>Acompanhamento do Google Meu Negócio<small>As fichas de Prudentópolis e Irati conferidas todo mês, com dados e fotos em dia</small></li>
+          </ul>
+          <button class="btn btn-ouro" type="button" data-marcar="presenca">Incluir a presença do mês <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </article>
+
+        <div class="rv">
+          <h3 class="sub" style="margin-top:0">Por que o valor é outro.</h3>
+          <table class="compara">
+            <thead><tr><th></th><th>Na reunião<small>Plano 1 · R$ 2.490 por mês</small></th><th>Agora<small>R$ 800 por mês</small></th></tr></thead>
+            <tbody>
+              <tr><th>Publicações por mês</th><td data-r="Na reunião">20: 12 reels e 8 carrosséis ou posts</td><td class="agora" data-r="Agora">8 posts, dois por semana</td></tr>
+              <tr><th>Gravação a campo</th><td data-r="Na reunião">Uma diária por mês, de até 5 horas, com o deslocamento</td><td class="agora" data-r="Agora">Não entra</td></tr>
+              <tr><th>Edição de vídeo</th><td data-r="Na reunião">12 reels com edição em motion</td><td class="agora" data-r="Agora">Não entra</td></tr>
+              <tr><th>Roteiro das visitas</th><td data-r="Na reunião">Pauta e roteiro de cada diária</td><td class="agora" data-r="Agora">Não entra</td></tr>
+              <tr><th>Manutenção do site</th><td data-r="Na reunião">Incluída</td><td class="agora" data-r="Agora">Incluída</td></tr>
+              <tr><th>Google das duas unidades</th><td data-r="Na reunião">Só no plano 2</td><td class="agora" data-r="Agora">Acompanhamento incluído</td></tr>
+            </tbody>
+          </table>
+          <p class="porque">O critério de preço é o mesmo da reunião. O que mudou foi o tamanho da entrega: saíram a diária a campo, o deslocamento e a edição dos 12 reels, que eram a maior parte do trabalho do mês. Com posts em imagem, o mês cabe na agenda de vocês e num valor menor.</p>
+          <p class="porque">Quando houver agenda para gravar, os vídeos a campo voltam com o plano da reunião.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band l-d" aria-hidden="true"></div>
+
+  <!-- prioridade 3: anúncios -->
+  <section class="dark sec" id="trafego">
+    <div class="container trafego-grid">
+      <div class="rv">
+        <div class="sec-head">
+          <span class="eyebrow">Prioridade 3 · quando fizer sentido</span>
+          <h2>Os anúncios, para chegar a quem ainda <span class="ouro">não conhece</span> vocês.</h2>
+          <p>Com o site e o Google no lugar, o anúncio leva o produtor para uma página pronta para receber. Pode começar junto ou alguns meses depois: a decisão é de vocês.</p>
+        </div>
+        <div class="preco-noite"><span class="rs">R$</span><span class="val tnum">1.000</span><span class="per">por mês</span><small>Valor para cliente do site</small></div>
+        <p class="ancora">Avulsa, a gestão de anúncios custa <b>R$ 1.470 por mês</b>. Como o site e a medição já ficam com a RK, para vocês o valor é R$ 1.000.</p>
+        <div class="ctas" style="margin-top:30px"><button class="btn btn-fio" type="button" data-marcar="trafego">Incluir os anúncios</button></div>
+      </div>
+      <ul class="lista rv">
+        <li>Meta Ads ou Google Ads<small>A plataforma sai do objetivo: Meta para o escritório ser visto na região, Google para quem já está pesquisando o serviço</small></li>
+        <li>Campanhas nos momentos de decisão do produtor<small>Imposto de renda, ITR, custeio e o CNPJ de 2027</small></li>
+        <li>Até 3 criativos de anúncio por mês<small>Feitos a partir das publicações e das fotos de vocês</small></li>
+        <li>Público das duas cidades e das vizinhas</li>
+        <li>A verba é de vocês<small>Paga direto às plataformas; a sugestão é começar a partir de R$&nbsp;1.000 por mês</small></li>
+        <li>Os números do mês<small>Quanto foi investido, quantas pessoas viram e quantas chamaram no WhatsApp</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="band d-l" aria-hidden="true"></div>
 
   <!-- investimento -->
   <section class="light sec" id="investimento">
     <div class="container">
       <div class="sec-head rv">
         <h2>Resumo dos <span class="ouro">valores</span>.</h2>
-        <p>O site é pago uma vez; o plano, todo mês. A verba dos anúncios, no plano 2, vai direto para as plataformas.</p>
+        <p>O site e o Google são pagos uma vez. A presença do mês e os anúncios são mensais e começam quando vocês quiserem.</p>
       </div>
       <div class="inv-grid">
         <div class="rv">
           <table class="tabela">
-            <tr><th>Plano 1 · Redes sociais<small>Todo mês, a partir da assinatura</small></th><td><b>R$ 2.490</b><small>por mês</small></td></tr>
-            <tr><th>Plano 2 · Redes sociais e tráfego<small>Todo mês, a partir da assinatura</small></th><td><b>R$ 3.290</b><small>por mês</small></td></tr>
-            <tr><th>Site completo<small>Entregue uma vez, com as 10 páginas, o SEO e as fichas do Google</small></th><td><b>R$ 2.500</b><small>único</small></td></tr>
-            <tr><th>Bônus da abertura<small>Painel do agro com as notícias e implantação do plano</small></th><td><b>R$ 0</b><small>R$ 3.190 em bônus</small></td></tr>
-            <tr><th>Verba de anúncio<small>No plano 2, paga direto à Meta e ao Google; sugestão a partir de R$&nbsp;1.000 por mês</small></th><td><b>À parte</b><small>das plataformas</small></td></tr>
+            <tr><th>Prioridade 1 · Site completo<small>Uma vez, com as 10 páginas, a publicação no domínio e o SEO</small></th><td><b>R$ 2.500</b><small>único</small></td></tr>
+            <tr><th>Prioridade 1 · Google Meu Negócio<small>Uma vez, as fichas de Prudentópolis e de Irati</small></th><td><b>R$ 300</b><small>único</small></td></tr>
+            <tr><th>Prioridade 2 · Presença do mês<small>8 posts, manutenção do site e acompanhamento do Google</small></th><td><b>R$ 800</b><small>por mês</small></td></tr>
+            <tr><th>Prioridade 3 · Gestão de anúncios<small>Meta Ads ou Google Ads, valor para cliente do site</small></th><td><b>R$ 1.000</b><small>por mês</small></td></tr>
+            <tr><th>Bônus até 30/11<small>Painel do agro com as notícias, para quem fecha o site</small></th><td><b>R$ 0</b><small>vale R$ 2.200</small></td></tr>
+            <tr><th>Verba de anúncio<small>Paga direto à Meta ou ao Google; sugestão a partir de R$&nbsp;1.000 por mês</small></th><td><b>À parte</b><small>das plataformas</small></td></tr>
           </table>
           <div class="pagto">
             <p><b>Site:</b> 50% para começar e 50% na publicação, por Pix.</p>
-            <p><b>Plano:</b> mensalidade antecipada por Pix até o dia 5. Contrato de 6 meses; depois, segue mês a mês, com aviso de 30 dias para encerrar.</p>
+            <p><b>Google Meu Negócio:</b> R$ 300 por Pix, no início do trabalho.</p>
+            <p><b>Serviços mensais:</b> mensalidade antecipada por Pix até o dia 5. Contrato de 6 meses; depois, segue mês a mês, com aviso de 30 dias para encerrar.</p>
           </div>
         </div>
 
         <form class="escolha rv" id="escolha" onsubmit="return false">
-          <h3>Escolham o plano e respondam pelo WhatsApp.</h3>
+          <h3>Marquem por onde começar e respondam pelo WhatsApp.</h3>
           <fieldset>
-            <legend>Plano do mês</legend>
-            <label class="op"><input type="radio" name="opcao" value="1"><span class="marca redonda"></span><span class="txt">Redes sociais<small>Plano 1</small></span><b>R$ 2.490</b></label>
-            <label class="op"><input type="radio" name="opcao" value="2" checked><span class="marca redonda"></span><span class="txt">Redes sociais e tráfego<small>Plano 2, recomendado</small></span><b>R$ 3.290</b></label>
+            <legend>Prioridade 1 · uma vez</legend>
+            <label class="op"><input type="checkbox" name="site" checked><span class="marca"></span><span class="txt">Site completo<small>No domínio de vocês, com SEO</small></span><b>R$ 2.500</b></label>
+            <label class="op"><input type="checkbox" name="google" checked><span class="marca"></span><span class="txt">Google Meu Negócio<small>As duas unidades</small></span><b>R$ 300</b></label>
+          </fieldset>
+          <fieldset>
+            <legend>Por mês · quando vocês quiserem</legend>
+            <label class="op"><input type="checkbox" name="presenca"><span class="marca"></span><span class="txt">Presença do mês<small>8 posts, site e Google cuidados</small></span><b>R$ 800</b></label>
+            <label class="op"><input type="checkbox" name="trafego"><span class="marca"></span><span class="txt">Gestão de anúncios<small id="tx-trafego">Valor para cliente do site</small></span><b id="v-trafego">R$ 1.000</b></label>
           </fieldset>
           <div class="total" aria-live="polite">
-            <div><span class="rot">Plano por mês</span><b id="t-plano">R$ 3.290</b><small>a partir da assinatura</small></div>
-            <div><span class="rot">Site, uma vez</span><b>R$ 2.500</b><small>R$ 1.250 para começar e R$ 1.250 na publicação</small></div>
+            <div><span class="rot">Uma vez</span><b id="t-unico">R$ 2.800</b><small id="d-unico">Site: R$ 1.250 para começar e R$ 1.250 na publicação. Google: R$ 300 no início.</small></div>
+            <div><span class="rot">Por mês</span><b id="t-mes">R$ 0</b><small id="d-mes">Nenhum serviço mensal por enquanto.</small></div>
           </div>
           <div class="acoes">
             <a class="btn btn-ouro" id="aceitar" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Aceitar pelo WhatsApp <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -866,17 +882,6 @@ html,body{overflow-x:clip}
           </div>
           <p class="aviso">O botão abre o WhatsApp com a mensagem pronta. Nada é enviado sem vocês confirmarem.</p>
         </form>
-      </div>
-
-      <div class="rv" style="margin-top:96px">
-        <h3 class="sub">Os números que vocês acompanham.</h3>
-        <div class="medir">
-          <div><b>Avaliações no Google</b><p>Das duas unidades, com a rotina pedindo aos clientes de hoje.</p></div>
-          <div><b>Pesquisas e visitas</b><p>Quais buscas do Google trazem gente para cada página de serviço.</p></div>
-          <div><b>Alcance dos vídeos</b><p>Quantas pessoas da região viram o conteúdo do mês.</p></div>
-          <div><b>Conversas no WhatsApp</b><p>Os cliques vindos do site e, no plano 2, dos anúncios.</p></div>
-        </div>
-        <p class="nota" style="margin-top:28px">Seguindo as regras do CFC, nada promete resultado: nem número de clientes, nem posição no Google. O que garantimos é o trabalho completo e os números à vista de vocês.</p>
       </div>
     </div>
   </section>
@@ -891,10 +896,10 @@ html,body{overflow-x:clip}
           <h2>Próximos <span class="ouro">passos</span>.</h2>
         </div>
         <ol class="passos rv">
-          <li><span class="n">1</span><div><h3>Aceite e contrato</h3><p>Vocês escolhem o plano, assinamos o contrato e vocês pagam a primeira mensalidade e a entrada do site.</p></div></li>
-          <li><span class="n">2</span><div><h3>Semana 1: acessos e Google</h3><p>Os acessos ao Instagram, ao Facebook, ao Gerenciador da Meta e às fichas do Google. Arrumamos as fichas, criamos a de Irati e começamos a rotina de avaliações.</p></div></li>
-          <li><span class="n">3</span><div><h3>Mês 1: a base pronta</h3><p>O site no domínio de vocês, a medição ligada, a primeira diária a campo e as primeiras publicações no ar.</p></div></li>
-          <li><span class="n">4</span><div><h3>Mês 2: tudo rodando</h3><p>O plano por inteiro e, no plano 2, os anúncios usando os dados do primeiro mês.</p></div></li>
+          <li><span class="n">1</span><div><h3>Aceite e contrato</h3><p>Vocês escolhem por onde começar, assinamos o contrato e vocês pagam a entrada do site.</p></div></li>
+          <li><span class="n">2</span><div><h3>Semana 1: acessos, domínio e Google</h3><p>Os acessos ao domínio e às fichas do Google. Corrigimos a ficha de Prudentópolis e criamos a de Irati.</p></div></li>
+          <li><span class="n">3</span><div><h3>O site no ar</h3><p>Ajustamos a prévia com vocês, publicamos no domínio e configuramos o SEO. A segunda parte do site é paga na publicação.</p></div></li>
+          <li><span class="n">4</span><div><h3>Depois, no ritmo de vocês</h3><p>A presença do mês e os anúncios entram quando vocês decidirem, sem precisar refazer nada do que já foi entregue.</p></div></li>
         </ol>
       </div>
       <figure class="equipe rv">
@@ -915,20 +920,24 @@ html,body{overflow-x:clip}
     <div class="container faq-grid">
       <div class="sec-head rv">
         <h2>Antes de <span class="ouro">decidir</span>.</h2>
-        <p>O que costuma aparecer quando um escritório começa a cuidar do digital, respondido em poucas linhas.</p>
+        <p>As dúvidas mais comuns sobre a proposta por etapas, respondidas em poucas linhas.</p>
         <a class="link js-duvida" href="https://wa.me/5542999833348" target="_blank" rel="noopener">Ficou outra dúvida? Fale com a gente</a>
       </div>
       <div class="faq rv">
-        <details><summary>Qual é a diferença entre os dois planos?<i></i></summary><p>O plano 1 cuida do conteúdo: os vídeos a campo, o Instagram, o Facebook e o site sempre atualizado. O plano 2 soma os anúncios na Meta e no Google e o cuidado mensal das fichas do Google das duas unidades, para o conteúdo chegar a quem ainda não segue vocês.</p></details>
-        <details><summary>Por que o site tem um preço à parte?<i></i></summary><p>Porque ele é construído e entregue uma vez só. Depois de publicado, a manutenção entra no plano do mês, sem custo a mais.</p></details>
-        <details><summary>Quem aparece nos vídeos a campo?<i></i></summary><p>A equipe de vocês e os produtores que aceitarem, sempre com autorização de imagem por escrito. Nenhum dado fiscal do produtor aparece na tela.</p></details>
-        <details><summary>Quem responde os comentários e as mensagens?<i></i></summary><p>A equipe de vocês, que conhece cada cliente e cada caso. A RK cuida do conteúdo, do site e, no plano 2, dos anúncios.</p></details>
-        <details><summary>De onde vêm as notícias do site?<i></i></summary><p>Um agente busca todo dia as notícias mais recentes do Ministério da Agricultura, da Receita Federal, do Ministério da Fazenda e da Conab, que liberam a reprodução com crédito, e publica no site na íntegra, com a fonte e o link. Notícias de outros veículos entram só com o título e o link para a matéria original, respeitando o direito autoral de cada um.</p></details>
+        <details><summary>O que mudou em relação à proposta da reunião?<i></i></summary><p>O projeto é o mesmo, agora em ordem de prioridade e com cada etapa separada. Vocês começam pela base, que é o site e o Google, e somam o resto quando fizer sentido.</p></details>
+        <details><summary>Por que a mensalidade passou de R$ 2.490 para R$ 800?<i></i></summary><p>Porque a entrega é outra. O plano da reunião tinha 20 publicações por mês, com uma diária de gravação a campo e a edição de 12 reels. A presença do mês tem 8 posts em imagem, sem gravação, sem deslocamento e sem edição de vídeo.</p></details>
+        <details><summary>Dá para fechar só o site, ou só o Google?<i></i></summary><p>Sim. O site custa R$ 2.500 e o Google Meu Negócio das duas unidades custa R$ 300. Cada um pode ser fechado sozinho, e os dois juntos formam a base.</p></details>
+        <details><summary>E os vídeos a campo?<i></i></summary><p>Continuam sendo o melhor formato para o agro. Quando vocês tiverem agenda para gravar, retomamos o plano da reunião, com a diária a campo e os reels.</p></details>
+        <details><summary>O site tem mensalidade?<i></i></summary><p>Não. A hospedagem não tem custo, e vocês pagam só o domínio, cerca de R$ 40 por ano. A manutenção, com até 4 alterações por mês, faz parte da presença do mês.</p></details>
+        <details><summary>Meta Ads ou Google Ads?<i></i></summary><p>Depende do objetivo. A Meta mostra o escritório para os produtores da região, mesmo que eles não estejam procurando. O Google aparece para quem já está pesquisando o serviço. Definimos juntos antes de começar.</p></details>
+        <details><summary>A verba dos anúncios está nos R$ 1.000?<i></i></summary><p>Não. Os R$ 1.000 cobrem a gestão e os criativos. A verba é de vocês e vai direto para a plataforma.</p></details>
+        <details><summary>A ficha de Irati aparece na hora?<i></i></summary><p>Depois de criada, o Google faz a verificação, que costuma pedir um vídeo curto do local. Nós orientamos esse passo e acompanhamos até a ficha aparecer.</p></details>
+        <details><summary>Quem responde os comentários e as mensagens?<i></i></summary><p>A equipe de vocês, que conhece cada cliente e cada caso. A RK cuida das publicações, do site, do Google e, se vocês contratarem, dos anúncios.</p></details>
         <details><summary>O conteúdo segue as regras do CFC?<i></i></summary><p>Sim. Sem preço de honorário, sem comparação com outros escritórios e sem promessa de resultado, com os dados de registro onde o CFC pede. A Maria Beatriz revisa o que for técnico antes de ir ao ar.</p></details>
-        <details><summary>A verba dos anúncios está no plano 2?<i></i></summary><p>Não. O plano cobre a gestão e os criativos. A verba é de vocês e vai direto para a Meta e o Google, e combinamos o valor juntos com os dados do primeiro mês.</p></details>
-        <details><summary>Podemos encerrar quando quisermos?<i></i></summary><p>Depois dos 6 primeiros meses, sim, com aviso de 30 dias. O site, o domínio e as fichas do Google continuam de vocês.</p></details>
-        <details><summary>Vocês garantem clientes novos?<i></i></summary><p>Não, e as regras do CFC também não permitem prometer. O que garantimos é o trabalho completo todo mês, e o relatório mostra o que está trazendo gente.</p></details>
-        <details><summary>O que precisamos fazer?<i></i></summary><p>Liberar os acessos, mandar as fotos originais dos sócios e o número de registro do escritório no CRC, combinar as diárias com os produtores e reservar uma hora por mês para a reunião.</p></details>
+        <details><summary>De onde vêm as notícias do site?<i></i></summary><p>Um agente busca todo dia as notícias mais recentes do Ministério da Agricultura, da Receita Federal, do Ministério da Fazenda e da Conab, que liberam a reprodução com crédito, e publica no site na íntegra, com a fonte e o link. Notícias de outros veículos entram só com o título e o link para a matéria original, respeitando o direito autoral de cada um.</p></details>
+        <details><summary>Podemos encerrar quando quisermos?<i></i></summary><p>O site e as fichas do Google são entregues uma vez e ficam de vocês. Os serviços mensais têm contrato de 6 meses; depois, seguem mês a mês, com aviso de 30 dias.</p></details>
+        <details><summary>Vocês garantem clientes novos?<i></i></summary><p>Não, e as regras do CFC também não permitem prometer. O que garantimos é o trabalho completo, entregue como está escrito aqui.</p></details>
+        <details><summary>O que precisamos fazer?<i></i></summary><p>Liberar os acessos ao domínio e às fichas do Google, mandar as fotos originais dos sócios e da equipe, informar o número de registro do escritório no CRC e aprovar o calendário do mês.</p></details>
       </div>
     </div>
   </section>
@@ -947,13 +956,9 @@ html,body{overflow-x:clip}
 (function () {
   document.body.classList.remove('no-js');
   var WA = 'https://wa.me/5542999833348?text=';
-  var P = {
-    '1': { nome: 'o plano 1 (redes sociais)', valor: 'R$ 2.490' },
-    '2': { nome: 'o plano 2 (redes sociais e tráfego)', valor: 'R$ 3.290' }
-  };
   var form = document.getElementById('escolha');
   var aceitar = document.getElementById('aceitar');
-  var msgDuvida = WA + encodeURIComponent('Olá, RK! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta completa: ');
+  var msgDuvida = WA + encodeURIComponent('Olá, RK! Aqui é da Integraliza. Tenho uma dúvida sobre a proposta por etapas: ');
   document.getElementById('duvida').href = msgDuvida;
   document.querySelectorAll('.js-duvida').forEach(function (a) { a.href = msgDuvida; });
   document.querySelectorAll('.faq details').forEach(function (d) {
@@ -962,17 +967,41 @@ html,body{overflow-x:clip}
       d.parentNode.querySelectorAll('details[open]').forEach(function (o) { if (o !== d) o.open = false; });
     });
   });
+  function brl(n) { return 'R$ ' + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+  function txt(id, t) { document.getElementById(id).textContent = t; }
   function atualizar() {
-    var o = form.querySelector('input[name="opcao"]:checked').value;
-    document.getElementById('t-plano').textContent = P[o].valor;
-    var msg = 'Olá, RK! Aqui é da Integraliza. Vimos a proposta completa e queremos seguir com ' + P[o].nome + ', ' + P[o].valor + ' por mês, e o site completo de R$ 2.500, na condição de abertura. Podemos combinar os próximos passos?';
+    var c = form.elements;
+    var s = c.site.checked, g = c.google.checked, p = c.presenca.checked, t = c.trafego.checked;
+    /* a gestão de anúncios custa R$ 1.000 para quem fecha o site e R$ 1.470 avulsa */
+    var vt = s ? 1000 : 1470;
+    txt('v-trafego', brl(vt));
+    txt('tx-trafego', s ? 'Valor para cliente do site' : 'Valor avulso, sem o site');
+    var unico = (s ? 2500 : 0) + (g ? 300 : 0);
+    var mes = (p ? 800 : 0) + (t ? vt : 0);
+    txt('t-unico', brl(unico));
+    txt('t-mes', brl(mes));
+    var du = 'Nenhum pagamento único.';
+    if (s && g) du = 'Site: R$ 1.250 para começar e R$ 1.250 na publicação. Google: R$ 300 no início.';
+    else if (s) du = 'R$ 1.250 para começar e R$ 1.250 na publicação.';
+    else if (g) du = 'Por Pix, no início do trabalho.';
+    txt('d-unico', du);
+    txt('d-mes', mes ? 'A partir do mês em que vocês começarem.' : 'Nenhum serviço mensal por enquanto.');
+    var itens = [];
+    if (s) itens.push('o site completo (R$ 2.500)');
+    if (g) itens.push('o Google Meu Negócio das duas unidades (R$ 300)');
+    if (p) itens.push('a presença do mês (R$ 800 por mês)');
+    if (t) itens.push('a gestão de anúncios (' + brl(vt) + ' por mês)');
+    var lista = itens.length > 1 ? itens.slice(0, -1).join(', ') + ' e ' + itens[itens.length - 1] : itens[0];
+    var msg = itens.length
+      ? 'Olá, RK! Aqui é da Integraliza. Vimos a proposta por etapas e queremos seguir com ' + lista + '. Podemos combinar os próximos passos?'
+      : 'Olá, RK! Aqui é da Integraliza. Vimos a proposta por etapas e queremos conversar sobre por onde começar.';
     aceitar.href = WA + encodeURIComponent(msg);
   }
   form.addEventListener('change', atualizar);
   atualizar();
-  document.querySelectorAll('[data-escolher]').forEach(function (b) {
+  document.querySelectorAll('[data-marcar]').forEach(function (b) {
     b.addEventListener('click', function () {
-      form.querySelector('input[name="opcao"][value="' + b.dataset.escolher + '"]').checked = true;
+      form.elements[b.dataset.marcar].checked = true;
       atualizar();
       var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       form.scrollIntoView({ behavior: reduz ? 'auto' : 'smooth', block: 'center' });
