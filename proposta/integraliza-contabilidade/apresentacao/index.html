@@ -290,6 +290,27 @@ tbody th small { display: block; font-weight: 300; font-size: 14px; color: var(-
 td { font-family: var(--mono); font-size: 14.5px; white-space: nowrap; font-variant-numeric: tabular-nums lining-nums; }
 td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--dourado3); padding-right: 0; text-align: right; }
 
+/* 13. o investimento, com os bônus em segundo plano */
+.resumo-grade { display: grid; grid-template-columns: 1.08fr .92fr; gap: 72px; align-items: center; }
+.valores { border-top: 1px solid var(--fio-escuro); margin-top: 28px; }
+.valores li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 24px; padding: 16px 0; border-bottom: 1px solid var(--fio-escuro); }
+.valores li > div:first-child b { display: block; font-weight: 300; font-size: 21px; line-height: 1.3; margin-top: 3px; }
+.valores .preco { margin: 0; }
+.valores .preco b { font-size: clamp(38px, 4vw, 56px); }
+.valores li.rec .preco b { font-size: clamp(48px, 5.2vw, 74px); }
+.presente { padding: 24px 26px 20px; border: 1px solid var(--fio2); background: rgba(252, 250, 247, .6); }
+.presente table { margin-top: 8px; }
+.presente th, .presente td { padding: 11px 12px 11px 0; }
+.presente tbody th { font-size: 15.5px; }
+.presente tbody th small { font-size: 13px; }
+.presente td { font-size: 13.5px; }
+.presente .soma { margin-top: 14px; font-size: 15.5px; color: var(--tinta2); }
+.presente .soma b { font-weight: 500; color: var(--tinta); }
+
+/* 02. a pergunta, sozinha */
+.so-pergunta { max-width: 900px; }
+.so-pergunta .pergunta { font-size: clamp(38px, 5.4vw, 78px); margin-top: 0; }
+
 /* 14. fechamento */
 .hoje { border-top: 1px solid var(--fio); margin: 24px 0 26px; max-width: 520px; }
 .hoje li { display: grid; grid-template-columns: 54px minmax(0, 1fr); padding: 11px 0; border-bottom: 1px solid var(--fio); align-items: baseline; font-size: 19px; font-weight: 300; color: var(--off); }
@@ -315,7 +336,7 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
 
 /* responsivo */
 @media (max-width: 999px) {
-  .hero .container, .duas, .painel-grade, .site-grade, .bonus-grade, .busca-grade { grid-template-columns: minmax(0, 1fr); gap: 52px; }
+  .hero .container, .duas, .painel-grade, .site-grade, .bonus-grade, .busca-grade, .resumo-grade { grid-template-columns: minmax(0, 1fr); gap: 52px; }
   .papeis, .planos { grid-template-columns: minmax(0, 1fr); gap: 34px; }
   .blocos { grid-template-columns: minmax(0, 1fr); }
   .achados { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -412,16 +433,13 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
     </div></div>
   </section>
 
-  <div class="band c-e com-faixa" aria-hidden="true">
-    <div class="faixa"><div class="trilha" id="trilha"><span class="lote"><span class="it">Selic<b>13,75%</b></span><span class="it">Dólar<b>R$ 5,79</b></span><span class="it">IPCA 12 meses<b>4,63%</b></span><span class="it">Soja<b>R$ 135,53</b></span><span class="it">Milho<b>R$ 52,88</b></span><span class="it">Leite<b>R$ 2,82</b></span></span></div></div>
-  </div>
+  <div class="band c-e" aria-hidden="true"></div>
 
   <!-- 02 · escuta -->
-  <section class="tela escuro cheia empilha" id="t2" data-numero="02">
+  <section class="tela escuro cheia com-foto" style="--foto:url(img/campo.webp)" id="t2" data-numero="02">
     <span class="romano esq" aria-hidden="true">02</span>
-    <div class="sangra"><img src="img/palestra.webp" alt="A equipe da Integraliza com os participantes da palestra sobre formação de preço, em novembro de 2026" width="1500" height="1125" style="object-position:50% 46%" data-par=".07"></div>
     <div class="container">
-      <div class="metade rv">
+      <div class="so-pergunta rv">
         <h2 class="pergunta">O que precisa acontecer em 2027 para vocês dizerem que <span class="ouro">valeu a pena</span>?</h2>
         <div class="pautas"><span>Os clientes de hoje</span><span>Quem vocês querem atrair</span><span>Quanto a estrutura comporta</span><span>Quem grava e quem atende</span></div>
       </div>
@@ -688,29 +706,28 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
 
   <div class="band e-a" aria-hidden="true"></div>
 
-  <!-- 13 · condição de abertura -->
+  <!-- 13 · o investimento e os bônus -->
   <section class="tela claro alt cheia" id="t13" data-numero="13">
     <span class="romano esq baixo" aria-hidden="true">13</span>
-    <div class="container bonus-grade">
+    <div class="container resumo-grade">
       <div class="rv">
-        <span class="gigante ouro tnum">R$ 3.190</span>
-        <h2 class="titulo menor" style="margin-top:0">em bônus para quem fecha até 30/11.</h2>
-        <p class="lead">O preço do plano é o da tabela. De presente entra o que já está pronto e o que é feito uma vez só.</p>
+        <h2 class="titulo menor" style="margin-top:0">O plano por mês, o site uma vez e os bônus de <span class="ouro">presente</span>.</h2>
+        <ul class="valores">
+          <li class="rec"><div><span class="rot">Plano 2 · recomendado</span><b>Redes sociais e tráfego</b></div><div class="preco"><b class="tnum ouro">R$ 3.290</b><small>por mês</small></div></li>
+          <li><div><span class="rot">Plano 1</span><b>Redes sociais</b></div><div class="preco"><b class="tnum">R$ 2.490</b><small>por mês</small></div></li>
+          <li><div><span class="rot">À parte</span><b>Site completo</b></div><div class="preco"><b class="tnum">R$ 2.500</b><small>uma vez</small></div></li>
+        </ul>
       </div>
-      <div class="rv">
+      <div class="presente rv">
+        <span class="rot">De presente para quem fecha até 30/11/2026</span>
         <table>
-          <thead><tr><th>Bônus</th><th>Valor</th><th></th></tr></thead>
           <tbody>
             <tr><th>Painel do agro<small>Indicadores, preços ao produtor e clima, atualizados sozinhos.</small></th><td>R$ 1.900</td><td class="pres">De presente</td></tr>
             <tr><th>Agente de notícias do agro<small>Publica no site as notícias dos órgãos do governo, com o crédito de cada fonte.</small></th><td>R$ 900</td><td class="pres">De presente</td></tr>
             <tr><th>Implantação do plano<small>Diagnóstico, identidade de edição, medição e o calendário do agro.</small></th><td>R$ 390</td><td class="pres">Isenta</td></tr>
           </tbody>
         </table>
-        <div class="trato">
-          <div><b class="tnum">R$ 2.490 ou 3.290</b><span>o plano, por mês</span></div>
-          <div><b class="tnum">R$ 2.500</b><span>o site, uma vez</span></div>
-          <div><b class="tnum">R$ 0</b><span>os bônus da abertura</span></div>
-        </div>
+        <p class="soma">Somados, são <b>R$ 3.190</b> em bônus, sem custo.</p>
       </div>
     </div>
   </section>
@@ -850,9 +867,8 @@ td.pres { font-family: var(--font); font-size: 10.5px; font-weight: 500; letter-
   function lote(itens) {
     return '<span class="lote">' + itens.map(function (it) { return '<span class="it">' + it[0] + '<b>' + it[1] + '</b></span>'; }).join('') + '</span>';
   }
-  function medir() { largura = trilha.firstElementChild.getBoundingClientRect().width; }
-  function repetir(html) { trilha.innerHTML = html; }
-  repetir(trilha.innerHTML);
+  function medir() { if (trilha) largura = trilha.firstElementChild.getBoundingClientRect().width; }
+  function repetir(html) { if (trilha) trilha.innerHTML = html; }
   window.addEventListener('resize', medir);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(medir);
   if (window.fetch) {
