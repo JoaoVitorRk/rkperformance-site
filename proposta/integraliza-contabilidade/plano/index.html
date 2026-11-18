@@ -457,7 +457,7 @@ html,body{overflow-x:clip}
 .bonus-cab{max-width:720px;margin:0 auto 40px;text-align:center}
 .bonus-cab .sub{margin:0 0 14px}
 .bonus-cab p{color:var(--tinta2);font-size:17.5px}
-.bonus-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.bonus-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:1000px;margin-inline:auto}
 .bonus-cards li{display:flex;flex-direction:column;padding:30px 28px 26px;background:var(--branco);border:1px solid var(--fio2);box-shadow:0 30px 60px -48px rgba(42,33,28,.4)}
 .b-tag{align-self:flex-start;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#1A130E;background:linear-gradient(100deg,#EFE3C8 0%,#C9A771 60%,#B8975A 100%);padding:5px 11px 4px}
 .bonus-cards h4{font-size:25px;font-weight:300;line-height:1.2;margin:20px 0 10px}
@@ -465,7 +465,7 @@ html,body{overflow-x:clip}
 .b-valor{margin-top:auto;padding-top:18px;border-top:1px solid var(--fio-escuro);display:flex;align-items:baseline;justify-content:space-between;gap:12px}
 .b-valor span{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tinta3)}
 .b-valor b{font-size:36px;font-weight:200;line-height:1;color:var(--dourado3)}
-.bonus-soma{margin-top:22px;padding:28px 34px;background:var(--noite);color:var(--off);display:flex;align-items:center;gap:20px 44px;flex-wrap:wrap}
+.bonus-soma{max-width:1000px;margin:22px auto 0;padding:28px 34px;background:var(--noite);color:var(--off);display:flex;align-items:center;gap:20px 44px;flex-wrap:wrap}
 .bonus-soma>div{display:flex;align-items:baseline;gap:16px}
 .bonus-soma span{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado)}
 .bonus-soma>div b{font-size:clamp(40px,4.4vw,58px);font-weight:200;line-height:1}
@@ -570,7 +570,7 @@ html,body{overflow-x:clip}
         <div><span class="grande">Irati</span><h3>não existe no Maps</h3><p>A unidade nova ainda não tem ficha no Google, então quem procura contador em Irati não encontra vocês.</p></div>
         <div><span class="grande">10×</span><h3>mais curtidas com gente real</h3><p>Os posts com a equipe e os eventos rendem dez vezes mais que as artes técnicas. A ideia dos vídeos a campo vai na direção certa.</p></div>
         <div><span class="grande">9 mil</span><h3>estabelecimentos rurais</h3><p>Só nas duas cidades (IBGE). Soja, fumo, feijão, leite e suínos, os temas que vocês querem gravar, são as maiores atividades da região.</p></div>
-        <div><span class="grande">set</span><h3>de 2026</h3><p>Desde setembro, um escritório da cidade posicionado no agro anuncia na Meta. Quem chegar primeiro ao produtor no digital ocupa esse lugar.</p></div>
+        <div><span class="grande">22</span><h3>anúncios de um concorrente</h3><p>Um escritório da cidade, também voltado ao agro, anuncia no Instagram e no Facebook desde setembro. Quem chegar primeiro ao produtor no digital ocupa esse lugar.</p></div>
       </div>
       <p class="nota rv">E 2027 traz um momento de decisão em massa: a exigência de CNPJ para parte dos produtores rurais, além da reforma tributária. Foi o tema do post de vocês, e é o assunto que vai fazer o produtor procurar um contador do agro.</p>
     </div>
@@ -679,7 +679,7 @@ html,body{overflow-x:clip}
           <ul>
             <li>As fichas de Prudentópolis e Irati cuidadas todo mês</li>
             <li>Publicações semanais no Google e a rotina de avaliações</li>
-            <li>Relatório a cada 15 dias, com os números dos anúncios</li>
+            <li>Dashboard de resultados on-line, atualizado todo dia</li>
           </ul>
         </article>
       </div>
@@ -703,11 +703,12 @@ html,body{overflow-x:clip}
           <li>Selic, dólar e inflação<small>Do Banco Central, todo dia</small></li>
           <li>Preço ao produtor no Paraná<small>Soja, milho, feijão, trigo, leite, suínos e boi gordo, da Secretaria da Agricultura</small></li>
           <li>Previsão do tempo de 5 dias<small>De Prudentópolis e de Irati</small></li>
+          <li>Notícias do agro<small>Do Ministério da Agricultura, da Receita e de outros órgãos do governo, com o crédito de cada fonte</small></li>
           <li>Atualização automática todo dia<small>Se uma fonte sair do ar, o painel mantém o último valor e segue funcionando</small></li>
         </ul>
         <div class="valor-painel">
-          <span class="rot">Valor do painel</span>
-          <b>R$ 1.900</b>
+          <span class="rot">Valor do painel com as notícias</span>
+          <b>R$ 2.200</b>
           <span class="d">de presente na condição de abertura, com a atualização diária incluída no plano</span>
         </div>
         <div class="ctas" style="margin-top:30px"><a class="btn btn-ouro" href="https://integraliza.rkperformance.com.br/portal/" target="_blank" rel="noopener">Abrir o painel <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
@@ -753,7 +754,7 @@ html,body{overflow-x:clip}
             <li>Gestão do Google Ads<small>Nas pesquisas de quem procura o serviço, levando para a página certa do site</small></li>
             <li>Até 3 criativos de anúncio por mês</li>
             <li>O Google das duas unidades<small>Publicações semanais e a rotina de avaliações</small></li>
-            <li>Relatório a cada 15 dias</li>
+            <li>Dashboard de resultados on-line<small>Atualizado todo dia, para vocês acompanharem quando quiserem</small></li>
           </ul>
           <button class="btn btn-ouro" type="button" data-escolher="2">Escolher o plano 2 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         </article>
@@ -790,27 +791,21 @@ html,body{overflow-x:clip}
 
       <div class="bonus rv">
         <div class="bonus-cab">
-          <h3 class="sub">Três bônus para quem fecha até <span class="ouro">30/11</span>.</h3>
+          <h3 class="sub">Dois bônus para quem fecha até <span class="ouro">30/11</span>.</h3>
           <p>O preço do plano é o da tabela. De presente entra o que já está pronto e o que é feito uma vez só.</p>
         </div>
         <ol class="bonus-cards">
           <li>
             <span class="b-tag">De presente</span>
-            <h4>Painel do agro</h4>
-            <p>Selic, dólar, preços ao produtor e clima, atualizados sozinhos todo dia. Já está no ar: vocês veem funcionando antes de assinar.</p>
-            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 1.900</b></div>
-          </li>
-          <li>
-            <span class="b-tag">De presente</span>
-            <h4>Agente de notícias do agro</h4>
-            <p>Publica no site, todo dia, as notícias do Ministério da Agricultura, da Receita e de outros órgãos do governo, com o crédito de cada fonte.</p>
-            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 900</b></div>
+            <h4>Painel do agro com as notícias</h4>
+            <p>Selic, dólar, preços ao produtor, clima e as notícias dos órgãos do governo, com o crédito de cada fonte. Tudo atualizado sozinho todo dia. Já está no ar: vocês veem funcionando antes de assinar.</p>
+            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 2.200</b></div>
           </li>
           <li>
             <span class="b-tag">Isenta</span>
             <h4>Implantação do plano</h4>
-            <p>Diagnóstico, identidade de edição dos vídeos, medição ligada e o calendário do agro, para o primeiro mês já sair com publicação no ar.</p>
-            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 390</b></div>
+            <p>Diagnóstico, identidade de edição dos vídeos, medição ligada, o calendário do agro e, no plano 2, o dashboard montado, para o primeiro mês já sair com publicação no ar.</p>
+            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 990</b></div>
           </li>
         </ol>
         <div class="bonus-soma">
@@ -845,7 +840,7 @@ html,body{overflow-x:clip}
             <tr><th>Plano 1 · Redes sociais<small>Todo mês, a partir da assinatura</small></th><td><b>R$ 2.490</b><small>por mês</small></td></tr>
             <tr><th>Plano 2 · Redes sociais e tráfego<small>Todo mês, a partir da assinatura</small></th><td><b>R$ 3.290</b><small>por mês</small></td></tr>
             <tr><th>Site completo<small>Entregue uma vez, com as 10 páginas, o SEO e as fichas do Google</small></th><td><b>R$ 2.500</b><small>único</small></td></tr>
-            <tr><th>Bônus da abertura<small>Painel do agro, agente de notícias e implantação</small></th><td><b>R$ 0</b><small>R$ 3.190 em bônus</small></td></tr>
+            <tr><th>Bônus da abertura<small>Painel do agro com as notícias e implantação do plano</small></th><td><b>R$ 0</b><small>R$ 3.190 em bônus</small></td></tr>
             <tr><th>Verba de anúncio<small>No plano 2, paga direto à Meta e ao Google; sugestão a partir de R$&nbsp;1.000 por mês</small></th><td><b>À parte</b><small>das plataformas</small></td></tr>
           </table>
           <div class="pagto">
@@ -874,7 +869,7 @@ html,body{overflow-x:clip}
       </div>
 
       <div class="rv" style="margin-top:96px">
-        <h3 class="sub">Os números do relatório.</h3>
+        <h3 class="sub">Os números que vocês acompanham.</h3>
         <div class="medir">
           <div><b>Avaliações no Google</b><p>Das duas unidades, com a rotina pedindo aos clientes de hoje.</p></div>
           <div><b>Pesquisas e visitas</b><p>Quais buscas do Google trazem gente para cada página de serviço.</p></div>
