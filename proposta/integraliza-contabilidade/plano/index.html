@@ -422,6 +422,71 @@ ul,ol{list-style:none}
   .faq details p{padding-right:0;font-size:15.5px}
 }
 html,body{overflow-x:clip}
+/* planos: no computador, os dois cartões ficam no centro da página */
+@media (min-width:1021px){
+  #planos .sec-head{margin-inline:auto;text-align:center}
+  .opcoes.dois{grid-template-columns:repeat(2,minmax(0,1fr));max-width:1000px;margin-inline:auto}
+  .opcoes.dois .opcao,.opcoes.dois .opcao:first-child,.opcoes.dois .opcao:last-child{padding-left:38px;padding-right:38px}
+}
+/* o site completo, em destaque */
+.site-destaque{position:relative;isolation:isolate;overflow:hidden;margin-top:88px;padding:58px 56px 50px;background:var(--noite);color:var(--off);display:grid;grid-template-columns:.92fr 1.08fr;gap:44px 60px;align-items:center}
+.site-destaque::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgb(30 25 20/.94) 0%,rgb(30 25 20/.74) 100%),url(img/fundo-talhoes.webp) center/cover no-repeat}
+.site-destaque h3{font-size:clamp(30px,3.3vw,46px);font-weight:200;line-height:1.12}
+.site-destaque p{color:var(--mudo);margin-top:16px;max-width:44ch;font-size:17.5px;line-height:1.7}
+.sd-preco{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:28px 0 26px;padding:22px 0;border-top:1px solid var(--fio);border-bottom:1px solid var(--fio)}
+.sd-preco .rs{font-size:20px;color:var(--mudo)}
+.sd-preco .val{font-size:clamp(56px,5.8vw,80px);font-weight:200;line-height:1}
+.sd-preco .per{margin-left:14px;font-size:16px;color:var(--off)}
+.sd-preco .per small{display:block;font-size:13.5px;color:var(--mudo)}
+.sd-acoes{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center}
+.site-destaque .link{color:var(--off);border-color:var(--fio)}
+.site-destaque .link:hover{color:var(--dourado2);border-color:var(--dourado)}
+.sd-vis .win{box-shadow:0 44px 90px -44px rgba(0,0,0,.85)}
+.sd-vis img{display:block;width:100%;height:auto}
+.sd-numeros{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--fio)}
+.sd-numeros li{padding:24px 26px 0 0}
+.sd-numeros li+li{padding-left:26px;border-left:1px solid var(--fio)}
+.sd-numeros b{display:block;font-size:clamp(40px,4.2vw,58px);font-weight:200;line-height:1;color:var(--dourado2)}
+.sd-numeros span{display:block;margin-top:10px;font-size:15.5px;line-height:1.55;color:var(--mudo)}
+.sd-lista{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:44px;border-top:1px solid var(--fio)}
+.sd-lista li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--fio);font-size:16px;color:var(--mudo)}
+.sd-lista li::before{content:'';position:absolute;left:0;top:27px;width:16px;height:1px;background:var(--dourado)}
+.sd-lista li b{font-weight:400;color:var(--off)}
+/* os bônus, cada um com o seu valor */
+.bonus{margin-top:96px}
+.bonus-cab{max-width:720px;margin:0 auto 40px;text-align:center}
+.bonus-cab .sub{margin:0 0 14px}
+.bonus-cab p{color:var(--tinta2);font-size:17.5px}
+.bonus-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.bonus-cards li{display:flex;flex-direction:column;padding:30px 28px 26px;background:var(--branco);border:1px solid var(--fio2);box-shadow:0 30px 60px -48px rgba(42,33,28,.4)}
+.b-tag{align-self:flex-start;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#1A130E;background:linear-gradient(100deg,#EFE3C8 0%,#C9A771 60%,#B8975A 100%);padding:5px 11px 4px}
+.bonus-cards h4{font-size:25px;font-weight:300;line-height:1.2;margin:20px 0 10px}
+.bonus-cards p{color:var(--tinta2);font-size:15.5px;line-height:1.65;margin-bottom:24px}
+.b-valor{margin-top:auto;padding-top:18px;border-top:1px solid var(--fio-escuro);display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.b-valor span{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--tinta3)}
+.b-valor b{font-size:36px;font-weight:200;line-height:1;color:var(--dourado3)}
+.bonus-soma{margin-top:22px;padding:28px 34px;background:var(--noite);color:var(--off);display:flex;align-items:center;gap:20px 44px;flex-wrap:wrap}
+.bonus-soma>div{display:flex;align-items:baseline;gap:16px}
+.bonus-soma span{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado)}
+.bonus-soma>div b{font-size:clamp(40px,4.4vw,58px);font-weight:200;line-height:1}
+.bonus-soma p{flex:1;min-width:260px;color:var(--mudo);font-size:17px}
+.bonus-soma p b{font-weight:400;color:var(--off)}
+@media (max-width:1020px){
+  .site-destaque{grid-template-columns:1fr;padding:44px 32px 40px;gap:36px}
+  .bonus-cards{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .site-destaque{margin:64px -20px 0;padding:40px 20px 34px}
+  .sd-numeros{grid-template-columns:1fr}
+  .sd-numeros li,.sd-numeros li+li{padding:20px 0 0;border-left:0}
+  .sd-numeros li+li{margin-top:20px;border-top:1px solid var(--fio)}
+  .sd-lista{grid-template-columns:1fr;margin-top:8px}
+  .sd-preco .per{margin-left:0;flex-basis:100%}
+  .site-destaque .btn{width:100%}
+  .bonus{margin-top:72px}
+  .bonus-soma{padding:24px 22px}
+  .bonus-soma>div{flex-direction:column;gap:8px}
+}
 /* abertura: o celular vai para a direita, para não cobrir o título do print do computador, e mostra o topo do painel */
 .fone img{object-position:top}
 @media (min-width:1021px){
@@ -694,35 +759,68 @@ html,body{overflow-x:clip}
         </article>
       </div>
 
-      <div class="comum rv">
-        <div>
-          <h3>O site completo: R$ 2.500.</h3>
-          <p>Pagamento único, à parte do plano. Depois de publicado, a manutenção fica por conta do plano do mês.</p>
+      <div class="site-destaque rv" id="site">
+        <div class="sd-texto">
+          <h3>O site completo, a porta de <span class="ouro">entrada</span>.</h3>
+          <p>O Google, os anúncios e os vídeos levam para ele. É no site que o produtor entende tudo o que vocês fazem e chama no WhatsApp já sabendo o assunto.</p>
+          <div class="sd-preco"><span class="rs">R$</span><span class="val tnum ouro">2.500</span><span class="per">uma vez<small>50% para começar e 50% na publicação</small></span></div>
+          <div class="sd-acoes">
+            <a class="btn btn-ouro" href="https://integraliza.rkperformance.com.br/" target="_blank" rel="noopener">Ver a prévia <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="link" href="https://integraliza.rkperformance.com.br/servicos/georreferenciamento/" target="_blank" rel="noopener">Ver uma página de serviço</a>
+          </div>
         </div>
-        <ul class="duas">
-          <li><b>A página principal</b> da prévia, ajustada com vocês.</li>
-          <li><b>10 páginas de serviço</b>, uma para cada pesquisa do Google.</li>
-          <li><b>Configuração de SEO</b>, com o Search Console e os dados do escritório para o Google.</li>
-          <li><b>As fichas do Google arrumadas</b> e a de Irati criada.</li>
-          <li><b>O Painel do agro</b> e as notícias, no domínio de vocês.</li>
-          <li><b>Sem mensalidade de hospedagem.</b> Só o domínio, cerca de R$&nbsp;40 por ano.</li>
+        <div class="sd-vis">
+          <div class="win">
+            <div class="win-bar" aria-hidden="true"><span></span><span></span><span></span><b>integraliza.rkperformance.com.br</b></div>
+            <img src="img/site-capa.webp" alt="A abertura da prévia do site da Integraliza: Ao lado de quem faz o campo crescer" width="1440" height="900" loading="lazy">
+          </div>
+        </div>
+        <ul class="sd-numeros">
+          <li><b class="tnum">10</b><span>páginas de serviço, uma para cada pesquisa do Google. Já estão prontas na prévia.</span></li>
+          <li><b class="tnum">2</b><span>fichas do Google arrumadas: a de Prudentópolis corrigida e a de Irati criada.</span></li>
+          <li><b class="tnum">R$ 0</b><span>de mensalidade de hospedagem. Só o domínio, cerca de R$&nbsp;40 por ano.</span></li>
+        </ul>
+        <ul class="sd-lista">
+          <li><b>A página principal</b> da prévia, ajustada com vocês</li>
+          <li><b>SEO configurado</b>, com o Search Console e os dados do escritório para o Google</li>
+          <li><b>O Painel do agro e as notícias</b> no domínio de vocês</li>
+          <li><b>A manutenção</b> fica dentro do plano do mês, depois de publicado</li>
         </ul>
       </div>
 
-      <div class="rv" style="margin-top:88px">
-        <span class="eyebrow">Condição de abertura · até 30/11/2026</span>
-        <h3 class="sub">O que entra de presente.</h3>
-        <table class="bonus-tab">
-          <thead><tr><th>Bônus</th><th>Valor</th><th>Na abertura</th></tr></thead>
-          <tbody>
-            <tr><th>Painel do agro<small>Indicadores, preços ao produtor e clima, atualizados sozinhos todo dia</small></th><td><b>R$ 1.900</b>uma vez</td><td><b>De presente</b>no site</td></tr>
-            <tr><th>Agente de notícias do agro<small>Publica no site, todo dia, as notícias do Ministério da Agricultura, da Receita e de outros órgãos do governo, com o crédito de cada fonte</small></th><td><b>R$ 900</b>uma vez</td><td><b>De presente</b>no site</td></tr>
-            <tr><th>Implantação do plano<small>Diagnóstico, identidade de edição, medição e o calendário do agro</small></th><td><b>R$ 390</b>uma vez</td><td><b>Isenta</b></td></tr>
-            <tr class="soma"><th>Bônus somados<small>Para quem fecha até 30/11/2026</small></th><td></td><td><b>R$ 3.190</b>sem custo</td></tr>
-          </tbody>
-        </table>
+      <div class="bonus rv">
+        <div class="bonus-cab">
+          <h3 class="sub">Três bônus para quem fecha até <span class="ouro">30/11</span>.</h3>
+          <p>O preço do plano é o da tabela. De presente entra o que já está pronto e o que é feito uma vez só.</p>
+        </div>
+        <ol class="bonus-cards">
+          <li>
+            <span class="b-tag">De presente</span>
+            <h4>Painel do agro</h4>
+            <p>Selic, dólar, preços ao produtor e clima, atualizados sozinhos todo dia. Já está no ar: vocês veem funcionando antes de assinar.</p>
+            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 1.900</b></div>
+          </li>
+          <li>
+            <span class="b-tag">De presente</span>
+            <h4>Agente de notícias do agro</h4>
+            <p>Publica no site, todo dia, as notícias do Ministério da Agricultura, da Receita e de outros órgãos do governo, com o crédito de cada fonte.</p>
+            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 900</b></div>
+          </li>
+          <li>
+            <span class="b-tag">Isenta</span>
+            <h4>Implantação do plano</h4>
+            <p>Diagnóstico, identidade de edição dos vídeos, medição ligada e o calendário do agro, para o primeiro mês já sair com publicação no ar.</p>
+            <div class="b-valor"><span>Vale</span><b class="tnum">R$ 390</b></div>
+          </li>
+        </ol>
+        <div class="bonus-soma">
+          <div><span>Bônus somados</span><b class="tnum ouro">R$ 3.190</b></div>
+          <p>em bônus, sem custo, para quem fecha até <b>30/11/2026</b>.</p>
+        </div>
+      </div>
 
-        <table class="bonus-tab" style="margin-top:56px">
+      <div class="rv" style="margin-top:64px">
+        <table class="bonus-tab">
           <thead><tr><th>Já dentro dos planos</th><th>À parte</th><th>No plano</th></tr></thead>
           <tbody>
             <tr><th>Manutenção do site<small>Até 4 alterações por mês</small></th><td><b>R$ 150</b>por mês</td><td><b>Incluída</b>nos dois</td></tr>
@@ -730,7 +828,6 @@ html,body{overflow-x:clip}
             <tr><th>Anúncios na Meta e no Google, mais o Google das duas unidades<small>No plano 2</small></th><td><b>R$ 1.470</b>por mês</td><td><b>R$ 800</b>a mais que o plano 1</td></tr>
           </tbody>
         </table>
-        <span class="prazo"><i></i>Condição de abertura para fechar até 30/11/2026</span>
       </div>
     </div>
   </section>
